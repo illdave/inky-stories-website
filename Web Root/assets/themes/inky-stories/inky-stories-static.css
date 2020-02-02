@@ -1,0 +1,247 @@
+@import url("../bootstrap-4/css/bootstrap.css");
+@import url("../../lib/bootstrap-4.1.3/site/docs/4.1/assets/css/docs.min.css");
+@import url("../../lib/fontawesome-5.5.0/css/all.css");
+
+/* 
+	Inky Stories
+	Responsive Regeneration of 2020 
+*/
+
+/* html ------------------------------- */
+html {
+	font-family: sans-serif;
+	position: relative;
+	min-height: 100%;  
+}
+body {
+	font-family: "proxima nova", arial, "helvetica neue", "helvetica", sans-serif;
+	min-height: 75rem; 		/* fixed header nav hack */
+	padding-top: 8.6rem;	/* fixed header nav hack */
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: bold;
+}
+
+h1, .h1 {
+	font-size: 2.5rem;
+}
+
+h2, .h2 {
+	font-size: 1.75rem;
+}
+
+h3, .h3 {
+	font-size: 1.25rem;
+}
+
+h4, .h4 {
+	font-size: 1rem;
+}
+a {
+	color: #cc0000;
+	text-decoration: none;
+	background-color: transparent;
+	font-weight: bold;
+}
+a:hover {
+	color: #cc0000;
+	text-decoration: underline;
+}
+a:focus {
+	color: orange;
+	text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+	background: #ccc;
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: .5rem auto;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+}
+
+ul {
+	padding-left: 3rem;
+}
+.wordy li {
+	margin-bottom: .75rem;
+}
+
+dl dd {
+	margin-bottom: .75rem;
+}
+
+table {
+	width: 100%;
+}
+
+.table-no-padding th,  
+.table-no-padding td {
+	padding: 0;
+}
+
+
+/* fonts ------------------------------ */
+@font-face {
+  font-family: 'Font Awesome Regular';
+  src: url("../../fonts/font-awesome/fa-regular-400.eot");
+  src: url("../../fonts/font-awesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+  url("../../fonts/font-awesome/fa-regular-400.woff") format("woff"), 
+  url("../../fonts/font-awesome/fa-regular-400.woff2") format("woff2"), 
+  url("../../fonts/font-awesome/fa-regular-400.ttf") format("truetype"), 
+  url("../../fonts/font-awesome/fa-regular-400.svg#fontawesome-free") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Font Awesome Brands';
+  src: url("../../fonts/font-awesome/fa-brands-400.eot");
+  src: url("../../fonts/font-awesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+  url("../../fonts/font-awesome/fa-brands-400.woff") format("woff"), 
+  url("../../fonts/font-awesome/fa-brands-400.woff2") format("woff2"), 
+  url("../../fonts/font-awesome/fa-brands-400.ttf") format("truetype"), 
+  url("../../fonts/font-awesome/fa-brands-400.svg#fontawesome-free") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Font Awesome Solid';
+  src: url("../../fonts/font-awesome/fa-solid-900.eot");
+  src: url("../../fonts/font-awesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+  	   url("../../fonts/font-awesome/fa-solid-900.woff") format("woff"), 
+       url("../../fonts/font-awesome/fa-solid-900.woff2") format("woff2"), 
+       url("../../fonts/font-awesome/fa-solid-900.ttf") format("truetype"), 
+       url("../../fonts/font-awesome/fa-solid-900.svg#fontawesome-free") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../../fonts/proxima-nova/proxima-nova-reg.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-reg.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/proxima-nova/proxima-nova-reg.woff") format("woff"), 
+ 	   url("../../fonts/proxima-nova/proxima-nova-reg.ttf") format("truetype"), 
+ 	   url("../../fonts/proxima-nova/proxima-nova-reg.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+	font-family: 'Font Awesome Regular';
+	font-weight: 400;
+}
+.fab {
+	font-family: 'Font Awesome Brands'; 
+	font-weight: 400;
+}
+.fas {
+	font-family: 'Font Awesome Solid';
+	font-weight: 900;
+}
+
+
+/* icons ------------------------------ */
+.btn.icon {
+	display: inline-flex;
+	align-items: center;
+}
+
+.learn-more .fas {
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+.learn-more .fas:before {
+	content: "\f0da"; 
+}
+
+/* header ----------------------------- */
+header {
+	background: white;
+}
+.inky-stories-brand {
+	background: #ccc;
+	min-height: 90px;
+}
+.navbar-brand  {
+	font-size: 3rem;
+}
+
+/* temp WIP styles -------------------- */
+.comic-book-page {
+	background: #efefef;
+	text-align: center;
+	margin-bottom: 3rem;
+	padding: 2rem;
+}
+
+.comic-book-page img {
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	margin-bottom: 2rem;
+}
+.author-notes {
+	text-align: left;
+}
+
+figure.comic-book-page  {
+	background: transparent;
+	padding: 0;
+}
+
+figure.comic-book-page.float-left {
+	margin-right: 1.5rem;
+}
+
+figure.comic-book-page img  {
+	margin-bottom: .5rem;
+}
+
+.jumbotron {
+	padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0rem;
+}
+
+.text-page, .web-comic {
+	padding-top: 1rem;
+}
+.banner-top {
+	padding-top: 0;
+}
+
+
+
+
+/* temp WIP responsive ---------------- */
+@media (max-width: 575.98px) { 
+	.comic-book-page {
+		background: transparent;
+		padding: 0;
+	}
+	.comic-book-page img {
+	}
+}
+
+
+
+
+
+
+
+
+
