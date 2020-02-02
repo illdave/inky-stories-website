@@ -25019,11 +25019,11 @@ https://www.npmjs.com/package/sass-rem */
 html {
   position: relative;
   min-height: 100%;
-  scroll-padding-top: 4.5rem;
+  scroll-padding-top: 5rem;
 }
 
 body {
-  padding-top: 4.5rem;
+  padding-top: 5rem;
   font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
   font-size: 1rem;
 }
@@ -25278,12 +25278,19 @@ table th, .table th {
   background: #15477a;
 }
 .main-navigation .inky-stories-brand {
-  min-height: 4.5rem;
+  min-height: 5rem;
 }
 .main-navigation .navbar-brand {
   font-size: 2.5rem;
   padding: 0;
   color: #fff;
+  display: block;
+  width: 250px;
+  height: 3rem;
+  text-indent: -9999px;
+  background: url("../../img/brand/logo-white.png") no-repeat 0 0;
+  background-size: contain;
+  margin: 0.25rem 0;
 }
 .main-navigation .navbar-brand:hover {
   text-shadow: 0 0 10px #fff;
