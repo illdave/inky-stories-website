@@ -1,0 +1,156 @@
+/* utility classes -------------------- */
+
+.table-no-padding th,  
+.table-no-padding td {
+	padding: 0;
+}
+
+.main-navigation .skip-link {
+	color: $white;
+	font-size: .75rem;
+	&.sr-only-focusable:focus, 
+	&.sr-only-focusable:active {
+		position: absolute;
+		top: .5rem;
+		z-index: 2;
+		left: 1rem;
+	}
+}
+
+.list-inline {
+	li {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: .5rem;
+		}
+	}
+}
+.list-unstyled {
+	li {
+		&:not(:last-child) {
+			margin-bottom: $spacer;
+		}
+	}
+}
+
+.back-to-top {
+	padding: .5rem 0;
+	text-align: right;
+	.fas {
+		color: $icon-link-color;
+		margin-left: .5rem;
+		&:before {
+			content: $icon-back-to-top;
+		}
+	}
+	&:hover {
+		.fas {
+			color: $icon-link-color-hover;
+		}
+	}
+	&:active {
+		.fas {
+			color: $icon-link-color-active;
+		}
+	}
+
+}
+
+.learn-more .fas {
+	&:before {
+		content: $icon-learn-more;
+	}
+}
+
+.jumbotron {
+	padding: $jumbotron-padding;
+    margin-bottom: $spacer-large;
+    background-color: $jumbotron-bg;
+    border-radius: $jumbotron-border-radius;
+}
+
+.section {
+	padding: $section-padding-large;
+	&.intro {
+		padding: $section-padding-large;
+	}
+}
+
+.photo {
+	background: $white no-repeat 0 0;
+	background-size: cover;
+	border: $border-default;
+	margin-bottom: 1rem;
+}
+.circle {
+	height: $photo-circle-large;
+	width: $photo-circle-large;
+	border-radius: $circle-border-radius;
+}
+
+.button-backtotop {
+	border: 1px solid red;
+	padding: 2rem;
+	background: blue;
+	color: red;
+    opacity: 0;
+    transition: opacity .5s linear;
+	&.active, 
+	&:focus {
+		opacity: 1;
+	}
+}
+
+
+/* blog ------------------------------- */
+
+.blog {
+	&.text-page {
+		padding-top: 0;
+		.blog-top-image {
+			margin-bottom: $spacer-base;;
+		}
+		.blog-header {
+			border-bottom: $border-default;
+			margin-bottom: $spacer-large;
+			padding-bottom: $spacer-base;
+			h1 {
+			}
+			p {
+				&.summary {
+					font-size: 120%;
+					font-family: 'Roboto Bold Italic';
+				}
+				&.meta {
+					text-align: right;
+					color: #666;
+					margin-bottom: 0;
+					font-family: 'Roboto Italic';
+					.time-stamp {
+						.entry-date {}
+						.updated {
+							display: none;
+						}
+					}
+				}
+				&.author {
+					margin-left: .5rem;
+				}
+			}
+		}
+	}
+}
+
+
+/* icons ------------------------------ */
+
+.btn.icon {
+	display: inline-flex;
+	align-items: center;
+}
+
+.learn-more .fas {
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+

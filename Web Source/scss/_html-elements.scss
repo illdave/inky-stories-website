@@ -1,0 +1,92 @@
+/* html elements ---------------------- */
+
+html {
+	position: relative;
+	min-height: 100%;  
+	scroll-padding-top: $main-nav-height;
+}
+body {
+	padding-top: $main-nav-height; 
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: normal;
+	color: $headings-color;
+	font-family: $font-family-headers;
+}
+
+h1, .h1 {
+	font-size: $h1-font-size;
+}
+h2, .h2 {
+	font-size: $h2-font-size;
+}
+h3, .h3 {
+	font-size: $h3-font-size;
+}
+h4, .h4 {
+	font-size: $h4-font-size;
+}
+h5, .h5 {
+	font-size: $h5-font-size;
+}
+h6, .h6 {
+	font-size: $h6-font-size;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	background-color: transparent;
+	font-weight: normal;
+	font-family: 'Roboto Bold';
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+	&:active {
+		color: $link-active-color;
+	}
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+	background: $gray-light-medium;
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: $hr-margin auto;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+}
+
+ul {
+	padding-left: 3rem;
+}
+
+dl {
+	margin-bottom: 1rem;
+	dt {
+		font-family: $font-family-headers;
+		font-weight: normal;
+	}
+}
+
+table, .table {
+	width: 100%;
+	th {
+		font-family: $font-family-headers;
+	}
+}
+

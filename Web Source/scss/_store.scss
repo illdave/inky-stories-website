@@ -1,0 +1,81 @@
+/* store ------------------------------ */
+
+.store {
+	.section {
+		&.intro {
+			background: $gray-lighter no-repeat 0 0;
+			background-size: cover;
+			background-image: url("#{$banner-image-path}/store.jpg");
+			h1 {
+				color: #ff7e00;
+			}
+			p {
+				margin-bottom: 0;
+				color: $white;
+			}
+		}
+		&#minicomics {
+			background: $gray-lighter;
+		}
+		&#minicomics, &#standard-us-comics-size {
+			padding-bottom: 0;
+		}
+		
+	}
+	
+	.merchandise-description {
+		margin-bottom: 2rem;
+		h2 {
+			margin-bottom: .25rem;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	
+	.thumbnails {
+		.thumbnail {
+			background: $comic-book-thumbnail-bg;
+			margin-bottom: $spacer-large;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			.image {
+				background: white 0 0 no-repeat;
+				background-size: cover;
+				border: $comic-book-thumbnail-image-border;
+				height: 14rem;
+				margin-bottom: $spacer-small;
+				flex-basis: 9rem;
+				flex-grow: auto;
+				flex-shrink: 0;
+				margin-right: $spacer-base;
+				display: block;
+				&:hover {
+					border-color: $link-color;
+					opacity: 0.5;
+				}
+				&:focus {
+					outline: 0;
+					box-shadow: $btn-focus-box-shadow;
+				}
+			}
+			.text {
+				flex-grow: 2;
+				display: flex;
+				flex-direction: column;
+				align-content: space-between;
+				h3 {
+					margin-bottom: 0;
+					font-weight: normal;
+					font-family: $font-family-base;
+				}
+				.button-row {
+					align-self: flex-start;
+				}
+			}
+		}
+	}
+}
+

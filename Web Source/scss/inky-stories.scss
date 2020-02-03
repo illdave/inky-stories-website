@@ -1,0 +1,39 @@
+/* Inky Stories 2.0
+ * Copyright 2020 and beyond Rotten Kid Press.
+ * From David Marshall, America's Artist */
+
+
+// Dependencies -------------------------------------------------- //
+
+/* Bootstrap: visual design framework
+https://github.com/twbs/bootstrap */
+@import "../lib/bootstrap-4.4.1/scss/bootstrap.scss";
+
+/* Font Awesome: font icon library
+https://github.com/FortAwesome/Font-Awesome */
+@import "../lib/fontawesome-5.12.0/scss/fontawesome.scss";
+
+/* Animate: cross-browser animations
+https://github.com/geoffgraham/animate.scss */
+@import "../lib/animate.scss-master/animate.scss";
+
+/* Sass Rem: Sass function and mixin to use rem units with optional pixel fallback
+https://www.npmjs.com/package/sass-rem */
+@import "../node_modules/sass-rem/_rem.scss";
+
+
+// Inky Stories Dependencies ----------------------------------- //
+
+@import "variables";
+@import "fonts";
+@import "html-elements";
+@import "utility";
+@import "layout";
+@import "main-navigation";
+@import "home";
+@import "comic-books";
+@import "about";
+@import "footer";
+@import "store";
+
+

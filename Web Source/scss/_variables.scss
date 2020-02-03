@@ -1,0 +1,298 @@
+// Inky Stories variables -------------------------------------- //
+
+/* brand colors --------------------- */
+
+$inkystories-teal:							#0083a9;
+$inkystories-green:							#6d8d23;
+$inkystories-purple:						#26328c;
+$inkystories-blue-dark:						#15477a;
+
+
+/* Bootstrap colors ----------------- */
+
+$gray-darker:            					lighten(#000, 13.5%); // #222
+$gray-dark:              					lighten(#000, 20%);   // #333
+$gray:                   					lighten(#000, 33.5%); // #555
+$gray-lightest:             				lighten(#000, 45%);   // #737373
+$gray-light:             					lighten(#000, 75%);   // #bfbfbf
+$gray-light-medium:     					lighten(#000, 80%);   // #ccc
+$gray-lighter:           					lighten(#000, 93.5%); // #eee
+
+$primary:      								$purple; // DSM failed override
+$secondary:     							$gray-600 !default;
+$success:       							$green !default;
+$info:          							$cyan !default;
+$warning:       							$yellow !default;
+$danger:        							$red !default;
+$light:         							$gray-100 !default;
+$dark:          							$gray-800 !default;
+
+
+/* theme colors ---------------------- */
+
+$theme-color-1:								#d16b34; // orange
+$theme-color-2:								#c0392b; // red
+$theme-color-3:								#416daf; // blue
+$theme-color-4:								#138a58; // green
+$theme-color-5:								#e5a843; // gold
+$theme-color-6:								darken($theme-color-3, 5%); // dark blue 
+
+$brand-primary:         					$theme-color-3;
+$brand-success:         					$theme-color-5;
+$brand-info:            					$theme-color-6;
+$brand-warning:         					$theme-color-1;
+$brand-danger:          					$theme-color-2;
+
+$main-nav-bg: 								$inkystories-blue-dark;
+$main-nav-logo: 							$white;
+$main-nav-logo-hover: 						#b4becc;
+$main-nav-logo-active: 						$black;
+
+$main-nav-link: 							#b4becc;
+$main-nav-link-hover: 						$white;
+$main-nav-link-active:						$black;
+
+$border-default-color: 						$gray-light-medium;
+$border-default: 							rem(1px solid $border-default-color);
+
+$body-bg:									$white;
+
+$headings-color: 							$black;
+$text-color:								#687178;
+$link-color:								#008fd5;
+$link-hover-color:							lighten($link-color, 20%);
+$link-active-color:							darken($link-color, 20%);
+
+$white-glow: 								0 0 10px $white;
+
+
+/* typography ------------------------ */
+
+$default-font-weight:						normal;
+
+$roboto-bold: 								"Roboto Bold";
+$roboto-bold-italic: 						"Roboto Bold Italic";
+$roboto-black: 								"Roboto Black";
+$roboto-black-italic: 						"Roboto Black Italic";
+
+$font-family-sans-serif: 					"Proxima Nova","helvetica neue", helvetica, arial, sans-serif;
+$font-family-serif:       					georgia, "times new roman", times, serif;
+$font-family-base:        					$font-family-sans-serif;
+$font-family-headers:						$roboto-black;
+
+$font-size-base:          					1rem;
+$font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
+$font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
+$font-size-small:         					ceil(($font-size-base * 0.85)); // ~12px
+
+$h1-font-size:                				$font-size-base * 2.5;
+$h2-font-size:                				$font-size-base * 1.6;
+$h3-font-size:                				$font-size-base * 1.4;
+$h4-font-size:                				$font-size-base * 1.2;
+$h5-font-size:                				$font-size-base;
+$h6-font-size:                				$font-size-base;
+
+$link-hover-decoration:						none;
+$text-indent-for-image:  					-9999px;
+
+
+/* z-index --------------------------- */
+
+$zindex-navbar:            					1000;
+$zindex-dropdown:          					1000;
+$zindex-popover:           					1010;
+$zindex-tooltip:           					1030;
+$zindex-navbar-fixed:      					1030;
+$zindex-modal-background: 					1040;
+$zindex-modal:             					1050;
+
+
+/* paths ----------------------------- */
+
+$image-path:								unquote('../../img');
+$assets-path:								unquote('../assets');
+$comics-image-path:							$image-path/comics;
+$banner-image-path:							$image-path/banner;
+$blog-image-path:							$image-path/blog;
+$brand-image-path:							$image-path/brand;
+$store-image-path:							$image-path/store;
+$pictures-image-path:						$image-path/pictures;
+$dsm-image-path:							$image-path/dsm;
+$webcomics-image-path:						$assets-path/img/comics;
+
+
+/* spacing --------------------------- */
+
+$spacer: 									1rem;
+$spacer-base:								$spacer;
+$spacer-large:								$spacer-base * 2;
+$spacer-small:								$spacer-base/2;
+$spacer-xs:									$spacer-base/4;
+
+$spacer-base-vertical:						$spacer-base;
+$spacer-base-horizontal:					$spacer-large;
+
+$spacer-large-vertical:						$spacer-large;
+$spacer-large-horizontal:  					$spacer-large-vertical * 2;
+
+$spacer-small-vertical:    					$spacer-small;
+$spacer-small-horizontal:  					$spacer-small-vertical * 2;
+
+$margin-base:								$spacer-base;
+$margin-base-vertical:						$margin-base;
+$margin-base-horizontal:					$margin-base * 2;
+
+$margin-large-vertical:						$spacer-large;
+$margin-large-horizontal:  					$margin-large-vertical * 2;
+
+$margin-small-vertical:    					$spacer-small;
+$margin-small-horizontal:  					$margin-small-vertical * 2;
+
+$padding-base-vertical:     				$spacer-base;
+$padding-base-horizontal:   				$padding-base-vertical * 2;
+
+$padding-large-vertical:    				$spacer-large;
+$padding-large-horizontal:  				$padding-large-vertical * 2;
+
+$padding-small-vertical:    				$spacer-small;
+$padding-small-horizontal:  				$padding-small-vertical * 2;
+
+$border-radius-base:        				$spacer-small;
+$border-radius-large:       				$border-radius-base * 2;
+$border-radius-small:       				$border-radius-base/2;
+
+$section-padding:		 					$spacer-base 0;
+$section-padding-large: 					$spacer-large 0;
+
+
+/* Font Awesome icons ---------------- */
+
+$icon-link-color: 							$gray-light;
+$icon-link-color-hover: 					orange;
+$icon-link-color-active: 					$black;
+
+$icon-back-to-top:   						quote($fa-var-chevron-up);
+$icon-learn-more:   						quote($fa-var-caret-right);
+$icon-facebook:   							quote($fa-var-facebook);
+$icon-twitter:   							quote($fa-var-twitter);
+$icon-email:   								quote($fa-var-at);
+
+$icon-comic-nav-prev:   					quote($fa-var-chevron-circle-left);
+$icon-comic-nav-next:   					quote($fa-var-chevron-circle-right);
+
+$navbar-toggler-icon:   					quote($fa-var-bars);
+
+
+/* uncategorized --------------------- */
+
+$footer-border: 							rem(1px solid $gray-light);
+$hr-margin: 								$spacer/2;
+
+$jumbotron-padding: 						$spacer-large $spacer-base;
+$jumbotron-bg: 								$gray-lighter;
+$jumbotron-border-radius: 					0;
+
+$photo-circle-large: 						20rem;
+$circle-border-radius: 						50%;
+
+$comic-listing-intro-bg: 					white no-repeat 0 0;
+$comic-listing-intro-border: 				$border-default;
+	
+
+/* home ------------------------------ */
+
+$latest-work-bg: 							$gray-lighter;
+$latest-work-border: 						rem(1px solid $border-default-color);
+
+$latest-page-color: 						$text-color;
+$latest-page-bg: 							$white;
+$latest-page-border: 						rem(1px solid $border-default-color);
+
+$banner-text-bg: 							transparentize(white, 0.1);
+$banner-text-border: 						rem(2px solid $gray-light);
+$banner-text-border-radius: 				$border-radius-large;
+
+
+/* comics ---------------------------- */
+
+$comic-book-page-bg: 						$white;
+$comic-book-page-margin: 					$spacer-large;
+$comic-book-page-padding:  					0;
+
+$comic-book-img-margin: 					0 auto $spacer auto;
+$comic-book-img-border: 					rem(1px solid $gray);
+
+$carousel-nav-width: 						14%;
+$carousel-nav-width-sm: 					7%;
+$carousel-nav-top: 							$spacer-large;
+$carousel-nav-padding-top: 					$spacer-large;
+$carousel-nav-padding-sm: 					$spacer-large;
+$carousel-nav-position-sm: 					-4rem;
+$carousel-button-width: 					5rem;
+$carousel-button-margin-bottom:				$spacer-large;
+$carousel-icon-top: 						20%;
+$carousel-icon-font: 						'Font Awesome Solid';
+$carousel-icon-size: 						3rem;
+$carousel-icon-size-sm: 					$spacer-large;
+
+$comics-for-everyone-bg:					$gray-lighter;
+$agent-k-null-device-bg:					$white;
+$accidental-genius-bg:						$gray-lighter;
+$dark-knight-dark-night-bg:					$white;
+$doctor-who-bg:								$gray-lighter;
+$twenty-four-hour-comics-bg:				$white;
+$comics-for-adults-bg:						$gray-darker;
+
+$comic-book-thumbnail-bg: 					transparent;
+$comic-book-thumbnail-margin-bottom: 		$spacer-large;
+$comic-book-thumbnail-image-bg: 			white center center no-repeat;
+$comic-book-thumbnail-image-border: 		$comic-book-img-border;
+$comic-book-thumbnail-image-margin-bottom:	$spacer-small;
+
+$comic-book-ratings-color: 					$black;
+$comic-book-ratings-bg: 					$white;
+$comic-book-ratings-border: 				rem(2px solid black);
+$comic-book-ratings-padding: 				.15rem .25rem;
+$comic-book-ratings-font-size: 				60%;
+$comic-book-ratings-font-family: 			$font-family-serif;
+
+$comic-ratings-circle-color: 				$white;
+$comic-ratings-circle-bg: 					$black;
+$comic-ratings-circle-border: 				0;
+$comic-ratings-circle-padding: 				0;
+$comic-ratings-circle-size: 				3rem;
+$comic-ratings-circle-line-height: 			2.9rem;
+$comic-ratings-circle-font-size: 			60%;
+$comic-ratings-circle-font-size-sm: 		50%;
+$comic-ratings-circle-font-family: 			$roboto-bold;
+
+
+/* main navigation ------------------- */
+
+$main-nav-bg:								$inkystories-blue-dark;
+
+$navbar-brand:								$white;
+$navbar-brand-hover:						$white-glow;
+$navbar-brand-active:						$black;
+
+$nav-link:									rgba($white, .5);
+$nav-link-hover:							$white;
+$nav-link-current:							$white;
+$nav-link-active:							$black;
+
+$navbar-icon:								$white;
+$navbar-icon-hover:							$white-glow;
+$navbar-icon-active:						$black;
+
+$navbar-brand-padding-y: 					0;
+
+$main-nav-brand-width: 						250px;
+$main-nav-brand-height: 					3rem;
+$main-nav-brand-padding: 					$navbar-brand-padding-y;
+$main-nav-brand-margin: 					$spacer-xs;
+$main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
+$main-nav-x-padding: 						.5rem;
+$main-nav-height: 							$main-nav-brand-height + $line-height-base + 2 * $main-nav-brand-margin;		
+
+
+/* FOO ------------------------------- */

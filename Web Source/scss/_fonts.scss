@@ -1,0 +1,116 @@
+/* fonts ------------------------------ */
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../../fonts/proxima-nova/proxima-nova-reg.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-reg.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/proxima-nova/proxima-nova-reg.woff") format("woff"), 
+ 	   url("../../fonts/proxima-nova/proxima-nova-reg.ttf") format("truetype"), 
+ 	   url("../../fonts/proxima-nova/proxima-nova-reg.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  src: url("../../fonts/roboto/roboto-black.eot");
+  src: url("../../fonts/roboto/roboto-black.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/roboto/roboto-black.woff") format("woff"), 
+ 	   url("../../fonts/roboto/roboto-black.ttf") format("truetype"), 
+ 	   url("../../fonts/roboto/roboto-black.svg#robotoblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Black Italic';
+  src: url("../../fonts/roboto/roboto-black-italic.eot");
+  src: url("../../fonts/roboto/roboto-black-italic.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/roboto/roboto-black-italic.woff") format("woff"), 
+ 	   url("../../fonts/roboto/roboto-black-italic.ttf") format("truetype"), 
+ 	   url("../../fonts/roboto/roboto-black-italic.svg#robotoblack_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../../fonts/roboto/roboto-bold.eot");
+  src: url("../../fonts/roboto/roboto-bold.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/roboto/roboto-bold.woff") format("woff"), 
+ 	   url("../../fonts/roboto/roboto-bold.ttf") format("truetype"), 
+ 	   url("../../fonts/roboto/roboto-bold.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold Italic';
+  src: url("../../fonts/roboto/roboto-bold-italic.eot");
+  src: url("../../fonts/roboto/roboto-bold-italic.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/roboto/roboto-bold-italic.woff") format("woff"), 
+ 	   url("../../fonts/roboto/roboto-bold-italic.ttf") format("truetype"), 
+ 	   url("../../fonts/roboto/roboto-bold-italic.svg#robotobold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url("../../fonts/roboto/roboto-italic.eot");
+  src: url("../../fonts/roboto/roboto-italic.eot?#iefix") format("embedded-opentype"), 
+ 	   url("../../fonts/roboto/roboto-italic.woff") format("woff"), 
+ 	   url("../../fonts/roboto/roboto-italic.ttf") format("truetype"), 
+ 	   url("../../fonts/roboto/roboto-italic.svg#robotoitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Font Awesome Solid';
+	src: url("../../fonts/font-awesome/fa-solid-900.eot");
+	src: url("../../fonts/font-awesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/font-awesome/fa-solid-900.woff") format("woff"), 
+		url("../../fonts/font-awesome/fa-solid-900.woff2") format("woff2"), 
+		url("../../fonts/font-awesome/fa-solid-900.ttf") format("truetype"), 
+		url("../../fonts/font-awesome/fa-solid-900.svg#fontawesome-free") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Font Awesome Brands';
+	src: url("../../fonts/font-awesome/fa-brands-400.eot");
+	src: url("../../fonts/font-awesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/font-awesome/fa-brands-400.woff") format("woff"), 
+		url("../../fonts/font-awesome/fa-brands-400.woff2") format("woff2"), 
+		url("../../fonts/font-awesome/fa-brands-400.ttf") format("truetype"), 
+		url("../../fonts/font-awesome/fa-brands-400.svg#fontawesome-free") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Font Awesome Regular';
+	src: url("../../fonts/font-awesome/fa-regular-400.eot");
+	src: url("../../fonts/font-awesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/font-awesome/fa-regular-400.woff") format("woff"), 
+		url("../../fonts/font-awesome/fa-regular-400.woff2") format("woff2"), 
+		url("../../fonts/font-awesome/fa-regular-400.ttf") format("truetype"), 
+		url("../../fonts/font-awesome/fa-regular-400.svg#fontawesome-free") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fas {
+	font-family: 'Font Awesome Solid';
+	font-weight: 900;
+}
+.fab {
+	font-family: 'Font Awesome Brands'; 
+	font-weight: 400;
+}
+.fa {
+	font-family: 'Font Awesome Regular';
+	font-weight: 400;
+}
+
+

@@ -1,0 +1,494 @@
+/* comic books ------------------------ */
+
+.comic-book {
+	.comic-book-story {
+		.comic-book-page {
+			background: $comic-book-page-bg;
+			text-align: center;
+			margin-bottom: $comic-book-page-margin;
+			padding: $comic-book-page-padding;
+			img {
+				margin: $comic-book-img-margin;
+				border: $comic-book-img-border;
+			}
+			.author-notes {
+				text-align: left;
+				margin: 0 auto;
+			}
+			&.carousel {
+				.carousel-control-prev, 
+				.carousel-control-next {
+					width: $carousel-nav-width;
+					background: transparent;
+					align-items: flex-start;
+					top: $carousel-nav-top;
+					opacity: .5;
+					padding-top: $carousel-nav-padding-top;
+					.carousel-control-prev-icon, 
+					.carousel-control-next-icon {
+						position: sticky;
+						top: $carousel-icon-top;
+						background: none;
+						width: auto;
+						height: auto;
+						font-family: $carousel-icon-font;
+						font-size: $carousel-icon-size;
+						color: $icon-link-color;
+					}
+					.carousel-control-prev-icon {
+						&:before {content: $icon-comic-nav-prev;}
+					}
+					.carousel-control-next-icon {
+						&:before {content: $icon-comic-nav-next;}
+					}
+		
+					&:hover {
+						opacity: 1;
+						.carousel-control-prev-icon, 
+						.carousel-control-next-icon {
+						}			
+					}
+					&:active {
+						.carousel-control-prev-icon, 
+						.carousel-control-next-icon {
+							color: $icon-link-color-active;
+						}			
+					}
+					&:focus,
+					&.focus {
+						outline: 0;
+						box-shadow: $btn-focus-box-shadow;
+					}
+				}
+				.carousel-control-prev {
+					justify-content: flex-start;
+				}
+				.carousel-control-next {
+					justify-content: flex-end;
+				}	
+				.button-row {
+					.prev, .next {
+						min-width: $carousel-button-width;
+						margin-bottom: $carousel-button-margin-bottom;
+					}
+				}
+	
+				@media (max-width: 991px) { 
+					.carousel-control-prev, 
+					.carousel-control-next {
+						width: $carousel-nav-width-sm;
+					}
+					.carousel-control-prev {
+						left: $carousel-nav-position-sm;
+					}
+					.carousel-control-next {
+						right: $carousel-nav-position-sm;
+					}
+				}
+				@media (max-width: 661px) { 
+					.carousel-control-prev, 
+					.carousel-control-next {
+						display: none;
+					}
+				}
+				@media (min-width: 1200px) { 
+					.carousel-control-prev {
+						justify-content: flex-end;
+						padding-right: $carousel-nav-padding-sm;
+					}
+					.carousel-control-next {
+						justify-content: flex-start;
+						padding-left: $carousel-nav-padding-sm;
+					}	
+				}
+			}
+		}
+		@media (max-width: 575.98px) { 
+			.comic-book-page {
+				background: transparent;
+			}
+		}
+	}
+	.comic-book-info {
+		border-top: $border-default;
+	}
+
+}
+.comic-book-overview {
+	.comic-book-page {
+		background: $comic-book-page-bg;
+		text-align: center;
+		margin-bottom: $comic-book-page-margin;
+		padding: $comic-book-page-padding;
+		img {
+			margin: $comic-book-img-margin;
+			border: $comic-book-img-border;
+		}
+		&.figure {
+			background: transparent;
+			&.float-left {
+				margin-right: 1.5rem;
+			}
+			img  {
+				margin-bottom: .5rem;
+			}
+		}
+	}
+}
+
+.comic-book-listing {
+	.section {
+		&.intro {
+			background: $comic-listing-intro-bg;
+			background-size: cover;
+			border-bottom: $comic-listing-intro-border;
+			.genre-list {
+				margin-bottom: 0;
+				&.list-inline li:not(:last-child) {
+					margin-right: $spacer-base;
+				}
+			}
+		}
+		&.genre {
+			background: transparent 0 0 no-repeat;
+			background-size: cover;
+			padding-bottom: 1rem;
+			margin-bottom: 0;
+			border-bottom: rem(1px solid #ccc);
+			
+			&#adult-content {
+				border-bottom: 0;
+			}
+			.genre-label {
+				h3 {}
+				p {}
+			}
+			.ratings {
+				float: right;
+				.rating {
+					display: inline-block;
+					color: $comic-book-ratings-color;
+					background: $comic-book-ratings-bg;
+					border: $comic-book-ratings-border;
+					padding: $comic-book-ratings-padding;
+					font-size: $comic-book-ratings-font-size;
+					font-family: $comic-book-ratings-font-family;
+					font-weight: bold;
+					margin-left: .15rem;
+					&.circle {
+						color: $comic-ratings-circle-color;
+						background: $comic-ratings-circle-bg;
+						border: $comic-ratings-circle-border;
+						padding: $comic-book-ratings-padding;
+						font-size: $comic-ratings-circle-font-size;
+						font-family: $roboto-bold;
+						text-align: center;
+						width: $comic-ratings-circle-size;
+						height:$comic-ratings-circle-size;
+						line-height: $comic-ratings-circle-line-height;
+						&.g {
+							background: #639d1e; // green
+						}
+						&.pg13 {
+							background: #f37022; // orange 
+							font-size: $comic-ratings-circle-font-size-sm;
+						}
+						&.r {
+							background: #2c53d0; // blue
+						}
+						&.r-nc17 {
+							color: $black;
+							background: $white;
+						}
+						&.nc17 {
+							color: $black;
+							background: $white;
+							font-size: $comic-ratings-circle-font-size-sm;
+						}
+					}					
+				}
+			}
+			.thumbnails {
+				.thumbnail {
+					background: $comic-book-thumbnail-bg;
+					margin-bottom: $spacer-large;
+					.image {
+						background: $comic-book-thumbnail-image-bg;
+						background-size: cover;
+						border: $comic-book-thumbnail-image-border;
+						width: 100%;
+						height: 19rem;
+						margin-bottom: $spacer-small;
+						display: block;
+						.hover {
+							display: block;
+							background: $white;
+							height: 100%;
+							opacity: 0;
+						}
+						&:hover {
+							border-color: $link-color;
+							box-shadow: $white-glow;
+							.hover {
+								opacity: .5;
+							}
+						}
+						&:focus {
+							outline: 0;
+							box-shadow: $btn-focus-box-shadow;
+						}
+					}
+					.text {
+						h4, p {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			
+			@media (min-width: 1200px) { 
+				.thumbnails {
+					.thumbnail {
+						.image {
+							background-size: cover;
+							height: 23rem;
+						}
+					}
+				}			
+			}
+			
+		}
+		
+		&#comics-for-everyone {
+			background-color: $comics-for-everyone-bg;
+		}
+		&#agent-k-null-device {
+			background-color: $agent-k-null-device-bg;
+		}
+		&#accidental-genius {
+			background-color: $accidental-genius-bg;
+		}
+		&#dark-knight-dark-night {
+			background-color: $dark-knight-dark-night-bg;
+		}
+		&#doctor-who {
+			background-color:$doctor-who-bg;
+		}
+		&#twenty-four-hour-comics {
+			background-color: $twenty-four-hour-comics-bg;
+		}
+		&#adult-content {
+			background-color: $comics-for-adults-bg;
+			h2 {
+				color: $white;
+			}
+			p {
+				color: $gray-light;
+			}
+			a {
+				&:hover {
+					color: $white;
+				}
+				&:active {}
+			}
+ 		}
+		&.FOO_GENRE {
+			background-color: $gray-lighter;
+			h2 {
+				color: $black;
+			}
+			p {
+				color: $gray-dark;
+			}
+			a {
+				&:hover {
+					color: $white;
+				}
+				&:active {}
+			}
+		}
+	}
+}
+
+.thumbnails {
+	.thumbnail {
+		&#FOO_COMIC .image {
+			background-image: url("#{$comics-image-path}/FOO_COMIC/00.jpg");
+		}
+		&#earth-girls-rnt-easy .image {
+			background-image: url("#{$comics-image-path}/earth-girls-rnt-easy/01.jpg");
+		}
+		&#enter-general-zaq .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/00-cover.jpg");
+		}
+		&#franks-next-mission .image {
+			background-image: url("#{$comics-image-path}/franks-next-mission/01.jpg");
+		}
+		&#i-did-nothing .image {
+			background-image: url("#{$comics-image-path}/i-did-nothing/03.jpg");
+		}
+		&#go-snow .image {
+			background-image: url("#{$comics-image-path}/go-snow/01.jpg");
+		}
+		&#grubhub-delivery .image {
+			background-image: url("#{$comics-image-path}/grubhub-delivery/01.jpg");
+		}
+		&#here-i-am .image {
+			background-image: url("#{$comics-image-path}/here-i-am/01.jpg");
+		}
+		&#last-day-on-earth .image {
+			background-image: url("#{$comics-image-path}/last-day-on-earth/01.jpg");
+		}
+		&#little-green-man .image {
+			background-image: url("#{$comics-image-path}/little-green-man/01.jpg");
+			background-size: contain;
+		}
+		&#paradigm-shift .image {
+			background-image: url("#{$comics-image-path}/paradigm-shift/01.jpg");
+		}
+		&#plate-ground .image {
+			background-image: url("#{$comics-image-path}/plate-ground/01.jpg");
+		}
+		&#lucky-seven-dee-brown .image {
+			background-image: url("#{$comics-image-path}/lucky-seven-dee-brown/01.jpg");
+		}
+		&#shower-powered .image {
+			background-image: url("#{$comics-image-path}/shower-powered/01.jpg");
+			background-size: contain;
+		}
+		&#six-year-old-horse-thief .image {
+			background-image: url("#{$comics-image-path}/six-year-old-horse-thief/01.jpg");
+		}
+		&#the-watchman .image {
+			background-image: url("#{$comics-image-path}/the-watchman/01.jpg");
+		}
+		
+		&#stop-that-panzer-woman .image {
+			background-image: url("#{$comics-image-path}/stop-that-panzer-woman/10.jpg");
+		}
+		&#the-null-device .image {
+			background-image: url("#{$comics-image-path}/the-null-device/18.jpg");
+			background-size: contain;
+		}
+		&#enter-general-zaq .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/07.jpg");
+		}
+		&#cupids-got-a-death-ray .image {
+			background-image: url("#{$comics-image-path}/cupids-got-a-death-ray/04.jpg");
+		}
+		&#agent-k-judo-trick-strangler .image {
+			background-image: url("#{$comics-image-path}/agent-k-judo-trick-strangler/01.png");
+		}
+		
+		&#ladybat-fanboy-tool-talk .image {
+			background-image: url("#{$comics-image-path}/ladybat-fanboy-tool-talk/01.jpg");
+		}
+		&#batgirl-and-joker .image {
+			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2016/01.jpg");
+		}
+		&#dark-knight-damsel-returns .image {
+			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2015/01.jpg");
+		}
+		&#batgirl-in-time-crash .image {
+			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2014/01.jpg");
+		}
+		&#day-of-the-batgirl .image {
+			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2013/01.jpg");
+		}
+		&#million-dollar-debut-of-batgirl .image {
+			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2012/01.jpg");
+		}
+		&#batgirl-training-day .image {
+			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2011/01.jpg");
+		}
+		&#flatline .image {
+			background-image: url("#{$comics-image-path}/doctor-who/flatline-flatstanley.jpg");
+			background-size: contain;
+		}
+		&#time-of-the-doctor .image {
+			background-image: url("#{$comics-image-path}/doctor-who/time-of-the-doctor.jpg");
+			background-size: contain;
+		}
+		&#into-the-dalek .image {
+			background-image: url("#{$comics-image-path}/doctor-who/into-the-dalek-duo.jpg");
+		}
+		&#training-daze .image {
+			background-image: url("#{$comics-image-path}/24hour-2010/01.jpg");
+		}
+		&#blank-spot .image {
+			background-image: url("#{$comics-image-path}/24hour-2009/01.jpg");
+		}
+		&#now-aint-soon-enough .image {
+			background-image: url("#{$comics-image-path}/24hour-2008/01.jpg");
+		}
+		&#soaked .image {
+			background-image: url("#{$comics-image-path}/24hour-2007/01.jpg");
+			background-size: contain;
+		}
+		&#reach .image {
+			background-image: url("#{$comics-image-path}/24hour-2004/01.jpg");
+			background-size: contain;
+		}
+		&#a-runnin-from-a-gunnin .image {
+			background-image: url("#{$comics-image-path}/a-runnin-from-a-gunnin/01.jpg");
+		}
+		&#not-really-blade-kills-twilight .image {
+			background-image: url("#{$comics-image-path}/not-really-blade-kills-twilight/01.jpg");
+		}
+		&#the-bleeding-mirror .image {
+			background-image: url("#{$comics-image-path}/the-bleeding-mirror/01.jpg");
+		}
+		&#bottle-of-red .image {
+			background-image: url("#{$comics-image-path}/bottle-of-red/01.jpg");
+		}
+		&#dead-by-the-pool .image {
+			background-image: url("#{$comics-image-path}/dead-by-the-pool/01.jpg");
+			background-size: contain;
+		}
+		&#encore .image {
+			background-image: url("#{$comics-image-path}/encore/01.jpg");
+		}
+		&#the-return .image {
+			background-image: url("#{$comics-image-path}/the-return/01.jpg");
+		}
+		&#school-fight .image {
+			background-image: url("#{$comics-image-path}/school-fight/01.jpg");
+		}
+		&#twilights-last-gleaming .image {
+			background-image: url("#{$comics-image-path}/twilights-last-gleaming/01.jpg");
+		}
+		&#window-of-opportunity .image {
+			background-image: url("#{$comics-image-path}/window-of-opportunity/01-censored.jpg");
+		}
+		&#the-worlds-slowest-foot-chase .image {
+			background-image: url("#{$comics-image-path}/the-worlds-slowest-foot-chase/01-censored.jpg");
+		}
+		&#zips-last-day .image {
+			background-image: url("#{$comics-image-path}/zips-last-day/01.jpg");
+			background-size: contain;
+		}
+		
+		&#inky-stories-7 .image {
+			background-image: url("#{$store-image-path}/07.jpg");
+		}
+		&#inky-stories-6 .image {
+			background-image: url("#{$store-image-path}/06.jpg");
+		}
+		&#inky-stories-5 .image {
+			background-image: url("#{$store-image-path}/05.jpg");
+		}
+		&#inky-stories-4 .image {
+			background-image: url("#{$store-image-path}/04.jpg");
+		}
+		&#inky-stories-3 .image {
+			background-image: url("#{$store-image-path}/03.jpg");
+		}
+		&#inky-stories-2 .image {
+			background-image: url("#{$store-image-path}/02.jpg");
+		}
+		&#inky-stories-1 .image {
+			background-image: url("#{$store-image-path}/01.jpg");
+		}
+	}
+}
+

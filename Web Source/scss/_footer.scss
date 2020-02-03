@@ -1,0 +1,61 @@
+/* footer ----------------------------- */
+
+footer {	
+	border-top: $footer-border;
+	
+	p {
+		&.copyright {}
+	}
+	
+	h3 {}
+	
+	ul {
+		&.list-inline {
+			li {
+				background: transparent no-repeat 0 0;
+				padding-left: 1.5rem;
+				position: relative;
+				&:not(:last-child) {margin-right: 1.5rem;}
+				a {
+					&:before {
+						position: absolute;
+						top: 0;
+						left: 0;
+						font-family: 'Font Awesome Brands';
+						color: $icon-link-color;
+					}
+				}
+				&.email a {
+					&:before {
+						font-family: 'Font Awesome Solid';
+						content: $icon-email;
+					}
+				}
+				&.facebook a {
+					&:before {content: $icon-facebook;}
+				}
+				&.twitter a {
+					&:before {content: $icon-twitter;}
+				}
+				&.follow-me {
+					padding-left: 0;
+					margin-right: .5rem;
+				}
+				&:hover a {
+					&:before {
+						color: $icon-link-color-hover;
+					}
+				}
+				&:active a {
+					&:before {
+						color: $icon-link-color-active;
+					}
+				}
+			}
+			
+		}
+		
+	}
+}
+
+

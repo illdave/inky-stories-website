@@ -1,0 +1,33 @@
+/* layout ----------------------------- */
+
+.text-page, .comic-book {
+	padding: 2rem 0;
+}
+.banner-top {
+	padding-top: 0;
+}
+.book-title {
+	font-family: $roboto-black-italic;
+}
+.text-page {
+	.text-page-header {
+		border-bottom: $border-default;
+		padding-bottom: $spacer-base;
+		margin-bottom: $spacer-base;
+		h1 {}
+		p {
+			color: $gray;
+			margin-bottom: 0;
+		}
+	}
+	@media (min-width: 1200px) and (max-width: 991px), (min-width: 992px) {
+		.container, .author-notes {
+			max-width: 50rem;
+		}
+		.author-notes {
+		  padding-right: ($grid-gutter-width / 2);
+		  padding-left: ($grid-gutter-width / 2);
+		}
+	}
+}
+

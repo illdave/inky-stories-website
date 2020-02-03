@@ -1,0 +1,37 @@
+/* store ------------------------------ */
+
+.about {
+	.section {
+		&.intro {
+			background: $gray-lighter no-repeat 0 0;
+			background-size: cover;
+			background-image: url("#{$banner-image-path}/about.jpg");
+			h1 {
+				color: #ccc;
+			}
+			p {
+				margin-bottom: 0;
+				color: $white;
+			}
+		}
+		&.details {
+			.sidebar-column {
+				text-align: center;
+				.photo {
+					margin: -1rem auto 1rem;
+					&.dsm-portrait-drawing {
+						background-image: url("#{$dsm-image-path}/dsm-photo-2.jpg");
+					}
+				}
+				p {
+					text-align: left;
+					margin: 0 $spacer-large;
+					font-family: "Roboto Italic";
+					color: $gray-lightest;
+				}
+			}
+			.main-column {}
+		}
+	}
+}
+
