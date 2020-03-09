@@ -4,14 +4,11 @@
 	.section {
 		&.intro {
 			background: $gray-lighter no-repeat 0 0;
-			background-size: cover;
-			background-image: url("#{$banner-image-path}/store.jpg");
+			border-bottom: $border-default;
 			h1 {
-				color: #ff7e00;
 			}
 			p {
 				margin-bottom: 0;
-				color: $white;
 			}
 		}
 		&#minicomics {
@@ -68,8 +65,6 @@
 				align-content: space-between;
 				h3 {
 					margin-bottom: 0;
-					font-weight: normal;
-					font-family: $font-family-base;
 				}
 				.button-row {
 					align-self: flex-start;
@@ -78,4 +73,3 @@
 		}
 	}
 }
-

@@ -10,6 +10,8 @@ https://github.com/twbs/bootstrap */
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import "../../lib/lightbox-2.11.1/css/lightbox.css";
+@import "../../lib/tipuesearch-7.1/tipuesearch-min.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -24923,6 +24925,10 @@ https://github.com/geoffgraham/animate.scss */
 }
 /* Sass Rem: Sass function and mixin to use rem units with optional pixel fallback
 https://www.npmjs.com/package/sass-rem */
+/* Lightbox 2 by Lokesh Dhakar: the original lightbox 
+https://github.com/lokesh/lightbox2 */
+/* Tipue Search: self-hosted javaScript object, free of MySQL/SQL 
+http://www.tipue.com/search */
 /* brand colors --------------------- */
 /* Bootstrap colors ----------------- */
 /* theme colors ---------------------- */
@@ -24941,6 +24947,97 @@ https://www.npmjs.com/package/sass-rem */
   font-family: "Proxima Nova";
   src: url("../../fonts/proxima-nova/proxima-nova-reg.eot");
   src: url("../../fonts/proxima-nova/proxima-nova-reg.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-reg.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-reg.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-reg.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../../fonts/proxima-nova/proxima-nova-bold.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-bold.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-bold.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-bold.svg#proxima_novabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Italic";
+  src: url("../../fonts/proxima-nova/proxima-nova-reg-italic.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-reg-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-reg-italic.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-reg-italic.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-reg-italic.svg#proxima_novaregular_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Bold Italic";
+  src: url("../../fonts/proxima-nova/proxima-nova-bold-italic.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-bold-italic.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-bold-italic.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-bold-italic.svg#proxima_novabold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Alt";
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-regular.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-alt-regular.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-alt-regular.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-alt-regular.svg#proxima_nova_alt_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Alt Bold";
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-bold.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-alt-bold.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-alt-bold.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-alt-bold.svg#proxima_nova_alt_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Alt Condensed Semibold";
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-semibold.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-semibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-alt-semibold.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-alt-semibold.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-alt-semibold.svg#proxima_nova_alt_condensedSBd") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Alt Black";
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-black.eot");
+  src: url("../../fonts/proxima-nova/proxima-nova-alt-black.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima-nova/proxima-nova-alt-black.woff") format("woff"), url("../../fonts/proxima-nova/proxima-nova-alt-black.ttf") format("truetype"), url("../../fonts/proxima-nova/proxima-nova-alt-black.svg#proxima_nova_altblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../../fonts/open-sans/opensans-regular.eot");
+  src: url("../../fonts/open-sans/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-regular.woff") format("woff"), url("../../fonts/open-sans/opensans-regular.ttf") format("truetype"), url("../../fonts/open-sans/opensans-regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/open-sans/opensans-bold.eot");
+  src: url("../../fonts/open-sans/opensans-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-bold.woff") format("woff"), url("../../fonts/open-sans/opensans-bold.ttf") format("truetype"), url("../../fonts/open-sans/opensans-bold.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/open-sans/opensans-italic.eot");
+  src: url("../../fonts/open-sans/opensans-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-italic.woff") format("woff"), url("../../fonts/open-sans/opensans-italic.ttf") format("truetype"), url("../../fonts/open-sans/opensans-italic.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Bold Italic";
+  src: url("../../fonts/open-sans/opensans-bold-italic.eot");
+  src: url("../../fonts/open-sans/opensans-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-bold-italic.woff") format("woff"), url("../../fonts/open-sans/opensans-bold-italic.ttf") format("truetype"), url("../../fonts/open-sans/opensans-bold-italic.svg#open_sansbold-italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/open-sans/opensans-semibold.eot");
+  src: url("../../fonts/open-sans/opensans-semibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-semibold.woff") format("woff"), url("../../fonts/open-sans/opensans-semibold.ttf") format("truetype"), url("../../fonts/open-sans/opensans-semibold.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Semibold Italic";
+  src: url("../../fonts/open-sans/opensans-semibold-italic.eot");
+  src: url("../../fonts/open-sans/opensans-semibold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-semibold-italic.woff") format("woff"), url("../../fonts/open-sans/opensans-semibold-italic.ttf") format("truetype"), url("../../fonts/open-sans/opensans-semibold-italic.svg#open_sanssemibold_italic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25019,24 +25116,25 @@ https://www.npmjs.com/package/sass-rem */
 html {
   position: relative;
   min-height: 100%;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
-  padding-top: 5rem;
+  padding-top: 4.5rem;
   font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
   font-size: 1rem;
+  color: #212529;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: normal;
   color: #000;
-  font-family: "Roboto Black";
+  font-family: "Proxima Nova Bold";
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2, .h2 {
@@ -25064,7 +25162,6 @@ a {
   text-decoration: none;
   background-color: transparent;
   font-weight: normal;
-  font-family: "Roboto Bold";
 }
 a:hover {
   color: #3cbfff;
@@ -25101,7 +25198,13 @@ dl {
   margin-bottom: 1rem;
 }
 dl dt {
-  font-family: "Roboto Black";
+  font-family: "Proxima Nova Bold";
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+strong, bold {
+  font-family: "Proxima Nova Bold";
   font-weight: normal;
 }
 
@@ -25109,7 +25212,30 @@ table, .table {
   width: 100%;
 }
 table th, .table th {
-  font-family: "Roboto Black";
+  font-family: "Proxima Nova Bold";
+}
+
+blockquote {
+  font-family: "Proxima Nova Italic";
+  padding: 0 2rem;
+}
+blockquote h4 {
+  font-family: "Proxima Nova Italic";
+  line-height: 2rem;
+}
+
+figure img {
+  margin-bottom: 0.5rem;
+}
+
+italic, em {
+  font-family: "Proxima Nova Italic";
+  font-style: normal;
+}
+
+bold, strong {
+  font-family: "Proxima Nova Bold";
+  font-weight: normal;
 }
 
 /* utility classes -------------------- */
@@ -25201,35 +25327,90 @@ table th, .table th {
   opacity: 1;
 }
 
-/* blog ------------------------------- */
-.blog.text-page {
-  padding-top: 0;
-}
-.blog.text-page .blog-top-image {
-  margin-bottom: 1rem;
-}
-.blog.text-page .blog-header {
-  border-bottom: 0.0625rem solid #cccccc;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
-.blog.text-page .blog-header p.summary {
-  font-size: 120%;
-  font-family: "Roboto Bold Italic";
-}
-.blog.text-page .blog-header p.meta {
-  text-align: right;
-  color: #666;
+.row.in-content {
   margin-bottom: 0;
-  font-family: "Roboto Italic";
 }
-.blog.text-page .blog-header p.meta .time-stamp .updated {
-  display: none;
-}
-.blog.text-page .blog-header p.author {
-  margin-left: 0.5rem;
+.row.in-content img {
+  margin-bottom: 2rem;
 }
 
+.listings .listing {
+  margin-bottom: 1rem;
+}
+.listings .listing dt, .listings .listing dd {
+  margin-bottom: 0;
+}
+.listings.boxed .listing {
+  border: 0.0625rem solid #cccccc;
+  padding: 0.5rem 1rem;
+  min-height: 10rem;
+}
+
+.signature {
+  font-family: "Proxima Nova Italic";
+}
+
+.instructional .instruction {
+  font-family: "Proxima Nova Italic";
+  margin-bottom: 2rem;
+}
+
+/* picture-figure text wrapping ------- */
+.picture-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.picture-wrapper.left {
+  float: left;
+  margin-right: 2rem;
+}
+.picture-wrapper.right {
+  float: right;
+  margin-left: 2rem;
+}
+.picture-wrapper.half {
+  width: 50%;
+}
+.picture-wrapper.third {
+  width: 33%;
+}
+.picture-wrapper.quarter {
+  width: 25%;
+}
+.picture-wrapper.centered {
+  text-align: center;
+}
+.picture-wrapper img {
+  margin-bottom: 0.5rem;
+}
+
+figure {
+  border-bottom: 0.0625rem solid #cccccc;
+  padding-bottom: 0.5rem;
+}
+
+.modal .modal-body figure {
+  margin-bottom: 0;
+}
+
+/* Lightbox 2 ------------------------- */
+.lightboxOverlay {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.lightbox .lb-image {
+  border-radius: 0;
+  border: 0.0625rem solid white;
+}
+.lightbox .lb-data .lb-details .lb-caption {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1em;
+}
+.lightbox .lb-data .lb-details .lb-number {
+  font-size: 80%;
+}
 /* icons ------------------------------ */
 .btn.icon {
   display: inline-flex;
@@ -25241,6 +25422,52 @@ table th, .table th {
   margin-left: 1rem;
 }
 
+.example {
+  margin-bottom: 1rem;
+}
+
+/* 404 error page --------------------- */
+.error-404 .intro {
+  background: transparent 0 0 no-repeat;
+  background-size: cover;
+  background-image: url("../../img/pictures/error-404.jpg");
+  min-height: 35rem;
+  position: relative;
+}
+.error-404 .intro .text {
+  bottom: -8rem;
+}
+.error-404 .intro .text h1, .error-404 .intro .text h2, .error-404 .intro .text p {
+  color: white;
+}
+
+/* Tipue search ----------------------- */
+#tipue_search_content #tipue_search_results_count {
+  border-bottom: 0.0625rem solid #cccccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+#tipue_search_content .tipue_search_result {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+#tipue_search_content .tipue_search_result .tipue_search_content_title {
+  font-size: 1.2rem;
+  font-family: "Proxima Nova Bold";
+}
+#tipue_search_content .tipue_search_result .tipue_search_content_url {
+  display: none;
+}
+#tipue_search_content .tipue_search_result .tipue_search_image {
+  display: none;
+}
+#tipue_search_content .tipue_search_result .tipue_search_content_text {
+  margin-top: 0;
+}
+#tipue_search_content .tipue_search_result .tipue_search_note {
+  display: none;
+}
+
 /* layout ----------------------------- */
 .text-page, .comic-book {
   padding: 2rem 0;
@@ -25250,8 +25477,12 @@ table th, .table th {
   padding-top: 0;
 }
 
-.book-title {
-  font-family: "Roboto Black Italic";
+.book-title, .magazine-title, .show-title, .tv-show-title {
+  font-family: "Proxima Nova Italic";
+}
+
+h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
+  font-family: "Proxima Nova Bold Italic";
 }
 
 .text-page .text-page-header {
@@ -25278,10 +25509,10 @@ table th, .table th {
   background: #15477a;
 }
 .main-navigation .inky-stories-brand {
-  min-height: 5rem;
+  min-height: 4.5rem;
 }
 .main-navigation .navbar-brand {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0;
   color: #fff;
   display: block;
@@ -25327,6 +25558,10 @@ table th, .table th {
   font-size: 1.5rem;
   content: "";
 }
+.main-navigation .search-form button {
+  background: transparent;
+  border: 0;
+}
 .main-navigation .search-form .fa-search {
   color: #fff;
 }
@@ -25335,26 +25570,16 @@ table th, .table th {
 }
 
 @media (max-width: 767px) {
-  body {
-    padding-top: 8rem;
-  }
-
   .navbar {
     padding: 0.5rem;
     text-align: center;
   }
   .navbar .navbar-brand {
-    width: 100%;
+    width: 250px;
     height: auto;
     background-position: center 0;
-    display: block;
-  }
-  .navbar .navbar-toggler {
-    margin: 0 auto 1rem;
-    display: none;
-  }
-  .navbar .collapse:not(.show) {
-    display: block;
+    display: inline-block;
+    font-size: 2rem;
   }
   .navbar .navbar-nav {
     flex-direction: row;
@@ -25396,15 +25621,13 @@ table th, .table th {
 }
 .home .section.intro .text {
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.9);
   border: 0.125rem solid #bfbfbf;
 }
 .home .section.intro .text h1 {
   color: #000;
-}
-.home .section.intro .text p {
-  font-size: 120%;
+  font-size: 1.6rem;
 }
 .home .section.intro .text p.button-row {
   margin-bottom: 0;
@@ -25432,9 +25655,36 @@ table th, .table th {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.home .blogs h3 {
+.home .blogs article .entry-thumb, .home .blogs article .entry-meta, .home .blogs article .entry-footer {
+  display: none;
+}
+.home .blogs article h1 {
   font-size: 1rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
+}
+.home .blogs .entry-summary {
+  position: relative;
+  --lh: 1.4rem;
+  line-height: var(--lh);
+  --max-lines: 3;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home .blogs .entry-summary::before {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.home .blogs .entry-summary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  /* note: not using bottom */
+  width: 1rem;
+  height: 1rem;
+  background: white;
 }
 .home .twitter .tweets {
   position: relative;
@@ -25453,6 +25703,12 @@ table th, .table th {
 .comic-book .comic-book-story .comic-book-page img {
   margin: 0 auto 1rem auto;
   border: 0.0625rem solid #555555;
+}
+.comic-book .comic-book-story .comic-book-page .no-border img {
+  border: none;
+}
+.comic-book .comic-book-story .comic-book-page .double-page-spread img {
+  width: 800px;
 }
 .comic-book .comic-book-story .comic-book-page .author-notes {
   text-align: left;
@@ -25550,6 +25806,14 @@ table th, .table th {
 .comic-book .comic-book-info {
   border-top: 0.0625rem solid #cccccc;
 }
+.comic-book .comic-book-info .comic-book-page.figure img {
+  border: 0.0625rem solid #555555;
+  margin-bottom: 0.5rem;
+}
+.comic-book .comic-book-info .comic-book-page.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .comic-book-overview .comic-book-page {
   background: #fff;
@@ -25572,9 +25836,22 @@ table th, .table th {
 }
 
 .comic-book-listing .section.intro {
-  background: white no-repeat 0 0;
+  background: #df0101 no-repeat 0 0;
   background-size: cover;
   border-bottom: 0.0625rem solid #cccccc;
+}
+.comic-book-listing .section.intro h1 {
+  color: #000;
+}
+.comic-book-listing .section.intro p {
+  color: #fff;
+}
+.comic-book-listing .section.intro a {
+  color: #f9d67a;
+  font-family: "Proxima Nova Bold";
+}
+.comic-book-listing .section.intro a:hover {
+  color: white;
 }
 .comic-book-listing .section.intro .genre-list {
   margin-bottom: 0;
@@ -25587,7 +25864,7 @@ table th, .table th {
   background-size: cover;
   padding-bottom: 1rem;
   margin-bottom: 0;
-  border-bottom: 0.0625rem solid #ccc;
+  border-bottom: 0.0625rem solid #cccccc;
 }
 .comic-book-listing .section.genre#adult-content {
   border-bottom: 0;
@@ -25637,45 +25914,6 @@ table th, .table th {
   background: #fff;
   font-size: 50%;
 }
-.comic-book-listing .section.genre .thumbnails .thumbnail {
-  background: transparent;
-  margin-bottom: 2rem;
-}
-.comic-book-listing .section.genre .thumbnails .thumbnail .image {
-  background: white center center no-repeat;
-  background-size: cover;
-  border: 0.0625rem solid #555555;
-  width: 100%;
-  height: 19rem;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-.comic-book-listing .section.genre .thumbnails .thumbnail .image .hover {
-  display: block;
-  background: #fff;
-  height: 100%;
-  opacity: 0;
-}
-.comic-book-listing .section.genre .thumbnails .thumbnail .image:hover {
-  border-color: #008fd5;
-  box-shadow: 0 0 10px #fff;
-}
-.comic-book-listing .section.genre .thumbnails .thumbnail .image:hover .hover {
-  opacity: 0.5;
-}
-.comic-book-listing .section.genre .thumbnails .thumbnail .image:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-.comic-book-listing .section.genre .thumbnails .thumbnail .text h4, .comic-book-listing .section.genre .thumbnails .thumbnail .text p {
-  margin-bottom: 0;
-}
-@media (min-width: 1200px) {
-  .comic-book-listing .section.genre .thumbnails .thumbnail .image {
-    background-size: cover;
-    height: 23rem;
-  }
-}
 .comic-book-listing .section#comics-for-everyone {
   background-color: #eeeeee;
 }
@@ -25718,158 +25956,186 @@ table th, .table th {
 .comic-book-listing .section.FOO_GENRE a:hover {
   color: #fff;
 }
-.thumbnails .thumbnail#FOO_COMIC .image {
+.thumbnails .thumbnail {
+  background: transparent;
+  margin-bottom: 2rem;
+}
+.thumbnails .thumbnail .image {
+  background: white center center no-repeat;
+  background-size: cover;
+  border: 0.0625rem solid #555555;
+  width: 100%;
+  height: 19rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.thumbnails .thumbnail .image .hover {
+  display: block;
+  background: #fff;
+  height: 100%;
+  opacity: 0;
+}
+.thumbnails .thumbnail .image:hover {
+  border-color: #008fd5;
+  box-shadow: 0 0 10px #fff;
+}
+.thumbnails .thumbnail .image:hover .hover {
+  opacity: 0.5;
+}
+.thumbnails .thumbnail .image:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.thumbnails .thumbnail .text h4, .thumbnails .thumbnail .text p {
+  margin-bottom: 0;
+}
+.thumbnails .thumbnail .text p {
+  margin-bottom: 0.5rem;
+}
+.thumbnails .thumbnail.FOO_COMIC .image {
   background-image: url("../../img/comics/FOO_COMIC/00.jpg");
 }
-.thumbnails .thumbnail#earth-girls-rnt-easy .image {
-  background-image: url("../../img/comics/earth-girls-rnt-easy/01.jpg");
+.thumbnails .thumbnail.earth-girls-rnt-easy .image {
+  background-image: url("../../img/comics/earth-girls-rnt-easy/01.jpg") !important;
 }
-.thumbnails .thumbnail#enter-general-zaq .image {
-  background-image: url("../../img/comics/enter-general-zaq/00-cover.jpg");
+.thumbnails .thumbnail.enter-general-zaq .image {
+  background-image: url("../../img/comics/enter-general-zaq/00-cover.jpg") !important;
 }
-.thumbnails .thumbnail#franks-next-mission .image {
-  background-image: url("../../img/comics/franks-next-mission/01.jpg");
+.thumbnails .thumbnail.franks-next-mission .image {
+  background-image: url("../../img/comics/franks-next-mission/01.jpg") !important;
 }
-.thumbnails .thumbnail#i-did-nothing .image {
-  background-image: url("../../img/comics/i-did-nothing/03.jpg");
+.thumbnails .thumbnail.i-did-nothing .image {
+  background-image: url("../../img/comics/i-did-nothing/03.jpg") !important;
 }
-.thumbnails .thumbnail#go-snow .image {
-  background-image: url("../../img/comics/go-snow/01.jpg");
+.thumbnails .thumbnail.go-snow .image {
+  background-image: url("../../img/comics/go-snow/01.jpg") !important;
 }
-.thumbnails .thumbnail#grubhub-delivery .image {
-  background-image: url("../../img/comics/grubhub-delivery/01.jpg");
+.thumbnails .thumbnail.grubhub-delivery .image {
+  background-image: url("../../img/comics/grubhub-delivery/01.jpg") !important;
 }
-.thumbnails .thumbnail#here-i-am .image {
-  background-image: url("../../img/comics/here-i-am/01.jpg");
+.thumbnails .thumbnail.here-i-am .image {
+  background-image: url("../../img/comics/here-i-am/01.jpg") !important;
 }
-.thumbnails .thumbnail#last-day-on-earth .image {
-  background-image: url("../../img/comics/last-day-on-earth/01.jpg");
+.thumbnails .thumbnail.last-day-on-earth .image {
+  background-image: url("../../img/comics/the-last-day-on-earth/01.jpg") !important;
 }
-.thumbnails .thumbnail#little-green-man .image {
-  background-image: url("../../img/comics/little-green-man/01.jpg");
+.thumbnails .thumbnail.little-green-man .image {
+  background-image: url("../../img/comics/little-green-man/01.jpg") !important;
   background-size: contain;
 }
-.thumbnails .thumbnail#paradigm-shift .image {
-  background-image: url("../../img/comics/paradigm-shift/01.jpg");
+.thumbnails .thumbnail.paradigm-shift .image {
+  background-image: url("../../img/comics/paradigm-shift/01.jpg") !important;
 }
-.thumbnails .thumbnail#plate-ground .image {
-  background-image: url("../../img/comics/plate-ground/01.jpg");
+.thumbnails .thumbnail.plate-ground .image {
+  background-image: url("../../img/comics/plate-ground/01.jpg") !important;
 }
-.thumbnails .thumbnail#lucky-seven-dee-brown .image {
-  background-image: url("../../img/comics/lucky-seven-dee-brown/01.jpg");
+.thumbnails .thumbnail.lucky-seven-dee-brown .image {
+  background-image: url("../../img/comics/lucky-seven-dee-brown/01.jpg") !important;
 }
-.thumbnails .thumbnail#shower-powered .image {
-  background-image: url("../../img/comics/shower-powered/01.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.shower-powered .image {
+  background-image: url("../../img/comics/shower-powered/01.jpg") !important;
 }
-.thumbnails .thumbnail#six-year-old-horse-thief .image {
-  background-image: url("../../img/comics/six-year-old-horse-thief/01.jpg");
+.thumbnails .thumbnail.six-year-old-horse-thief .image {
+  background-image: url("../../img/comics/six-year-old-horse-thief/01.jpg") !important;
 }
-.thumbnails .thumbnail#the-watchman .image {
-  background-image: url("../../img/comics/the-watchman/01.jpg");
+.thumbnails .thumbnail.the-watchman .image {
+  background-image: url("../../img/comics/the-watchman/01.jpg") !important;
 }
-.thumbnails .thumbnail#stop-that-panzer-woman .image {
-  background-image: url("../../img/comics/stop-that-panzer-woman/10.jpg");
+.thumbnails .thumbnail.stop-that-panzer-woman .image {
+  background-image: url("../../img/comics/stop-that-panzer-woman/10.jpg") !important;
 }
-.thumbnails .thumbnail#the-null-device .image {
-  background-image: url("../../img/comics/the-null-device/18.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.the-null-device .image {
+  background-image: url("../../img/comics/the-null-device/18.jpg") !important;
 }
-.thumbnails .thumbnail#enter-general-zaq .image {
-  background-image: url("../../img/comics/enter-general-zaq/07.jpg");
+.thumbnails .thumbnail.enter-general-zaq .image {
+  background-image: url("../../img/comics/enter-general-zaq/07.jpg") !important;
 }
-.thumbnails .thumbnail#cupids-got-a-death-ray .image {
-  background-image: url("../../img/comics/cupids-got-a-death-ray/04.jpg");
+.thumbnails .thumbnail.cupids-got-a-death-ray .image {
+  background-image: url("../../img/comics/cupids-got-a-death-ray/04.jpg") !important;
 }
-.thumbnails .thumbnail#agent-k-judo-trick-strangler .image {
-  background-image: url("../../img/comics/agent-k-judo-trick-strangler/01.png");
+.thumbnails .thumbnail.agent-k-judo-trick-strangler .image {
+  background-image: url("../../img/comics/agent-k-judo-trick-strangler/01.jpg") !important;
 }
-.thumbnails .thumbnail#ladybat-fanboy-tool-talk .image {
-  background-image: url("../../img/comics/ladybat-fanboy-tool-talk/01.jpg");
+.thumbnails .thumbnail.ladybat-fanboy-tool-talk .image {
+  background-image: url("../../img/comics/ladybat-fanboy-tool-talk/01.jpg") !important;
 }
-.thumbnails .thumbnail#batgirl-and-joker .image {
-  background-image: url("../../img/comics/dark-night-on-a-dark-night-2016/01.jpg");
+.thumbnails .thumbnail.batgirl-and-joker .image {
+  background-image: url("../../img/comics/batgirl-and-joker/01.jpg") !important;
 }
-.thumbnails .thumbnail#dark-knight-damsel-returns .image {
-  background-image: url("../../img/comics/dark-night-on-a-dark-night-2015/01.jpg");
+.thumbnails .thumbnail.dark-knight-damsel-returns .image {
+  background-image: url("../../img/comics/the-dark-knight-damsel-returns/01.jpg") !important;
 }
-.thumbnails .thumbnail#batgirl-in-time-crash .image {
-  background-image: url("../../img/comics/dark-night-on-a-dark-night-2014/01.jpg");
+.thumbnails .thumbnail.batgirl-in-time-crash .image {
+  background-image: url("../../img/comics/batgirl-in-time-crash/01.jpg") !important;
 }
-.thumbnails .thumbnail#day-of-the-batgirl .image {
-  background-image: url("../../img/comics/dark-night-on-a-dark-night-2013/01.jpg");
+.thumbnails .thumbnail.day-of-the-batgirl .image {
+  background-image: url("../../img/comics/day-of-the-batgirl/01.jpg") !important;
 }
-.thumbnails .thumbnail#million-dollar-debut-of-batgirl .image {
-  background-image: url("../../img/comics/dark-night-on-a-dark-night-2012/01.jpg");
+.thumbnails .thumbnail.million-dollar-debut-of-batgirl .image {
+  background-image: url("../../img/comics/the-million-dollar-debut-of-batgirl/01.jpg") !important;
 }
-.thumbnails .thumbnail#batgirl-training-day .image {
-  background-image: url("../../img/comics/dark-night-on-a-dark-night-2011/01.jpg");
+.thumbnails .thumbnail.batgirl-training-day .image {
+  background-image: url("../../img/comics/batgirl-in-training-day/01.jpg") !important;
 }
-.thumbnails .thumbnail#flatline .image {
-  background-image: url("../../img/comics/doctor-who/flatline-flatstanley.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.flatline .image {
+  background-image: url("../../img/comics/doctor-who/flatline.jpg") !important;
 }
-.thumbnails .thumbnail#time-of-the-doctor .image {
-  background-image: url("../../img/comics/doctor-who/time-of-the-doctor.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.time-of-the-doctor .image {
+  background-image: url("../../img/comics/doctor-who/time-of-the-doctor.jpg") !important;
 }
-.thumbnails .thumbnail#into-the-dalek .image {
-  background-image: url("../../img/comics/doctor-who/into-the-dalek-duo.jpg");
+.thumbnails .thumbnail.into-the-dalek .image {
+  background-image: url("../../img/comics/doctor-who/into-the-dalek-duo.jpg") !important;
 }
-.thumbnails .thumbnail#training-daze .image {
-  background-image: url("../../img/comics/24hour-2010/01.jpg");
+.thumbnails .thumbnail.training-daze .image {
+  background-image: url("../../img/comics/training-daze/01.jpg") !important;
 }
-.thumbnails .thumbnail#blank-spot .image {
-  background-image: url("../../img/comics/24hour-2009/01.jpg");
+.thumbnails .thumbnail.blank-spot .image {
+  background-image: url("../../img/comics/blank-spot/01.jpg") !important;
 }
-.thumbnails .thumbnail#now-aint-soon-enough .image {
-  background-image: url("../../img/comics/24hour-2008/01.jpg");
+.thumbnails .thumbnail.now-aint-soon-enough .image {
+  background-image: url("../../img/comics/now-aint-soon-enough/01.jpg") !important;
 }
-.thumbnails .thumbnail#soaked .image {
-  background-image: url("../../img/comics/24hour-2007/01.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.soaked .image {
+  background-image: url("../../img/comics/soaked/01.jpg") !important;
 }
-.thumbnails .thumbnail#reach .image {
-  background-image: url("../../img/comics/24hour-2004/01.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.reach .image {
+  background-image: url("../../img/comics/reach/01.jpg") !important;
 }
-.thumbnails .thumbnail#a-runnin-from-a-gunnin .image {
-  background-image: url("../../img/comics/a-runnin-from-a-gunnin/01.jpg");
+.thumbnails .thumbnail.a-runnin-from-a-gunnin .image {
+  background-image: url("../../img/comics/a-runnin-from-a-gunnin/01.jpg") !important;
 }
-.thumbnails .thumbnail#not-really-blade-kills-twilight .image {
-  background-image: url("../../img/comics/not-really-blade-kills-twilight/01.jpg");
+.thumbnails .thumbnail.not-really-blade-kills-twilight .image {
+  background-image: url("../../img/comics/not-really-blade-kills-twilight/01.jpg") !important;
 }
-.thumbnails .thumbnail#the-bleeding-mirror .image {
-  background-image: url("../../img/comics/the-bleeding-mirror/01.jpg");
+.thumbnails .thumbnail.the-bleeding-mirror .image {
+  background-image: url("../../img/comics/the-bleeding-mirror/01.jpg") !important;
 }
-.thumbnails .thumbnail#bottle-of-red .image {
-  background-image: url("../../img/comics/bottle-of-red/01.jpg");
+.thumbnails .thumbnail.bottle-of-red .image {
+  background-image: url("../../img/comics/bottle-of-red/01.jpg") !important;
 }
-.thumbnails .thumbnail#dead-by-the-pool .image {
-  background-image: url("../../img/comics/dead-by-the-pool/01.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.dead-by-the-pool .image {
+  background-image: url("../../img/comics/dead-by-the-pool/01.jpg") !important;
 }
-.thumbnails .thumbnail#encore .image {
-  background-image: url("../../img/comics/encore/01.jpg");
+.thumbnails .thumbnail.encore .image {
+  background-image: url("../../img/comics/encore/01.jpg") !important;
 }
-.thumbnails .thumbnail#the-return .image {
-  background-image: url("../../img/comics/the-return/01.jpg");
+.thumbnails .thumbnail.the-return .image {
+  background-image: url("../../img/comics/the-return/01.jpg") !important;
 }
-.thumbnails .thumbnail#school-fight .image {
-  background-image: url("../../img/comics/school-fight/01.jpg");
+.thumbnails .thumbnail.school-fight .image {
+  background-image: url("../../img/comics/school-fight/01.jpg") !important;
 }
-.thumbnails .thumbnail#twilights-last-gleaming .image {
-  background-image: url("../../img/comics/twilights-last-gleaming/01.jpg");
+.thumbnails .thumbnail.twilights-last-gleaming .image {
+  background-image: url("../../img/comics/twilights-last-gleaming/01.jpg") !important;
 }
-.thumbnails .thumbnail#window-of-opportunity .image {
-  background-image: url("../../img/comics/window-of-opportunity/01-censored.jpg");
+.thumbnails .thumbnail.window-of-opportunity .image {
+  background-image: url("../../img/comics/window-of-opportunity/01-censored.jpg") !important;
 }
-.thumbnails .thumbnail#the-worlds-slowest-foot-chase .image {
-  background-image: url("../../img/comics/the-worlds-slowest-foot-chase/01-censored.jpg");
+.thumbnails .thumbnail.the-worlds-slowest-foot-chase .image {
+  background-image: url("../../img/comics/the-worlds-slowest-foot-chase/01-censored.jpg") !important;
 }
-.thumbnails .thumbnail#zips-last-day .image {
-  background-image: url("../../img/comics/zips-last-day/01.jpg");
-  background-size: contain;
+.thumbnails .thumbnail.zips-last-day .image {
+  background-image: url("../../img/comics/zips-last-day/01.jpg") !important;
 }
 .thumbnails .thumbnail#inky-stories-7 .image {
   background-image: url("../../img/store/07.jpg");
@@ -25892,19 +26158,89 @@ table th, .table th {
 .thumbnails .thumbnail#inky-stories-1 .image {
   background-image: url("../../img/store/01.jpg");
 }
+.thumbnails .thumbnail.cover-wip-1 .image {
+  background-image: url("../../img/comics/enter-general-zaq/wip/cover-art-01.jpg") !important;
+}
+.thumbnails .thumbnail.cover-wip-2 .image {
+  background-image: url("../../img/comics/enter-general-zaq/wip/cover-art-02.jpg") !important;
+}
+.thumbnails .thumbnail.cover-wip-3 .image {
+  background-image: url("../../img/comics/enter-general-zaq/wip/cover-art-03.jpg") !important;
+}
+.thumbnails .thumbnail.cover-wip-4 .image {
+  background-image: url("../../img/comics/enter-general-zaq/wip/cover-art-04.jpg") !important;
+}
+.thumbnails .thumbnail.cover-wip-5 .image {
+  background-image: url("../../img/comics/enter-general-zaq/wip/cover-art-05.jpg") !important;
+}
+.thumbnails.image-gallery .thumbnail .image {
+  height: 12rem;
+}
 
+.script {
+  font-family: courier, "courier new", monospace;
+  font-size: 1rem;
+}
+.script .page {
+  border: 0.0625rem solid #cccccc;
+  border-top: 0.1875rem solid #000;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.script .page h2, .script .page h3, .script .page p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+}
+.script .page h2, .script .page h3, .script .page h4, .script .page dt {
+  font-family: courier, "courier new", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.script .page dt {
+  margin-bottom: 0;
+}
+.script .page h2 {
+  margin-bottom: 1rem;
+}
+.script .page h3 {
+  border-top: 0.0625rem solid #cccccc;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.script .page .dialog {
+  margin: 0 auto;
+  width: 70%;
+  text-align: left;
+}
+.script .page .dialog h4, .script .page .dialog p {
+  margin: 0;
+  padding: 0;
+}
+.script .page .dialog h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.script .page .dialog p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .thumbnails .thumbnail .image {
+    background-size: cover;
+    height: 23rem;
+  }
+}
 /* store ------------------------------ */
 .about .section.intro {
   background: #eeeeee no-repeat 0 0;
-  background-size: cover;
-  background-image: url("../../img/banner/about.jpg");
-}
-.about .section.intro h1 {
-  color: #ccc;
+  border-bottom: 0.0625rem solid #cccccc;
 }
 .about .section.intro p {
   margin-bottom: 0;
-  color: #fff;
 }
 .about .section.details .sidebar-column {
   text-align: center;
@@ -25913,17 +26249,41 @@ table th, .table th {
   margin: -1rem auto 1rem;
 }
 .about .section.details .sidebar-column .photo.dsm-portrait-drawing {
-  background-image: url("../../img/dsm/dsm-photo-2.jpg");
+  background-image: url("../../img/pictures/dave-drawing-2.jpg");
 }
 .about .section.details .sidebar-column p {
   text-align: left;
   margin: 0 2rem;
-  font-family: "Roboto Italic";
+  font-family: "Proxima Nova Italic";
   color: #737373;
+}
+
+@media (max-width: 1199px) {
+  .sidebar-column {
+    margin-bottom: 2rem;
+  }
+  .sidebar-column .circle {
+    height: 18rem;
+    width: 18rem;
+  }
+  .sidebar-column p {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .section.details .sidebar-column .circle {
+    height: 14rem;
+    width: 14rem;
+    margin-left: -1rem;
+  }
+  .about .section.details .sidebar-column p {
+    margin: 0;
+  }
 }
 /* footer ----------------------------- */
 footer {
   border-top: 0.0625rem solid #bfbfbf;
+  background: #efefef;
 }
 footer ul.list-inline li {
   background: transparent no-repeat 0 0;
@@ -25964,15 +26324,10 @@ footer ul.list-inline li:active a:before {
 /* store ------------------------------ */
 .store .section.intro {
   background: #eeeeee no-repeat 0 0;
-  background-size: cover;
-  background-image: url("../../img/banner/store.jpg");
-}
-.store .section.intro h1 {
-  color: #ff7e00;
+  border-bottom: 0.0625rem solid #cccccc;
 }
 .store .section.intro p {
   margin-bottom: 0;
-  color: #fff;
 }
 .store .section#minicomics {
   background: #eeeeee;
@@ -26025,11 +26380,150 @@ footer ul.list-inline li:active a:before {
 }
 .store .thumbnails .thumbnail .text h3 {
   margin-bottom: 0;
-  font-weight: normal;
-  font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
 }
 .store .thumbnails .thumbnail .text .button-row {
   align-self: flex-start;
+}
+
+/* blog ------------------------------- */
+.blog {
+  padding-top: 0;
+}
+.blog article {
+  margin-bottom: 2rem;
+}
+.blog article:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.blog article .entry-thumb {
+  margin-bottom: 1rem;
+}
+.blog article .entry-thumb a img {
+  border: 0.0625rem solid #cccccc;
+}
+.blog article .entry-thumb a:hover img {
+  border-color: #008fd5;
+}
+.blog article header {
+  border-bottom: 0.0625rem solid #cccccc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+.blog article header h1 {
+  font-size: 1.6rem;
+}
+.blog article header h2 {
+  font-family: georgia, times, "times new roman", serif;
+  font-size: 1.3em;
+  font-style: italic;
+  color: #333333;
+}
+.blog article header .entry-meta {
+  font-size: 80%;
+  text-align: right;
+}
+.blog article header .entry-meta a {
+  color: #212529;
+  cursor: default;
+}
+.blog article header .entry-meta .byline .author {
+  font-family: "Proxima Nova Bold";
+}
+.blog article header .entry-meta .posted-on a {
+  font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+}
+.blog article header .entry-meta .posted-on time.updated {
+  display: none;
+}
+.blog article .content-summary {
+  font-family: georgia, times, "times new roman", serif;
+  font-size: 1.3em;
+  font-style: italic;
+  color: #333333;
+}
+.blog article footer.entry-footer {
+  display: none;
+  border: 0;
+}
+.blog .latest {
+  border-bottom: 0.0625rem solid #cccccc;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.blog .older article .entry-thumb {
+  float: left;
+  width: 30%;
+  margin-right: 1rem;
+}
+.blog aside {
+  line-height: 1.25rem;
+}
+.blog aside a {
+  font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+}
+.blog aside dl {
+  border-top: 0.0625rem solid #cccccc;
+  padding-top: 0.5rem;
+}
+.blog aside dl dt {
+  margin-bottom: 0.25rem;
+}
+.blog aside .links .template,
+.blog aside .links .comic-book-history,
+.blog aside .links .film-and-television,
+.blog aside .links .doctor-who {
+  display: none;
+}
+.blog .sticky-top {
+  top: 5.5rem;
+}
+.blog.index article {
+  clear: both;
+}
+.blog.index article header {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.blog.index article header h1 {
+  font-size: 1.4rem;
+}
+.blog.index article header .entry-meta {
+  text-align: left;
+}
+.blog.index article .entry-summary {
+  position: relative;
+  --lh: 1.4rem;
+  line-height: var(--lh);
+  --max-lines: 3;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog.index article .entry-summary::before {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.blog.index article .entry-summary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  /* note: not using bottom */
+  width: 1rem;
+  height: 1rem;
+  background: Swhite;
+}
+
+@media (max-width: 767px) {
+  .blog article:last-child {
+    margin-bottom: 2rem;
+  }
+}
+.imggallery {
+  max-height: 250px;
 }
 
 /*# sourceMappingURL=inky-stories.css.map */

@@ -9,6 +9,7 @@ body {
 	padding-top: $main-nav-height; 
 	font-family: $font-family-base;
 	font-size: $font-size-base;
+	color: $text-color;
 }
 
 h1, h2, h3, h4, h5, h6, 
@@ -42,7 +43,6 @@ a {
 	text-decoration: none;
 	background-color: transparent;
 	font-weight: normal;
-	font-family: 'Roboto Bold';
 	&:hover {
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
@@ -76,11 +76,17 @@ ul {
 }
 
 dl {
-	margin-bottom: 1rem;
+	margin-bottom: $spacer-base;
 	dt {
 		font-family: $font-family-headers;
 		font-weight: normal;
+		margin-bottom: $spacer-small;
 	}
+}
+
+strong, bold {
+	font-family: $font-family-headers;
+	font-weight: normal;
 }
 
 table, .table {
@@ -89,4 +95,29 @@ table, .table {
 		font-family: $font-family-headers;
 	}
 }
+
+blockquote {
+	font-family: $font-family-italic;
+	padding: 0 $spacer-large;
+	h4 {
+		font-family: $font-family-italic;
+		line-height: 2rem;
+	}
+}
+
+figure {
+	img {
+		margin-bottom: $spacer-small;
+	}
+}
+
+italic, em {
+	font-family: $font-family-italic;
+	font-style: normal;
+}
+bold, strong {
+	font-family: $font-family-bold;
+	font-weight: normal;
+}
+
 

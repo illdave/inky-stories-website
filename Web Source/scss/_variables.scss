@@ -58,7 +58,7 @@ $border-default: 							rem(1px solid $border-default-color);
 $body-bg:									$white;
 
 $headings-color: 							$black;
-$text-color:								#687178;
+$text-color:								#212529;
 $link-color:								#008fd5;
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
@@ -74,18 +74,40 @@ $roboto-bold: 								"Roboto Bold";
 $roboto-bold-italic: 						"Roboto Bold Italic";
 $roboto-black: 								"Roboto Black";
 $roboto-black-italic: 						"Roboto Black Italic";
+$roboto-italic: 							"Roboto Italic";
 
-$font-family-sans-serif: 					"Proxima Nova","helvetica neue", helvetica, arial, sans-serif;
+$proxima-nova:		 						"Proxima Nova";
+$proxima-nova-italic: 						"Proxima Nova Italic";
+$proxima-nova-bold: 						"Proxima Nova Bold";
+$proxima-nova-bold-italic: 					"Proxima Nova Bold Italic";
+
+$proxima-nova-alt-regular: 					"Proxima Nova Alt";
+$proxima-nova-alt-bold:						"Proxima Nova Alt Bold";
+$proxima-nova-alt-condensed-semibold:		"Proxima Nova Alt Condensed Semibold";
+$proxima-nova-alt-black:					"Proxima Nova Alt Black";
+
+$opensans-regular:							"Open Sans Regular";
+$opensans-bold: 							"Open Sans Bold";
+$opensans-italic:							"Open Sans Italic";
+$opensans-bold-italic:						"Open Sans Bold Italic";
+$opensans-semibold-italic:					"Open Sans Semibold";
+
+$font-family-sans-serif: 					$proxima-nova,"helvetica neue", helvetica, arial, sans-serif;
 $font-family-serif:       					georgia, "times new roman", times, serif;
+$font-family-monospace:      				SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:        					$font-family-sans-serif;
-$font-family-headers:						$roboto-black;
+$font-family-headers:						$proxima-nova-bold;
+
+$font-family-italic:						$proxima-nova-italic;
+$font-family-bold:							$proxima-nova-bold;
+$font-family-bold-italic:					$proxima-nova-bold-italic;
 
 $font-size-base:          					1rem;
 $font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
 $font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
 $font-size-small:         					ceil(($font-size-base * 0.85)); // ~12px
 
-$h1-font-size:                				$font-size-base * 2.5;
+$h1-font-size:                				$font-size-base * 2.0;
 $h2-font-size:                				$font-size-base * 1.6;
 $h3-font-size:                				$font-size-base * 1.4;
 $h4-font-size:                				$font-size-base * 1.2;
@@ -186,17 +208,18 @@ $navbar-toggler-icon:   					quote($fa-var-bars);
 /* uncategorized --------------------- */
 
 $footer-border: 							rem(1px solid $gray-light);
+$footer-bg: 								#efefef;
+
 $hr-margin: 								$spacer/2;
 
 $jumbotron-padding: 						$spacer-large $spacer-base;
 $jumbotron-bg: 								$gray-lighter;
 $jumbotron-border-radius: 					0;
 
-$photo-circle-large: 						20rem;
+$photo-circle-lg: 							20rem;
+$photo-circle-md: 							18rem;
+$photo-circle-sm: 							14rem;
 $circle-border-radius: 						50%;
-
-$comic-listing-intro-bg: 					white no-repeat 0 0;
-$comic-listing-intro-border: 				$border-default;
 	
 
 /* home ------------------------------ */
@@ -210,10 +233,17 @@ $latest-page-border: 						rem(1px solid $border-default-color);
 
 $banner-text-bg: 							transparentize(white, 0.1);
 $banner-text-border: 						rem(2px solid $gray-light);
-$banner-text-border-radius: 				$border-radius-large;
+$banner-text-border-radius: 				$border-radius-base;
+$banner-text-border-radius-large: 			$border-radius-large;
 
 
 /* comics ---------------------------- */
+
+$comic-listing-intro-bg: 					#df0101 no-repeat 0 0;
+$comic-listing-intro-border: 				$border-default;
+$comic-listing-intro-header: 				$black;
+$comic-listing-intro-color: 				$white;
+$comic-listing-intro-link-color: 			#f9d67a;
 
 $comic-book-page-bg: 						$white;
 $comic-book-page-margin: 					$spacer-large;
@@ -292,7 +322,8 @@ $main-nav-brand-padding: 					$navbar-brand-padding-y;
 $main-nav-brand-margin: 					$spacer-xs;
 $main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
 $main-nav-x-padding: 						.5rem;
-$main-nav-height: 							$main-nav-brand-height + $line-height-base + 2 * $main-nav-brand-margin;		
+$main-nav-height: 							$main-nav-brand-height + $line-height-base + 2 * $main-nav-brand-padding;		
 
 
 /* FOO ------------------------------- */
+

@@ -11,6 +11,16 @@
 				margin: $comic-book-img-margin;
 				border: $comic-book-img-border;
 			}
+			.no-border {
+				img {
+					border: none;
+				}			
+			}
+			.double-page-spread {
+				img {
+					width: 800px;
+				}			
+			}
 			.author-notes {
 				text-align: left;
 				margin: 0 auto;
@@ -111,9 +121,21 @@
 	}
 	.comic-book-info {
 		border-top: $border-default;
+		.comic-book-page {
+			&.figure {
+				img {
+					border: $comic-book-img-border;
+					margin-bottom: $spacer-small;
+				}
+			}
+			&.row {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
 	}
-
 }
+
 .comic-book-overview {
 	.comic-book-page {
 		background: $comic-book-page-bg;
@@ -130,7 +152,7 @@
 				margin-right: 1.5rem;
 			}
 			img  {
-				margin-bottom: .5rem;
+				margin-bottom: $spacer-small;
 			}
 		}
 	}
@@ -142,6 +164,22 @@
 			background: $comic-listing-intro-bg;
 			background-size: cover;
 			border-bottom: $comic-listing-intro-border;
+			
+			h1 {
+				color: $comic-listing-intro-header;
+			}
+			p {
+				color: $comic-listing-intro-color;
+			}
+			a {
+				color: $comic-listing-intro-link-color;
+				font-family: $font-family-headers;
+				&:hover {
+					color: white;
+				}
+			}
+			
+			
 			.genre-list {
 				margin-bottom: 0;
 				&.list-inline li:not(:last-child) {
@@ -152,9 +190,9 @@
 		&.genre {
 			background: transparent 0 0 no-repeat;
 			background-size: cover;
-			padding-bottom: 1rem;
+			padding-bottom: $spacer-base;
 			margin-bottom: 0;
-			border-bottom: rem(1px solid #ccc);
+			border-bottom: $border-default;
 			
 			&#adult-content {
 				border-bottom: 0;
@@ -208,55 +246,6 @@
 					}					
 				}
 			}
-			.thumbnails {
-				.thumbnail {
-					background: $comic-book-thumbnail-bg;
-					margin-bottom: $spacer-large;
-					.image {
-						background: $comic-book-thumbnail-image-bg;
-						background-size: cover;
-						border: $comic-book-thumbnail-image-border;
-						width: 100%;
-						height: 19rem;
-						margin-bottom: $spacer-small;
-						display: block;
-						.hover {
-							display: block;
-							background: $white;
-							height: 100%;
-							opacity: 0;
-						}
-						&:hover {
-							border-color: $link-color;
-							box-shadow: $white-glow;
-							.hover {
-								opacity: .5;
-							}
-						}
-						&:focus {
-							outline: 0;
-							box-shadow: $btn-focus-box-shadow;
-						}
-					}
-					.text {
-						h4, p {
-							margin-bottom: 0;
-						}
-					}
-				}
-			}
-			
-			@media (min-width: 1200px) { 
-				.thumbnails {
-					.thumbnail {
-						.image {
-							background-size: cover;
-							height: 23rem;
-						}
-					}
-				}			
-			}
-			
 		}
 		
 		&#comics-for-everyone {
@@ -312,160 +301,188 @@
 
 .thumbnails {
 	.thumbnail {
-		&#FOO_COMIC .image {
+		background: $comic-book-thumbnail-bg;
+		margin-bottom: $spacer-large;
+		.image {
+			background: $comic-book-thumbnail-image-bg;
+			background-size: cover;
+			border: $comic-book-thumbnail-image-border;
+			width: 100%;
+			height: 19rem;
+			margin-bottom: $spacer-small;
+			display: block;
+			.hover {
+				display: block;
+				background: $white;
+				height: 100%;
+				opacity: 0;
+			}
+			&:hover {
+				border-color: $link-color;
+				box-shadow: $white-glow;
+				.hover {
+					opacity: .5;
+				}
+			}
+			&:focus {
+				outline: 0;
+				box-shadow: $btn-focus-box-shadow;
+			}
+		}
+		.text {
+			h4, p {
+				margin-bottom: 0;
+			}
+			p {
+				margin-bottom: $spacer-small;
+			}
+		}
+		&.FOO_COMIC .image {
 			background-image: url("#{$comics-image-path}/FOO_COMIC/00.jpg");
 		}
-		&#earth-girls-rnt-easy .image {
-			background-image: url("#{$comics-image-path}/earth-girls-rnt-easy/01.jpg");
+		&.earth-girls-rnt-easy .image {
+			background-image: url("#{$comics-image-path}/earth-girls-rnt-easy/01.jpg") !important;
 		}
-		&#enter-general-zaq .image {
-			background-image: url("#{$comics-image-path}/enter-general-zaq/00-cover.jpg");
+		&.enter-general-zaq .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/00-cover.jpg") !important;
 		}
-		&#franks-next-mission .image {
-			background-image: url("#{$comics-image-path}/franks-next-mission/01.jpg");
+		&.franks-next-mission .image {
+			background-image: url("#{$comics-image-path}/franks-next-mission/01.jpg") !important;
 		}
-		&#i-did-nothing .image {
-			background-image: url("#{$comics-image-path}/i-did-nothing/03.jpg");
+		&.i-did-nothing .image {
+			background-image: url("#{$comics-image-path}/i-did-nothing/03.jpg") !important;
 		}
-		&#go-snow .image {
-			background-image: url("#{$comics-image-path}/go-snow/01.jpg");
+		&.go-snow .image {
+			background-image: url("#{$comics-image-path}/go-snow/01.jpg") !important;
 		}
-		&#grubhub-delivery .image {
-			background-image: url("#{$comics-image-path}/grubhub-delivery/01.jpg");
+		&.grubhub-delivery .image {
+			background-image: url("#{$comics-image-path}/grubhub-delivery/01.jpg") !important;
 		}
-		&#here-i-am .image {
-			background-image: url("#{$comics-image-path}/here-i-am/01.jpg");
+		&.here-i-am .image {
+			background-image: url("#{$comics-image-path}/here-i-am/01.jpg") !important;
 		}
-		&#last-day-on-earth .image {
-			background-image: url("#{$comics-image-path}/last-day-on-earth/01.jpg");
+		&.last-day-on-earth .image {
+			background-image: url("#{$comics-image-path}/the-last-day-on-earth/01.jpg") !important;
 		}
-		&#little-green-man .image {
-			background-image: url("#{$comics-image-path}/little-green-man/01.jpg");
+		&.little-green-man .image {
+			background-image: url("#{$comics-image-path}/little-green-man/01.jpg") !important;
 			background-size: contain;
 		}
-		&#paradigm-shift .image {
-			background-image: url("#{$comics-image-path}/paradigm-shift/01.jpg");
+		&.paradigm-shift .image {
+			background-image: url("#{$comics-image-path}/paradigm-shift/01.jpg") !important;
 		}
-		&#plate-ground .image {
-			background-image: url("#{$comics-image-path}/plate-ground/01.jpg");
+		&.plate-ground .image {
+			background-image: url("#{$comics-image-path}/plate-ground/01.jpg") !important;
 		}
-		&#lucky-seven-dee-brown .image {
-			background-image: url("#{$comics-image-path}/lucky-seven-dee-brown/01.jpg");
+		&.lucky-seven-dee-brown .image {
+			background-image: url("#{$comics-image-path}/lucky-seven-dee-brown/01.jpg") !important;
 		}
-		&#shower-powered .image {
-			background-image: url("#{$comics-image-path}/shower-powered/01.jpg");
-			background-size: contain;
+		&.shower-powered .image {
+			background-image: url("#{$comics-image-path}/shower-powered/01.jpg") !important;
 		}
-		&#six-year-old-horse-thief .image {
-			background-image: url("#{$comics-image-path}/six-year-old-horse-thief/01.jpg");
+		&.six-year-old-horse-thief .image {
+			background-image: url("#{$comics-image-path}/six-year-old-horse-thief/01.jpg") !important;
 		}
-		&#the-watchman .image {
-			background-image: url("#{$comics-image-path}/the-watchman/01.jpg");
+		&.the-watchman .image {
+			background-image: url("#{$comics-image-path}/the-watchman/01.jpg") !important;
 		}
 		
-		&#stop-that-panzer-woman .image {
-			background-image: url("#{$comics-image-path}/stop-that-panzer-woman/10.jpg");
+		&.stop-that-panzer-woman .image {
+			background-image: url("#{$comics-image-path}/stop-that-panzer-woman/10.jpg") !important;
 		}
-		&#the-null-device .image {
-			background-image: url("#{$comics-image-path}/the-null-device/18.jpg");
-			background-size: contain;
+		&.the-null-device .image {
+			background-image: url("#{$comics-image-path}/the-null-device/18.jpg") !important;
 		}
-		&#enter-general-zaq .image {
-			background-image: url("#{$comics-image-path}/enter-general-zaq/07.jpg");
+		&.enter-general-zaq .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/07.jpg") !important;
 		}
-		&#cupids-got-a-death-ray .image {
-			background-image: url("#{$comics-image-path}/cupids-got-a-death-ray/04.jpg");
+		&.cupids-got-a-death-ray .image {
+			background-image: url("#{$comics-image-path}/cupids-got-a-death-ray/04.jpg") !important;
 		}
-		&#agent-k-judo-trick-strangler .image {
-			background-image: url("#{$comics-image-path}/agent-k-judo-trick-strangler/01.png");
+		&.agent-k-judo-trick-strangler .image {
+			background-image: url("#{$comics-image-path}/agent-k-judo-trick-strangler/01.jpg") !important;
 		}
 		
-		&#ladybat-fanboy-tool-talk .image {
-			background-image: url("#{$comics-image-path}/ladybat-fanboy-tool-talk/01.jpg");
+		&.ladybat-fanboy-tool-talk .image {
+			background-image: url("#{$comics-image-path}/ladybat-fanboy-tool-talk/01.jpg") !important;
 		}
-		&#batgirl-and-joker .image {
-			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2016/01.jpg");
+		&.batgirl-and-joker .image {
+			background-image: url("#{$comics-image-path}/batgirl-and-joker/01.jpg") !important;
 		}
-		&#dark-knight-damsel-returns .image {
-			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2015/01.jpg");
+		&.dark-knight-damsel-returns .image {
+			background-image: url("#{$comics-image-path}/the-dark-knight-damsel-returns/01.jpg") !important;
 		}
-		&#batgirl-in-time-crash .image {
-			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2014/01.jpg");
+		&.batgirl-in-time-crash .image {
+			background-image: url("#{$comics-image-path}/batgirl-in-time-crash/01.jpg") !important;
 		}
-		&#day-of-the-batgirl .image {
-			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2013/01.jpg");
+		&.day-of-the-batgirl .image {
+			background-image: url("#{$comics-image-path}/day-of-the-batgirl/01.jpg") !important;
 		}
-		&#million-dollar-debut-of-batgirl .image {
-			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2012/01.jpg");
+		&.million-dollar-debut-of-batgirl .image {
+			background-image: url("#{$comics-image-path}/the-million-dollar-debut-of-batgirl/01.jpg") !important;
 		}
-		&#batgirl-training-day .image {
-			background-image: url("#{$comics-image-path}/dark-night-on-a-dark-night-2011/01.jpg");
+		&.batgirl-training-day .image {
+			background-image: url("#{$comics-image-path}/batgirl-in-training-day/01.jpg") !important;
 		}
-		&#flatline .image {
-			background-image: url("#{$comics-image-path}/doctor-who/flatline-flatstanley.jpg");
-			background-size: contain;
+		&.flatline .image {
+			background-image: url("#{$comics-image-path}/doctor-who/flatline.jpg") !important;
 		}
-		&#time-of-the-doctor .image {
-			background-image: url("#{$comics-image-path}/doctor-who/time-of-the-doctor.jpg");
-			background-size: contain;
+		&.time-of-the-doctor .image {
+			background-image: url("#{$comics-image-path}/doctor-who/time-of-the-doctor.jpg") !important;
 		}
-		&#into-the-dalek .image {
-			background-image: url("#{$comics-image-path}/doctor-who/into-the-dalek-duo.jpg");
+		&.into-the-dalek .image {
+			background-image: url("#{$comics-image-path}/doctor-who/into-the-dalek-duo.jpg") !important;
 		}
-		&#training-daze .image {
-			background-image: url("#{$comics-image-path}/24hour-2010/01.jpg");
+		&.training-daze .image {
+			background-image: url("#{$comics-image-path}/training-daze/01.jpg") !important;
 		}
-		&#blank-spot .image {
-			background-image: url("#{$comics-image-path}/24hour-2009/01.jpg");
+		&.blank-spot .image {
+			background-image: url("#{$comics-image-path}/blank-spot/01.jpg") !important;
 		}
-		&#now-aint-soon-enough .image {
-			background-image: url("#{$comics-image-path}/24hour-2008/01.jpg");
+		&.now-aint-soon-enough .image {
+			background-image: url("#{$comics-image-path}/now-aint-soon-enough/01.jpg") !important;
 		}
-		&#soaked .image {
-			background-image: url("#{$comics-image-path}/24hour-2007/01.jpg");
-			background-size: contain;
+		&.soaked .image {
+			background-image: url("#{$comics-image-path}/soaked/01.jpg") !important;
 		}
-		&#reach .image {
-			background-image: url("#{$comics-image-path}/24hour-2004/01.jpg");
-			background-size: contain;
+		&.reach .image {
+			background-image: url("#{$comics-image-path}/reach/01.jpg") !important;
 		}
-		&#a-runnin-from-a-gunnin .image {
-			background-image: url("#{$comics-image-path}/a-runnin-from-a-gunnin/01.jpg");
+		&.a-runnin-from-a-gunnin .image {
+			background-image: url("#{$comics-image-path}/a-runnin-from-a-gunnin/01.jpg") !important;
 		}
-		&#not-really-blade-kills-twilight .image {
-			background-image: url("#{$comics-image-path}/not-really-blade-kills-twilight/01.jpg");
+		&.not-really-blade-kills-twilight .image {
+			background-image: url("#{$comics-image-path}/not-really-blade-kills-twilight/01.jpg") !important;
 		}
-		&#the-bleeding-mirror .image {
-			background-image: url("#{$comics-image-path}/the-bleeding-mirror/01.jpg");
+		&.the-bleeding-mirror .image {
+			background-image: url("#{$comics-image-path}/the-bleeding-mirror/01.jpg") !important;
 		}
-		&#bottle-of-red .image {
-			background-image: url("#{$comics-image-path}/bottle-of-red/01.jpg");
+		&.bottle-of-red .image {
+			background-image: url("#{$comics-image-path}/bottle-of-red/01.jpg") !important;
 		}
-		&#dead-by-the-pool .image {
-			background-image: url("#{$comics-image-path}/dead-by-the-pool/01.jpg");
-			background-size: contain;
+		&.dead-by-the-pool .image {
+			background-image: url("#{$comics-image-path}/dead-by-the-pool/01.jpg") !important;
 		}
-		&#encore .image {
-			background-image: url("#{$comics-image-path}/encore/01.jpg");
+		&.encore .image {
+			background-image: url("#{$comics-image-path}/encore/01.jpg") !important;
 		}
-		&#the-return .image {
-			background-image: url("#{$comics-image-path}/the-return/01.jpg");
+		&.the-return .image {
+			background-image: url("#{$comics-image-path}/the-return/01.jpg") !important;
 		}
-		&#school-fight .image {
-			background-image: url("#{$comics-image-path}/school-fight/01.jpg");
+		&.school-fight .image {
+			background-image: url("#{$comics-image-path}/school-fight/01.jpg") !important;
 		}
-		&#twilights-last-gleaming .image {
-			background-image: url("#{$comics-image-path}/twilights-last-gleaming/01.jpg");
+		&.twilights-last-gleaming .image {
+			background-image: url("#{$comics-image-path}/twilights-last-gleaming/01.jpg") !important;
 		}
-		&#window-of-opportunity .image {
-			background-image: url("#{$comics-image-path}/window-of-opportunity/01-censored.jpg");
+		&.window-of-opportunity .image {
+			background-image: url("#{$comics-image-path}/window-of-opportunity/01-censored.jpg") !important;
 		}
-		&#the-worlds-slowest-foot-chase .image {
-			background-image: url("#{$comics-image-path}/the-worlds-slowest-foot-chase/01-censored.jpg");
+		&.the-worlds-slowest-foot-chase .image {
+			background-image: url("#{$comics-image-path}/the-worlds-slowest-foot-chase/01-censored.jpg") !important;
 		}
-		&#zips-last-day .image {
-			background-image: url("#{$comics-image-path}/zips-last-day/01.jpg");
-			background-size: contain;
+		&.zips-last-day .image {
+			background-image: url("#{$comics-image-path}/zips-last-day/01.jpg") !important;
 		}
 		
 		&#inky-stories-7 .image {
@@ -489,6 +506,97 @@
 		&#inky-stories-1 .image {
 			background-image: url("#{$store-image-path}/01.jpg");
 		}
+		
+		&.cover-wip-1 .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/wip/cover-art-01.jpg") !important;
+		}
+		&.cover-wip-2 .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/wip/cover-art-02.jpg") !important;
+		}
+		&.cover-wip-3 .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/wip/cover-art-03.jpg") !important;
+		}
+		&.cover-wip-4 .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/wip/cover-art-04.jpg") !important;
+		}
+		&.cover-wip-5 .image {
+			background-image: url("#{$comics-image-path}/enter-general-zaq/wip/cover-art-05.jpg") !important;
+		}
+	}
+	
+	&.image-gallery {
+		.thumbnail {
+			.image {
+				height: 12rem;
+			}
+		}
 	}
 }
+
+.script	{
+	font-family: courier, 'courier new', monospace; 
+	font-size: $font-size-base;
+	.page {
+		border: $border-default; 
+		border-top: rem(3px solid #000); 
+		padding: $spacer-large 0; 
+		margin-bottom: $spacer-large; 
+		text-align: center;
+		
+		h2, h3, p {
+			margin-left: $spacer-large; 
+			margin-right: $spacer-large; 
+			text-align: left;
+		}
+		h2, h3, h4, dt {
+			font-family: courier, 'courier new', monospace;
+			font-weight: bold;
+			font-size: $font-size-base;
+		}
+		dt {
+			margin-bottom: 0;
+		}
+		h2 {
+			margin-bottom: $spacer-base; 
+		}
+		h3 {
+			border-top: $border-default; 
+			margin-top: $spacer-large; 
+			padding-top: $spacer-base; 
+			margin-bottom: $spacer-xs; 
+			text-transform: uppercase;
+		}
+		.dialog	{
+			margin: 0 auto; 
+			width: 70%; 
+			text-align: left;
+			
+			h4, p {
+				margin: 0; 
+				padding: 0;
+			}
+			h4	{
+				text-align: center; 
+				text-transform: uppercase;
+			}
+			p {
+				margin-bottom: $spacer-base;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) { 
+	.thumbnails {
+		.thumbnail {
+			.image {
+				background-size: cover;
+				height: 23rem;
+			}
+		}
+	}			
+}
+			
+
+
 

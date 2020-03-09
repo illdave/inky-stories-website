@@ -4,14 +4,11 @@
 	.section {
 		&.intro {
 			background: $gray-lighter no-repeat 0 0;
-			background-size: cover;
-			background-image: url("#{$banner-image-path}/about.jpg");
+			border-bottom: $border-default;
 			h1 {
-				color: #ccc;
 			}
 			p {
 				margin-bottom: 0;
-				color: $white;
 			}
 		}
 		&.details {
@@ -20,18 +17,48 @@
 				.photo {
 					margin: -1rem auto 1rem;
 					&.dsm-portrait-drawing {
-						background-image: url("#{$dsm-image-path}/dsm-photo-2.jpg");
+						background-image: url("#{$pictures-image-path}/dave-drawing-2.jpg");
 					}
 				}
 				p {
 					text-align: left;
 					margin: 0 $spacer-large;
-					font-family: "Roboto Italic";
+					font-family: $font-family-italic;
 					color: $gray-lightest;
 				}
 			}
-			.main-column {}
 		}
 	}
 }
 
+@media (max-width: 1199px) { 
+	.sidebar-column {
+		margin-bottom: 2rem;
+		.circle {
+			height: $photo-circle-md;
+			width: $photo-circle-md;
+		}
+		p {
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	.about {
+		.section {
+			&.details {
+				.sidebar-column {
+					.circle {
+						height: $photo-circle-sm;
+						width: $photo-circle-sm;
+						margin-left: -1rem;
+					}
+					p {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}

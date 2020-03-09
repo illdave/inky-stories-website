@@ -21,6 +21,14 @@ https://github.com/geoffgraham/animate.scss */
 https://www.npmjs.com/package/sass-rem */
 @import "../node_modules/sass-rem/_rem.scss";
 
+/* Lightbox 2 by Lokesh Dhakar: the original lightbox 
+https://github.com/lokesh/lightbox2 */
+@import "../../lib/lightbox-2.11.1/css/lightbox.css";
+
+/* Tipue Search: self-hosted javaScript object, free of MySQL/SQL 
+http://www.tipue.com/search */
+@import "../../lib/tipuesearch-7.1/tipuesearch-min.css";
+
 
 // Inky Stories Dependencies ----------------------------------- //
 
@@ -35,5 +43,8 @@ https://www.npmjs.com/package/sass-rem */
 @import "about";
 @import "footer";
 @import "store";
+@import "blog";
 
-
+.imggallery{
+    max-height: 250px;
+}

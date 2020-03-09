@@ -12,37 +12,43 @@
 		<meta name="description" content="Comic book stories by David Marshall">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
-		<script type="text/javascript" src="../assets/themes/inky-stories/inky-stories.js"></script>
-		<link rel="icon" href="../assets/img/inky-stories.ico" type="image/x-icon">
+		<script src="../assets/themes/inky-stories/inky-stories.js" type="text/javascript"></script>
+		<link rel="icon" href="../assets/img/brand/inky-stories.ico" type="image/x-icon">
 	</head>
 	<body>
 		<div class="inky-stories-3">
 			<header class="fixed-top main-navigation" role="banner">
 				<a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip Content</a>
 				<nav class="navbar navbar-expand-md">
-					<a class="navbar-brand" href="#" rel="home">Inky Stories</a>
+					<a class="navbar-brand" href="../index.htm" rel="home">Inky Stories</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="main-navigation">
 						<ul class="navbar-nav bd-navbar-nav mr-auto">
 							<li class="nav-item web-comics active">
-								<a class="nav-link" href="#" aria-label="comic books by David Marshall">Comics</a>
+								<a class="nav-link" href="index.htm" aria-label="comic books by David Marshall">Comics</a>
 							</li>
 							<li class="nav-item about">
-								<a class="nav-link" href="#" aria-label="about Inky Stories author David Marshall">About</a>
+								<a class="nav-link" href="../about/index.htm" aria-label="about Inky Stories author David Marshall">About</a>
 							</li>
 							<li class="nav-item store">
-								<a class="nav-link" href="#" aria-label="Inky Stories store">Store</a>
+								<a class="nav-link" href="../store/index.htm" aria-label="Inky Stories store">Store</a>
 							</li>
 							<li class="nav-item blogs">
-								<a class="nav-link" href="#" aria-label="Inky Stories blogs">Blogs</a>
+								<a class="nav-link" href="../blog/index.htm" aria-label="Inky Stories blog">Blog</a>
 							</li>
 						</ul>
 						<div class="search-form form-inline my-2 my-md-0">
 							<form>
-								<input class="form-control form-control-sm mr-3" type="text" placeholder="" aria-label="Search">
-								<i class="fas fa-search active" aria-hidden="true"></i>
+								<input 
+									class="form-control form-control-sm" 
+									type="text" 
+									name="q" 
+									id="tipue_search_input" 
+									placeholder="Search not functional...yet!" 
+									aria-label="Search">
+									<i class="fas fa-search active" aria-hidden="true"></i>
 							</form>	
 						</div>
 					</div>
@@ -51,17 +57,24 @@
 			<main id="main-content" class="main-content bd-content comic-book-listing" role="main">
 				<section class="section intro">
 					<div class="container">
-						<h1>My Comic Books</h1>
-						<p>These are my completed web comics, listed with plot summaries and "suitable content" labels (using the MPAA film rating system as a rule-of-thumb). Unless otherwise noted, all material is written and draw by me. With the exception of the single-page stories, descriptions have links to a detailed story overview.</p>
-						<ul class="list-inline genre-list">
-							<li><a href="#comics-for-everyone">Comics for Everyone</a></li>
-							<li><a href="#agent-k-null-device">Agent K and The Null Device</a></li>
-							<li><a href="#accidental-genius"">Accidental Genius</a></li>
-							<li><a href="#dark-knight-dark-night">Dark Knight on a Dark Night</a></li>
-							<li><a href="#doctor-who">Doctor Who</a></li>
-							<li><a href="#twenty-four-hour-comics">24-Hour Comics</a></li>
-							<li class="adult-content"><a href="#adult-content">Comics for Adults</a></li>
-						</ul>
+						<div class="row">
+							<div class="col-md-6">
+								<img src="../assets/img/pictures/comics-index.jpg" alt="" >
+							</div>
+							<div class="col-md-6">
+								<h1>My Comic Books</h1>
+								<p>These are my completed web comics, listed with plot summaries and "suitable content" labels (using the MPAA film rating system as a rule-of-thumb). Unless otherwise noted, all material is written and drawn (lettered, colored, edited, designed etc.) by me. Most comics have detailed page and story descriptions below the art.</p>
+								<ul class="list-inline genre-list">
+									<li><a href="#comics-for-everyone">Comics for Everyone</a></li>
+									<li><a href="#agent-k-null-device">Agent K and The Null Device</a></li>
+									<li><a href="#accidental-genius">Accidental Genius</a></li>
+									<li><a href="#dark-knight-dark-night">Dark Knight on a Dark Night</a></li>
+									<li><a href="#doctor-who">Doctor Who</a></li>
+									<li><a href="#twenty-four-hour-comics">24-Hour Comics</a></li>
+									<li class="adult-content"><a href="#adult-content">Comics for Adults</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section class="section genre" id="comics-for-everyone">
@@ -77,8 +90,8 @@
 							<p>Autobio, abstract, and historical stories designed for a wide audience.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="bottle-of-red">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail bottle-of-red">
 									<a href="bottle-of-red.htm" class="image" role="img" aria-label="read Bottle of Red online right now!"><span class="hover"></span></a>
 									<div class="text">
 										<h4 aria-labelledby="bottle-of-red"><a href="bottle-of-red.htm">Bottle of Red</a></h4>
@@ -86,62 +99,62 @@
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="earth-girls-rnt-easy">
-									<a href="#" class="image" role="img" aria-label="read Earth Girls Rn't Easy online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail earth-girls-rnt-easy">
+									<a href="earth-girls-rnt-easy.htm" class="image" role="img" aria-label="read Earth Girls Rn&rsquo;t Easy online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="earth-girls-rnt-easy"><a href="http://www.inkystories.com/earth-girls-rnt-easy">Earth Girls Rn't Easy</a></h4>
+										<h4 aria-labelledby="earth-girls-rnt-easy"><a href="earth-girls-rnt-easy.htm">Earth Girls Rn&rsquo;t Easy</a></h4>
 										<p>How did this sci-fi/slasher movie fanboy's blind date go so horribly wrong?</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="enter-general-zaq">
-									<a href="#" class="image" role="img" aria-label="read Enter...General Zaq! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail enter-general-zaq">
+									<a href="enter-general-zaq.htm" class="image" role="img" aria-label="read Enter...General Zaq! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="enter-general-zaq"><a href="#">Enter...General Zaq!</a></h4>
+										<h4 aria-labelledby="enter-general-zaq"><a href="enter-general-zaq.htm">Enter...General Zaq!</a></h4>
 										<p>Anything's possible in the Silver Age Zone.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="franks-next-mission">
-									<a href="franks-next-mission.htm" class="image" role="img" aria-label="read Frank's Next Mission online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail franks-next-mission">
+									<a href="franks-next-mission.htm" class="image" role="img" aria-label="read Frank&rsquo;s Next Mission online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="franks-next-mission"><a href="franks-next-mission.htm">Frank's Next Mission</a></h4>
+										<h4 aria-labelledby="franks-next-mission"><a href="franks-next-mission.htm">Frank&rsquo;s Next Mission</a></h4>
 										<p>A vigilante serial killer's war on crime gets bumped to the next level.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="go-snow">
-									<a href="#" class="image" role="img" aria-label="read Go Snow! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail go-snow">
+									<a href="go-snow.htm" class="image" role="img" aria-label="read Go Snow! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="go-snow"><a href="#">Go Snow!</a></h4>
+										<h4 aria-labelledby="go-snow"><a href="go-snow.htm">Go Snow!</a></h4>
 										<p>A young snowflake tells the story of his first blizzard.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="grubhub-delivery">
-									<a href="#" class="image" role="img" aria-label="read GrubHub Delivery online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail grubhub-delivery">
+									<a href="grubhub-delivery.htm" class="image" role="img" aria-label="read GrubHub Delivery online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="grubhub-delivery"><a href="#">GrubHub Delivery</a></h4>
+										<h4 aria-labelledby="grubhub-delivery"><a href="grubhub-delivery.htm">GrubHub Delivery</a></h4>
 										<p>Children try stopping an equally monster from trashing their city.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="here-i-am">
-									<a href="#" class="image" role="img" aria-label="read Here I Am online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail here-i-am">
+									<a href="here-i-am.htm" class="image" role="img" aria-label="read Here I Am online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="here-i-am"><a href="#">Here I Am</a></h4>
+										<h4 aria-labelledby="here-i-am"><a href="here-i-am.htm">Here I Am</a></h4>
 										<p>Our lone protagonist ends his life of fulfilling everyone else's hopes.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="i-did-nothing">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail i-did-nothing">
 									<a href="i-did-nothing.htm" class="image" role="img" aria-label="read Here I Did Nothing online right now!"><span class="hover"></span></a>
 									<div class="text">
 										<h4 aria-labelledby="i-did-nothing"><a href="i-did-nothing.htm">I Did Nothing</a></h4>
@@ -149,74 +162,74 @@
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="last-day-on-earth">
-									<a href="#" class="image" role="img" aria-label="read Last Day on Earth online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail last-day-on-earth">
+									<a href="the-last-day-on-earth.htm" class="image" role="img" aria-label="read Last Day on Earth online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="last-day-on-earth"><a href="#">Last Day on Earth</a></h4>
+										<h4 aria-labelledby="last-day-on-earth"><a href="the-last-day-on-earth.htm">Last Day on Earth</a></h4>
 										<p>Today's alien invasion is tomorrow's history lesson.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="little-green-man">
-									<a href="#" class="image" role="img" aria-label="read Little Green Man online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail little-green-man">
+									<a href="little-green-man.htm" class="image" role="img" aria-label="read Little Green Man online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="little-green-man"><a href="#">Little Green Man</a></h4>
+										<h4 aria-labelledby="little-green-man"><a href="little-green-man.htm">Little Green Man</a></h4>
 										<p>A young woman defines her artistic integrity.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="lucky-seven-dee-brown">
-									<a href="#" class="image" role="img" aria-label="read Lucky Seven: The Dee Brown Incident online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail lucky-seven-dee-brown">
+									<a href="lucky-seven-dee-brown.htm" class="image" role="img" aria-label="read Lucky Seven: The Dee Brown Incident online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="lucky-seven-dee-brown"><a href="#">Lucky Seven: The Dee Brown Incident</a></h4>
+										<h4 aria-labelledby="lucky-seven-dee-brown"><a href="lucky-seven-dee-brown.htm">Lucky Seven: The Dee Brown Incident</a></h4>
 										<p>Black resident and Celtics rookie got mistaken for a bank robber.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="paradigm-shift">
-									<a href="#" class="image" role="img" aria-label="read Paradigm Shift right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail paradigm-shift">
+									<a href="paradigm-shift.htm" class="image" role="img" aria-label="read Paradigm Shift right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="paradigm-shift"><a href="#">Paradigm Shift</a></h4>
+										<h4 aria-labelledby="paradigm-shift"><a href="paradigm-shift.htm">Paradigm Shift</a></h4>
 										<p>Probably the most over-worked page in fan art history.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="plate-ground">
-									<a href="#" class="image" role="img" aria-label="read Plate Ground online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail plate-ground">
+									<a href="plate-ground.htm" class="image" role="img" aria-label="read Plate Ground online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="plate-ground"><a href="#">Plate Ground</a></h4>
+										<h4 aria-labelledby="plate-ground"><a href="plate-ground.htm">Plate Ground</a></h4>
 										<p>Will this Allston rooftop part ever end?</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="shower-powered">
-									<a href="#" class="image" role="img" aria-label="read Shower Powered online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail shower-powered">
+									<a href="shower-powered.htm" class="image" role="img" aria-label="read Shower Powered online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="shower-powered"><a href="#">Shower Powered</a></h4>
+										<h4 aria-labelledby="shower-powered"><a href="shower-powered.htm">Shower Powered</a></h4>
 										<p>First installment of the Wacky Accidents series.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="six-year-old-horse-thief">
-									<a href="#" class="image" role="img" aria-label="read Six-Year-Old Horse Thief online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail six-year-old-horse-thief">
+									<a href="six-year-old-horse-thief.htm" class="image" role="img" aria-label="read Six-Year-Old Horse Thief online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="six-year-old-horse-thief"><a href="#">Six-Year-Old Horse Thief</a></h4>
+										<h4 aria-labelledby="six-year-old-horse-thief"><a href="six-year-old-horse-thief.htm">Six-Year-Old Horse Thief</a></h4>
 										<p>Childhood memory from an era with no cellphones or VCRs, and only one Starbucks.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="the-watchman">
-									<a href="#" class="image" role="img" aria-label="read The Watchman online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail the-watchman">
+									<a href="the-watchman.htm" class="image" role="img" aria-label="read The Watchman online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="the-watchman"><a href="#">The Watchman</a></h4>
+										<h4 aria-labelledby="the-watchman"><a href="the-watchman.htm">The Watchman</a></h4>
 										<p>A child defies a bridge of silent authority.</p>
 									</div>
 								</div>
@@ -238,47 +251,47 @@
 							<p>Stories featuring Agent K, the Director, Agent D, and Delgada from The Null Device saga.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="stop-that-panzer-woman">
-									<a href="#" class="image" role="img" aria-label="read Stop That Panzer Woman! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail stop-that-panzer-woman">
+									<a href="stop-that-panzer-woman.htm" class="image" role="img" aria-label="read Stop That Panzer Woman! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="stop-that-panzer-woman"><a href="#">Stop That Panzer Woman!</a></h4>
+										<h4 aria-labelledby="stop-that-panzer-woman"><a href="stop-that-panzer-woman.htm">Stop That Panzer Woman!</a></h4>
 										<p>Agent K's first solo mission: stop an alien invasion by going deep undercover in a UNIX war zone.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="the-null-device">
-									<a href="#" class="image" role="img" aria-label="read The Null Device online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail the-null-device">
+									<a href="the-null-device.htm" class="image" role="img" aria-label="read The Null Device online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="the-null-device"><a href="#">The Null Device</a></h4>
+										<h4 aria-labelledby="the-null-device"><a href="the-null-device.htm">The Null Device</a></h4>
 										<p>A reluctant hero gets deep into enemy territory in a UNIX war zone.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="enter-general-zaq">
-									<a href="#" class="image" role="img" aria-label="read Enter...General Zaq! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail enter-general-zaq">
+									<a href="enter-general-zaq.htm" class="image" role="img" aria-label="read Enter...General Zaq! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="enter-general-zaq"><a href="#">Enter...General Zaq!</a></h4>
+										<h4 aria-labelledby="enter-general-zaq"><a href="enter-general-zaq.htm">Enter...General Zaq!</a></h4>
 										<p>In the Silver Age Zone, anything’s possible.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="cupids-got-a-death-ray">
-									<a href="#" class="image" role="img" aria-label="read Cupid's Got A Death Ray! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail cupids-got-a-death-ray">
+									<a href="cupids-got-a-death-ray.htm" class="image" role="img" aria-label="read Cupid&rsquo;s Got A Death Ray! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="cupids-got-a-death-ray"><a href="#">Cupid's Got A Death Ray!</a></h4>
+										<h4 aria-labelledby="cupids-got-a-death-ray"><a href="cupids-got-a-death-ray.htm">Cupid&rsquo;s Got A Death Ray!</a></h4>
 										<p>Agent K tries to stop an army of alien killer robots from conquering Earth.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="agent-k-judo-trick-strangler">
-									<a href="#" class="image" role="img" aria-label="read Agent K Judo Trick: The Strangle online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail agent-k-judo-trick-strangler">
+									<a href="agent-k-judo-trick-strangler.htm" class="image" role="img" aria-label="read Agent K Judo Trick: The Strangle online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="agent-k-judo-trick-strangler"><a href="#">Agent K Judo Trick: The Strangler</a></h4>
+										<h4 aria-labelledby="agent-k-judo-trick-strangler"><a href="agent-k-judo-trick-strangler.htm">Agent K Judo Trick: The Strangler</a></h4>
 										<p>Karen teaches the art of self defense in 6-inch heels.</p>
 									</div>
 								</div>
@@ -300,56 +313,56 @@
 							<p>Series of one-page comics created from demonstration tools of my Art of the Comic Book class. The raw material was random ink marks (compass-drawn circles, 1-point perspective, Ames lettering guides) on expensive sheets of bristol paper.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="go-snow">
-									<a href="#" class="image" role="img" aria-label="read Go Snow! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail go-snow">
+									<a href="go-snow.htm" class="image" role="img" aria-label="read Go Snow! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="go-snow"><a href="#">Go Snow!</a></h4>
+										<h4 aria-labelledby="go-snow"><a href="go-snow.htm">Go Snow!</a></h4>
 										<p>A young snowflake tells the story of his first blizzard.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="grubhub-delivery">
-									<a href="#" class="image" role="img" aria-label="read GrubHub Delivery online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail grubhub-delivery">
+									<a href="grubhub-delivery.htm" class="image" role="img" aria-label="read GrubHub Delivery online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="grubhub-delivery"><a href="#">GrubHub Delivery</a></h4>
+										<h4 aria-labelledby="grubhub-delivery"><a href="grubhub-delivery.htm">GrubHub Delivery</a></h4>
 										<p>Children try stopping an equally monster from trashing their city.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="ladybat-fanboy-tool-talk">
-									<a href="#" class="image" role="img" aria-label="read Ladybat and the Fanboy in Tool Talk online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail ladybat-fanboy-tool-talk">
+									<a href="ladybat-fanboy-tool-talk.htm" class="image" role="img" aria-label="read Ladybat and the Fanboy in Tool Talk online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="ladybat-fanboy-tool-talk"><a href="#">Ladybat and the Fanboy in "Tool Talk"</a></h4>
+										<h4 aria-labelledby="ladybat-fanboy-tool-talk"><a href="ladybat-fanboy-tool-talk.htm">Ladybat and the Fanboy in &ldquo;Tool Talk&rdquo;</a></h4>
 										<p>A delusional fanboy and beautiful superheroine hang out in a Krazy Kat landscape.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="last-day-on-earth">
-									<a href="#" class="image" role="img" aria-label="read FOO online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail last-day-on-earth">
+									<a href="the-last-day-on-earth.htm" class="image" role="img" aria-label="read Last Day on Earth online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="last-day-on-earth"><a href="#">Last Day on Earth</a></h4>
+										<h4 aria-labelledby="last-day-on-earth"><a href="the-last-day-on-earth.htm">Last Day on Earth</a></h4>
 										<p>Today's alien invasion is tomorrow's history lesson.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="little-green-man">
-									<a href="#" class="image" role="img" aria-label="read Last Day on Earth online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail little-green-man">
+									<a href="little-green-man.htm" class="image" role="img" aria-label="read Little Green Man online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="little-green-man"><a href="#">Little Green Man</a></h4>
+										<h4 aria-labelledby="little-green-man"><a href="little-green-man.htm">Little Green Man</a></h4>
 										<p>A young woman defines her artistic integrity.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="plate-ground">
-									<a href="#" class="image" role="img" aria-label="read Plate Ground online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail plate-ground">
+									<a href="plate-ground.htm" class="image" role="img" aria-label="read Plate Ground online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="plate-ground"><a href="#">Plate Ground</a></h4>
+										<h4 aria-labelledby="plate-ground"><a href="plate-ground.htm">Plate Ground</a></h4>
 										<p>Will this Allston rooftop part ever end?</p>
 									</div>
 								</div>
@@ -371,56 +384,56 @@
 							<p>Annual exhibition of Somerville/Cambridge artists' take on Batman, his world, or any part of his 75-year history. My contributions involve Yvonne Craig as Batgirl from Batman '66.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="batgirl-and-joker">
-									<a href="#" class="image" role="img" aria-label="read Batgirl and Joker online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail batgirl-and-joker">
+									<a href="batgirl-and-joker.htm" class="image" role="img" aria-label="read Batgirl and Joker online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="batgirl-and-joker"><a href="#">Batgirl and Joker</a></h4>
+										<h4 aria-labelledby="batgirl-and-joker"><a href="batgirl-and-joker.htm">Batgirl and Joker</a></h4>
 										<p>Regenerated enemies fight to the death in the Steranko zone.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="dark-knight-damsel-returns">
-									<a href="#" class="image" role="img" aria-label="read The Dark Knight Damsel Returns online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail dark-knight-damsel-returns">
+									<a href="the-dark-knight-damsel-returns.htm" class="image" role="img" aria-label="read The Dark Knight Damsel Returns online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="dark-knight-damsel-returns"><a href="#">The Dark Knight Damsel Returns</a></h4>
+										<h4 aria-labelledby="dark-knight-damsel-returns"><a href="the-dark-knight-damsel-returns.htm">The Dark Knight Damsel Returns</a></h4>
 										<p>55-year-old Barbara Gordon comes out of crime-fighting retirement.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="batgirl-in-time-crash">
-									<a href="#" class="image" role="img" aria-label="read Batgirl in Time Crash online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail batgirl-in-time-crash">
+									<a href="batgirl-in-time-crash.htm" class="image" role="img" aria-label="read Batgirl in Time Crash online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="batgirl-in-time-crash"><a href="#">Batgirl in "Time Crash"</a></h4>
+										<h4 aria-labelledby="batgirl-in-time-crash"><a href="batgirl-in-time-crash.htm">Batgirl in &ldquo;Time Crash&rdquo;</a></h4>
 										<p>A time-traveling alien helps Barbara find her older incarnation.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="day-of-the-batgirl">
-									<a href="#" class="image" role="img" aria-label="read Day of the Batgirl online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail day-of-the-batgirl">
+									<a href="day-of-the-batgirl.htm" class="image" role="img" aria-label="read Day of the Batgirl online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="day-of-the-batgirl"><a href="#">Day of the Batgirl</a></h4>
+										<h4 aria-labelledby="day-of-the-batgirl"><a href="day-of-the-batgirl.htm">Day of the Batgirl</a></h4>
 										<p>Three eras of Barbara Gordon join forces through time and space.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="million-dollar-debut-of-batgirl">
-									<a href="#" class="image" role="img" aria-label="read The Million Dollar Debut of Batgirl online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail million-dollar-debut-of-batgirl">
+									<a href="the-million-dollar-debut-of-batgirl.htm" class="image" role="img" aria-label="read The Million Dollar Debut of Batgirl online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="million-dollar-debut-of-batgirl"><a href="#">The Million Dollar Debut of Batgirl</a></h4>
+										<h4 aria-labelledby="million-dollar-debut-of-batgirl"><a href="the-million-dollar-debut-of-batgirl.htm">The Million Dollar Debut of Batgirl</a></h4>
 										<p>Barbara finishes her costume just in time for the masquerade ball.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="batgirl-training-day">
-									<a href="#" class="image" role="img" aria-label="read Training Day online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail batgirl-training-day">
+									<a href="batgirl-in-training-day.htm" class="image" role="img" aria-label="read Training Day online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="batgirl-training-day"><a href="#">Training Day</a></h4>
+										<h4 aria-labelledby="batgirl-training-day"><a href="batgirl-in-training-day.htm">Batgirl in &ldquo;Training Day&rdquo;</a></h4>
 										<p>The Dark Knight teaches Batgirl the fine art of escapology.</p>
 									</div>
 								</div>
@@ -442,29 +455,29 @@
 							<p>Fan art and comics about a time traveling weirdo.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="flatline">
-									<a href="#" class="image" role="img" aria-label="read Flatline (Flat Stanley) online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail flatline">
+									<a href="doctor-who-flatline.htm" class="image" role="img" aria-label="read Flatline (Flat Stanley) online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="flatline"><a href="#">Flatline (Flat Stanley)</a></h4>
+										<h4 aria-labelledby="flatline"><a href="doctor-who-flatline.htm">Flatline (Flat Stanley)</a></h4>
 										<p>The Gabby Gallifreyan was in full swing in this episode.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="time-of-the-doctor">
-									<a href="#" class="image" role="img" aria-label="read The Time of the Doctor (Handle's Revenge) online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail time-of-the-doctor">
+									<a href="doctor-who-handles-revenge.htm" class="image" role="img" aria-label="read The Time of the Doctor (Handle's Revenge) online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="time-of-the-doctor"><a href="#">The Time of the Doctor (Handle's Revenge)</a></h4>
+										<h4 aria-labelledby="time-of-the-doctor"><a href="doctor-who-handles-revenge.htm">The Time of the Doctor (Handle's Revenge)</a></h4>
 										<p>Public display of beheaded enemies is more Vlad the Impaler than rebel Time Lord.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="into-the-dalek">
-									<a href="#" class="image" role="img" aria-label="read Into the Dalek (Next Time Try Words) online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail into-the-dalek">
+									<a href="doctor-who-into-the-dalek.htm" class="image" role="img" aria-label="read Into the Dalek (Next Time Try Words) online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="into-the-dalek"><a href="#">Into the Dalek (Next Time Try Words)</a></h4>
+										<h4 aria-labelledby="into-the-dalek"><a href="doctor-who-into-the-dalek.htm">Into the Dalek (Next Time Try Words)</a></h4>
 										<p>Sticking up for the hen-pecked Time Lord.</p>
 									</div>
 								</div>
@@ -487,47 +500,47 @@
 							<p>An international challenge to produce a 24-page comic (normally a month’s amount of work) in 24 consecutive hours. This annual tradition was founded by Scott McCloud in 1990. Participating artists include Dave Sim, Neil Gaiman and Kevin Eastman.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="training-daze">
-									<a href="#" class="image" role="img" aria-label="read 2010: Training Daze online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail training-daze">
+									<a href="training-daze.htm" class="image" role="img" aria-label="read 2010: Training Daze online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="training-daze"><a href="#">2010: Training Daze</a></h4>
+										<h4 aria-labelledby="training-daze"><a href="training-daze.htm">2010: Training Daze</a></h4>
 										<p>Adults hook up in a mystical art gallery while a rotten kid saves the day.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="blank-spot">
-									<a href="#" class="image" role="img" aria-label="read 2009: Blank Spot online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail blank-spot">
+									<a href="blank-spot.htm" class="image" role="img" aria-label="read 2009: Blank Spot online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="blank-spot"><a href="#">2009: Blank Spot</a></h4>
+										<h4 aria-labelledby="blank-spot"><a href="blank-spot.htm">2009: Blank Spot</a></h4>
 										<p>Battle to the death on the Planet of Kung Fu Fighting.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="now-aint-soon-enough">
-									<a href="#" class="image" role="img" aria-label="read 2008: Now Ain't Soon Enough online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail now-aint-soon-enough">
+									<a href="now-aint-soon-enough.htm" class="image" role="img" aria-label="read 2008: Now Ain't Soon Enough online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="now-aint-soon-enough"><a href="#">2008: Now Ain't Soon Enough</a></h4>
+										<h4 aria-labelledby="now-aint-soon-enough"><a href="now-aint-soon-enough.htm">2008: Now Ain't Soon Enough</a></h4>
 										<p>Unfocused, unlettered, incomplete autobiographical mess.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="soaked">
-									<a href="#" class="image" role="img" aria-label="read 2007: Soaked online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail soaked">
+									<a href="soaked.htm" class="image" role="img" aria-label="read 2007: Soaked online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="soaked"><a href="#">2007: Soaked</a></h4>
+										<h4 aria-labelledby="soaked"><a href="soaked.htm">2007: Soaked</a></h4>
 										<p>A lone agent fights an army, rescues a damsel and saves the universe.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="reach">
-									<a href="#" class="image" role="img" aria-label="read 2004: Reach online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail reach">
+									<a href="reach.htm" class="image" role="img" aria-label="read 2004: Reach online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="reach"><a href="#">2004: Reach</a></h4>
+										<h4 aria-labelledby="reach"><a href="reach.htm">2004: Reach</a></h4>
 										<p>An abstract autobiographical mess.</p>
 									</div>
 								</div>
@@ -549,101 +562,103 @@
 							<p>Stories with elements of social content, harsh language, graphic sex or violence.</p>
 						</div>
 						<div class="row thumbnails">
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="a-runnin-from-a-gunnin">
-									<a href="#" class="image" role="img" aria-label="read A-Runnin' From A Gunnin' online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail a-runnin-from-a-gunnin">
+									<a href="a-runnin-from-a-gunnin.htm" class="image" role="img" aria-label="read A-Runnin&rsquo; From A Gunnin&rsquo;
+ online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="a-runnin-from-a-gunnin"><a href="#">A-Runnin' From A Gunnin'</a></h4>
+										<h4 aria-labelledby="a-runnin-from-a-gunnin"><a href="a-runnin-from-a-gunnin.htm">A-Runnin&rsquo; From A Gunnin&rsquo;
+</a></h4>
 										<p>A petty thief is hunted by the mob and the law.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="not-really-blade-kills-twilight">
-									<a href="#" class="image" role="img" aria-label="read (Not Really) Blade Kills Twilight online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail not-really-blade-kills-twilight">
+									<a href="not-really-blade-kills-twilight.htm" class="image" role="img" aria-label="read (Not Really) Blade Kills Twilight online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="not-really-blade-kills-twilight"><a href="#">(Not Really) Blade Kills Twilight</a></h4>
+										<h4 aria-labelledby="not-really-blade-kills-twilight"><a href="not-really-blade-kills-twilight.htm">(Not Really) Blade Kills Twilight</a></h4>
 										<p>Blade kills everyone on Twilight, and other Hollywood vampires.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="the-bleeding-mirror">
-									<a href="#" class="image" role="img" aria-label="read The Bleeding Mirror online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail the-bleeding-mirror">
+									<a href="the-bleeding-mirror.htm" class="image" role="img" aria-label="read The Bleeding Mirror online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="the-bleeding-mirror"><a href="#">The Bleeding Mirror</a></h4>
+										<h4 aria-labelledby="the-bleeding-mirror"><a href="the-bleeding-mirror.htm">The Bleeding Mirror</a></h4>
 										<p>Psychological response to mass media and urban loneliness.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="dead-by-the-pool">
-									<a href="#" class="image" role="img" aria-label="read Dead by the Pool online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail dead-by-the-pool">
+									<a href="dead-by-the-pool.htm" class="image" role="img" aria-label="read Dead by the Pool online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="dead-by-the-pool"><a href="#">Dead by the Pool</a></h4>
+										<h4 aria-labelledby="dead-by-the-pool"><a href="dead-by-the-pool.htm">Dead by the Pool</a></h4>
 										<p>A vengeful nerd fights to the death against something corporate.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="encore">
-									<a href="#" class="image" role="img" aria-label="read Encore online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail encore">
+									<a href="encore.htm" class="image" role="img" aria-label="read Encore online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="encore"><a href="#">Encore</a></h4>
+										<h4 aria-labelledby="encore"><a href="encore.htm">Encore</a></h4>
 										<p>A bookkeeper races against rigor mortis to avenge his own murder.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="the-return">
-									<a href="#" class="image" role="img" aria-label="read The Return online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail the-return">
+									<a href="the-return.htm" class="image" role="img" aria-label="read The Return online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="the-return"><a href="#">The Return</a></h4>
+										<h4 aria-labelledby="the-return"><a href="the-return.htm">The Return</a></h4>
 										<p>A Prodigal Son story with a different set of brothers.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="school-fight">
-									<a href="#" class="image" role="img" aria-label="read School Fight! online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail school-fight">
+									<a href="school-fight.htm" class="image" role="img" aria-label="read School Fight! online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="school-fight"><a href="#">School Fight!</a></h4>
+										<h4 aria-labelledby="school-fight"><a href="school-fight.htm">School Fight!</a></h4>
 										<p>A middle-aged woman shares a story from her wonder years.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="twilights-last-gleaming">
-									<a href="#" class="image" role="img" aria-label="read Twilight’s Last Gleaming online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail twilights-last-gleaming">
+									<a href="twilights-last-gleaming.htm" class="image" role="img" aria-label="read Twilight&rsquo;s Last Gleaming online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="twilights-last-gleaming"><a href="#">Twilight’s Last Gleaming</a></h4>
+										<h4 aria-labelledby="twilights-last-gleaming"><a href="twilights-last-gleaming.htm">Twilight&rsquo;s Last Gleaming</a></h4>
 										<p>A sparkling franchise meets its truly bloody end.</p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="window-of-opportunity">
-									<a href="#" class="image" role="img" aria-label="read Window of Opportunity online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail window-of-opportunity">
+									<a href="window-of-opportunity.htm" class="image" role="img" aria-label="read Window of Opportunity online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="window-of-opportunity"><a href="#">Window of Opportunity</a></h4>
+										<h4 aria-labelledby="window-of-opportunity"><a href="window-of-opportunity.htm">Window of Opportunity</a></h4>
 										<p>Betsy and Veronika visit their first all-women's health club. </p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="the-worlds-slowest-foot-chase">
-									<a href="#" class="image" role="img" aria-label="read The World's Slowest Foot Chase online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail the-worlds-slowest-foot-chase">
+									<a href="the-worlds-slowest-foot-chase.htm" class="image" role="img" aria-label="read The World&rsquo;s Slowest Foot Chase online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="the-worlds-slowest-foot-chase"><a href="#">The World's Slowest Foot Chase</a></h4>
+										<h4 aria-labelledby="the-worlds-slowest-foot-chase"><a href="the-worlds-slowest-foot-chase.htm">The World&rsquo;s Slowest Foot Chase</a></h4>
 										<p>Old men chase another in Inman Square, screaming threats like a Tourette's procession. </p>
 									</div>
 								</div>
 							</div>	
-							<div class="col-12 col-md-3">
-								<div class="thumbnail" id="zips-last-day">
-									<a href="#" class="image" role="img" aria-label="read Zip's Last Day online right now!"><span class="hover"></span></a>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+								<div class="thumbnail zips-last-day">
+									<a href="zips-last-day.htm" class="image" role="img" aria-label="read Zip&rsquo;s Last Day online right now!"><span class="hover"></span></a>
 									<div class="text">
-										<h4 aria-labelledby="zips-last-day"><a href="#">Zip's Last Day</a></h4>
+										<h4 aria-labelledby="zips-last-day"><a href="zips-last-day.htm">Zip&rsquo;s Last Day</a></h4>
 										<p>A corrupt FBI agent arrives in Boston to solve what looks like a murder mystery.</p>
 									</div>
 								</div>
@@ -654,10 +669,10 @@
 			</main>
 			<footer class="bd-footer text-muted">
 				<div class="container py-3 py-md-4">
-					<p class="copyright">Copyright &copy; 1986-<script>document.write(new Date().getFullYear())</script> David Marshall. All rights reserved. The material may not, under any circumstances, be resold or redistributed for compensation of any kind without prior written permission from David Marshall nor may the information be used in any commercial venue without such prior written permission. For more information, please <a title="Send Email to Art of the Comic Book's Dave Marshall" href="mailto:dsm@inkystories.com">contact us here</a>. </p>
+					<p class="copyright">Copyright &copy; 1986-<script>document.write(new Date().getFullYear())</script> David Marshall. All rights reserved. The material may not, under any circumstances, be resold or redistributed for compensation of any kind without prior written permission from David Marshall nor may the information be used in any commercial venue without such prior written permission. For more information, please <a title="" href="mailto:dsm@inkystories.com">contact us here</a>. </p>
 					<div class="social">
 						<ul class="list-inline">
-							<li class="follow-me">Follow me on </li>
+							<li class="follow-me d-none d-sm-inline-block">Follow me on </li>
 							<li class="email"><a href="mailto:david@inkystories.com" rel="external"><span>Email</span></a></li>
 							<li class="facebook"><a href="http://www.facebook.com/pages/Inky-Stories/161622173872127" rel="external"><span>Facebook</span></a></li>
 							<li class="twitter"><a href="http://twitter.com/InkyDavid" rel="external"><span>Twitter</span></a></li>
@@ -668,12 +683,17 @@
 					</p>
 				</div>
 			</footer>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-			<script>
-				window.jQuery || document.write('<script src="../assets/js/vendor/jquery-slim.min.js"><\/script>')
-			</script>
+			<script src="../assets/lib/jquery/jquery-3.3.1.min.js"></script>
+			<script src="../assets/lib/lightbox-2.11.1/js/lightbox.js" type="text/javascript"></script>		
 			<script src="../assets/themes/bootstrap-4/js/bootstrap.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+			<script src="../assets/lib/tipuesearch-7.1/tipuesearch_content.js"></script>
+			<script src="../assets/lib/tipuesearch-7.1/tipuesearch_set.js"></script>
+			<script src="../assets/lib/tipuesearch-7.1/tipuesearch.min.js"></script>
 		</div>
+		<script>
+			$(document).ready(function() {
+				 $('#tipue_search_input').tipuesearch();
+			});
+		</script>
 	</body>
 </html>

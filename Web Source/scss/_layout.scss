@@ -1,14 +1,24 @@
 /* layout ----------------------------- */
 
 .text-page, .comic-book {
-	padding: 2rem 0;
+	padding: $spacer-large 0;
 }
 .banner-top {
 	padding-top: 0;
 }
-.book-title {
-	font-family: $roboto-black-italic;
+.book-title, .magazine-title, .show-title, .tv-show-title {
+	font-family: $font-family-italic;
 }
+
+h1, h2, h3, h4 {
+	.book-title {
+		font-family: $font-family-bold-italic;
+	}
+}
+
+
+
+
 .text-page {
 	.text-page-header {
 		border-bottom: $border-default;
@@ -30,4 +40,3 @@
 		}
 	}
 }
-

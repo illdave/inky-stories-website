@@ -2,6 +2,7 @@
 
 footer {	
 	border-top: $footer-border;
+	background: $footer-bg;
 	
 	p {
 		&.copyright {}
@@ -57,5 +58,4 @@ footer {
 		
 	}
 }
-
 

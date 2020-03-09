@@ -20,80 +20,95 @@
 
 
 // load Grunt 
+
 'use strict';
 module.exports = function(grunt) {
-
 	grunt.initConfig({
 		jshint: {
 			options: {
-				jshintrc: '.jshintrc'
+				jshintrc: '.jshintrc',
+				
+				globals: {
+					jQuery: true,
+					console: true,
+					module: true,
+					document: true
+				}
 			},
-		all: [
-			'Gruntfile.js',
-			'js/**/*.js',
-			'!build/app.min.js'
-		]
-	},
-    
-    sass: {
-		dist: {
-			options: {
-				style: 'expanded',
-				compass: false,
-				sourcemap: false
-			},
-			files: {
-				'../Web Root/assets/themes/inky-stories/inky-stories.css': [
-					'scss/inky-stories.scss'
-				]
-			}
-		}
-    },
-    
-    uglify: {
-		dist: {
-			files: {
-				'build/app.min.js': [
-				'js/app.js'
-				]
-			},
-			options: {
-				sourceMap: 'build/app.min.js.map',
-				sourceMappingURL: 'build/app.min.js.map'
-			}
-		}
-    },
-    
-    watch: {
-		options: {
-			livereload: true
+			all: [
+				'Gruntfile.js',
+				'js/**/*.js',
+				'!build/app.min.js'
+			]
 		},
+		concat: {   
+			dist: {
+				src: [
+					'js/inky-stories-base.js'
+				],
+				dest: '../Web Root/assets/themes/inky-stories/inky-stories.js',
+			}
+		},		
 		sass: {
-			files: [
-				'scss/**/*.scss'
-			],
-			tasks: ['sass']
+			dist: {
+				options: {
+					style: 'expanded',
+					compass: false,
+					sourcemap: false
+				},
+				files: {
+					'../Web Root/assets/themes/inky-stories/inky-stories.css': [
+						'scss/inky-stories.scss'
+					]
+				}
+			}
 		},
-		js: {
-			files: [
-				'js/**/*.js'
-			],
-			tasks: ['jshint', 'uglify']
+		uglify: {
+			dist: {
+				files: {
+					'build/app.min.js': [
+					'js/app.js'
+					]
+				},
+				options: {
+					sourceMap: 'build/app.min.js.map',
+					sourceMappingURL: 'build/app.min.js.map'
+				}
+			}
 		},
-		html: {
-			files: [
-			  '**/*.html'
+		watch: {
+			options: {
+				livereload: true
+			},
+			sass: {
+				files: [
+					'scss/**/*.scss'
+				],
+				tasks: ['sass']
+			},
+			concat: {
+				files: ['js/inky-stories-base.js','../Web Root/assets/themes/inky-stories/inky-stories.js'],
+				tasks: ['concat']
+			},
+			js: {
+				files: [
+					'js/**/*.js'
+				],
+				tasks: ['jshint', 'uglify', 'concat']
+			},
+			html: {
+				files: [
+				  '**/*.html'
+				]
+			}
+		},
+		clean: {
+			dist: [
+				'assets/build/app.min.css',
+				'assets/build/app.min.js'
 			]
 		}
-    },
-    
-    clean: {
-		dist: [
-			'assets/build/app.min.css',
-			'assets/build/app.min.js'
-		]
-    }
-  });
+	});
 
 	// Load tasks
 	grunt.loadNpmTasks('grunt-contrib-clean');
@@ -101,6 +116,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	// Register tasks
 	grunt.registerTask('default', [

@@ -63,6 +63,10 @@
 		input.form-control {
 			&.form-control-sm {}
 		}
+		button {
+			background: transparent;
+			border: 0;
+		}
 		.fa-search {
 			color: $navbar-icon;
 			&:hover {
@@ -74,25 +78,16 @@
 
 @media (max-width: 767px) { 
 	body {
-		padding-top: 8rem;
 	}
 	.navbar {
 		padding: .5rem;
 		text-align: center;
-		
-
 		.navbar-brand {
-			width: 100%;
+			width: 250px;
 			height: auto;
 			background-position: center 0;
-			display: block;
-		}
-		.navbar-toggler {
-			margin: 0 auto 1rem;
-			display: none;
-		}	
-		.collapse:not(.show) {
-			display: block;
+			display: inline-block;
+			font-size: 2rem;
 		}
 		
 		.navbar-nav {
@@ -128,4 +123,6 @@
 		}
 	}
 }
+
+
 

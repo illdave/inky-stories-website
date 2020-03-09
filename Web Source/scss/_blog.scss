@@ -1,0 +1,175 @@
+/* blog ------------------------------- */
+
+.blog {
+	padding-top: 0;
+	article {
+		margin-bottom: 2rem;
+		
+		&:last-child {
+			border-bottom: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.entry-thumb {
+			margin-bottom: $spacer-base;
+			a {
+				img {
+					border: $border-default;
+				}
+				&:hover {
+					img {
+						border-color: $link-color;
+					}
+				}
+			}
+		}
+		header {
+			border-bottom: $border-default;
+			margin-bottom: $spacer-base;
+			padding-bottom: $spacer-small;			
+			h1 {
+				font-size: $h2-font-size;
+			}
+			h2 {
+				font-family: georgia, times, 'times new roman', serif;
+				font-size: 1.3em;
+				font-style: italic;
+				color: $gray-dark;
+
+			}
+			.entry-meta {
+				font-size: 80%;
+				text-align: right;
+				a {
+					color: $text-color;
+					cursor: default;
+				}
+			
+				.byline {
+					.author {
+						font-family: $font-family-headers;
+					}
+				}			
+				.posted-on {
+					a {
+						font-family: $font-family-base;
+					}
+				
+					time {
+						&.entry-date {}
+						&.updated {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.entry-summary {}
+		
+		.content-summary {
+			font-family: georgia, times, 'times new roman', serif;
+			font-size: 1.3em;
+			font-style: italic;
+			color: $gray-dark;
+		}
+		
+		footer {
+			&.entry-footer {
+				display: none;
+				border: 0;
+			}
+		}
+	}
+	
+	.latest {
+		border-bottom: $border-default;
+		padding-bottom: 1.5rem;
+		margin-bottom: $spacer-large;
+	}
+	
+	.older {
+		article {
+			.entry-thumb {
+				float: left;
+				width: 30%;
+				margin-right: $spacer-base;
+			}	
+		}	
+	}
+	
+	aside {
+		line-height: 1.25rem;
+		a {
+			font-family: $font-family-base;
+		}
+		dl {
+			border-top: $border-default;
+			padding-top: $spacer-small;
+			dt {
+				margin-bottom: $spacer-xs;
+			}
+		}
+		
+		.links {
+			.template,
+			.comic-book-history, 
+			.film-and-television, 
+			.doctor-who {
+				display: none;
+			}
+		}
+	}
+	.sticky-top {
+		top: $main-nav-height + $spacer-base;
+	}
+	
+	&.index {
+		article {
+			clear: both;
+			header {
+				border-bottom: 0;	
+				margin-bottom: 0;
+				h1 {
+					font-size: $h3-font-size;
+				}
+				.entry-meta {
+					text-align: left;
+				}
+			}
+			.entry-summary {
+				position: relative;
+				--lh: 1.4rem;
+				line-height: var(--lh);
+				--max-lines: 3;
+				max-height: calc(var(--lh) * var(--max-lines));
+				overflow: hidden;
+				text-overflow: ellipsis;
+				&::before {
+				  content: "...";
+				  position: absolute;
+				  bottom: 0;
+				  right: 0;
+				}
+				&::after {
+				  content: "";
+				  position: absolute;
+				  right: 0; /* note: not using bottom */
+				  width: $spacer-base;
+				  height: $spacer-base;
+				  background: Swhite;
+				}		
+			}		
+		}
+	}
+}
+
+@media (max-width:767px) { 
+	.blog {
+		article {
+			&:last-child {
+				margin-bottom: $spacer-large;
+			}
+			
+		}
+	}
+}
