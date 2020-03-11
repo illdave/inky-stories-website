@@ -164,25 +164,31 @@
 		&.intro {
 			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
 			border-bottom: $comic-listing-intro-border;
-			
-			h1 {
-				color: $comic-listing-intro-header;
+			img {
+				margin-bottom: .5rem;
 			}
-			p {
-				color: $comic-listing-intro-color;
-			}
-			a {
-				color: $comic-listing-intro-link-color;
-				font-family: $font-family-headers;
-				&:hover {
-					color: white;
+			.text {
+				h1 {
+					color: $comic-listing-intro-header;
 				}
-			}
-			.genre-list {
-				margin-bottom: 0;
-				&.list-inline li:not(:last-child) {
-					margin-right: $spacer-base;
+				p {
+					color: $comic-listing-intro-color;
+					margin-bottom: 0;
 				}
+				
+				a {
+					color: $comic-listing-intro-link-color;
+					font-family: $font-family-headers;
+					&:hover {
+						color: white;
+					}
+				}
+				.genre-list {
+					margin-bottom: 0;
+					&.list-inline li:not(:last-child) {
+						margin-right: $spacer-base;
+					}
+				}				
 			}
 		}
 		&.genre {

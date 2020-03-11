@@ -6,10 +6,16 @@
 			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
 			background-size: cover;
 			border-bottom: $border-default;
-			h1 {
-			}
-			p {
+			padding: 0;
+			img {
 				margin-bottom: 0;
+			}
+			.text {
+				padding: 2rem;
+				h1 {}
+				p {
+					margin-bottom: 0;
+				}
 			}
 		}
 		&#minicomics {
@@ -18,7 +24,6 @@
 		&#minicomics, &#standard-us-comics-size {
 			padding-bottom: 0;
 		}
-		
 	}
 	
 	.merchandise-description {

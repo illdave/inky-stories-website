@@ -25389,17 +25389,16 @@ bold, strong {
 }
 
 /* 404 error page --------------------- */
-.error-404 .intro {
-  background: transparent 0 0 no-repeat;
+.error-404 .section.intro {
+  background: transparent url("../../img/pictures/error-404.jpg") 0 0 no-repeat;
   background-size: cover;
-  background-image: url("../../img/pictures/error-404.jpg");
   min-height: 35rem;
   position: relative;
 }
-.error-404 .intro .text {
+.error-404 .section.intro .text {
   bottom: -8rem;
 }
-.error-404 .intro .text h1, .error-404 .intro .text h2, .error-404 .intro .text p {
+.error-404 .section.intro .text h1, .error-404 .section.intro .text h2, .error-404 .section.intro .text p {
   color: white;
 }
 
@@ -25846,23 +25845,27 @@ figure {
   background-image: url("../../img/layout/intro-corner-dots.png");
   border-bottom: 0.0625rem solid #cccccc;
 }
-.comic-book-listing .section.intro h1 {
+.comic-book-listing .section.intro img {
+  margin-bottom: 0.5rem;
+}
+.comic-book-listing .section.intro .text h1 {
   color: #000;
 }
-.comic-book-listing .section.intro p {
+.comic-book-listing .section.intro .text p {
   color: #212529;
+  margin-bottom: 0;
 }
-.comic-book-listing .section.intro a {
+.comic-book-listing .section.intro .text a {
   color: #008fd5;
   font-family: "Proxima Nova Bold";
 }
-.comic-book-listing .section.intro a:hover {
+.comic-book-listing .section.intro .text a:hover {
   color: white;
 }
-.comic-book-listing .section.intro .genre-list {
+.comic-book-listing .section.intro .text .genre-list {
   margin-bottom: 0;
 }
-.comic-book-listing .section.intro .genre-list.list-inline li:not(:last-child) {
+.comic-book-listing .section.intro .text .genre-list.list-inline li:not(:last-child) {
   margin-right: 1rem;
 }
 .comic-book-listing .section.genre {
@@ -26338,8 +26341,15 @@ footer ul.list-inline li:active a:before {
   background-image: url("../../img/layout/intro-corner-dots.png");
   background-size: cover;
   border-bottom: 0.0625rem solid #cccccc;
+  padding: 0;
 }
-.store .section.intro p {
+.store .section.intro img {
+  margin-bottom: 0;
+}
+.store .section.intro .text {
+  padding: 2rem;
+}
+.store .section.intro .text p {
   margin-bottom: 0;
 }
 .store .section#minicomics {

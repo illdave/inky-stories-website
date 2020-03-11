@@ -188,16 +188,17 @@
 /* 404 error page --------------------- */
 
 .error-404 {
-	.intro {
-		background: transparent 0 0 no-repeat;
-		background-size: cover;
-		background-image: url("#{$pictures-image-path}/error-404.jpg");
-		min-height: 35rem;
-		position: relative;
-		.text {
-			bottom: -8rem;
-			h1, h2, p {
-				color: white;
+	.section {
+		&.intro {
+			background: transparent url("#{$pictures-image-path}/error-404.jpg") 0 0 no-repeat;
+			background-size: cover;
+			min-height: 35rem;
+			position: relative;
+			.text {
+				bottom: -8rem;
+				h1, h2, p {
+					color: white;
+				}
 			}
 		}
 	}
