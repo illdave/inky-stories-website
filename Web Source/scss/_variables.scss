@@ -137,6 +137,7 @@ $comics-image-path:							$image-path/comics;
 $banner-image-path:							$image-path/banner;
 $blog-image-path:							$image-path/blog;
 $brand-image-path:							$image-path/brand;
+$layout-image-path:							$image-path/layout;
 $store-image-path:							$image-path/store;
 $pictures-image-path:						$image-path/pictures;
 $dsm-image-path:							$image-path/dsm;
@@ -219,7 +220,10 @@ $jumbotron-border-radius: 					0;
 $photo-circle-lg: 							20rem;
 $photo-circle-md: 							18rem;
 $photo-circle-sm: 							14rem;
+$photo-circle-xs: 							10rem;
 $circle-border-radius: 						50%;
+
+$intro-bg:  								#dff0f7;
 	
 
 /* home ------------------------------ */
@@ -239,11 +243,11 @@ $banner-text-border-radius-large: 			$border-radius-large;
 
 /* comics ---------------------------- */
 
-$comic-listing-intro-bg: 					#df0101 no-repeat 0 0;
+$comic-listing-intro-bg: 					#cde7e7 no-repeat 0 0;
 $comic-listing-intro-border: 				$border-default;
-$comic-listing-intro-header: 				$black;
-$comic-listing-intro-color: 				$white;
-$comic-listing-intro-link-color: 			#f9d67a;
+$comic-listing-intro-header: 				$headings-color;
+$comic-listing-intro-color: 				$text-color;
+$comic-listing-intro-link-color: 			$link-color;
 
 $comic-book-page-bg: 						$white;
 $comic-book-page-margin: 					$spacer-large;
@@ -265,12 +269,12 @@ $carousel-icon-font: 						'Font Awesome Solid';
 $carousel-icon-size: 						3rem;
 $carousel-icon-size-sm: 					$spacer-large;
 
-$comics-for-everyone-bg:					$gray-lighter;
-$agent-k-null-device-bg:					$white;
-$accidental-genius-bg:						$gray-lighter;
-$dark-knight-dark-night-bg:					$white;
-$doctor-who-bg:								$gray-lighter;
-$twenty-four-hour-comics-bg:				$white;
+$comics-for-everyone-bg:					$white;
+$agent-k-null-device-bg:					$gray-lighter;
+$accidental-genius-bg:						$white;
+$dark-knight-dark-night-bg:					$gray-lighter;
+$doctor-who-bg:								$white;
+$twenty-four-hour-comics-bg:				$gray-lighter;
 $comics-for-adults-bg:						$gray-darker;
 
 $comic-book-thumbnail-bg: 					transparent;

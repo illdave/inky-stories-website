@@ -3,7 +3,8 @@
 .store {
 	.section {
 		&.intro {
-			background: $gray-lighter no-repeat 0 0;
+			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
+			background-size: cover;
 			border-bottom: $border-default;
 			h1 {
 			}

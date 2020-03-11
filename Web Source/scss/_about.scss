@@ -3,21 +3,34 @@
 .about {
 	.section {
 		&.intro {
-			background: $gray-lighter no-repeat 0 0;
 			border-bottom: $border-default;
+			background-position: -20rem 0;
+			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
 			h1 {
 			}
 			p {
 				margin-bottom: 0;
 			}
+			
+			img {
+				&.photo {
+					&.circle {
+						height: $photo-circle-xs;
+						width: $photo-circle-xs;
+						margin-top: -1rem;
+					}
+				}
+
+			}
 		}
+		
 		&.details {
 			.sidebar-column {
 				text-align: center;
 				.photo {
 					margin: -1rem auto 1rem;
 					&.dsm-portrait-drawing {
-						background-image: url("#{$pictures-image-path}/dave-drawing-2.jpg");
+						background-image: url("#{$pictures-image-path}/dave-2015-lense-flared.jpg");
 					}
 				}
 				p {

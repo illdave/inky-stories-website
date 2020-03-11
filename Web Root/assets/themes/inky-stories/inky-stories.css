@@ -25355,44 +25355,6 @@ bold, strong {
   margin-bottom: 2rem;
 }
 
-/* picture-figure text wrapping ------- */
-.picture-wrapper {
-  position: relative;
-  margin-bottom: 1rem;
-}
-.picture-wrapper.left {
-  float: left;
-  margin-right: 2rem;
-}
-.picture-wrapper.right {
-  float: right;
-  margin-left: 2rem;
-}
-.picture-wrapper.half {
-  width: 50%;
-}
-.picture-wrapper.third {
-  width: 33%;
-}
-.picture-wrapper.quarter {
-  width: 25%;
-}
-.picture-wrapper.centered {
-  text-align: center;
-}
-.picture-wrapper img {
-  margin-bottom: 0.5rem;
-}
-
-figure {
-  border-bottom: 0.0625rem solid #cccccc;
-  padding-bottom: 0.5rem;
-}
-
-.modal .modal-body figure {
-  margin-bottom: 0;
-}
-
 /* Lightbox 2 ------------------------- */
 .lightboxOverlay {
   background-color: black;
@@ -25485,6 +25447,44 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
   font-family: "Proxima Nova Bold Italic";
 }
 
+/* picture-figure text wrapping ------- */
+.picture-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.picture-wrapper.left {
+  float: left;
+  margin-right: 2rem;
+}
+.picture-wrapper.right {
+  float: right;
+  margin-left: 2rem;
+}
+.picture-wrapper.half {
+  width: 50%;
+}
+.picture-wrapper.third {
+  width: 33%;
+}
+.picture-wrapper.quarter {
+  width: 25%;
+}
+.picture-wrapper.centered {
+  text-align: center;
+}
+.picture-wrapper img {
+  margin-bottom: 0.5rem;
+}
+
+figure {
+  border-bottom: 0.0625rem solid #cccccc;
+  padding-bottom: 0.5rem;
+}
+
+.modal .modal-body figure {
+  margin-bottom: 0;
+}
+
 .text-page .text-page-header {
   border-bottom: 0.0625rem solid #cccccc;
   padding-bottom: 1rem;
@@ -25502,6 +25502,14 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
     padding-right: 15px;
     padding-left: 15px;
   }
+}
+
+.section.intro {
+  background: #dff0f7 no-repeat 0 0;
+  background-size: cover;
+}
+.section.intro img {
+  margin-bottom: 0.5rem;
 }
 
 /* main navigation -------------------- */
@@ -25628,28 +25636,27 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
 .home .section.intro .text h1 {
   color: #000;
   font-size: 1.6rem;
+  text-align: center;
 }
 .home .section.intro .text p.button-row {
   margin-bottom: 0;
+  text-align: center;
 }
 .home .section.intro .text p.button-row .btn {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 .home .section.promos [class*=col] {
   margin-bottom: 1rem;
 }
-.home .latest .latest-work {
-  background: #eeeeee;
-  padding: 1.5rem;
-}
-.home .latest .latest-work .latest-page {
-  display: block;
-  height: 18rem;
-  background: white no-repeat 0 bottom;
-  background-size: cover;
-  background-image: url("../../img/comics/franks-next-mission/01.jpg");
+.home .latest .latest-work img {
   border: 0.0625rem solid #cccccc;
   margin-bottom: 1rem;
+}
+.home .latest .latest-work h3 {
+  margin-bottom: 0;
+}
+.home .latest .latest-work p {
+  margin-bottom: 0;
 }
 .home .latest .latest-work .back-to-top {
   margin-bottom: 0;
@@ -25836,18 +25843,17 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
 }
 
 .comic-book-listing .section.intro {
-  background: #df0101 no-repeat 0 0;
-  background-size: cover;
+  background-image: url("../../img/layout/intro-corner-dots.png");
   border-bottom: 0.0625rem solid #cccccc;
 }
 .comic-book-listing .section.intro h1 {
   color: #000;
 }
 .comic-book-listing .section.intro p {
-  color: #fff;
+  color: #212529;
 }
 .comic-book-listing .section.intro a {
-  color: #f9d67a;
+  color: #008fd5;
   font-family: "Proxima Nova Bold";
 }
 .comic-book-listing .section.intro a:hover {
@@ -25915,22 +25921,22 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
   font-size: 50%;
 }
 .comic-book-listing .section#comics-for-everyone {
-  background-color: #eeeeee;
+  background-color: #fff;
 }
 .comic-book-listing .section#agent-k-null-device {
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 .comic-book-listing .section#accidental-genius {
-  background-color: #eeeeee;
+  background-color: #fff;
 }
 .comic-book-listing .section#dark-knight-dark-night {
-  background-color: #fff;
-}
-.comic-book-listing .section#doctor-who {
   background-color: #eeeeee;
 }
-.comic-book-listing .section#twenty-four-hour-comics {
+.comic-book-listing .section#doctor-who {
   background-color: #fff;
+}
+.comic-book-listing .section#twenty-four-hour-comics {
+  background-color: #eeeeee;
 }
 .comic-book-listing .section#adult-content {
   background-color: #222222;
@@ -26236,11 +26242,17 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
 }
 /* store ------------------------------ */
 .about .section.intro {
-  background: #eeeeee no-repeat 0 0;
   border-bottom: 0.0625rem solid #cccccc;
+  background-position: -20rem 0;
+  background-image: url("../../img/layout/intro-corner-dots.png");
 }
 .about .section.intro p {
   margin-bottom: 0;
+}
+.about .section.intro img.photo.circle {
+  height: 10rem;
+  width: 10rem;
+  margin-top: -1rem;
 }
 .about .section.details .sidebar-column {
   text-align: center;
@@ -26249,7 +26261,7 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
   margin: -1rem auto 1rem;
 }
 .about .section.details .sidebar-column .photo.dsm-portrait-drawing {
-  background-image: url("../../img/pictures/dave-drawing-2.jpg");
+  background-image: url("../../img/pictures/dave-2015-lense-flared.jpg");
 }
 .about .section.details .sidebar-column p {
   text-align: left;
@@ -26323,7 +26335,8 @@ footer ul.list-inline li:active a:before {
 
 /* store ------------------------------ */
 .store .section.intro {
-  background: #eeeeee no-repeat 0 0;
+  background-image: url("../../img/layout/intro-corner-dots.png");
+  background-size: cover;
   border-bottom: 0.0625rem solid #cccccc;
 }
 .store .section.intro p {

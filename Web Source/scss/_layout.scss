@@ -16,8 +16,48 @@ h1, h2, h3, h4 {
 	}
 }
 
+/* picture-figure text wrapping ------- */
 
+.picture-wrapper {
+	position: relative;
+	margin-bottom: $spacer-base-vertical;
+	&.left {
+		float: left;
+		margin-right: 2rem;
+	}
+	&.right {
+		float: right;
+		margin-left: 2rem;
+	}
+	&.half {
+		width: 50%;
+	}
+	&.third {
+		width: 33%;
+	}
+	&.quarter {
+		width: 25%;
+	}
+	&.centered {
+		text-align: center;
+	}
+	img {
+		margin-bottom: .5rem;
+	}
+}
 
+figure {
+	border-bottom: $border-default;
+	padding-bottom: .5rem;
+}
+
+.modal {
+	.modal-body {
+		figure {
+			margin-bottom: 0;
+		}
+	}
+}
 
 .text-page {
 	.text-page-header {
@@ -37,6 +77,16 @@ h1, h2, h3, h4 {
 		.author-notes {
 		  padding-right: ($grid-gutter-width / 2);
 		  padding-left: ($grid-gutter-width / 2);
+		}
+	}
+}
+
+.section {
+	&.intro {
+		background: $intro-bg no-repeat 0 0;
+		background-size: cover;
+		img {
+			margin-bottom: .5rem;
 		}
 	}
 }

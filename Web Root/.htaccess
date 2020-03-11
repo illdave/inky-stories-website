@@ -11,6 +11,9 @@ Redirect 301 /?webcomic_post=go-snow http://www.inkystories.com/comics/go-snow.h
 Redirect 301 /?webcomic_post=grubhub-delivery http://www.inkystories.com/comics/grubhub-delivery.htm
 Redirect 301 /?webcomic_post=here-i-am-page-01-of-04 http://www.inkystories.com/comics/here-i-am.htm
 Redirect 301 /?webcomic_post=lucky-seven-the-dee-brown-incident-page-01-of-06 http://www.inkystories.com/comics/lucky-seven-dee-brown.htm
+Redirect 301 /lucky-seven-the-dee-brown-incident http://www.inkystories.com/comics/lucky-seven-dee-brown.htm
+Redirect 301 /the-dee-brown-incident http://www.inkystories.com/comics/lucky-seven-dee-brown.htm
+
 Redirect 301 /?webcomic_post=the-last-day-on-earth http://www.inkystories.com/comics/the-last-day-on-earth.htm
 Redirect 301 /?webcomic_post=accidental-genius-little-green-man http://www.inkystories.com/comics/little-green-man.htm
 

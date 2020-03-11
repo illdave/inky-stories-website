@@ -7,6 +7,7 @@
 			text-align: center;
 			margin-bottom: $comic-book-page-margin;
 			padding: $comic-book-page-padding;
+			
 			img {
 				margin: $comic-book-img-margin;
 				border: $comic-book-img-border;
@@ -161,8 +162,7 @@
 .comic-book-listing {
 	.section {
 		&.intro {
-			background: $comic-listing-intro-bg;
-			background-size: cover;
+			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
 			border-bottom: $comic-listing-intro-border;
 			
 			h1 {
@@ -178,8 +178,6 @@
 					color: white;
 				}
 			}
-			
-			
 			.genre-list {
 				margin-bottom: 0;
 				&.list-inline li:not(:last-child) {

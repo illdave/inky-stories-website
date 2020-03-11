@@ -14,12 +14,14 @@
 				h1 {
 					color: $black;	
 					font-size: $h2-font-size;
+					text-align: center;
 				}
 				p {
 					&.button-row {
 						margin-bottom: 0;
+						text-align: center;
 						.btn {
-							margin-bottom: 0;
+							margin-bottom: .5rem;
 						}
 					}
 				}
@@ -34,19 +36,16 @@
 	
 	.latest {
 		.latest-work {
-			background: $gray-lighter;
-			padding: 1.5rem;
-			.latest-page {
-				display: block;
-				height: 18rem;
-				background: white no-repeat 0 bottom;
-				background-size: cover;
-				background-image: url("#{$comics-image-path}/franks-next-mission/01.jpg");
+			img {
 				border: $border-default;
-				margin-bottom: $spacer-base;	
+				margin-bottom: $spacer-base;
 			}
-			h3 {}
-			p {}
+			h3 {
+				margin-bottom: 0;
+			}
+			p {
+				margin-bottom: 0;
+			}
 			ul {
 				li {}
 			}
