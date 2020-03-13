@@ -4,7 +4,9 @@
 
 $inkystories-teal:							#0083a9;
 $inkystories-green:							#6d8d23;
-$inkystories-purple:						#26328c;
+$inkystories-green:							#6d8d23;
+$inkystories-blue:							#007bff; // Bootstrap primary blue
+$inkystories-orange:						#ff4e00; // Strava orange
 $inkystories-blue-dark:						#15477a;
 
 
@@ -18,7 +20,7 @@ $gray-light:             					lighten(#000, 75%);   // #bfbfbf
 $gray-light-medium:     					lighten(#000, 80%);   // #ccc
 $gray-lighter:           					lighten(#000, 93.5%); // #eee
 
-$primary:      								$purple; // DSM failed override
+$primary:      								$purple !important; // DSM failed override
 $secondary:     							$gray-600 !default;
 $success:       							$green !default;
 $info:          							$cyan !default;
@@ -30,36 +32,21 @@ $dark:          							$gray-800 !default;
 
 /* theme colors ---------------------- */
 
-$theme-color-1:								#d16b34; // orange
-$theme-color-2:								#c0392b; // red
+$theme-color-1:								$inkystories-blue; 
+$theme-color-2:								$inkystories-orange;
 $theme-color-3:								#416daf; // blue
 $theme-color-4:								#138a58; // green
 $theme-color-5:								#e5a843; // gold
 $theme-color-6:								darken($theme-color-3, 5%); // dark blue 
 
-$brand-primary:         					$theme-color-3;
-$brand-success:         					$theme-color-5;
-$brand-info:            					$theme-color-6;
-$brand-warning:         					$theme-color-1;
-$brand-danger:          					$theme-color-2;
-
-$main-nav-bg: 								$inkystories-blue-dark;
-$main-nav-logo: 							$white;
-$main-nav-logo-hover: 						#b4becc;
-$main-nav-logo-active: 						$black;
-
-$main-nav-link: 							#b4becc;
-$main-nav-link-hover: 						$white;
-$main-nav-link-active:						$black;
-
-$border-default-color: 						$gray-light-medium;
+$border-default-color: 						$gray-light;
 $border-default: 							rem(1px solid $border-default-color);
 
 $body-bg:									$white;
 
 $headings-color: 							$black;
 $text-color:								#212529;
-$link-color:								#008fd5;
+$link-color:								$theme-color-1;
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 
@@ -191,7 +178,7 @@ $section-padding-large: 					$spacer-large 0;
 /* Font Awesome icons ---------------- */
 
 $icon-link-color: 							$gray-light;
-$icon-link-color-hover: 					orange;
+$icon-link-color-hover: 					$theme-color-1;
 $icon-link-color-active: 					$black;
 
 $icon-back-to-top:   						quote($fa-var-chevron-up);
@@ -303,16 +290,40 @@ $comic-ratings-circle-font-family: 			$roboto-bold;
 
 /* main navigation ------------------- */
 
-$main-nav-bg:								$inkystories-blue-dark;
+$main-nav-bg:								#142f56;
+
+$main-nav-logo: 							$white;
+$main-nav-logo-hover: 						#b4becc;
+$main-nav-logo-active: 						$black;
 
 $navbar-brand:								$white;
 $navbar-brand-hover:						$white-glow;
 $navbar-brand-active:						$black;
 
+$main-nav-link: 							#b4becc;
+$main-nav-link-hover: 						$white;
+$main-nav-link-active:						$black;
+
 $nav-link:									rgba($white, .5);
 $nav-link-hover:							$white;
 $nav-link-current:							$white;
 $nav-link-active:							$black;
+
+$nav-link-color:							$white;
+$nav-link-bg:								$theme-color-1;
+$nav-link-border:							rem(1px solid $nav-link-bg);
+
+$nav-link-hover-color:						$white;
+$nav-link-hover-bg:							$nav-link-bg;
+$nav-link-hover-border-color:				$white;
+
+$nav-link-active-color:						$theme-color-1;
+$nav-link-active-bg:						darken($nav-link-bg, 45%);
+$nav-link-active-border-color:				$nav-link-active-bg;
+
+$nav-link-curr-color:						#ff4e00;
+$nav-link-curr-bg:							$white;
+$nav-link-curr-border-color:				$nav-link-curr-bg;
 
 $navbar-icon:								$white;
 $navbar-icon-hover:							$white-glow;
@@ -323,7 +334,7 @@ $navbar-brand-padding-y: 					0;
 $main-nav-brand-width: 						250px;
 $main-nav-brand-height: 					3rem;
 $main-nav-brand-padding: 					$navbar-brand-padding-y;
-$main-nav-brand-margin: 					$spacer-xs;
+$main-nav-brand-margin: 					$spacer-xs $spacer-base $spacer-xs 0;
 $main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
 $main-nav-x-padding: 						.5rem;
 $main-nav-height: 							$main-nav-brand-height + $line-height-base + 2 * $main-nav-brand-padding;		

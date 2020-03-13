@@ -25158,17 +25158,17 @@ h6, .h6 {
 }
 
 a {
-  color: #008fd5;
+  color: #007bff;
   text-decoration: none;
   background-color: transparent;
   font-weight: normal;
 }
 a:hover {
-  color: #3cbfff;
+  color: #66b0ff;
   text-decoration: none;
 }
 a:active {
-  color: #004b6f;
+  color: #004a99;
 }
 
 img {
@@ -25278,7 +25278,7 @@ bold, strong {
   content: "";
 }
 .back-to-top:hover .fas {
-  color: orange;
+  color: #007bff;
 }
 .back-to-top:active .fas {
   color: #000;
@@ -25305,7 +25305,7 @@ bold, strong {
 .photo {
   background: #fff no-repeat 0 0;
   background-size: cover;
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #bfbfbf;
   margin-bottom: 1rem;
 }
 
@@ -25341,7 +25341,7 @@ bold, strong {
   margin-bottom: 0;
 }
 .listings.boxed .listing {
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #bfbfbf;
   padding: 0.5rem 1rem;
   min-height: 10rem;
 }
@@ -25404,7 +25404,7 @@ bold, strong {
 
 /* Tipue search ----------------------- */
 #tipue_search_content #tipue_search_results_count {
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
@@ -25476,7 +25476,7 @@ h1 .book-title, h2 .book-title, h3 .book-title, h4 .book-title {
 }
 
 figure {
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   padding-bottom: 0.5rem;
 }
 
@@ -25485,7 +25485,7 @@ figure {
 }
 
 .text-page .text-page-header {
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
@@ -25513,7 +25513,7 @@ figure {
 
 /* main navigation -------------------- */
 .main-navigation {
-  background: #15477a;
+  background: #142f56;
 }
 .main-navigation .inky-stories-brand {
   min-height: 4.5rem;
@@ -25526,9 +25526,9 @@ figure {
   width: 250px;
   height: 3rem;
   text-indent: -9999px;
-  background: url("../../img/brand/logo-white.png") no-repeat 0 0;
+  background: url("../../img/brand/logo-main-nav.png") no-repeat 0 0;
   background-size: contain;
-  margin: 0.25rem 0;
+  margin: 0.25rem 1rem 0.25rem 0;
 }
 .main-navigation .navbar-brand:hover {
   text-shadow: 0 0 10px #fff;
@@ -25537,19 +25537,30 @@ figure {
   color: #000;
 }
 .main-navigation .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  background: #007bff;
+  border: 0.0625rem solid #007bff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin: 0 0.25rem;
 }
 .main-navigation .navbar-nav .nav-link:hover {
   color: #fff;
+  background: #007bff;
+  border-color: #fff;
 }
 .main-navigation .navbar-nav .nav-link:active {
-  color: #000;
+  color: #007bff;
+  background: #000c1a;
+  border-color: #000c1a;
 }
 .main-navigation .navbar-nav .active > .nav-link,
 .main-navigation .navbar-nav .nav-link.active,
 .main-navigation .navbar-nav .nav-link.show,
 .main-navigation .navbar-nav .show > .nav-link {
-  color: #fff;
+  color: #ff4e00;
+  background: #fff;
+  border-color: #fff;
 }
 .main-navigation .navbar-toggler {
   border: 0.0625rem solid;
@@ -25564,6 +25575,9 @@ figure {
   font-family: "Font Awesome Solid";
   font-size: 1.5rem;
   content: "";
+}
+.main-navigation .search-form {
+  display: none;
 }
 .main-navigation .search-form button {
   background: transparent;
@@ -25587,11 +25601,13 @@ figure {
     background-position: center 0;
     display: inline-block;
     font-size: 2rem;
+    margin-right: 0;
   }
   .navbar .navbar-nav {
     flex-direction: row;
     text-align: center;
     display: block;
+    margin-top: 1rem;
   }
   .navbar .navbar-nav .nav-item {
     display: inline-block;
@@ -25648,7 +25664,7 @@ figure {
   margin-bottom: 1rem;
 }
 .home .latest .latest-work img {
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #bfbfbf;
   margin-bottom: 1rem;
 }
 .home .latest .latest-work h3 {
@@ -25810,7 +25826,7 @@ figure {
   }
 }
 .comic-book .comic-book-info {
-  border-top: 0.0625rem solid #cccccc;
+  border-top: 0.0625rem solid #bfbfbf;
 }
 .comic-book .comic-book-info .comic-book-page.figure img {
   border: 0.0625rem solid #555555;
@@ -25843,10 +25859,11 @@ figure {
 
 .comic-book-listing .section.intro {
   background-image: url("../../img/layout/intro-corner-dots.png");
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
 }
 .comic-book-listing .section.intro img {
   margin-bottom: 0.5rem;
+  border: 0.0625rem solid #bfbfbf;
 }
 .comic-book-listing .section.intro .text h1 {
   color: #000;
@@ -25856,7 +25873,7 @@ figure {
   margin-bottom: 0;
 }
 .comic-book-listing .section.intro .text a {
-  color: #008fd5;
+  color: #007bff;
   font-family: "Proxima Nova Bold";
 }
 .comic-book-listing .section.intro .text a:hover {
@@ -25873,7 +25890,7 @@ figure {
   background-size: cover;
   padding-bottom: 1rem;
   margin-bottom: 0;
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
 }
 .comic-book-listing .section.genre#adult-content {
   border-bottom: 0;
@@ -25985,7 +26002,7 @@ figure {
   opacity: 0;
 }
 .thumbnails .thumbnail .image:hover {
-  border-color: #008fd5;
+  border-color: #007bff;
   box-shadow: 0 0 10px #fff;
 }
 .thumbnails .thumbnail .image:hover .hover {
@@ -26191,7 +26208,7 @@ figure {
   font-size: 1rem;
 }
 .script .page {
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #bfbfbf;
   border-top: 0.1875rem solid #000;
   padding: 2rem 0;
   margin-bottom: 2rem;
@@ -26214,7 +26231,7 @@ figure {
   margin-bottom: 1rem;
 }
 .script .page h3 {
-  border-top: 0.0625rem solid #cccccc;
+  border-top: 0.0625rem solid #bfbfbf;
   margin-top: 2rem;
   padding-top: 1rem;
   margin-bottom: 0.25rem;
@@ -26245,7 +26262,7 @@ figure {
 }
 /* store ------------------------------ */
 .about .section.intro {
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   background-position: -20rem 0;
   background-image: url("../../img/layout/intro-corner-dots.png");
 }
@@ -26330,7 +26347,7 @@ footer ul.list-inline li.follow-me {
   margin-right: 0.5rem;
 }
 footer ul.list-inline li:hover a:before {
-  color: orange;
+  color: #007bff;
 }
 footer ul.list-inline li:active a:before {
   color: #000;
@@ -26340,7 +26357,7 @@ footer ul.list-inline li:active a:before {
 .store .section.intro {
   background-image: url("../../img/layout/intro-corner-dots.png");
   background-size: cover;
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   padding: 0;
 }
 .store .section.intro img {
@@ -26388,7 +26405,7 @@ footer ul.list-inline li:active a:before {
   display: block;
 }
 .store .thumbnails .thumbnail .image:hover {
-  border-color: #008fd5;
+  border-color: #007bff;
   opacity: 0.5;
 }
 .store .thumbnails .thumbnail .image:focus {
@@ -26424,13 +26441,13 @@ footer ul.list-inline li:active a:before {
   margin-bottom: 1rem;
 }
 .blog article .entry-thumb a img {
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #bfbfbf;
 }
 .blog article .entry-thumb a:hover img {
-  border-color: #008fd5;
+  border-color: #007bff;
 }
 .blog article header {
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
 }
@@ -26471,7 +26488,7 @@ footer ul.list-inline li:active a:before {
   border: 0;
 }
 .blog .latest {
-  border-bottom: 0.0625rem solid #cccccc;
+  border-bottom: 0.0625rem solid #bfbfbf;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -26487,7 +26504,7 @@ footer ul.list-inline li:active a:before {
   font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
 }
 .blog aside dl {
-  border-top: 0.0625rem solid #cccccc;
+  border-top: 0.0625rem solid #bfbfbf;
   padding-top: 0.5rem;
 }
 .blog aside dl dt {
