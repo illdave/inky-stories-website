@@ -101,7 +101,7 @@
 			padding: .5rem;
 			text-align: center;
 			.navbar-brand {
-				width: 250px;
+				width: $main-nav-brand-width-mobile;
 				height: auto;
 				background-position: center 0;
 				display: inline-block;
@@ -109,7 +109,6 @@
 				margin-right: 0;
 				margin-left: 0;
 			}
-		
 			.navbar-nav {
 				flex-direction: row;
 				text-align: center;

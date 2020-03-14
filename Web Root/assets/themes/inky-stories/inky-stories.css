@@ -25524,7 +25524,7 @@ figure {
   padding: 0.3125rem;
   color: #fff;
   display: block;
-  width: 250px;
+  width: 300px;
   height: 4rem;
   text-indent: -9999px;
   background: url("../../img/layout/main-nav-logo.png") no-repeat 0 0;
@@ -25604,7 +25604,7 @@ figure {
     text-align: center;
   }
   .main-navigation .navbar .navbar-brand {
-    width: 250px;
+    width: 260px;
     height: auto;
     background-position: center 0;
     display: inline-block;
