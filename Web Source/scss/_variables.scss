@@ -2,12 +2,13 @@
 
 /* brand colors --------------------- */
 
+$inkystories-blue:							#007bff; // stolen from Bootstrap branding
+$inkystories-blue-dark:						#142f56;
+$inkystories-cyan:							#00a0e3; 
+$inkystories-orange:						#ff4e00; // stolen from Strava branding
+$inkystories-yellow:						#fdda00;
 $inkystories-teal:							#0083a9;
 $inkystories-green:							#6d8d23;
-$inkystories-green:							#6d8d23;
-$inkystories-blue:							#007bff; // Bootstrap primary blue
-$inkystories-orange:						#ff4e00; // Strava orange
-$inkystories-blue-dark:						#15477a;
 
 
 /* Bootstrap colors ----------------- */
@@ -34,9 +35,9 @@ $dark:          							$gray-800 !default;
 
 $theme-color-1:								$inkystories-blue; 
 $theme-color-2:								$inkystories-orange;
-$theme-color-3:								#416daf; // blue
-$theme-color-4:								#138a58; // green
-$theme-color-5:								#e5a843; // gold
+$theme-color-3:								$inkystories-cyan;
+$theme-color-4:								$inkystories-green;
+$theme-color-5:								$inkystories-yellow; // gold
 $theme-color-6:								darken($theme-color-3, 5%); // dark blue 
 
 $border-default-color: 						$gray-light;
@@ -290,7 +291,10 @@ $comic-ratings-circle-font-family: 			$roboto-bold;
 
 /* main navigation ------------------- */
 
-$main-nav-bg:								#142f56;
+$main-nav-bg:								#142f56 0 0 no-repeat;
+
+$main-nav-padding-horizontal: 				$spacer-small;
+$main-nav-padding-vertical: 				$spacer-base;
 
 $main-nav-logo: 							$white;
 $main-nav-logo-hover: 						#b4becc;
@@ -329,15 +333,16 @@ $navbar-icon:								$white;
 $navbar-icon-hover:							$white-glow;
 $navbar-icon-active:						$black;
 
-$navbar-brand-padding-y: 					0;
+$navbar-brand-padding-vertical: 			0;
 
 $main-nav-brand-width: 						250px;
-$main-nav-brand-height: 					3rem;
+$main-nav-brand-height: 					4rem;
 $main-nav-brand-padding: 					$navbar-brand-padding-y;
-$main-nav-brand-margin: 					$spacer-xs $spacer-base $spacer-xs 0;
+$main-nav-brand-margin: 					0 $spacer-base 0 6rem;
 $main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
 $main-nav-x-padding: 						.5rem;
-$main-nav-height: 							$main-nav-brand-height + $line-height-base + 2 * $main-nav-brand-padding;		
+$main-nav-height: 							$main-nav-brand-height + 2 * $navbar-brand-padding-vertical + $main-nav-padding-vertical;		
+$main-nav-height-mobile: 					$main-nav-height - .5rem;		
 
 
 /* FOO ------------------------------- */

@@ -2,6 +2,8 @@
 
 .main-navigation {
 	background: $main-nav-bg;
+	background-image: url("#{$layout-image-path}/main-nav-art-home.png");
+
 	.inky-stories-brand {
 		min-height: $main-nav-height;
 	}
@@ -14,7 +16,7 @@
 		width: $main-nav-brand-width;
 		height: $main-nav-brand-height;
 		text-indent: $text-indent-for-image;
-		background: url("#{$brand-image-path}/logo-main-nav.png") no-repeat 0 0;
+		background: url("#{$layout-image-path}/main-nav-logo.png") no-repeat 0 0;
 		background-size: contain;
 		margin: $main-nav-brand-margin;
 
@@ -90,48 +92,54 @@
 
 @media (max-width: 767px) { 
 	body {
+		padding-top: $main-nav-height-mobile;
 	}
-	.navbar {
-		padding: .5rem;
-		text-align: center;
-		.navbar-brand {
-			width: 250px;
-			height: auto;
-			background-position: center 0;
-			display: inline-block;
-			font-size: 2rem;
-			margin-right: 0;
-		}
-		
-		.navbar-nav {
-			flex-direction: row;
+	
+	.main-navigation {
+		background-image: url("#{$layout-image-path}/main-nav-art.png");
+		.navbar {
+			padding: .5rem;
 			text-align: center;
-			display: block;
-			margin-top: 1rem;
-			.nav-item {
+			.navbar-brand {
+				width: 250px;
+				height: auto;
+				background-position: center 0;
 				display: inline-block;
-				.nav-link {
-					display: inline-block;
-					padding: 0.25rem .5rem;
-				}	
-			}	
-		}
-		.navbar-nav-scroll {
-			max-width: 100%;
-			height: 2.5rem;
-			margin-top: .25rem;
-			overflow: hidden;
-			font-size: .875rem;
-		}
-		.search-form {
-			width: 100%;
-			form {
-				margin: 0 auto;
+				font-size: 2rem;
+				margin-right: 0;
+				margin-left: 0;
+			}
+		
+			.navbar-nav {
+				flex-direction: row;
 				text-align: center;
-				width: 100%;
-				.form-control {
-					width: 40%;
+				display: block;
+				margin: 1rem 0;
+				.nav-item {
 					display: inline-block;
+					.nav-link {
+						display: inline-block;
+						padding: 0.25rem .5rem;
+					}	
+				}	
+			}
+			.navbar-nav-scroll {
+				max-width: 100%;
+				height: 2.5rem;
+				margin-top: .25rem;
+				overflow: hidden;
+				font-size: .875rem;
+			}
+			.search-form {
+				width: 100%;
+				form {
+					margin: 0 auto;
+					text-align: center;
+					width: 100%;
+					.form-control {
+						width: 40%;
+						display: inline-block;
+					}
 				}
 			}
 		}
