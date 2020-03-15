@@ -25503,6 +25503,12 @@ figure {
   }
 }
 
+/* safe image (social media img) ------ */
+img.social-media-preview {
+  display: none;
+}
+
+/* misc layout ------------------------ */
 .section.intro {
   background: #dff0f7 no-repeat 0 0;
   background-size: cover;

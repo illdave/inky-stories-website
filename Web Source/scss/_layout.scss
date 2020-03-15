@@ -81,6 +81,18 @@ figure {
 	}
 }
 
+
+/* safe image (social media img) ------ */
+
+img {
+	&.social-media-preview {
+		display: none;
+	}
+}
+
+
+/* misc layout ------------------------ */
+
 .section {
 	&.intro {
 		background: $intro-bg no-repeat 0 0;
@@ -90,3 +102,5 @@ figure {
 		}
 	}
 }
+
+
