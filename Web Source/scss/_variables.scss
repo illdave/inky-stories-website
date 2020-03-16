@@ -325,7 +325,7 @@ $nav-link-active-color:						$theme-color-1;
 $nav-link-active-bg:						darken($nav-link-bg, 45%);
 $nav-link-active-border-color:				$nav-link-active-bg;
 
-$nav-link-curr-color:						#ff4e00;
+$nav-link-curr-color:						$nav-link-bg;
 $nav-link-curr-bg:							$white;
 $nav-link-curr-border-color:				$nav-link-curr-bg;
 
