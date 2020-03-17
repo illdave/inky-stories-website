@@ -4,7 +4,6 @@
 	.section {
 		&.intro {
 			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
-			background-size: cover;
 			border-bottom: $border-default;
 			padding: 0;
 			img {
