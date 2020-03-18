@@ -5,6 +5,7 @@ Redirect 301 /a-runnin-from-a-gunnin http://www.inkystories.com/comics/a-runnin-
 
 Redirect 301 /?webcomic_post=the-bleeding-mirror-page-01-of-07 http://www.inkystories.com/comics/the-bleeding-mirror.html
 Redirect 301 /the-bleeding-mirror http://www.inkystories.com/comics/the-bleeding-mirror.html
+Redirect 301 /bleeding-mirror http://www.inkystories.com/comics/the-bleeding-mirror.html
 
 Redirect 301 /?webcomic_post=bottle-of-red-p1-webcomic http://www.inkystories.com/comics/bottle-of-red.html
 Redirect 301 /bottle-of-red http://www.inkystories.com/comics/bottle-of-red.html
@@ -25,11 +26,12 @@ Redirect 301 /?webcomic_post=grubhub-delivery http://www.inkystories.com/comics/
 Redirect 301 /grubhub-delivery http://www.inkystories.com/comics/grubhub-delivery.html
 
 Redirect 301 /?webcomic_post=here-i-am-page-01-of-04 http://www.inkystories.com/comics/here-i-am.html
-Redirect 301 /here-i-am-page http://www.inkystories.com/comics/here-i-am.html
+Redirect 301 /here-i-am http://www.inkystories.com/comics/here-i-am.html
 
 Redirect 301 /?webcomic_post=lucky-seven-the-dee-brown-incident-page-01-of-06 http://www.inkystories.com/comics/lucky-seven-dee-brown.html
 Redirect 301 /lucky-seven-the-dee-brown-incident http://www.inkystories.com/comics/lucky-seven-dee-brown.html
 Redirect 301 /the-dee-brown-incident http://www.inkystories.com/comics/lucky-seven-dee-brown.html
+Redirect 301 /lucky-seven http://www.inkystories.com/comics/lucky-seven-dee-brown.html
 
 Redirect 301 /?webcomic_post=the-last-day-on-earth http://www.inkystories.com/comics/the-last-day-on-earth.html
 Redirect 301 /the-last-day-on-earth http://www.inkystories.com/comics/the-last-day-on-earth.html
@@ -42,10 +44,15 @@ Redirect 301 /?webcomic_post=the-worlds-slowest-foot-chase-page-01-of-03 http://
 Redirect 301 /the-worlds-slowest-foot-chase http://www.inkystories.com/comics/the-worlds-slowest-foot-chase.html
 
 Redirect 301 /?webcomic_post=diane-aprince-in-the-yeoman-page-01-of-11 http://www.inkystories.com/comics/the-yeoman.html 
+Redirect 301 /the-yeoman http://www.inkystories.com/comics/the-yeoman.html 
 Redirect 301 /diane-aprince-in-the-yeoman http://www.inkystories.com/comics/the-yeoman.html 
 Redirect 301 /diane-aprince-is-the-yeoman http://www.inkystories.com/comics/the-yeoman.html 
 
+Redirect 301 /batgirls-bad-day http://www.inkystories.com/comics/batgirls-bad-day.html
+Redirect 301 /batgirl's-bad-day http://www.inkystories.com/comics/batgirls-bad-day.html
+
 Redirect 301 /?webcomic_post=enter-general-zaq-cover http://www.inkystories.com/comics/enter-general-zaq.html
+Redirect 301 /enter-general-zaq http://www.inkystories.com/comics/enter-general-zaq.html
 Redirect 301 /enter-general-zak http://www.inkystories.com/comics/enter-general-zaq.html
 Redirect 301 /enter-general-zakk http://www.inkystories.com/comics/enter-general-zaq.html
 Redirect 301 /dots-all-folks http://www.inkystories.com/comics/enter-general-zaq.html
@@ -59,6 +66,7 @@ Redirect 301 /ladybat+fanboy-tooltalk http://www.inkystories.com/comics/ladybat-
 
 Redirect 301 /?webcomic_post=dark-knight-on-a-dark-night-2011 http://www.inkystories.com/comics/batgirl-in-training-day.html
 Redirect 301 /batgirl-in-training-day http://www.inkystories.com/comics/batgirl-in-training-day.html
+Redirect 301 /batgirl-training-day http://www.inkystories.com/comics/batgirl-in-training-day.html
 Redirect 301 /dark-knight-on-a-dark-night-2011 http://www.inkystories.com/comics/batgirl-in-training-day.html
 
 Redirect 301 /?webcomic_post=dark-knight-on-a-dark-night-2012 http://www.inkystories.com/comics/the-million-dollar-debut-of-batgirl.html
@@ -79,6 +87,7 @@ Redirect 301 /DKoaDN6 http://www.inkystories.com/comics/batgirl-in-time-crash.ht
 Redirect 301 /?webcomic_post=dark-knight-on-a-dark-night-2015 http://www.inkystories.com/comics/the-dark-knight-damsel-returns.html
 Redirect 301 /the-dark-knight-damsel-returns http://www.inkystories.com/comics/the-dark-knight-damsel-returns.html
 Redirect 301 /batgirl-returns http://www.inkystories.com/comics/the-dark-knight-damsel-returns.html
+Redirect 301 /the-batgirl-returns http://www.inkystories.com/comics/the-dark-knight-damsel-returns.html
 Redirect 301 /batgirl-dark-knight-damsel-returns http://www.inkystories.com/comics/the-dark-knight-damsel-returns.html
 
 Redirect 301 /?webcomic_post=dark-knight-on-a-dark-night-2016 http://www.inkystories.com/comics/batgirl-and-joker.html
@@ -90,6 +99,8 @@ Redirect 301 /batgirl-and-the-joker http://www.inkystories.com/comics/batgirl-an
 Redirect 301 /barbara-gordon-is-the-batgirl http://www.inkystories.com/comics/batgirl-and-joker.html
 
 Redirect 301 /?p=358 http://www.inkystories.com/comics/paradigm-shift.html
+Redirect 301 /paradigm-shift http://www.inkystories.com/comics/paradigm-shift.html
+
 Redirect 301 /plate-ground http://www.inkystories.com/comics/plate-ground.html
 Redirect 301 /?webcomic_post=plate-ground http://www.inkystories.com/comics/plate-ground.html
 
@@ -131,22 +142,24 @@ Redirect 301 /?webcomic_post=zips-last-day-page-01-of-16 http://www.inkystories.
 Redirect 301 /zips-last-day http://www.inkystories.com/comics/zips-last-day.html
 
 Redirect 301 /?webcomic_post=reach-24-hour-comic-2004-page-01-of-12 http://www.inkystories.com/comics/reach.html
+Redirect 301 /24-hour-comic-2004 http://www.inkystories.com/comics/reach.html
 Redirect 301 /reach http://www.inkystories.com/comics/reach.html
 
 Redirect 301 /?webcomic_post=soaked-24-hour-comic-2007-page-01-of-24 http://www.inkystories.com/comics/soaked.html
+Redirect 301 /24-hour-comic-2007 http://www.inkystories.com/comics/soaked.html
 Redirect 301 /soaked http://www.inkystories.com/comics/soaked.html
 
 Redirect 301 /?webcomic_post=untitled-24-hour-comic-2008-page-01-of-13 http://www.inkystories.com/comics/now-aint-soon-enough.html
+Redirect 301 /24-hour-comic-2008 http://www.inkystories.com/comics/now-aint-soon-enough.html
 Redirect 301 /now-aint-soon-enough http://www.inkystories.com/comics/now-aint-soon-enough.html
 
 Redirect 301 /?webcomic_post=blank-spot-24-hour-comic-2009-page-01-of-20 http://www.inkystories.com/comics/blank-spot.html
+Redirect 301 /24-hour-comic-2009 http://www.inkystories.com/comics/blank-spot.html
 Redirect 301 /blank-spot http://www.inkystories.com/comics/blank-spot.html
 
 Redirect 301 /?webcomic_post=training-daze-24-hour-comic-2010-page-01-of-19 http://www.inkystories.com/comics/training-daze.html
+Redirect 301 /24-hour-comic-2010 http://www.inkystories.com/comics/training-daze.html
 Redirect 301 /training-daze http://www.inkystories.com/comics/training-daze.html
-
-Redirect 301 /?p=476 http://www.inkystories.com/blog/exhibit-2013-agencyport.html
-Redirect 301 /exhibit-2013-agencyport http://www.inkystories.com/blog/exhibit-2013-agencyport.html
 
 Redirect 301 /?webcomic_post=doctor-who-into-the-dalek-page-1-of-1 http://www.inkystories.com/comics/doctor-who-into-the-dalek.html
 Redirect 301 /doctor-who-into-the-dalek http://www.inkystories.com/comics/doctor-who-into-the-dalek.html
@@ -174,8 +187,21 @@ Redirect 301 /cupid-death-ray http://www.inkystories.com/comics/cupids-got-a-dea
 Redirect 301 /agent-k-cupid-death-ray http://www.inkystories.com/comics/cupids-got-a-death-ray.html
 
 Redirect 301 /?webcomic_post=i-did-nothing-page-1-of-4 http://www.inkystories.com/comics/i-did-nothing.html
-Redirect 301 /i-did-nothing-page http://www.inkystories.com/comics/i-did-nothing.html
+Redirect 301 /i-did-nothing http://www.inkystories.com/comics/i-did-nothing.html
 
 Redirect 301 /?webcomic_post=the-punisher-in-franks-next-mission-page-1-of-2 http://www.inkystories.com/comics/franks-next-mission.html
 Redirect 301 /franks-next-mission http://www.inkystories.com/comics/franks-next-mission.html
 Redirect 301 /punisher-vs-galactus http://www.inkystories.com/comics/franks-next-mission.html
+
+Redirect 301 /?p=476 http://www.inkystories.com/blog/exhibit-2013-agencyport.html
+Redirect 301 /exhibit-2013-agencyport http://www.inkystories.com/blog/exhibit-2013-agencyport.html
+Redirect 301 /exhibit-2013-agencyport-software http://www.inkystories.com/blog/exhibit-2013-agencyport.html
+Redirect 301 /inkystories-exhibit-agencyport http://www.inkystories.com/blog/exhibit-2013-agencyport.html
+Redirect 301 /inkystories-exhibit-agencyport-software http://www.inkystories.com/blog/exhibit-2013-agencyport.html
+
+Redirect 301 /exhibit-2002-inman-square http://www.inkystories.com/blog/exhibit-2002-inman-square.html
+Redirect 301 /exhibit-2002-1369 http://www.inkystories.com/blog/exhibit-2002-inman-square.html
+Redirect 301 /exhibit-inman-square http://www.inkystories.com/blog/exhibit-2002-inman-square.html
+Redirect 301 /exhibit-1369 http://www.inkystories.com/blog/exhibit-2002-inman-square.html
+Redirect 301 /exhibit-1369-coffee-house http://www.inkystories.com/blog/exhibit-2002-inman-square.html
+Redirect 301 /exhibit-1369-coffeehouse http://www.inkystories.com/blog/exhibit-2002-inman-square.html
