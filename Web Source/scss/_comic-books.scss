@@ -177,17 +177,28 @@
 					margin-bottom: 0;
 				}
 				
-				a {
-					color: $comic-listing-intro-link-color;
-					font-family: $font-family-headers;
-					&:hover {
-						color: white;
-					}
-				}
 				.genre-list {
 					margin-bottom: 0;
 					&.list-inline li:not(:last-child) {
 						margin-right: $spacer-base;
+					}
+					a {
+						font-family: $font-family-headers;
+						color: $genre-link-color;
+						background: $genre-link-bg;
+						line-height: $genre-link-line-height;
+						padding: $genre-link-line-padding;
+						border-radius: $genre-link-line-border-radius;
+						margin-bottom: $spacer-large;
+						
+						&:hover {
+							color: $genre-link-color-hover;
+							background: $genre-link-bg-hover;
+						}
+						&:active {
+							color: $genre-link-color-active;
+							background: $genre-link-bg-active;
+						}
 					}
 				}				
 			}

@@ -235,7 +235,24 @@ $comic-listing-intro-bg: 					#cde7e7 no-repeat 0 0;
 $comic-listing-intro-border: 				$border-default;
 $comic-listing-intro-header: 				$headings-color;
 $comic-listing-intro-color: 				$text-color;
+
 $comic-listing-intro-link-color: 			$link-color;
+
+$genre-link-line-height:					$spacer-base * 3;
+$genre-link-line-padding:					$spacer-small $spacer-base;
+$genre-link-line-border-radius:				$spacer-xs;
+
+$genre-link-color: 							$white;
+$genre-link-bg: 							$theme-color-1;
+$genre-link-border: 						rem(1px solid $genre-link-bg);
+
+$genre-link-color-hover: 					$white;
+$genre-link-bg-hover: 						darken($genre-link-bg, 15%);
+$genre-link-border-hover: 					$white;
+
+$genre-link-color-active: 					$theme-color-1;
+$genre-link-bg-active: 						darken($genre-link-bg, 45%);
+$genre-link-border-active: 					$genre-link-bg-active;
 
 $comic-book-page-bg: 						$white;
 $comic-book-page-margin: 					$spacer-large;

@@ -25886,18 +25886,28 @@ img.social-media-preview {
   color: #212529;
   margin-bottom: 0;
 }
-.comic-book-listing .section.intro .text a {
-  color: #007bff;
-  font-family: "Proxima Nova Bold";
-}
-.comic-book-listing .section.intro .text a:hover {
-  color: white;
-}
 .comic-book-listing .section.intro .text .genre-list {
   margin-bottom: 0;
 }
 .comic-book-listing .section.intro .text .genre-list.list-inline li:not(:last-child) {
   margin-right: 1rem;
+}
+.comic-book-listing .section.intro .text .genre-list a {
+  font-family: "Proxima Nova Bold";
+  color: #fff;
+  background: #007bff;
+  line-height: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+.comic-book-listing .section.intro .text .genre-list a:hover {
+  color: #fff;
+  background: #0056b3;
+}
+.comic-book-listing .section.intro .text .genre-list a:active {
+  color: #007bff;
+  background: #000c1a;
 }
 .comic-book-listing .section.genre {
   background: transparent 0 0 no-repeat;
