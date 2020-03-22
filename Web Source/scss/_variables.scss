@@ -37,8 +37,9 @@ $theme-color-1:								$inkystories-blue;
 $theme-color-2:								$inkystories-orange;
 $theme-color-3:								$inkystories-cyan;
 $theme-color-4:								$inkystories-green;
-$theme-color-5:								$inkystories-yellow; // gold
-$theme-color-6:								darken($theme-color-3, 5%); // dark blue 
+$theme-color-5:								$inkystories-yellow;
+$theme-color-6:								$inkystories-teal;
+$theme-color-7:								darken($theme-color-3, 5%); // dark blue 
 
 $border-default-color: 						$gray-light;
 $border-default: 							rem(1px solid $border-default-color);
@@ -79,6 +80,13 @@ $opensans-bold: 							"Open Sans Bold";
 $opensans-italic:							"Open Sans Italic";
 $opensans-bold-italic:						"Open Sans Bold Italic";
 $opensans-semibold-italic:					"Open Sans Semibold";
+
+$comic-book-font: 							"Spinner Rack Regular";
+$comic-book-font-italic: 					"Spinner Rack Italic";
+$comic-book-font-bold-italic: 				"Spinner Rack Bold Italic";
+
+$comic-book-font-size:						1.2rem;
+$comic-book-font-line-height:				$comic-book-font-size;
 
 $font-family-sans-serif: 					$proxima-nova,"helvetica neue", helvetica, arial, sans-serif;
 $font-family-serif:       					georgia, "times new roman", times, serif;
@@ -130,6 +138,7 @@ $store-image-path:							$image-path/store;
 $pictures-image-path:						$image-path/pictures;
 $dsm-image-path:							$image-path/dsm;
 $webcomics-image-path:						$assets-path/img/comics;
+$speaker-image-path:						$image-path/speaker;
 
 
 /* spacing --------------------------- */
@@ -304,6 +313,11 @@ $comic-ratings-circle-line-height: 			2.9rem;
 $comic-ratings-circle-font-size: 			60%;
 $comic-ratings-circle-font-size-sm: 		50%;
 $comic-ratings-circle-font-family: 			$roboto-bold;
+
+$word-balloon-background: 					$white;
+$word-balloon-color: 						$text-color;
+$word-balloon-border-radius: 				$spacer-small;
+$word-balloon-padding: 						$spacer-large;
 
 
 /* main navigation ------------------- */

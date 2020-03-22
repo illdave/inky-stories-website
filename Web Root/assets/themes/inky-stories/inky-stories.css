@@ -25000,6 +25000,167 @@ http://www.tipue.com/search */
   font-style: normal;
 }
 @font-face {
+  font-family: "Spinner Rack Regular";
+  src: url("../../fonts/spinner-rack/spinner-rack-regular.eot");
+  src: url("../../fonts/spinner-rack/spinner-rack-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/spinner-rack/spinner-rack-regular.woff") format("woff"), url("../../fonts/spinner-rack/spinner-rack-regular.ttf") format("truetype"), url("../../fonts/spinner-rack/spinner-rack-regular.svg#spinner-rack/spinner-rack-regular_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Spinner Rack Italic";
+  src: url("../../fonts/spinner-rack/spinner-rack-italic.eot");
+  src: url("../../fonts/spinner-rack/spinner-rack-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/spinner-rack/spinner-rack-italic.woff") format("woff"), url("../../fonts/spinner-rack/spinner-rack-italic.ttf") format("truetype"), url("../../fonts/spinner-rack/spinner-rack-italic.svg#spinner-rack/spinner-rack-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Spinner Rack Bold Italic";
+  src: url("../../fonts/spinner-rack/spinner-rack-bold-italic.eot");
+  src: url("../../fonts/spinner-rack/spinner-rack-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/spinner-rack/spinner-rack-bold-italic.woff") format("woff"), url("../../fonts/spinner-rack/spinner-rack-bold-italic.ttf") format("truetype"), url("../../fonts/spinner-rack/spinner-rack-bold-italic.svg#spinner-rack/spinner-rack-bold-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Action Man Regular";
+  src: url("../../fonts/action-man/action-man-regular.eot");
+  src: url("../../fonts/action-man/action-man-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/action-man/action-man-regular.woff") format("woff"), url("../../fonts/action-man/action-man-regular.ttf") format("truetype"), url("../../fonts/action-man/action-man-regular.svg#action-man/action-man-regular_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Action Man Bold";
+  src: url("../../fonts/action-man/action-man-bold.eot");
+  src: url("../../fonts/action-man/action-man-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/action-man/action-man-bold.woff") format("woff"), url("../../fonts/action-man/action-man-bold.ttf") format("truetype"), url("../../fonts/action-man/action-man-bold.svg#action-man/action-man-bold_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Action Man Italic";
+  src: url("../../fonts/action-man/action-man-italic.eot");
+  src: url("../../fonts/action-man/action-man-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/action-man/action-man-italic.woff") format("woff"), url("../../fonts/action-man/action-man-italic.ttf") format("truetype"), url("../../fonts/action-man/action-man-italic.svg#action-man/action-man-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Action Man Bold Italic";
+  src: url("../../fonts/action-man/action-man-bold-italic.eot");
+  src: url("../../fonts/action-man/action-man-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/action-man/action-man-bold-italic.woff") format("woff"), url("../../fonts/action-man/action-man-bold-italic.ttf") format("truetype"), url("../../fonts/action-man/action-man-bold-italic.svg#action-man/action-man-bold-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Toontime Regular";
+  src: url("../../fonts/toontime/toontime-regular.eot");
+  src: url("../../fonts/toontime/toontime-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/toontime/toontime-regular.woff") format("woff"), url("../../fonts/toontime/toontime-regular.ttf") format("truetype"), url("../../fonts/toontime/toontime-regular.svg#toontime/toontime-regular_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Toontime Bold";
+  src: url("../../fonts/toontime/toontime-bold.eot");
+  src: url("../../fonts/toontime/toontime-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/toontime/toontime-bold.woff") format("woff"), url("../../fonts/toontime/toontime-bold.ttf") format("truetype"), url("../../fonts/toontime/toontime-bold.svg#toontime/toontime-bold_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Toontime Italic";
+  src: url("../../fonts/toontime/toontime-italic.eot");
+  src: url("../../fonts/toontime/toontime-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/toontime/toontime-italic.woff") format("woff"), url("../../fonts/toontime/toontime-italic.ttf") format("truetype"), url("../../fonts/toontime/toontime-italic.svg#toontime/toontime-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Toontime Bold Italic";
+  src: url("../../fonts/toontime/toontime-bold-italic.eot");
+  src: url("../../fonts/toontime/toontime-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/toontime/toontime-bold-italic.woff") format("woff"), url("../../fonts/toontime/toontime-bold-italic.ttf") format("truetype"), url("../../fonts/toontime/toontime-bold-italic.svg#toontime/toontime-bold-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Wonder Comic Regular";
+  src: url("../../fonts/wonder-comic/wonder-comic-regular.eot");
+  src: url("../../fonts/wonder-comic/wonder-comic-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/wonder-comic/wonder-comic-regular.woff") format("woff"), url("../../fonts/wonder-comic/wonder-comic-regular.ttf") format("truetype"), url("../../fonts/wonder-comic/wonder-comic-regular.svg#wonder-comic/wonder-comic-regular_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Wonder Comic Bold";
+  src: url("../../fonts/wonder-comic/wonder-comic-bold.eot");
+  src: url("../../fonts/wonder-comic/wonder-comic-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/wonder-comic/wonder-comic-bold.woff") format("woff"), url("../../fonts/wonder-comic/wonder-comic-bold.ttf") format("truetype"), url("../../fonts/wonder-comic/wonder-comic-bold.svg#wonder-comic/wonder-comic-bold_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Wonder Comic Italic";
+  src: url("../../fonts/wonder-comic/wonder-comic-italic.eot");
+  src: url("../../fonts/wonder-comic/wonder-comic-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/wonder-comic/wonder-comic-italic.woff") format("woff"), url("../../fonts/wonder-comic/wonder-comic-italic.ttf") format("truetype"), url("../../fonts/wonder-comic/wonder-comic-italic.svg#wonder-comic/wonder-comic-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Wonder Comic Bold Italic";
+  src: url("../../fonts/wonder-comic/wonder-comic-bold-italic.eot");
+  src: url("../../fonts/wonder-comic/wonder-comic-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/wonder-comic/wonder-comic-bold-italic.woff") format("woff"), url("../../fonts/wonder-comic/wonder-comic-bold-italic.ttf") format("truetype"), url("../../fonts/wonder-comic/wonder-comic-bold-italic.svg#wonder-comic/wonder-comic-bold-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yew Basturd Regular";
+  src: url("../../fonts/yew-basturd/yew-basturd-regular.eot");
+  src: url("../../fonts/yew-basturd/yew-basturd-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/yew-basturd/yew-basturd-regular.woff") format("woff"), url("../../fonts/yew-basturd/yew-basturd-regular.ttf") format("truetype"), url("../../fonts/yew-basturd/yew-basturd-regular.svg#yew-basturd/yew-basturd-regular_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yew Basturd Bold";
+  src: url("../../fonts/yew-basturd/yew-basturd-bold.eot");
+  src: url("../../fonts/yew-basturd/yew-basturd-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/yew-basturd/yew-basturd-bold.woff") format("woff"), url("../../fonts/yew-basturd/yew-basturd-bold.ttf") format("truetype"), url("../../fonts/yew-basturd/yew-basturd-bold.svg#yew-basturd/yew-basturd-bold_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yew Basturd Italic";
+  src: url("../../fonts/yew-basturd/yew-basturd-italic.eot");
+  src: url("../../fonts/yew-basturd/yew-basturd-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/yew-basturd/yew-basturd-italic.woff") format("woff"), url("../../fonts/yew-basturd/yew-basturd-italic.ttf") format("truetype"), url("../../fonts/yew-basturd/yew-basturd-italic.svg#yew-basturd/yew-basturd-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yew Basturd Bold Italic";
+  src: url("../../fonts/yew-basturd/yew-basturd-bold-italic.eot");
+  src: url("../../fonts/yew-basturd/yew-basturd-bold-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/yew-basturd/yew-basturd-bold-italic.woff") format("woff"), url("../../fonts/yew-basturd/yew-basturd-bold-italic.ttf") format("truetype"), url("../../fonts/yew-basturd/yew-basturd-bold-italic.svg#yew-basturd/yew-basturd-bold-italic_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FONT_FAMILY_NAME";
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot");
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot?#iefix") format("embedded-opentype"), url("../../fonts/FONT-FOLDER/FONT_NAME.woff") format("woff"), url("../../fonts/FONT-FOLDER/FONT_NAME.ttf") format("truetype"), url("../../fonts/FONT-FOLDER/FONT_NAME.svg#FONT-FOLDER/FONT_NAME_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FONT_FAMILY_NAME";
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot");
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot?#iefix") format("embedded-opentype"), url("../../fonts/FONT-FOLDER/FONT_NAME.woff") format("woff"), url("../../fonts/FONT-FOLDER/FONT_NAME.ttf") format("truetype"), url("../../fonts/FONT-FOLDER/FONT_NAME.svg#FONT-FOLDER/FONT_NAME_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FONT_FAMILY_NAME";
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot");
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot?#iefix") format("embedded-opentype"), url("../../fonts/FONT-FOLDER/FONT_NAME.woff") format("woff"), url("../../fonts/FONT-FOLDER/FONT_NAME.ttf") format("truetype"), url("../../fonts/FONT-FOLDER/FONT_NAME.svg#FONT-FOLDER/FONT_NAME_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FONT_FAMILY_NAME";
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot");
+  src: url("../../fonts/FONT-FOLDER/FONT_NAME.eot?#iefix") format("embedded-opentype"), url("../../fonts/FONT-FOLDER/FONT_NAME.woff") format("woff"), url("../../fonts/FONT-FOLDER/FONT_NAME.ttf") format("truetype"), url("../../fonts/FONT-FOLDER/FONT_NAME.svg#FONT-FOLDER/FONT_NAME_SVG") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Open Sans Regular";
   src: url("../../fonts/open-sans/opensans-regular.eot");
   src: url("../../fonts/open-sans/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/open-sans/opensans-regular.woff") format("woff"), url("../../fonts/open-sans/opensans-regular.ttf") format("truetype"), url("../../fonts/open-sans/opensans-regular.svg#open_sansregular") format("svg");
@@ -25402,6 +25563,122 @@ bold, strong {
   color: white;
 }
 
+/* demo ------------------------------- */
+.demo {
+  border-top: 0.0625rem solid #bfbfbf;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* site-wide use of comic book font---- */
+.comic-book-font {
+  font-family: "Spinner Rack Regular";
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+.comic-book-font i, .comic-book-font em {
+  font-family: "Spinner Rack Italic";
+}
+.comic-book-font bold, .comic-book-font strong, .comic-book-font h1, .comic-book-font h2, .comic-book-font h3, .comic-book-font h4, .comic-book-font dt {
+  font-family: "Spinner Rack Bold Italic";
+}
+.comic-book-font.caption {
+  font-family: "Spinner Rack Italic";
+}
+
+.world-balloon {
+  position: relative;
+  color: #212529;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.world-balloon:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border: 33px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -16.5px;
+  margin-bottom: -33px;
+}
+
+.comic-book-panel .speaker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 145px;
+  background: transparent url("../../img/speaker/the-director.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.comic-font-test .spinner-rack .regular {
+  font-family: "Spinner Rack Regular";
+}
+.comic-font-test .spinner-rack .italic {
+  font-family: "Spinner Rack Italic";
+}
+.comic-font-test .spinner-rack .bold-italic {
+  font-family: "Spinner Rack Bold Italic";
+}
+.comic-font-test .action-comic .regular {
+  font-family: "Action Man Regular";
+}
+.comic-font-test .action-comic .bold {
+  font-family: "Action Man Bold";
+}
+.comic-font-test .action-comic .italic {
+  font-family: "Action Man Italic";
+}
+.comic-font-test .action-comic .bold-italic {
+  font-family: "Action Man Bold Italic";
+}
+.comic-font-test .toontime .regular {
+  font-family: "Toontime Regular";
+}
+.comic-font-test .toontime .bold {
+  font-family: "Toontime Bold";
+}
+.comic-font-test .toontime .italic {
+  font-family: "Toontime Italic";
+}
+.comic-font-test .toontime .bold-italic {
+  font-family: "Toontime Bold Italic";
+}
+.comic-font-test .wonder-comic .regular {
+  font-family: "Yew Basturd Regular";
+}
+.comic-font-test .wonder-comic .bold {
+  font-family: "Yew Basturd Bold";
+}
+.comic-font-test .wonder-comic .italic {
+  font-family: "Yew Basturd Italic";
+}
+.comic-font-test .wonder-comic .bold-italic {
+  font-family: "Yew Basturd Bold Italic";
+}
+.comic-font-test .yew-basturd .regular {
+  font-family: "Wonder Comic Regular";
+}
+.comic-font-test .yew-basturd .bold {
+  font-family: "Wonder Comic Bold";
+}
+.comic-font-test .yew-basturd .italic {
+  font-family: "Wonder Comic Italic";
+}
+.comic-font-test .yew-basturd .bold-italic {
+  font-family: "Wonder Comic Bold Italic";
+}
+
 /* Tipue search ----------------------- */
 #tipue_search_content #tipue_search_results_count {
   border-bottom: 0.0625rem solid #bfbfbf;
@@ -25652,27 +25929,36 @@ img.social-media-preview {
 }
 /* home ------------------------------- */
 .home .section.intro {
-  background: #bfbfbf no-repeat 0 0;
-  background-size: cover;
-  background-image: url("../../img/banner/04.jpg");
+  padding: 0;
 }
 .home .section.intro .text {
-  padding: 2rem;
-  border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.9);
-  border: 0.125rem solid #bfbfbf;
+  border-radius: 0;
+  background: 0 0 no-repeat #ff7133;
+  background-image: url("../../img/layout/intro-corner-dots-dark.png");
+  background-size: auto 100%;
+  border-right: 0.1875rem solid #fff;
+  padding: 1.5rem 3rem;
 }
 .home .section.intro .text h1 {
   color: #000;
   font-size: 1.6rem;
   text-align: center;
+  display: none;
+}
+.home .section.intro .text p {
+  margin-bottom: 0;
 }
 .home .section.intro .text p.button-row {
   margin-bottom: 0;
-  text-align: center;
+  text-align: right;
 }
 .home .section.intro .text p.button-row .btn {
   margin-bottom: 0.5rem;
+}
+.home .section.intro .public-image {
+  background: transparent no-repeat 0 0;
+  background-image: url("../../img/banner/home-banner.jpg");
+  background-size: cover;
 }
 .home .section.promos [class*=col] {
   margin-bottom: 1rem;
@@ -25729,6 +26015,19 @@ img.social-media-preview {
   overflow-y: auto;
 }
 
+@media (max-width: 991.98px) {
+  .home .section.intro .text {
+    padding: 1.5rem;
+  }
+  .home .section.intro .text .world-balloon {
+    padding: 1rem;
+  }
+  .home .section.intro .comic-book-panel .speaker {
+    left: -3px;
+    width: 137px;
+    height: 121px;
+  }
+}
 /* comic books ------------------------ */
 .comic-book .comic-book-story .comic-book-page {
   background: #fff;

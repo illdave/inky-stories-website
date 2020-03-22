@@ -204,6 +204,138 @@
 	}
 }
 
+/* demo ------------------------------- */
+
+.demo {
+	border-top: $border-default;
+	padding-top: $spacer-base;
+	margin-bottom: $spacer-large;
+}
+
+
+/* site-wide use of comic book font---- */
+
+.comic-book-font {
+	font-family: $comic-book-font;
+	font-size: $comic-book-font-line-height;
+	line-height: 1.2rem;
+	i, em {
+		font-family: $comic-book-font-italic;
+	}
+	bold, strong, h1, h2, h3, h4, dt {
+		font-family: $comic-book-font-bold-italic;
+	}
+	&.caption {
+		font-family: $comic-book-font-italic;
+	}
+}
+
+.world-balloon {
+	position: relative;
+	color: $word-balloon-color;
+	background: $word-balloon-background;
+	border-radius: $word-balloon-border-radius;
+	padding:$word-balloon-padding;
+	margin-bottom: $spacer-base;
+	text-align: center;
+	width: 100%;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 90px;
+		width: 0;
+		height: 0;
+		border: 33px solid transparent;
+		border-top-color: $white;
+		border-bottom: 0;
+		border-left: 0;
+		margin-left: -16.5px;
+		margin-bottom: -33px;
+	}
+}
+.comic-book-panel {
+	.speaker {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 180px;
+		height: 145px;
+		background: transparent url("#{$speaker-image-path}/the-director.png") 0 0 no-repeat;
+		background-size: cover;
+	}
+}
+
+.comic-font-test {
+	.spinner-rack {
+		.regular {
+			font-family: "Spinner Rack Regular";
+		}
+		.italic {
+			font-family: "Spinner Rack Italic";
+		}
+		.bold-italic {
+			font-family: "Spinner Rack Bold Italic";
+		}
+	}
+	.action-comic {
+		.regular {
+			font-family: "Action Man Regular";
+		}
+		.bold {
+			font-family: "Action Man Bold";
+		}
+		.italic {
+			font-family: "Action Man Italic";
+		}
+		.bold-italic {
+			font-family: "Action Man Bold Italic";
+		}
+	}
+	.toontime {
+		.regular {
+			font-family: "Toontime Regular";
+		}
+		.bold {
+			font-family: "Toontime Bold";
+		}
+		.italic {
+			font-family: "Toontime Italic";
+		}
+		.bold-italic {
+			font-family: "Toontime Bold Italic";
+		}
+	}
+	.wonder-comic {
+		.regular {
+			font-family: "Yew Basturd Regular";
+		}
+		.bold {
+			font-family: "Yew Basturd Bold";
+		}
+		.italic {
+			font-family: "Yew Basturd Italic";
+		}
+		.bold-italic {
+			font-family: "Yew Basturd Bold Italic";
+		}
+	}
+	.yew-basturd {
+		.regular {
+			font-family: "Wonder Comic Regular";
+		}
+		.bold {
+			font-family: "Wonder Comic Bold";
+		}
+		.italic {
+			font-family: "Wonder Comic Italic";
+		}
+		.bold-italic {
+			font-family: "Wonder Comic Bold Italic";
+		}
+	}
+}
+
 
 /* Tipue search ----------------------- */
 
