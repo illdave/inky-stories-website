@@ -12,7 +12,7 @@
 		<meta name="description" content="Comic book stories by David Marshall">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
-		<link rel="icon" href="../assets/img/brand/inky-stories.ico" type="image/x-icon">
+		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
 
 		<meta property="og:title"        content="Inky Stories: Inky Stories: A-Runnin&rsquo; From A Gunnin&rsquo;">
 		<meta property="og:type"         content="article">
@@ -55,7 +55,7 @@
 <p><span class="rating">(R; Scifi/Action)</span> A petty thief is hunted by his former Mafia employers, wealthy ex-girlfriends and various law enforcement agencies.</p>
 					
 <div id="a-runnin-from-a-gunnin-comic" class="comic-book-page carousel slide text-page" data-ride="carousel" data-interval="false" data-touch="true">
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
 			<p class="page-label">A-Runnin&rsquo; From A Gunnin&rsquo;: Page 1 of 8</p>
 			<img src="../assets/img/comics/a-runnin-from-a-gunnin/01.jpg" alt="page 1 of A-Runnin&rsquo; From A Gunnin&rsquo;">
@@ -218,7 +218,17 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-				 $('#tipue_search_input').tipuesearch();
+				$('#tipue_search_input').tipuesearch();
+				function qs(key) {
+					key = key.replace(/[*+?^$.\[\]{}()|\\/]/g, "\$&"); // escape RegEx meta chars
+					var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+					var page = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+					if (Math.floor(page) == page && $.isNumeric(page))
+					return parseInt(page);
+					else
+					return 0;
+				}
+				$('#a-runnin-from-a-gunnin-comic').carousel(qs('page'));
 			});
 		</script>
 	</body>

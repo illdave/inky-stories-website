@@ -213,12 +213,12 @@
 }
 
 
-/* site-wide use of comic book font---- */
+/* site-wide use of comic book font --- */
 
 .comic-book-font {
 	font-family: $comic-book-font;
-	font-size: $comic-book-font-line-height;
-	line-height: 1.2rem;
+	font-size: $comic-book-font-size;
+	line-height: $comic-book-font-line-height;
 	i, em {
 		font-family: $comic-book-font-italic;
 	}
@@ -235,7 +235,7 @@
 	color: $word-balloon-color;
 	background: $word-balloon-background;
 	border-radius: $word-balloon-border-radius;
-	padding:$word-balloon-padding;
+	padding: $word-balloon-padding;
 	margin-bottom: $spacer-base;
 	text-align: center;
 	width: 100%;
@@ -243,15 +243,15 @@
 		content: '';
 		position: absolute;
 		bottom: 0;
-		left: 90px;
+		left: 70px;
 		width: 0;
 		height: 0;
 		border: 33px solid transparent;
-		border-top-color: $white;
+		border-top-color: $word-balloon-background;
 		border-bottom: 0;
 		border-left: 0;
 		margin-left: -16.5px;
-		margin-bottom: -33px;
+		margin-bottom: -25px;
 	}
 }
 .comic-book-panel {
@@ -259,8 +259,8 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 180px;
-		height: 145px;
+		width: 150px;
+		height: 130px;
 		background: transparent url("#{$speaker-image-path}/the-director.png") 0 0 no-repeat;
 		background-size: cover;
 	}

@@ -13,7 +13,7 @@
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
 		<script src="../assets/themes/inky-stories/inky-stories.js" type="text/javascript"></script>		
-		<link rel="icon" href="../assets/img/brand/inky-stories.ico" type="image/x-icon">
+		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
 
 		<meta property="og:title"        content="Inky Stories: Zip&rsquo;s Last Day">
 		<meta property="og:type"         content="article">
@@ -55,7 +55,7 @@
 <p><span class="rating">(R; Crime/Horror)</span> A corrupt FBI agent arrives in Boston to solve what looks like a murder mystery. As he tracks down clues, the case evolves into something much more bizarre.</p>		
 					
 <div id="zips-last-day-comic" class="comic-book-page carousel slide text-page" data-ride="carousel" data-interval="false" data-touch="true">
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
 			<p class="page-label">Zip&rsquo;s Last Day: Page 1 of 16</p>
 			<img src="../assets/img/comics/zips-last-day/01.jpg" alt="page 1 of Zip&rsquo;s Last Day">
@@ -317,7 +317,17 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-				 $('#tipue_search_input').tipuesearch();
+				$('#tipue_search_input').tipuesearch();
+				function qs(key) {
+					key = key.replace(/[*+?^$.\[\]{}()|\\/]/g, "\$&"); // escape RegEx meta chars
+					var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+					var page = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+					if (Math.floor(page) == page && $.isNumeric(page))
+					return parseInt(page);
+					else
+					return 0;
+				}
+				$('#THIS_COMIC-comic').carousel(qs('page'));
 			});
 		</script>
 	</body>

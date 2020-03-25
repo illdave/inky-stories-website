@@ -12,7 +12,7 @@
 		<meta name="description" content="Comic book stories by David Marshall">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
-		<link rel="icon" href="../assets/img/brand/inky-stories.ico" type="image/x-icon">
+		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
 
 		<meta property="og:title"        content="Inky Stories: Blank Spot">
 		<meta property="og:type"         content="article">
@@ -54,7 +54,7 @@
 <p><span class="rating">(G; Fantasy/Adventure)</span> A childhood nightmare, girlfriend delirium, wordless Ditko-wannabe pages, a battle to the death on the Planet of Kung Fu Fighting, a visit to Ball Nut Avenue.</p>
 					
 <div id="blank-spot-comic" class="comic-book-page carousel slide text-page" data-ride="carousel" data-interval="false" data-touch="true">
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
 			<p class="page-label">Blank Spot: Page 1 of 20</p>
 			<img src="../assets/img/comics/blank-spot/01.jpg" alt="page 1 of Blank Spot">
@@ -359,7 +359,17 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-				 $('#tipue_search_input').tipuesearch();
+				$('#tipue_search_input').tipuesearch();
+				function qs(key) {
+					key = key.replace(/[*+?^$.\[\]{}()|\\/]/g, "\$&"); // escape RegEx meta chars
+					var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+					var page = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+					if (Math.floor(page) == page && $.isNumeric(page))
+					return parseInt(page);
+					else
+					return 0;
+				}
+				$('#blank-spot-comic').carousel(qs('page'));
 			});
 		</script>
 	</body>

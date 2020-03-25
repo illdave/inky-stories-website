@@ -85,9 +85,6 @@ $comic-book-font: 							"Spinner Rack Regular";
 $comic-book-font-italic: 					"Spinner Rack Italic";
 $comic-book-font-bold-italic: 				"Spinner Rack Bold Italic";
 
-$comic-book-font-size:						1.2rem;
-$comic-book-font-line-height:				$comic-book-font-size;
-
 $font-family-sans-serif: 					$proxima-nova,"helvetica neue", helvetica, arial, sans-serif;
 $font-family-serif:       					georgia, "times new roman", times, serif;
 $font-family-monospace:      				SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -314,10 +311,13 @@ $comic-ratings-circle-font-size: 			60%;
 $comic-ratings-circle-font-size-sm: 		50%;
 $comic-ratings-circle-font-family: 			$roboto-bold;
 
+$comic-book-font-size:						1rem;
+$comic-book-font-line-height:				$comic-book-font-size;
+
 $word-balloon-background: 					$white;
 $word-balloon-color: 						$text-color;
 $word-balloon-border-radius: 				$spacer-small;
-$word-balloon-padding: 						$spacer-large;
+$word-balloon-padding: 						$spacer-base;
 
 
 /* main navigation ------------------- */
@@ -378,4 +378,6 @@ $main-nav-height-mobile: 					$main-nav-height - .5rem;
 
 
 /* FOO ------------------------------- */
+
+
 

@@ -25570,11 +25570,11 @@ bold, strong {
   margin-bottom: 2rem;
 }
 
-/* site-wide use of comic book font---- */
+/* site-wide use of comic book font --- */
 .comic-book-font {
   font-family: "Spinner Rack Regular";
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 .comic-book-font i, .comic-book-font em {
   font-family: "Spinner Rack Italic";
@@ -25591,7 +25591,7 @@ bold, strong {
   color: #212529;
   background: #fff;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   text-align: center;
   width: 100%;
@@ -25600,7 +25600,7 @@ bold, strong {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 90px;
+  left: 70px;
   width: 0;
   height: 0;
   border: 33px solid transparent;
@@ -25608,15 +25608,15 @@ bold, strong {
   border-bottom: 0;
   border-left: 0;
   margin-left: -16.5px;
-  margin-bottom: -33px;
+  margin-bottom: -25px;
 }
 
 .comic-book-panel .speaker {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 180px;
-  height: 145px;
+  width: 150px;
+  height: 130px;
   background: transparent url("../../img/speaker/the-director.png") 0 0 no-repeat;
   background-size: cover;
 }
@@ -25797,6 +25797,7 @@ img.social-media-preview {
 .main-navigation {
   background: #142f56 0 0 no-repeat;
   background-image: url("../../img/layout/main-nav-art-home.png");
+  border-bottom: 0.125rem solid white;
 }
 .main-navigation .inky-stories-brand {
   min-height: 5rem;
@@ -25933,11 +25934,12 @@ img.social-media-preview {
 }
 .home .section.intro .text {
   border-radius: 0;
-  background: 0 0 no-repeat #ff7133;
-  background-image: url("../../img/layout/intro-corner-dots-dark.png");
-  background-size: auto 100%;
+  background: 0 0 no-repeat #ff4e00;
+  background-image: url("../../img/layout/kirby-krackle.png");
+  background-size: 120%;
   border-right: 0.1875rem solid #fff;
   padding: 1.5rem 3rem;
+  min-height: 15rem;
 }
 .home .section.intro .text h1 {
   color: #000;
@@ -26018,14 +26020,19 @@ img.social-media-preview {
 @media (max-width: 991.98px) {
   .home .section.intro .text {
     padding: 1.5rem;
+    min-height: auto;
   }
   .home .section.intro .text .world-balloon {
     padding: 1rem;
   }
+  .home .section.intro .comic-book-panel .world-balloon:after {
+    left: 79px;
+    margin-bottom: -22px;
+  }
   .home .section.intro .comic-book-panel .speaker {
     left: -3px;
-    width: 137px;
-    height: 121px;
+    width: 128px;
+    height: 112px;
   }
 }
 /* comic books ------------------------ */
@@ -26778,7 +26785,7 @@ footer ul.list-inline li:active a:before {
 }
 .blog article header h2 {
   font-family: georgia, times, "times new roman", serif;
-  font-size: 1.3em;
+  font-size: 1.2rem;
   font-style: italic;
   color: #333333;
 }

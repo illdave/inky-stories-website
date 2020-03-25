@@ -54,7 +54,7 @@
 <p><span class="rating">(R; Crime/Horror)</span> A lone agent must transmit data into enemy territory, fight an army, rescue a damsel in distress and save the world. <em>Published in  <a href="http://outboundmagazine.blogspot.com/search/label/David%20Marshall" title="Outbound, an anthology science fiction comics, published by the Boston Comics Roundtable" rel="external">Outbound</a>, a science fiction anthology by the <a href="http://www.bostoncomicsroundtable.com/" title="The Boston Comics Roundtable" rel="external">Boston Comics Roundtable</a></em></p>
 					
 <div id="the-null-device-comic" class="comic-book-page carousel slide text-page" data-ride="carousel" data-interval="false" data-touch="true">
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
 			<p class="page-label">Inky Stories #6: Front Cover</p>
 			<img src="../assets/img/comics/the-null-device/cover-printed.jpg" alt="cover of Inky Stories #6">
@@ -502,7 +502,17 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-				 $('#tipue_search_input').tipuesearch();
+				$('#tipue_search_input').tipuesearch();
+				function qs(key) {
+					key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+					var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+					var page = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+					if (Math.floor(page) == page && $.isNumeric(page))
+					return parseInt(page);
+					else
+					return 0;
+				}
+				$('#the-null-device-comic').carousel(qs('page'));
 			});
 		</script>
 	</body>

@@ -12,7 +12,7 @@
 		<meta name="description" content="Comic book stories by David Marshall">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
-		<link rel="icon" href="../assets/img/brand/inky-stories.ico" type="image/x-icon">
+		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
 
 		<meta property="og:title"        content="Inky Stories: Ladybat and the Fanboy in &ldquo;Tool Talk&rdquo;">
 		<meta property="og:type"         content="article">
@@ -54,7 +54,7 @@
 <p><span class="rating">(PG; Superhero)</span> A delusional fanboy and beautiful superheroine hang out in a Krazy Kat landscape.</p>
 					
 <div id="ladybat-fanboy-tool-talk-comic" class="comic-book-page carousel slide text-page" data-ride="carousel" data-interval="false" data-touch="true">
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
 			<p class="page-label"></p>
 			<img src="../assets/img/comics/ladybat-fanboy-tool-talk/01.jpg" alt="page 1 of Ladybat and the Fanboy in &ldquo;Tool Talk&rdquo">
@@ -120,7 +120,8 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-				 $('#tipue_search_input').tipuesearch();
+				$('#tipue_search_input').tipuesearch();
+				$('#THIS_COMIC-comic').carousel(qs('page'));
 			});
 		</script>
 	</body>

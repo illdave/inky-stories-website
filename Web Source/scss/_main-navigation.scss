@@ -3,7 +3,7 @@
 .main-navigation {
 	background: $main-nav-bg;
 	background-image: url("#{$layout-image-path}/main-nav-art-home.png");
-
+	border-bottom: rem(2px solid white);
 	.inky-stories-brand {
 		min-height: $main-nav-height;
 	}

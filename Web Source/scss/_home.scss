@@ -6,11 +6,12 @@
 			padding: 0;
 			.text {
 				border-radius: 0;
-				background: 0 0 no-repeat lighten($theme-color-2, 10%);
-				background-image: url("#{$layout-image-path}/intro-corner-dots-dark.png");
-				background-size: auto 100%;
+				background: 0 0 no-repeat $theme-color-2;
+				background-image: url("#{$layout-image-path}/kirby-krackle.png");
+				background-size: 120%;
 				border-right: rem(3px solid $white);
 				padding: 1.5rem 3rem;
+				min-height: 15rem;
 				
 				h1 {
 					color: $black;	
@@ -114,15 +115,20 @@
 			&.intro {
 				.text {
 					padding: 1.5rem;
+					min-height: auto;
 					.world-balloon {
 						padding: 1rem;
 					}
 				}
 				.comic-book-panel {
+					.world-balloon:after {
+						left: 79px;
+						margin-bottom: -22px;
+					}
 					.speaker {
 						left: -3px;
-						width: 137px;
-						height: 121px;
+						width: 128px;
+						height: 112px;
 					}
 				}
 			}

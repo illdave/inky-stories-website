@@ -12,7 +12,7 @@
 		<meta name="description" content="Comic book stories by David Marshall">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
-		<link rel="icon" href="../assets/img/brand/inky-stories.ico" type="image/x-icon">
+		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
 
 		<meta property="og:title"        content="Inky Stories: The Yeoman">
 		<meta property="og:type"         content="article">
@@ -54,7 +54,7 @@
 <p><span class="rating">(XXX; Superhero Pornography)</span> To protect her secret identity and defend freedom as Marvel Woman, Diane Aprince takes an bare-bottom OTK spanking, gets tied up ...and more.</p>
 					
 <div id="the-yeoman-comic" class="comic-book-page carousel slide text-page" data-ride="carousel" data-interval="false" data-touch="true">
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
 			<p class="page-label">The Yeoman: Page 1 of 11</p>
 			<img src="../assets/img/comics/the-yeoman/01.jpg" alt="page 1 of The Yeoman">
@@ -263,7 +263,17 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-				 $('#tipue_search_input').tipuesearch();
+				$('#tipue_search_input').tipuesearch();
+				function qs(key) {
+					key = key.replace(/[*+?^$.\[\]{}()|\\/]/g, "\$&"); // escape RegEx meta chars
+					var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+					var page = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+					if (Math.floor(page) == page && $.isNumeric(page))
+					return parseInt(page);
+					else
+					return 0;
+				}
+				$('#the-yeoman-comic').carousel(qs('page'));
 			});
 		</script>
 	</body>
