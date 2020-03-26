@@ -162,13 +162,35 @@
 .comic-book-listing {
 	.section {
 		&.intro {
-			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
 			border-bottom: $comic-listing-intro-border;
-			img {
-				margin-bottom: .5rem;
-				border: $border-default;
+			background: $theme-color-5 url("#{$layout-image-path}/kirby-krackle-comics.png") 0 0 no-repeat;
+			background-size: cover;
+			padding: 0;
+			&.comic-book-panel {
+				.word-balloon {
+					&:after {
+						left: -33px;
+						top: 20px;
+						border: 33px solid transparent;
+						border-width: 20px 45px 20px 0;
+						border-right-color: $word-balloon-background;
+						margin-top: 0;
+						margin-left: 0;
+					}
+				}
+				.speaker {
+					top: 0;
+					bottom: auto;
+					left: 0;
+					width: 115%;
+					height: 100%;
+					background: transparent url("#{$speaker-image-path}/agent-k-untied.png") 0 0 no-repeat;
+					background-size: cover;
+					background-position: -40px -30px;
+				}
 			}
 			.text {
+				padding: 2rem 0;
 				h1 {
 					color: $comic-listing-intro-header;
 				}
@@ -176,7 +198,6 @@
 					color: $comic-listing-intro-color;
 					margin-bottom: 0;
 				}
-				
 				.genre-list {
 					margin-bottom: 0;
 					&.list-inline li:not(:last-child) {
@@ -602,7 +623,53 @@
 	}
 }
 
+@media (max-width: 768px) { 
+	.comic-book-listing {
+		.section.intro {
+			&.comic-book-panel {
+				.speaker {
+					background-position: -40px 0;
+				}
+			}
+			.text {
+				padding: 1rem;
+				.genre-list {
+					a {
+						padding: 0.25rem .5rem;
+						line-height: 2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 576px) { 
+	.comic-book-listing {
+		.section.intro {
+			&.comic-book-panel {
+				.word-balloon {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 1200px) { 
+	.comic-book-listing {
+		.section.intro {
+			&.comic-book-panel {
+				.speaker {
+					background-position: -40px -50px;
+					width: 100%;
+				}
+			}
+		}
+	}
 	.thumbnails {
 		.thumbnail {
 			.image {

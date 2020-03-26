@@ -12,7 +12,6 @@
 				border-right: rem(3px solid $white);
 				padding: 1.5rem 3rem;
 				min-height: 15rem;
-				
 				h1 {
 					color: $black;	
 					font-size: $h2-font-size;
@@ -30,7 +29,6 @@
 					}
 				}
 			}
-			
 			.public-image {
 				background: transparent no-repeat 0 0;
 				background-image: url("#{$banner-image-path}/home-banner.jpg");
@@ -116,12 +114,12 @@
 				.text {
 					padding: 1.5rem;
 					min-height: auto;
-					.world-balloon {
+					.word-balloon {
 						padding: 1rem;
 					}
 				}
 				.comic-book-panel {
-					.world-balloon:after {
+					.word-balloon:after {
 						left: 79px;
 						margin-bottom: -22px;
 					}

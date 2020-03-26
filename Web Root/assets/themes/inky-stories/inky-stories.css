@@ -25586,7 +25586,7 @@ bold, strong {
   font-family: "Spinner Rack Italic";
 }
 
-.world-balloon {
+.word-balloon {
   position: relative;
   color: #212529;
   background: #fff;
@@ -25596,7 +25596,7 @@ bold, strong {
   text-align: center;
   width: 100%;
 }
-.world-balloon:after {
+.word-balloon:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -25610,7 +25610,14 @@ bold, strong {
   margin-left: -16.5px;
   margin-bottom: -25px;
 }
+.word-balloon h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
 
+.comic-book-panel {
+  position: relative;
+}
 .comic-book-panel .speaker {
   position: absolute;
   bottom: 0;
@@ -25787,7 +25794,7 @@ img.social-media-preview {
 
 /* misc layout ------------------------ */
 .section.intro {
-  background: #dff0f7 no-repeat 0 0;
+  background: #ff4e00 no-repeat 0 0;
 }
 .section.intro img {
   margin-bottom: 0.5rem;
@@ -26022,10 +26029,10 @@ img.social-media-preview {
     padding: 1.5rem;
     min-height: auto;
   }
-  .home .section.intro .text .world-balloon {
+  .home .section.intro .text .word-balloon {
     padding: 1rem;
   }
-  .home .section.intro .comic-book-panel .world-balloon:after {
+  .home .section.intro .comic-book-panel .word-balloon:after {
     left: 79px;
     margin-bottom: -22px;
   }
@@ -26178,12 +26185,32 @@ img.social-media-preview {
 }
 
 .comic-book-listing .section.intro {
-  background-image: url("../../img/layout/intro-corner-dots.png");
   border-bottom: 0.0625rem solid #bfbfbf;
+  background: #fdda00 url("../../img/layout/kirby-krackle-comics.png") 0 0 no-repeat;
+  background-size: cover;
+  padding: 0;
 }
-.comic-book-listing .section.intro img {
-  margin-bottom: 0.5rem;
-  border: 0.0625rem solid #bfbfbf;
+.comic-book-listing .section.intro.comic-book-panel .word-balloon:after {
+  left: -33px;
+  top: 20px;
+  border: 33px solid transparent;
+  border-width: 20px 45px 20px 0;
+  border-right-color: #fff;
+  margin-top: 0;
+  margin-left: 0;
+}
+.comic-book-listing .section.intro.comic-book-panel .speaker {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  width: 115%;
+  height: 100%;
+  background: transparent url("../../img/speaker/agent-k-untied.png") 0 0 no-repeat;
+  background-size: cover;
+  background-position: -40px -30px;
+}
+.comic-book-listing .section.intro .text {
+  padding: 2rem 0;
 }
 .comic-book-listing .section.intro .text h1 {
   color: #000;
@@ -26584,7 +26611,29 @@ img.social-media-preview {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  .comic-book-listing .section.intro.comic-book-panel .speaker {
+    background-position: -40px 0;
+  }
+  .comic-book-listing .section.intro .text {
+    padding: 1rem;
+  }
+  .comic-book-listing .section.intro .text .genre-list a {
+    padding: 0.25rem 0.5rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .comic-book-listing .section.intro.comic-book-panel .word-balloon:after {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
+  .comic-book-listing .section.intro.comic-book-panel .speaker {
+    background-position: -40px -50px;
+    width: 100%;
+  }
+
   .thumbnails .thumbnail .image {
     background-size: cover;
     height: 23rem;

@@ -230,7 +230,7 @@
 	}
 }
 
-.world-balloon {
+.word-balloon {
 	position: relative;
 	color: $word-balloon-color;
 	background: $word-balloon-background;
@@ -253,8 +253,13 @@
 		margin-left: -16.5px;
 		margin-bottom: -25px;
 	}
+	h1 {
+		font-size: $h2-font-size;
+		margin-bottom: 0;
+	}
 }
 .comic-book-panel {
+	position: relative;
 	.speaker {
 		position: absolute;
 		bottom: 0;

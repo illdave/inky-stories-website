@@ -217,7 +217,7 @@ $photo-circle-sm: 							14rem;
 $photo-circle-xs: 							10rem;
 $circle-border-radius: 						50%;
 
-$intro-bg:  								#dff0f7;
+$intro-bg:  								$theme-color-2;
 	
 
 /* home ------------------------------ */
@@ -244,7 +244,7 @@ $comic-listing-intro-color: 				$text-color;
 
 $comic-listing-intro-link-color: 			$link-color;
 
-$genre-link-line-height:					$spacer-base * 3;
+$genre-link-line-height:					3rem;
 $genre-link-line-padding:					$spacer-small $spacer-base;
 $genre-link-line-border-radius:				$spacer-xs;
 
