@@ -163,7 +163,7 @@
 	.section {
 		&.intro {
 			border-bottom: $comic-listing-intro-border;
-			background: $theme-color-5 url("#{$layout-image-path}/kirby-krackle-comics.png") 0 0 no-repeat;
+			background: $section-intro-comics url("#{$layout-image-path}/section-intro-comics.png") 0 0 no-repeat;
 			background-size: cover;
 			padding: 0;
 			&.comic-book-panel {
@@ -192,7 +192,6 @@
 			.text {
 				padding: 2rem 0;
 				h1 {
-					color: $comic-listing-intro-header;
 				}
 				p {
 					color: $comic-listing-intro-color;
@@ -632,26 +631,11 @@
 				}
 			}
 			.text {
-				padding: 1rem;
+				padding: $spacer-base;
 				.genre-list {
 					a {
 						padding: 0.25rem .5rem;
 						line-height: 2rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-
-@media (max-width: 576px) { 
-	.comic-book-listing {
-		.section.intro {
-			&.comic-book-panel {
-				.word-balloon {
-					&:after {
-						display: none;
 					}
 				}
 			}

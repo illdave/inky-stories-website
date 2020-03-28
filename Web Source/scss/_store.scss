@@ -3,19 +3,41 @@
 .store {
 	.section {
 		&.intro {
-			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
+			background: $section-intro-store url("#{$layout-image-path}/section-intro-store.png") 0 0 no-repeat;
+			background-size: cover;
 			border-bottom: $border-default;
 			padding: 0;
-			img {
-				margin-bottom: 0;
-			}
-			.text {
-				padding: 2rem;
-				h1 {}
-				p {
+			&.comic-book-panel {
+				.word-balloon {
 					margin-bottom: 0;
+					&:after {
+						left: -33px;
+						top: 20px;
+						border: 33px solid transparent;
+						border-width: 20px 45px 20px 0;
+						border-right-color: $word-balloon-background;
+						margin-top: 0;
+						margin-left: 0;
+					}
 				}
-			}
+				.speaker {
+					top: 0;
+					bottom: auto;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: transparent url("#{$speaker-image-path}/mecanica.png") 0 0 no-repeat;
+					background-size: cover;
+					background-position: 0 20%;
+				}
+				.text {
+					padding: 2rem 0;
+					h1 {}
+					p {
+						margin-bottom: 0;
+					}
+				}
+			}			
 		}
 		&#minicomics {
 			background: $gray-lighter;
@@ -78,3 +100,34 @@
 		}
 	}
 }
+
+@media (max-width: 576px) { 
+	.store {
+		.section.intro {
+			&.comic-book-panel {
+				.word-balloon {
+					&:after {
+						display: none;
+					}
+				}
+				.text {
+					padding: 1rem;
+				}				
+			}
+		}
+	}
+}
+
+@media (min-width: 769px) { 
+	.store {
+		.section.intro {
+			&.comic-book-panel {
+				.speaker {
+					background-position: 3rem 20%;
+				}
+			}
+		}
+	}
+}		
+
+

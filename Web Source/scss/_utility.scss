@@ -119,12 +119,58 @@
 	}
 	&.boxed {
 		.listing {
+			background: $white right .5rem top .5rem no-repeat;
+			background-size: 25%;
 			border: $border-default;
-			padding: $spacer-small $spacer-base;
+			border-top: rem(3px solid $black);
+			padding: $spacer-base $spacer-large;
 			min-height: 10rem;
+			&.bedrock-comics {
+				background-image: url("#{$logos-image-path}/bedrock-comics.png");
+			}
+			&.comicazi {
+				background-image: url("#{$logos-image-path}/comicazi.png");
+			}
+			&.comicopia {
+				background-image: url("#{$logos-image-path}/comicopia.png");
+			}
+			&.hub-comics {
+				background-image: url("#{$logos-image-path}/hub-comics.png");
+			}
+			&.million-year-picnic {
+				background-image: url("#{$logos-image-path}/million-year-picnic.png");
+			}
+			&.new-england-comics {
+				background-image: url("#{$logos-image-path}/new-england-comics.png");
+				dd {width: 75%;}
+			}
+			&.paper-asylum {
+				background-image: url("#{$logos-image-path}/paper-asylum.png");
+			}
+			&.the-comic-stop {
+				background-image: url("#{$logos-image-path}/the-comic-stop.png");
+			}
+			&.silver-moon {
+				background-image: url("#{$logos-image-path}/silver-moon.png");
+			}
+			&.outer-limits {
+				background-image: url("#{$logos-image-path}/outer-limits.png");
+			}
+			&.COMIC_BOOK_STORE {
+				background-image: url("#{$logos-image-path}/COMIC_BOOK_STORE.png");
+			}
 		}
 	}
 }
+
+@media (max-width: 991px) { 
+	.listings.boxed .listing {
+		background-image: none !important;
+		font-size: 85%;
+		padding: 1rem;
+	}
+}
+
 
 .signature {
 	font-family: $font-family-italic;
@@ -239,6 +285,9 @@
 	margin-bottom: $spacer-base;
 	text-align: center;
 	width: 100%;
+	&.left-pointer {
+		margin-left: 1rem;
+	}
 	&:after {
 		content: '';
 		position: absolute;
@@ -254,10 +303,23 @@
 		margin-bottom: -25px;
 	}
 	h1 {
-		font-size: $h2-font-size;
+		font-size: $word-balloon-header-size;
+		color: $word-balloon-header-color;
 		margin-bottom: 0;
 	}
 }
+
+@media (max-width: 576px) { 
+	.word-balloon {
+		&.left-pointer {
+			margin-left: 0;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+
 .comic-book-panel {
 	position: relative;
 	.speaker {

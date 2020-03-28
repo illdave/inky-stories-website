@@ -3,24 +3,40 @@
 .about {
 	.section {
 		&.intro {
+			background: $section-intro-about url("#{$layout-image-path}/section-intro-about.png") 0 0 no-repeat;
+			background-size: cover;
+			padding: 0;
 			border-bottom: $border-default;
-			background-position: -20rem 0;
-			background-image: url("#{$layout-image-path}/intro-corner-dots.png");
-			h1 {
-			}
-			p {
-				margin-bottom: 0;
-			}
-			
-			img {
-				&.photo {
-					&.circle {
-						height: $photo-circle-xs;
-						width: $photo-circle-xs;
-						margin-top: -1rem;
+			&.comic-book-panel {
+				.word-balloon {
+					margin-bottom: 0;
+					&:after {
+						left: -33px;
+						top: 20px;
+						border: 33px solid transparent;
+						border-width: 20px 45px 20px 0;
+						border-right-color: $word-balloon-background;
+						margin-top: 0;
+						margin-left: 0;
 					}
 				}
-
+				.speaker {
+					top: 0;
+					bottom: auto;
+					left: 0;
+					width: 175%;
+					height: 100%;
+					background: transparent url("#{$speaker-image-path}/dave-drafting-table.png") 0 0 no-repeat;
+					background-size: cover;
+					background-position: 0 0;
+				}
+				.text {
+					padding: 2rem 0;
+					h1 {}
+					p {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 		&.details {
@@ -43,33 +59,18 @@
 	}
 }
 
-@media (max-width: 1199px) { 
-	.sidebar-column {
-		margin-bottom: 2rem;
-		.circle {
-			height: $photo-circle-md;
-			width: $photo-circle-md;
-		}
-		p {
-			margin: 0;
-		}
-	}
-}
-
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (max-width: 576px) { 
 	.about {
-		.section {
-			&.details {
-				.sidebar-column {
-					.circle {
-						height: $photo-circle-sm;
-						width: $photo-circle-sm;
-						margin-left: -1rem;
-					}
-					p {
-						margin: 0;
+		.section.intro {
+			&.comic-book-panel {
+				.word-balloon {
+					&:after {
+						display: none;
 					}
 				}
+				.text {
+					padding: 1rem;
+				}				
 			}
 		}
 	}

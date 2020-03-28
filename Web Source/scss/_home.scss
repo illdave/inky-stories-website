@@ -6,8 +6,7 @@
 			padding: 0;
 			.text {
 				border-radius: 0;
-				background: 0 0 no-repeat $theme-color-2;
-				background-image: url("#{$layout-image-path}/kirby-krackle.png");
+				background: $section-intro-home url("#{$layout-image-path}/section-intro-home.png") 0 0 no-repeat;
 				background-size: 120%;
 				border-right: rem(3px solid $white);
 				padding: 1.5rem 3rem;

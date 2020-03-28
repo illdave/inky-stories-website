@@ -55,6 +55,14 @@ $link-active-color:							darken($link-color, 20%);
 $white-glow: 								0 0 10px $white;
 
 
+/* section intro colors -------------- */
+
+$section-intro-home: 	$theme-color-2;
+$section-intro-comics: 	$theme-color-5;
+$section-intro-about: 	lighten($theme-color-6, 60%);
+$section-intro-store: 	$theme-color-7;
+
+
 /* typography ------------------------ */
 
 $default-font-weight:						normal;
@@ -136,6 +144,7 @@ $pictures-image-path:						$image-path/pictures;
 $dsm-image-path:							$image-path/dsm;
 $webcomics-image-path:						$assets-path/img/comics;
 $speaker-image-path:						$image-path/speaker;
+$logos-image-path:							$image-path/logos;
 
 
 /* spacing --------------------------- */
@@ -316,6 +325,9 @@ $comic-book-font-line-height:				$comic-book-font-size;
 
 $word-balloon-background: 					$white;
 $word-balloon-color: 						$text-color;
+$word-balloon-header-color: 				$theme-color-2;
+$word-balloon-header-size: 					$h2-font-size;
+
 $word-balloon-border-radius: 				$spacer-small;
 $word-balloon-padding: 						$spacer-base;
 
