@@ -9,7 +9,7 @@
 	"dependencies": {
 		"ekko-lightbox": "^5.3.0",
 		"grunt-css": "^0.5.4",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"lightbox2": "^2.11.1",
 		"node-sass": "^4.13.1",
 		"sass-rem": "^2.0.1",
