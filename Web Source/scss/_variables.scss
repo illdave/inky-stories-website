@@ -4,11 +4,13 @@
 
 $inkystories-blue:							#007bff; // stolen from Bootstrap branding
 $inkystories-blue-dark:						#142f56;
-$inkystories-cyan:							#00a0e3; 
+$inkystories-cyan:							#00afec; 
 $inkystories-orange:						#ff4e00; // stolen from Strava branding
-$inkystories-yellow:						#fdda00;
+$inkystories-yellow:						#fdc131;
 $inkystories-teal:							#0083a9;
-$inkystories-green:							#6d8d23;
+$inkystories-green:							#8ec549;
+$inkystories-green-dark:					#3fb350;
+$inkystories-red:							#ff0000;
 
 
 /* Bootstrap colors ----------------- */
@@ -40,9 +42,12 @@ $theme-color-4:								$inkystories-green;
 $theme-color-5:								$inkystories-yellow;
 $theme-color-6:								$inkystories-teal;
 $theme-color-7:								darken($theme-color-3, 5%); // dark blue 
+$theme-color-8: 							$inkystories-green-dark;
+$theme-color-9: 							$inkystories-red;
 
 $border-default-color: 						$gray-light;
 $border-default: 							rem(1px solid $border-default-color);
+$border-light: 								rem(1px solid $gray-lighter);
 
 $body-bg:									$white;
 
@@ -57,10 +62,10 @@ $white-glow: 								0 0 10px $white;
 
 /* section intro colors -------------- */
 
-$section-intro-home: 	$theme-color-2;
-$section-intro-comics: 	$theme-color-5;
-$section-intro-about: 	lighten($theme-color-6, 60%);
-$section-intro-store: 	$theme-color-7;
+$section-intro-home: 						$theme-color-2;
+$section-intro-comics: 						$theme-color-5;
+$section-intro-about: 						lighten($theme-color-6, 60%);
+$section-intro-store: 						$theme-color-7;
 
 
 /* typography ------------------------ */
@@ -257,17 +262,12 @@ $genre-link-line-height:					3rem;
 $genre-link-line-padding:					$spacer-small $spacer-base;
 $genre-link-line-border-radius:				$spacer-xs;
 
-$genre-link-color: 							$white;
-$genre-link-bg: 							$theme-color-1;
-$genre-link-border: 						rem(1px solid $genre-link-bg);
+$genre-link-color: 							$link-color;
+$genre-link-color-hover: 					$link-hover-color;
+$genre-link-color-active: 					$black;
 
-$genre-link-color-hover: 					$white;
-$genre-link-bg-hover: 						darken($genre-link-bg, 15%);
-$genre-link-border-hover: 					$white;
 
-$genre-link-color-active: 					$theme-color-1;
-$genre-link-bg-active: 						darken($genre-link-bg, 45%);
-$genre-link-border-active: 					$genre-link-bg-active;
+$link-active-color:							darken($link-color, 20%);
 
 $comic-book-page-bg: 						$white;
 $comic-book-page-margin: 					$spacer-large;
@@ -390,6 +390,11 @@ $main-nav-height-mobile: 					$main-nav-height - .5rem;
 
 
 /* FOO ------------------------------- */
+
+$picture-caption-color: 					lighten(#000, 60%);
+$picture-caption-bg: 						transparentize(black, 0.2);
+$picture-caption-link: 						white;
+$picture-caption-strong:					$theme-color-5;
 
 
 

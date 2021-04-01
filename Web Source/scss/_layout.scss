@@ -40,6 +40,14 @@ h1, h2, h3, h4 {
 	}
 	&.centered {
 		text-align: center;
+		.figure-caption {
+			text-align: left;
+		}
+		&.full-width {
+			img {
+				width: 100%;
+			}
+		}
 	}
 	img {
 		margin-bottom: .5rem;
@@ -49,6 +57,9 @@ h1, h2, h3, h4 {
 figure {
 	border-bottom: $border-default;
 	padding-bottom: .5rem;
+	.figure-caption {
+		text-align: left;
+	}
 }
 
 .modal {

@@ -28,6 +28,11 @@
 					}
 				}
 			}
+			.comic-book-panel {
+				.word-balloon {
+					margin-bottom: 1rem;
+				}
+			}
 			.public-image {
 				background: transparent no-repeat 0 0;
 				background-image: url("#{$banner-image-path}/home-banner.jpg");
@@ -69,6 +74,19 @@
 			}
 			h1 {
 				font-size: $font-size-base;
+				margin-bottom: 0;
+			}
+		}
+		.promo-blurb {
+			padding: 1rem;
+			margin-bottom: 1rem;
+			text-align: center;
+			border-bottom: 0;
+			h2 {
+				font-size: $h3-font-size;
+				margin-bottom: 0;
+			}
+			p {
 				margin-bottom: 0;
 			}
 		}

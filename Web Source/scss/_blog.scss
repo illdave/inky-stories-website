@@ -12,6 +12,7 @@
 		}
 		.entry-thumb {
 			margin-bottom: $spacer-base;
+			position: relative;
 			a {
 				img {
 					border: $border-default;
@@ -22,11 +23,24 @@
 					}
 				}
 			}
+			p {
+				position: absolute;
+				left: 0;
+				bottom: -1rem;
+				padding: .5rem 1rem;
+				color: $picture-caption-color;
+				width: 100%;
+				background: $picture-caption-bg;
+				a {
+					color: $picture-caption-link;
+				}
+				strong {
+					color: $picture-caption-strong;
+				}
+			}
 		}
 		header {
-			border-bottom: $border-default;
-			margin-bottom: $spacer-base;
-			padding-bottom: $spacer-small;			
+			margin-bottom: $spacer-small;
 			h1 {
 				font-size: $h2-font-size;
 			}
@@ -35,7 +49,9 @@
 				font-size: $h4-font-size;
 				font-style: italic;
 				color: $gray-dark;
-
+				.book-title {
+					font-family: inherit;
+				}
 			}
 			.entry-meta {
 				font-size: 80%;
@@ -107,6 +123,16 @@
 			padding-top: $spacer-small;
 			dt {
 				margin-bottom: $spacer-xs;
+				font-size: $h4-font-size;
+			}
+			dd {
+				&.active {
+					a {
+						font-family: $font-family-italic;
+						color: $gray-light;
+						cursor: default;
+					}
+				}
 			}
 		}
 		
