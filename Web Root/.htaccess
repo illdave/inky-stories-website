@@ -205,3 +205,6 @@ Redirect 301 /exhibit-inman-square http://www.inkystories.com/blog/exhibit-2002-
 Redirect 301 /exhibit-1369 http://www.inkystories.com/blog/exhibit-2002-inman-square.html
 Redirect 301 /exhibit-1369-coffee-house http://www.inkystories.com/blog/exhibit-2002-inman-square.html
 Redirect 301 /exhibit-1369-coffeehouse http://www.inkystories.com/blog/exhibit-2002-inman-square.html
+
+Redirect 301 /ask-kodiak https://www.inkystories.com/blog/commission-ask-kodiak.html
+Redirect 301 /superkick https://www.inkystories.com/blog/commission-ask-kodiak.html
