@@ -232,6 +232,11 @@ $photo-circle-xs: 							10rem;
 $circle-border-radius: 						50%;
 
 $intro-bg:  								$theme-color-2;
+
+$picture-caption-color: 					lighten(#000, 60%);
+$picture-caption-bg: 						transparentize(black, 0.2);
+$picture-caption-link: 						white;
+$picture-caption-strong:					$theme-color-5;
 	
 
 /* home ------------------------------ */
@@ -391,10 +396,6 @@ $main-nav-height-mobile: 					$main-nav-height - .5rem;
 
 /* FOO ------------------------------- */
 
-$picture-caption-color: 					lighten(#000, 60%);
-$picture-caption-bg: 						transparentize(black, 0.2);
-$picture-caption-link: 						white;
-$picture-caption-strong:					$theme-color-5;
 
 
 
