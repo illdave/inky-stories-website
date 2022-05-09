@@ -21,7 +21,7 @@
 		"simplelightbox": "^2.1.2"
 	},
 	"devDependencies": {
-		"async": "^1.4.2",
+		"async": "^2.6.4",
 		"chalk": "^1.1.1",
 		"cross-spawn": "^2.0.0",
 		"dargs": "^4.0.1",
