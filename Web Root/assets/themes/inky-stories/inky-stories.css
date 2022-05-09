@@ -26732,6 +26732,9 @@ img.social-media-preview {
 .thumbnails .thumbnail.batgirl-training-day .image {
   background-image: url("../../img/comics/batgirl-in-training-day/01.jpg") !important;
 }
+.thumbnails .thumbnail.end-of-the-doctor .image {
+  background-image: url("../../img/comics/the-end-of-the-doctor/01.jpg") !important;
+}
 .thumbnails .thumbnail.flatline .image {
   background-image: url("../../img/comics/doctor-who/flatline.jpg") !important;
 }
