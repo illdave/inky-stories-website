@@ -1,75 +1,143 @@
 /* main navigation -------------------- */
 
 .main-navigation {
-	background: $main-nav-bg;
-	background-image: url("#{$layout-image-path}/main-nav-art-home.png");
-	border-bottom: rem(2px solid white);
-	.inky-stories-brand {
-		min-height: $main-nav-height;
-	}
+	background: $main-nav-bg url("#{$layout-image-path}/main-nav-art.png") 0 0 repeat;
+	border-bottom: rem(0px solid white);
+	background-size: 50%;
 	
-	.navbar-brand  {
-		font-size: $h1-font-size;
-		padding: $navbar-brand-padding-y;
-		color: $navbar-brand;
-		display: block;
-		width: $main-nav-brand-width;
-		height: $main-nav-brand-height;
-		text-indent: $text-indent-for-image;
-		background: url("#{$layout-image-path}/main-nav-logo.png") no-repeat 0 0;
-		background-size: contain;
-		margin: $main-nav-brand-margin;
+	.navbar {
+		padding: $main-nav-padding;
+		.inky-stories-brand {
+			min-height: $main-nav-height;
+		}
+		.navbar-brand  {
+			font-size: $h1-font-size;
+			padding: $navbar-brand-padding-y;
+			color: $navbar-brand;
+			display: block;
+			width: $main-nav-brand-width;
+			height: $main-nav-brand-height;
+			text-indent: $text-indent-for-image;
+			background: url("#{$layout-image-path}/main-nav-logo.png") no-repeat 0 0;
+			background-size: contain;
+			margin: $main-nav-brand-margin;
 
-		&:hover {
-			text-shadow: $navbar-brand-hover;
-		}
-		&:active {
-			color: $navbar-brand-active;
-		}
-	}
-	.navbar-nav {
-		.nav-link {
-			color: $nav-link-color;
-			background: $nav-link-bg;
-			border: $nav-link-border;
-			padding: .25rem .5rem;
-			border-radius: .25rem;
-			margin: 0 .25rem;
 			&:hover {
-				color: $nav-link-hover-color;
-				background: $nav-link-hover-bg;
-				border-color: $nav-link-hover-border-color;
+				text-shadow: $navbar-brand-hover;
 			}
 			&:active {
-				color: $nav-link-active-color;
-				background: $nav-link-active-bg;
-				border-color: $nav-link-active-border-color;
+				color: $navbar-brand-active;
 			}
 		}
-		.active>.nav-link, 
-		.nav-link.active, 
-		.nav-link.show, 
-		.show>.nav-link {
-			color: $nav-link-curr-color;
-			background: $nav-link-curr-bg;
-			border-color: $nav-link-curr-border-color;
-		}
-	}
-		
-	.navbar-toggler {
-		border: rem(1px solid);
-		border-color: transparentize(white, 0.7);
-		padding: 0.15rem 0.25rem;
-		
-		.navbar-toggler-icon {
-			color: $white;
-			line-height: 1.9rem;
-			&:before {
-				font-family: 'Font Awesome Solid';
-				font-size: 1.5rem;
-				content: $navbar-toggler-icon;
+		.navbar-nav {
+			margin-bottom: -0.5rem;
+			margin-top: 0.5rem;		
+    	}
+		.navbar-toggler {
+			border: rem(1px solid);
+			border-color: transparentize(white, 0.7);
+			padding: 0.15rem 0.25rem;
+			&:focus {
+				box-shadow: $box-shadow-white;
 			}
-		}	
+		
+			.navbar-toggler-icon {
+				color: $white;
+				line-height: 1.9rem;
+				&:before {
+					font-family: 'Font Awesome Solid';
+					font-size: 1.5rem;
+					content: $navbar-toggler-icon;
+				}
+			}	
+		}
+		.navbar-collapse {
+			justify-content: flex-end;
+			.navbar-nav {
+				li {
+					margin-bottom: 0;
+					a {
+						display: inline-block;
+						margin: 0 .75rem;
+						text-align: center;
+						text-decoration: none;
+						.nav-icon {
+							position: relative;
+							display: block;
+							margin: 0 auto;
+							margin-bottom: .5rem;
+							background: $main-nav-icon-bg;
+							width: $main-nav-icon-size;
+							height: $main-nav-icon-size;
+							background-size: contain;
+							border-radius:$circle-border-radius;
+							&::after {
+								position: absolute;
+								display: inherit;
+								content: '';
+								top: -$main-nav-icon-outline-offset;
+								left: -$main-nav-icon-outline-offset;
+								width: $main-nav-icon-outline-size;
+								height: $main-nav-icon-outline-size;
+								border: $nav-link-border;
+								border-radius: $main-nav-icon-size;
+								border-width: $main-nav-icon-outline-width;
+								background-color: transparent;
+							}							
+						}
+						.nav-text {
+							display: block;
+							color: $nav-link-color;
+							background: $nav-link-bg;
+							border: $nav-link-border;
+							padding: $btn-padding;
+							border-radius: $border-radius-small;
+						}
+					}
+					&:hover {
+						.nav-icon {
+							&::after {
+								border-color: $nav-link-hover-border-color;
+							}							
+						}
+						.nav-text {
+							color: $nav-link-hover-color;
+							background: $nav-link-hover-bg;
+							border-color: $nav-link-hover-border-color;
+						}
+					}
+					&:active {
+						.nav-icon {}
+						.nav-text {
+							color: $nav-link-active-color;
+							background: $nav-link-active-bg;
+							border-color: $nav-link-active-border-color;
+						}
+					}
+					
+					&.active>a, 
+					a.active, 
+					a.show, 
+					.show>a {
+						.nav-icon {
+							&::after {
+								border-color: $nav-link-curr-border-color;
+							}							
+						}
+						.nav-text {
+							color: $nav-link-curr-color;
+							background: $nav-link-curr-bg;
+							border-color: $nav-link-curr-border-color;
+						}
+					}
+					&.web-comics .nav-icon {background-image: url("#{$layout-image-path}/nav-icon-comics.png")};
+					&.about .nav-icon {background-image: url("#{$layout-image-path}/nav-icon-about.png")};
+					&.store .nav-icon {background-image: url("#{$layout-image-path}/nav-icon-store.png")};
+					&.blogs .nav-icon {background-image: url("#{$layout-image-path}/nav-icon-blog.png")};
+					&.contact .nav-icon {background-image: url("#{$layout-image-path}/nav-icon-contact.png")};
+				}
+			}
+		}
 	}
 	
 	.search-form {
@@ -91,15 +159,10 @@
 }
 
 @media (max-width: 767px) { 
-	body {
-		padding-top: $main-nav-height-mobile;
-	}
-	
 	.main-navigation {
 		background-image: url("#{$layout-image-path}/main-nav-art.png");
-		.navbar {
-			padding: .5rem;
-			text-align: center;
+		 .navbar {
+		 	padding: 1rem 0;
 			.navbar-brand {
 				width: $main-nav-brand-width-mobile;
 				height: auto;
@@ -110,36 +173,57 @@
 				margin-left: 0;
 			}
 			.navbar-nav {
-				flex-direction: row;
-				text-align: center;
-				display: block;
-				margin: 1rem 0;
-				.nav-item {
-					display: inline-block;
-					.nav-link {
-						display: inline-block;
-						padding: 0.25rem .5rem;
-					}	
-				}	
+				text-align: left;
+				margin: 0.5rem 0
 			}
-			.navbar-nav-scroll {
-				max-width: 100%;
-				height: 2.5rem;
-				margin-top: .25rem;
-				overflow: hidden;
-				font-size: .875rem;
-			}
-			.search-form {
-				width: 100%;
-				form {
-					margin: 0 auto;
-					text-align: center;
-					width: 100%;
-					.form-control {
-						width: 40%;
-						display: inline-block;
+			.navbar-collapse {
+				.navbar-nav {
+					flex-direction: row;
+					text-align: left;
+					li {
+						display: inline;
+						a {
+							margin: 0;
+							margin-left: 0.5rem;
+							.nav-icon {
+								display: none;
+							}
+							.nav-text {
+								display: inline-block;
+							}
+						}
 					}
 				}
+				.navbar-nav-scroll {
+					max-width: 100%;
+					height: 2.5rem;
+					margin-top: .25rem;
+					overflow: hidden;
+					font-size: .875rem;
+				}
+				.search-form {
+					width: 100%;
+					form {
+						margin: 0 auto;
+						text-align: center;
+						width: 100%;
+						.form-control {
+							width: 40%;
+							display: inline-block;
+						}
+					}
+				}				
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-navigation {
+		.navbar {
+			.navbar-brand {
+				background-image: url("#{$layout-image-path}/main-nav-logo-stacked.png");
+				height: 7rem;
 			}
 		}
 	}

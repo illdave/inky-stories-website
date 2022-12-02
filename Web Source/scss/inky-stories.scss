@@ -1,21 +1,22 @@
-/* Inky Stories 2.0
- * Copyright 2020 and beyond Rotten Kid Press.
+/* Inky Stories 3.0
+ * Copyright 2022 and beyond Rotten Kid Press.
  * From David Marshall, America's Artist */
 
 
 // Dependencies -------------------------------------------------- //
 
+/* Dart Sass: methods for using "/" for division, which will be deprecated
+https://sass-lang.com/documentation/breaking-changes/slash-div */
+@use "sass:list";
+@use "sass:math";
+
 /* Bootstrap: visual design framework
 https://github.com/twbs/bootstrap */
-@import "../lib/bootstrap-4.6.0/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 /* Font Awesome: font icon library
 https://github.com/FortAwesome/Font-Awesome */
-@import "../lib/fontawesome-5.12.0/scss/fontawesome.scss";
-
-/* Animate: cross-browser animations
-https://github.com/geoffgraham/animate.scss */
-@import "../lib/animate.scss-master/animate.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 /* Sass Rem: Sass function and mixin to use rem units with optional pixel fallback
 https://www.npmjs.com/package/sass-rem */
@@ -25,14 +26,11 @@ https://www.npmjs.com/package/sass-rem */
 https://github.com/lokesh/lightbox2 */
 @import "../../lib/lightbox-2.11.1/css/lightbox.css";
 
-/* Tipue Search: self-hosted javaScript object, free of MySQL/SQL 
-http://www.tipue.com/search */
-@import "../../lib/tipuesearch-7.1/tipuesearch-min.css";
-
 
 // Inky Stories Dependencies ----------------------------------- //
 
 @import "variables";
+@import "mixins";
 @import "fonts";
 @import "html-elements";
 @import "utility";
@@ -45,6 +43,5 @@ http://www.tipue.com/search */
 @import "store";
 @import "blog";
 
-.imggallery{
-    max-height: 250px;
-}
+
+

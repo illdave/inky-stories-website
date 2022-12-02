@@ -41,9 +41,10 @@ $theme-color-3:								$inkystories-cyan;
 $theme-color-4:								$inkystories-green;
 $theme-color-5:								$inkystories-yellow;
 $theme-color-6:								$inkystories-teal;
-$theme-color-7:								darken($theme-color-3, 5%); // dark blue 
+$theme-color-7:								darken($theme-color-1, 18%); // dark blue 
 $theme-color-8: 							$inkystories-green-dark;
 $theme-color-9: 							$inkystories-red;
+$theme-color-10: 							$inkystories-blue-dark;
 
 $border-default-color: 						$gray-light;
 $border-default: 							rem(1px solid $border-default-color);
@@ -51,24 +52,30 @@ $border-light: 								rem(1px solid $gray-lighter);
 
 $body-bg:									$white;
 
-$headings-color: 							$black;
+$h1-color: 									darken($theme-color-2, 5%); 
+$headings-color: 							lighten($theme-color-10, 10%);
 $text-color:								#212529;
-$link-color:								$theme-color-1;
+$text-disabled-color:						$gray-light;
+$link-color:								darken($theme-color-1, 10%); // slightly darker blue 
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 
+$cta-link-color: 							$link-color;
+$cta-link-hover-color: 						$text-color;
+$cta-link-active-color: 					darken($cta-link-color, 70%);
+
 $white-glow: 								0 0 10px $white;
-
 $table-border-color:						$border-default-color;
-
+$box-shadow-white:                  		0 .25rem .5rem rgba($white, .15);
 
 
 /* section intro colors -------------- */
 
-$section-intro-home: 						$theme-color-2;
-$section-intro-comics: 						$theme-color-5;
+$section-intro-home: 						$inkystories-blue;
+$section-intro-comics: 						lighten($inkystories-yellow, 10%);
 $section-intro-about: 						lighten($theme-color-6, 60%);
 $section-intro-store: 						$theme-color-7;
+$section-intro-contact: 					lighten($inkystories-blue, 10%);
 
 
 /* typography ------------------------ */
@@ -97,6 +104,14 @@ $opensans-italic:							"Open Sans Italic";
 $opensans-bold-italic:						"Open Sans Bold Italic";
 $opensans-semibold-italic:					"Open Sans Semibold";
 
+$avengeance-mightiest-avenger:				"Avengeance Mightiest Avenger";
+$blambot-fxpro-heavy:						"Blambot FXPro Heavy";
+$blambot-fxpro-heavy-italic:				"Blambot FXPro Heavy Italic";
+$comicraft-biffbamboom:						"Comicraft BiffBamBoom";
+$comicraft-foom:							"Comicraft Foom";
+
+$comic-book-headers: 						$comicraft-foom;
+
 $comic-book-font: 							"Spinner Rack Regular";
 $comic-book-font-italic: 					"Spinner Rack Italic";
 $comic-book-font-bold-italic: 				"Spinner Rack Bold Italic";
@@ -105,7 +120,9 @@ $font-family-sans-serif: 					$proxima-nova,"helvetica neue", helvetica, arial, 
 $font-family-serif:       					georgia, "times new roman", times, serif;
 $font-family-monospace:      				SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:        					$font-family-sans-serif;
-$font-family-headers:						$proxima-nova-bold;
+
+$font-family-headers:						$comic-book-headers;
+$font-family-info-headers:					$proxima-nova-bold;
 
 $font-family-italic:						$proxima-nova-italic;
 $font-family-bold:							$proxima-nova-bold;
@@ -114,7 +131,7 @@ $font-family-bold-italic:					$proxima-nova-bold-italic;
 $font-size-base:          					1rem;
 $font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
 $font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
-$font-size-small:         					ceil(($font-size-base * 0.85)); // ~12px
+$font-size-small:         					math.div($font-size-base, 1.15); // ~12px
 
 $h1-font-size:                				$font-size-base * 2.0;
 $h2-font-size:                				$font-size-base * 1.6;
@@ -123,6 +140,7 @@ $h4-font-size:                				$font-size-base * 1.2;
 $h5-font-size:                				$font-size-base;
 $h6-font-size:                				$font-size-base;
 
+$link-decoration:							underline;
 $link-hover-decoration:						none;
 $text-indent-for-image:  					-9999px;
 
@@ -160,9 +178,8 @@ $logos-image-path:							$image-path/logos;
 $spacer: 									1rem;
 $spacer-base:								$spacer;
 $spacer-large:								$spacer-base * 2;
-$spacer-small:								$spacer-base/2;
-$spacer-xs:									$spacer-base/4;
-
+$spacer-small:								math.div($spacer-base, 2);
+$spacer-xs:									math.div($spacer-base, 4);
 $spacer-base-vertical:						$spacer-base;
 $spacer-base-horizontal:					$spacer-large;
 
@@ -193,36 +210,49 @@ $padding-small-horizontal:  				$padding-small-vertical * 2;
 
 $border-radius-base:        				$spacer-small;
 $border-radius-large:       				$border-radius-base * 2;
-$border-radius-small:       				$border-radius-base/2;
+$border-radius-small:       				math.div($border-radius-base, 2);
 
 $section-padding:		 					$spacer-base 0;
 $section-padding-large: 					$spacer-large 0;
 
 
 /* Font Awesome icons ---------------- */
+$fa-var-circle-envelope: 					\e10c;
+$fa-var-at: 								\40;
 
-$icon-link-color: 							$gray-light;
+$icon-link-color: 							$gray-dark;
 $icon-link-color-hover: 					$theme-color-1;
 $icon-link-color-active: 					$black;
 
 $icon-back-to-top:   						quote($fa-var-chevron-up);
 $icon-learn-more:   						quote($fa-var-caret-right);
+$icon-learn-cta:   							quote($fa-var-circle-right);
+$icon-comics-nav:   						quote($fa-var-paint-brush);
+
+$icon-toggle-collapsed:   					quote($fa-var-circle-chevron-down);
+$icon-toggle-open:   						quote($fa-var-circle-chevron-up);
+
 $icon-facebook:   							quote($fa-var-facebook);
 $icon-twitter:   							quote($fa-var-twitter);
-$icon-email:   								quote($fa-var-at);
+$icon-email:   								quote($fa-var-envelope);
 
 $icon-comic-nav-prev:   					quote($fa-var-chevron-circle-left);
 $icon-comic-nav-next:   					quote($fa-var-chevron-circle-right);
 
 $navbar-toggler-icon:   					quote($fa-var-bars);
+$icon-list-link: 							quote($fa-var-chevron-right);
+
 
 
 /* uncategorized --------------------- */
 
 $footer-border: 							rem(1px solid $gray-light);
-$footer-bg: 								#efefef;
+$footer-bg-color: 							#efefef;
+$footer-bg: 								$footer-bg-color url("#{$layout-image-path}/footer-dots-logo.png") no-repeat 0 0;
+$footer-height: 							5.6rem;
+$footer-height-mobile: 						3rem;
 
-$hr-margin: 								$spacer/2;
+$hr-margin: 								math.div($spacer, 2);
 
 $jumbotron-padding: 						$spacer-large $spacer-base;
 $jumbotron-bg: 								$gray-lighter;
@@ -240,6 +270,8 @@ $picture-caption-color: 					lighten(#000, 60%);
 $picture-caption-bg: 						transparentize(black, 0.2);
 $picture-caption-link: 						white;
 $picture-caption-strong:					$theme-color-5;
+
+$btn-padding:	 							0.25rem 0.5rem;
 	
 
 /* home ------------------------------ */
@@ -260,7 +292,7 @@ $banner-text-border-radius-large: 			$border-radius-large;
 /* comics ---------------------------- */
 
 $comic-listing-intro-bg: 					#cde7e7 no-repeat 0 0;
-$comic-listing-intro-border: 				$border-default;
+$comic-listing-intro-border: 				rem(4px solid $white);
 $comic-listing-intro-header: 				$headings-color;
 $comic-listing-intro-color: 				$text-color;
 
@@ -314,7 +346,8 @@ $comic-book-thumbnail-image-margin-bottom:	$spacer-small;
 $comic-book-ratings-color: 					$black;
 $comic-book-ratings-bg: 					$white;
 $comic-book-ratings-border: 				rem(2px solid black);
-$comic-book-ratings-padding: 				.15rem .25rem;
+$comic-book-ratings-border-radius: 			.15rem;
+$comic-book-ratings-padding: 				.15rem .5rem;
 $comic-book-ratings-font-size: 				60%;
 $comic-book-ratings-font-family: 			$font-family-serif;
 
@@ -335,14 +368,21 @@ $word-balloon-background: 					$white;
 $word-balloon-color: 						$text-color;
 $word-balloon-header-color: 				$theme-color-2;
 $word-balloon-header-size: 					$h2-font-size;
-
 $word-balloon-border-radius: 				$spacer-small;
-$word-balloon-padding: 						$spacer-base;
+$word-balloon-padding: 						$spacer-large;
+
+$caption-box-background: 					$word-balloon-background;
+$caption-box-color: 						$word-balloon-color;
+$caption-box-header-color: 					$word-balloon-header-color;
+$caption-box-header-size: 					$word-balloon-header-size;
+$caption-box-border: 						rem(8px solid #b7e4f3);
+$caption-box-border-radius: 				$word-balloon-border-radius;
+$caption-box-padding: 						$word-balloon-padding;
 
 
 /* main navigation ------------------- */
 
-$main-nav-bg:								#142f56 0 0 no-repeat;
+$main-nav-bg:								$theme-color-10;
 
 $main-nav-padding-horizontal: 				$spacer-small;
 $main-nav-padding-vertical: 				$spacer-base;
@@ -365,12 +405,12 @@ $nav-link-current:							$white;
 $nav-link-active:							$black;
 
 $nav-link-color:							$white;
-$nav-link-bg:								$theme-color-1;
+$nav-link-bg:								darken($theme-color-1, 10%); // slightly darker blue 
 $nav-link-border:							rem(1px solid $nav-link-bg);
 
-$nav-link-hover-color:						$white;
-$nav-link-hover-bg:							$nav-link-bg;
-$nav-link-hover-border-color:				$white;
+$nav-link-hover-color:						$nav-link-bg;
+$nav-link-hover-bg:							$white;
+$nav-link-hover-border-color:				$nav-link-hover-bg;
 
 $nav-link-active-color:						$theme-color-1;
 $nav-link-active-bg:						darken($nav-link-bg, 45%);
@@ -384,17 +424,26 @@ $navbar-icon:								$white;
 $navbar-icon-hover:							$white-glow;
 $navbar-icon-active:						$black;
 
-$navbar-brand-padding-vertical: 			0;
+$navbar-brand-padding-vertical: 			0rem;
 
-$main-nav-brand-width: 						300px;
+$main-nav-brand-width: 						24rem;
 $main-nav-brand-width-mobile: 				260px;
-$main-nav-brand-height: 					4rem;
+$main-nav-brand-height: 					5rem;
 $main-nav-brand-padding: 					$navbar-brand-padding-y;
-$main-nav-brand-margin: 					0 $spacer-base 0 6rem;
+$main-nav-brand-margin: 					0 $spacer-base 0 0;
 $main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
+$main-nav-padding: 							1rem 0 1.5rem;
+
+$main-nav-icon-size: 						4rem;
+$main-nav-icon-bg: 							$white 0 0 no-repeat;
+$main-nav-icon-outline-width: 				rem(3px);
+$main-nav-icon-outline-offset: 				rem(9px);
+$main-nav-icon-outline-size: 				$main-nav-icon-size + 2 * $main-nav-icon-outline-offset;
+
 $main-nav-x-padding: 						.5rem;
-$main-nav-height: 							$main-nav-brand-height + 2 * $navbar-brand-padding-vertical + $main-nav-padding-vertical;		
-$main-nav-height-mobile: 					$main-nav-height - .5rem;		
+$main-nav-height: 							2 * $main-nav-padding-vertical + $main-nav-icon-size + 2 * $main-nav-icon-outline-offset + $font-size-base + 2 * $spacer-small;
+$main-nav-height-mobile: 					$main-nav-brand-height + $main-nav-x-padding;
+$main-new-height: 							2 * $navbar-brand-padding-vertical;	
 
 
 /* FOO ------------------------------- */

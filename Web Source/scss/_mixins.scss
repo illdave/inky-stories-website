@@ -1,0 +1,17 @@
+/* mixins ----------------------------- */
+
+@mixin comic-book-font {
+	font-family: $comic-book-font;
+	i, em {
+		font-family: $comic-book-font-italic;
+	}
+	bold, strong, h2, h3, h4, dt {
+		font-family: $comic-book-font-bold-italic;
+	}
+	h1 {
+		font-family: $comic-book-headers;
+	}
+	&.caption {
+		font-family: $comic-book-font-italic;
+	}
+}

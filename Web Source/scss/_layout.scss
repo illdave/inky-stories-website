@@ -1,7 +1,6 @@
 /* layout ----------------------------- */
 
 .text-page, .comic-book {
-	padding: $spacer-large 0;
 }
 .banner-top {
 	padding-top: 0;
@@ -15,6 +14,23 @@ h1, h2, h3, h4 {
 		font-family: $font-family-bold-italic;
 	}
 }
+
+
+/* sidebar column --------------------- */
+
+.sidebar {
+	.item {
+		border-bottom: $border-default;
+		margin-bottom: $spacer-base;
+		&:last-child {
+  			border: 0;
+		}
+	}
+	.links a {
+		text-decoration: none;
+	}
+}
+
 
 /* picture-figure text wrapping ------- */
 
@@ -59,6 +75,10 @@ figure {
 	padding-bottom: .5rem;
 	.figure-caption {
 		text-align: left;
+		margin-bottom: .5rem;
+	}
+	&.no-border {
+		border: 0;
 	}
 }
 
@@ -71,23 +91,34 @@ figure {
 }
 
 .text-page {
+	h3, .h3 {
+		border-top: rem(1px solid $gray-light);
+		padding-top: 1.5rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
 	.text-page-header {
-		border-bottom: $border-default;
+		padding-top: $spacer-base;
 		padding-bottom: $spacer-base;
-		margin-bottom: $spacer-base;
-		h1 {}
+		margin-bottom: $spacer-large;
+		@include comic-book-font;
+		h1 {
+			font-size: $font-size-base * 2.5;
+			line-height: $font-size-base * 2.5;
+			margin-bottom: $spacer-base;
+		}
+		h2 {
+		}
 		p {
-			color: $gray;
 			margin-bottom: 0;
+			font-size: $font-size-base * 1.15;
+			line-height: 1.2rem;;
 		}
 	}
 	@media (min-width: 1200px) and (max-width: 991px), (min-width: 992px) {
-		.container, .author-notes {
-			max-width: 50rem;
-		}
 		.author-notes {
-		  padding-right: ($grid-gutter-width / 2);
-		  padding-left: ($grid-gutter-width / 2);
+		  padding-right:math.div($grid-gutter-width, 2);
+		  padding-left: math.div($grid-gutter-width, 2);
 		}
 	}
 }
@@ -104,13 +135,5 @@ img {
 
 /* misc layout ------------------------ */
 
-.section {
-	&.intro {
-		background: $intro-bg no-repeat 0 0;
-		img {
-			margin-bottom: .5rem;
-		}
-	}
-}
 
 

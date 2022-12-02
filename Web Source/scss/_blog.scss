@@ -64,13 +64,15 @@
 				.byline {
 					.author {
 						font-family: $font-family-headers;
+						display: none;
 					}
 				}			
 				.posted-on {
 					a {
 						font-family: $font-family-base;
+						text-decoration: none;
+						color: $gray-lightest;
 					}
-				
 					time {
 						&.entry-date {}
 						&.updated {
@@ -118,19 +120,23 @@
 		a {
 			font-family: $font-family-base;
 		}
+		h2 {
+			margin-bottom: 1rem;
+		}
 		dl {
-			border-top: $border-default;
-			padding-top: $spacer-small;
+			margin-bottom: $spacer-large;
 			dt {
-				margin-bottom: $spacer-xs;
+				margin-bottom: $spacer-small;
 				font-size: $h4-font-size;
 			}
 			dd {
 				&.active {
 					a {
-						font-family: $font-family-italic;
 						color: $gray-light;
 						cursor: default;
+						&:after {
+							display: none;
+						}
 					}
 				}
 			}
@@ -145,9 +151,6 @@
 			}
 		}
 	}
-	.sticky-top {
-		top: $main-nav-height + $spacer-base;
-	}
 	
 	&.index {
 		article {
@@ -157,6 +160,9 @@
 				margin-bottom: 0;
 				h1 {
 					font-size: $h3-font-size;
+					a {
+						text-decoration: none;
+					}
 				}
 				.entry-meta {
 					text-align: left;

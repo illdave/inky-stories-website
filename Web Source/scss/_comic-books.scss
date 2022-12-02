@@ -5,7 +5,6 @@
 		.comic-book-page {
 			background: $comic-book-page-bg;
 			text-align: center;
-			margin-bottom: $comic-book-page-margin;
 			padding: $comic-book-page-padding;
 			
 			img {
@@ -171,10 +170,12 @@
 	.section {
 		&.intro {
 			border-bottom: 0;
-			background: $section-intro-comics url("#{$layout-image-path}/section-intro-comics.png") 0 0 no-repeat;
-			background-size: cover;
-			padding: 0;
-			
+			padding-bottom: 1rem;
+			background: $section-intro-comics url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+			background-size: 50%;
+			.text-page-header {
+				margin-bottom: 0;
+			}
 			&.comic-book-panel {
 				.word-balloon {
 					&:after {
@@ -216,13 +217,42 @@
 		}
 		
 		&.genre-nav {
-			padding: .5rem 0;
+			text-align: center;
+			.comics-nav-toggler {
+				display: inline-block;
+				position: relative;	
+				text-decoration: none;
+				background: $white;
+				padding: .5rem 1rem;
+				margin: 0 auto 1rem;
+				&:after {
+					font-family: 'Font Awesome Solid';
+					content: $icon-toggle-open;
+				}
+				&.collapsed {
+					&:after {
+						content: $icon-toggle-collapsed;
+					}
+				}
+			}
+		
+			.nav {
+				margin-bottom: -4px;
+			}
+			padding: 0;
+			
+			background: $section-intro-comics url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+			background-size: 50%;
+			
+			
 			border-bottom: $comic-listing-intro-border;
 			li {
 				a {
 					color: $genre-link-color;
-					padding-right: .5rem;
-					padding-left: .5rem;
+					padding: .5rem 1rem;
+					text-decoration: none;
+					font-family: $font-family-bold;
+					text-transform: uppercase;
 					
 					color: $genre-link-color;
 			
@@ -234,6 +264,7 @@
 					}
 					&.active {
 						color: $black;
+						background: $white;
 					}
 				}
 			}
@@ -243,7 +274,7 @@
 			padding: 0;
 			border: 0;
 			.genre {
-				background: transparent 0 0 no-repeat;
+				background: $white 0 0 no-repeat;
 				background-size: cover;
 				padding-bottom: $spacer-base;
 				margin-bottom: 0;
@@ -252,9 +283,6 @@
 				&#adult-content {
 					border-bottom: 0;
 				}
-				.genre-label {
-					p {}
-				}
 				.ratings {
 					float: right;
 					.rating {
@@ -262,6 +290,7 @@
 						color: $comic-book-ratings-color;
 						background: $comic-book-ratings-bg;
 						border: $comic-book-ratings-border;
+						border-radius: $comic-book-ratings-border-radius;
 						padding: $comic-book-ratings-padding;
 						font-size: $comic-book-ratings-font-size;
 						font-family: $comic-book-ratings-font-family;
@@ -303,24 +332,6 @@
 			}
 		}
 									
-		&#comics-for-everyone {
-			background-color: $comics-for-everyone-bg;
-		}
-		&#agent-k-null-device {
-			background-color: $agent-k-null-device-bg;
-		}
-		&#accidental-genius {
-			background-color: $accidental-genius-bg;
-		}
-		&#dark-knight-dark-night {
-			background-color: $dark-knight-dark-night-bg;
-		}
-		&#doctor-who {
-			background-color:$doctor-who-bg;
-		}
-		&#twenty-four-hour-comics {
-			background-color: $twenty-four-hour-comics-bg;
-		}
 		&#adult-content {
 			background-color: $comics-for-adults-bg;
 			h2 {
@@ -328,12 +339,18 @@
 			}
 			p {
 				color: $gray-light;
-			}
-			a {
-				&:hover {
-					color: $white;
+			}			
+			.thumbnails a {
+				.text .name {
 				}
-				&:active {}
+				.text .description {
+					color: $gray-light; 
+				}
+				&:hover {
+					.text .name {
+						color: $white;	
+					}
+				}					
 			}
  		}
 		&.FOO_GENRE {
@@ -390,6 +407,9 @@
 			}
 			p {
 				margin-bottom: $spacer-small;
+			}
+			a {
+				text-decoration: none;
 			}
 		}
 		&.FOO_COMIC .image {
@@ -788,7 +808,57 @@
 			}
 		}
 	}			
-}		
+}
 
+@media (min-width: 1200px) { 
+	.genre-nav {
+		.navbar-collapse {
+			display: block !important;
+		}
+		.comics-nav-toggler {
+			display: none !important;
+		}
+		
+	}	
+}	
 
-
+@media (max-width: 1200px) {
+	.comic-book-listing .section.intro {
+		padding-bottom: 0;
+	}
+	.genre-nav {
+		.nav {
+			position: relative;
+			background: $white !important;
+			padding: 1rem;
+			margin-bottom: 1rem !important;
+			border-radius: 1rem;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0;
+				height: 0;
+				border-top: 2rem solid $word-balloon-background;	
+				border-left: 1rem solid transparent;
+				border-right: 1rem solid transparent;
+				margin-bottom: -1.5rem;
+			}			
+			
+			li {
+				margin-bottom: 0;
+				a {
+					padding: .5rem !important;
+					&.active {
+						color: $text-disabled-color !important;
+						text-decoration: none !important;
+						background-color: transparent !important; 
+						cursor: default;
+					}
+				}
+			}
+		}
+	}	
+}	

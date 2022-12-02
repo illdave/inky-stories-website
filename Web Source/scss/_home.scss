@@ -3,34 +3,43 @@
 .home {
 	.section {
 		&.intro {
-			padding: 0;
-			.text {
-				border-radius: 0;
-				background: $section-intro-home url("#{$layout-image-path}/section-intro-home.png") 0 0 no-repeat;
-				background-size: 120%;
-				border-right: rem(3px solid $white);
-				padding: 1.5rem 3rem;
-				min-height: 15rem;
-				h1 {
-					color: $black;	
-					font-size: $h2-font-size;
-					text-align: center;
-					display: none;
-				}
-				p {
+			padding: 1rem 0;
+			background: $section-intro-home url("#{$layout-image-path}/intro-corner-dots-nofade-cyan.png") 0 0 repeat;
+			background-size: 50%;
+			h1 {
+				color: $black;	
+				text-align: left;
+				font-size: $h1-font-size;
+			}
+			p {
+				text-align: left;
+				margin-bottom: .5rem;
+				&.button-row {
 					margin-bottom: 0;
-					&.button-row {
-						margin-bottom: 0;
-						text-align: right;
-						.btn {
-							margin-bottom: .5rem;
-						}
+					text-align: right;
+					.btn {
+						margin-bottom: .5rem;
 					}
 				}
 			}
-			.comic-book-panel {
+			&.comic-book-panel {
 				.word-balloon {
-					margin-bottom: 1rem;
+					&.left-pointer {
+						margin-left: 0;
+						&::after {
+							left: -25px;
+							top: 42%;
+							border-width: 10px 27px 10px 0px;
+						}
+					}
+				}
+				.speaker {
+					left: 0;
+					bottom: 0;
+					background-image: url("#{$speaker-image-path}/dave-drawing-as-kid.png");
+					width: 35%;
+					height: 213px;
+					z-index: 1031;
 				}
 			}
 			.public-image {
@@ -39,19 +48,10 @@
 				background-size: cover;
 			}
 		}
-		&.promos {
-			[class*="col"] {
-				margin-bottom: $spacer-base;
-			}
-		}
 	}
 	
 	.latest {
 		.latest-work {
-			img {
-				border: $border-default;
-				margin-bottom: $spacer-base;
-			}
 			h3 {
 				margin-bottom: 0;
 			}
@@ -67,6 +67,13 @@
 			}
 		}
 	}
+	
+	.featured {
+		.has-right-link {
+			margin-top: 0;
+		}		
+	}
+	
 	.blogs {
 		article {
 			.entry-thumb, .entry-meta, .entry-footer {
@@ -129,7 +136,6 @@
 		.section {
 			&.intro {
 				.text {
-					padding: 1.5rem;
 					min-height: auto;
 					.word-balloon {
 						padding: 1rem;
