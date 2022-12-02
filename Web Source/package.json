@@ -44,7 +44,7 @@
 		"gulp-uglify": "^3.0.2",
 		"jekyll": "^3.0.0-beta1",
 		"jquery": "^3.6.0",
-		"jquery-ui": "^1.13.1",
+		"jquery-ui": "^1.13.2",
 		"lightbox2": "^2.11.3",
 		"motion-ui": "^2.0.3",
 		"sass-rem": "^3.0.0",
