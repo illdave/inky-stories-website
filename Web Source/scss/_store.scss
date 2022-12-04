@@ -88,31 +88,3 @@
 		}
 	}
 }
-
-@media (max-width: 576px) { 
-	.store {
-		.section.intro {
-			&.comic-book-panel {
-				.word-balloon {
-					&:after {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (min-width: 769px) { 
-	.store {
-		.section.intro {
-			&.comic-book-panel {
-				.speaker {
-					
-				}
-			}
-		}
-	}
-}		
-
-

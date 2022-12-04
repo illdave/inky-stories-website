@@ -1,0 +1,347 @@
+/* responsive ------------------------- */
+
+@media (min-width: 1200px) { 
+	.genre-nav {
+		.navbar-collapse {
+			display: block !important;
+		}
+		.comics-nav-toggler {
+			display: none !important;
+		}
+	}	
+	.comic-book-listing, .commissions {
+		.section.intro {
+			&.comic-book-panel {
+				.speaker {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.thumbnails {
+		.thumbnail {
+			.image {
+				background-size: cover;
+				height: 23rem;
+			}
+		}
+	}			
+}
+	
+@media (max-width: 1200px) {
+	.comic-book-listing .section.intro {
+		padding-bottom: 0;
+	}
+	.genre-nav {
+		.nav {
+			position: relative;
+			background: $white !important;
+			padding: 1rem;
+			margin-bottom: 1rem !important;
+			border-radius: 1rem;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0;
+				height: 0;
+				border-top: 2rem solid $word-balloon-background;	
+				border-left: 1rem solid transparent;
+				border-right: 1rem solid transparent;
+				margin-bottom: -1.5rem;
+			}			
+			li {
+				margin-bottom: 0;
+				a {
+					padding: .5rem !important;
+					&.active {
+						color: $text-disabled-color !important;
+						text-decoration: none !important;
+						background-color: transparent !important; 
+						cursor: default;
+					}
+				}
+			}
+		}
+	}	
+}	
+
+@media (max-width: 991.98px) { 
+	.home  {
+		.section {
+			&.intro {
+				.text {
+					min-height: auto;
+					.word-balloon {
+						padding: 1rem;
+					}
+				}
+				.comic-book-panel {
+					.word-balloon:after {
+						left: 79px;
+						margin-bottom: -22px;
+					}
+					.speaker {
+						left: -3px;
+						width: 128px;
+						height: 112px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) { 
+	body {
+		padding-top: $main-nav-height-mobile;
+		padding-bottom: $footer-height-mobile;
+	}
+	.table {
+		tr {
+			display: flex;
+			flex-flow: column wrap;			
+			margin-bottom: .5rem;
+		}
+		td, th {
+			border-bottom: $border-default;
+			padding: .5rem 0; 
+		}
+		tbody th {
+			border-color: black;
+		}
+		tfoot {
+			td {
+				padding-top: 0;
+			}
+		}
+		thead {
+			display: none;
+		}
+		dl dt {
+			border: 0;
+			padding-bottom: 0;
+		}
+	}
+	.fyi {
+		display: block;
+	}
+	.main-navigation {
+		background-image: url("#{$layout-image-path}/main-nav-art.png");
+		 .navbar {
+		 	padding: 1rem 0;
+			.navbar-brand {
+				width: $main-nav-brand-width-mobile;
+				height: auto;
+				background-position: center 0;
+				display: inline-block;
+				font-size: 2rem;
+				margin-right: 0;
+				margin-left: 0;
+			}
+			.navbar-nav {
+				text-align: left;
+				margin: 0.5rem 0
+			}
+			.navbar-collapse {
+				.navbar-nav {
+					flex-direction: row;
+					text-align: left;
+					li {
+						display: inline;
+						a {
+							margin: 0;
+							margin-left: 0.5rem;
+							.nav-icon {
+								display: none;
+							}
+							.nav-text {
+								display: inline-block;
+							}
+						}
+					}
+				}
+				.navbar-nav-scroll {
+					max-width: 100%;
+					height: 2.5rem;
+					margin-top: .25rem;
+					overflow: hidden;
+					font-size: .875rem;
+				}
+			}
+		}
+	}
+	.comic-book-listing, .commissions, .store  {
+		.section.intro {
+			&.comic-book-panel {
+				.speaker {
+					background-position: 0 0;
+				}
+				.text {
+					padding: $spacer-base;
+					.genre-list {
+						a {
+							padding: 0.25rem .5rem;
+							line-height: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.blog {
+		article {
+			&:last-child {
+				margin-bottom: $spacer-large;
+			}
+			
+		}
+	}	
+}
+
+@media (min-width: 1200px) and (max-width: 991px), (min-width: 992px) {
+	.author-notes {
+	  padding-right:math.div($grid-gutter-width, 2);
+	  padding-left: math.div($grid-gutter-width, 2);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-navigation {
+		.navbar {
+			.navbar-brand {
+				background-image: url("#{$layout-image-path}/main-nav-logo-stacked.png");
+				height: 7rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) { 
+	.affix {
+		position: static;
+		top: 0;
+	}
+	.section {
+		&.intro {
+			padding: 0;
+			padding-bottom: 1rem !important;
+		}
+	}
+	.text-page {
+		 .text-page-header {
+		 	margin-bottom: 0;
+			h1, .h1 {
+				margin-bottom: .5rem;
+			}		 	
+		 }
+	}
+	.word-balloon {
+		margin-bottom: 0;
+		 h1 {
+		 	font-size: 1.4rem;
+		 }
+		&.left-pointer {
+			margin-left: 0;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	.about {
+		.section.intro {
+			&.comic-book-panel {
+				.word-balloon {
+					&:after {
+						display: none;
+					}
+				}
+				.text {
+					padding: 1rem;
+				}				
+			}
+		}
+	}
+	.store {
+		.section.intro {
+			&.comic-book-panel {
+				.word-balloon {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+		
+		.merchandise-description {
+			margin-bottom: 1rem;
+		}		
+	}
+	.home {
+		.promos {
+			.has-right-link {
+				margin-bottom: .5rem;
+			}
+
+			.latest {
+				.sticky-top {
+					position: static;
+				}
+				
+				.latest-work {
+					margin-bottom: $spacer-base;
+					border-bottom: $border-default;
+				}
+			}
+
+		}
+	}
+	.comic-book-listing, .commissions, .store  {
+		.section.intro {
+			&.comic-book-panel {
+				.speaker {
+					background-position: -40px 0;
+				}
+				.text {
+					padding: 0 !important;
+					background: white;
+					.word-balloon {
+						background: transparent;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+		.section.genres {
+			padding-top: 0;
+			.section.genre {
+				&:first-child {
+					padding-top: 1rem;
+				}
+			}
+		}
+	}
+	
+	.contact-form {
+		section.intro {
+			background: transparent;
+			min-height: auto;
+			.word-balloon {
+				margin: 1rem;
+				width: auto;
+			}	
+		}
+	}
+	.blog {
+		&.index {
+			.section {
+				&.intro {
+					padding-bottom: 1rem;
+				}
+			}
+		}		
+	}
+}
+

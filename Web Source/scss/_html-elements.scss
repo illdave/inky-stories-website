@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
 	font-size: $h1-font-size;
-	line-height: math.div($h1-font-size, 1.2);
+	line-height: math.div($h1-font-size, 1);
 	color: $h1-color;
 }
 h2, .h2 {
@@ -35,7 +35,7 @@ h3, .h3 {
 }
 h4, .h4 {
 	font-size: $h4-font-size;
-	line-height: math.div($h4-font-size, 1.2);
+	line-height: math.div($h4-font-size, 1);
 	margin-bottom: .25rem;
 }
 h5, .h5 {
@@ -238,42 +238,5 @@ bold, strong {
 	}
 	.btn {
 		font-family: $font-family-info-headers;
-	}
-}
-
-@media (max-width: 768px) {
-	body {
-		padding-top: $main-nav-height-mobile;
-		padding-bottom: $footer-height-mobile;
-	}
-
-	.table tr {
-		display: flex;
-		flex-flow: column wrap;			
-		margin-bottom: .5rem;
-	}
-	.table td, .table th {
-		border-bottom: 1px solid #ccc;
-		padding: .5rem 0; 
-	}
-	.table tbody th {
-		border-color: black;
-	}
-	.table td {
-	}
-	.table tfoot {
-		td {
-			padding-top: 0;
-		}
-	}
-	.table thead {
-		display: none;
-	}
-	.table dl dt {
-		border: 0;
-		padding-bottom: 0;
-	}
-	.fyi {
-		display: block;
 	}
 }

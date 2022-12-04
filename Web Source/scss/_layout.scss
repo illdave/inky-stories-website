@@ -82,6 +82,11 @@ figure {
 	}
 }
 
+.has-bottom-border {
+	margin-bottom: 1rem;
+	border-bottom: $border-default;
+}
+
 .modal {
 	.modal-body {
 		figure {
@@ -113,12 +118,6 @@ figure {
 			margin-bottom: 0;
 			font-size: $font-size-base * 1.15;
 			line-height: 1.2rem;;
-		}
-	}
-	@media (min-width: 1200px) and (max-width: 991px), (min-width: 992px) {
-		.author-notes {
-		  padding-right:math.div($grid-gutter-width, 2);
-		  padding-left: math.div($grid-gutter-width, 2);
 		}
 	}
 }

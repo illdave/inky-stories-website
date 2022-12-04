@@ -3,7 +3,6 @@
 .about {
 	.section {
 		&.intro {
-			background: $section-intro-about url("#{$layout-image-path}/section-intro-about.png") 0 0 no-repeat;
 			background-size: cover;
 			padding: 0;
 			border-bottom: $border-default;
@@ -54,23 +53,6 @@
 					font-family: $font-family-italic;
 					color: $gray-lightest;
 				}
-			}
-		}
-	}
-}
-
-@media (max-width: 576px) { 
-	.about {
-		.section.intro {
-			&.comic-book-panel {
-				.word-balloon {
-					&:after {
-						display: none;
-					}
-				}
-				.text {
-					padding: 1rem;
-				}				
 			}
 		}
 	}

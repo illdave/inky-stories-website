@@ -7,9 +7,9 @@
 			background: $section-intro-home url("#{$layout-image-path}/intro-corner-dots-nofade-cyan.png") 0 0 repeat;
 			background-size: 50%;
 			h1 {
-				color: $black;	
 				text-align: left;
 				font-size: $h1-font-size;
+				font-family: $comic-book-headers;
 			}
 			p {
 				text-align: left;
@@ -130,30 +130,3 @@
 		}
 	}
 }
-
-@media (max-width: 991.98px) { 
-	.home  {
-		.section {
-			&.intro {
-				.text {
-					min-height: auto;
-					.word-balloon {
-						padding: 1rem;
-					}
-				}
-				.comic-book-panel {
-					.word-balloon:after {
-						left: 79px;
-						margin-bottom: -22px;
-					}
-					.speaker {
-						left: -3px;
-						width: 128px;
-						height: 112px;
-					}
-				}
-			}
-		}
-	}
-}
-

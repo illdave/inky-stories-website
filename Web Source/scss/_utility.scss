@@ -844,16 +844,6 @@
 	}
 }
 
-@media (max-width: 576px) { 
-	.word-balloon {
-		&.left-pointer {
-			margin-left: 0;
-		}
-		&:after {
-			display: none;
-		}
-	}
-}
 
 .comic-book-panel {
 	position: relative;
@@ -871,5 +861,3 @@
 		background-size: cover;
 	}
 }
-
-

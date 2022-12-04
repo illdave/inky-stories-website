@@ -153,6 +153,14 @@
 	}
 	
 	&.index {
+		.section {
+			&.intro {
+				padding-bottom: 0;
+			}
+			&.text-page-section {
+				padding-top: 0;
+			}
+		}
 		article {
 			clear: both;
 			header {
@@ -191,17 +199,6 @@
 				  background: Swhite;
 				}		
 			}		
-		}
-	}
-}
-
-@media (max-width:767px) { 
-	.blog {
-		article {
-			&:last-child {
-				margin-bottom: $spacer-large;
-			}
-			
 		}
 	}
 }
