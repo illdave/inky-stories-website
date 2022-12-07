@@ -129,8 +129,9 @@
 		dl {
 			margin-bottom: $spacer-large;
 			dt {
-				margin-bottom: $spacer-small;
 				font-size: $h4-font-size;
+				padding-bottom: $spacer-base;
+				margin-bottom: $spacer-base;				
 			}
 			dd {
 				&.active {
