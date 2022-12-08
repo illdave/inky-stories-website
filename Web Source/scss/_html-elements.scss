@@ -13,6 +13,16 @@ body {
 	color: $text-color;
 }
 
+p {
+	& + h2, 
+	& + h3, 
+	& + h4, 
+	& + dl {
+		margin-top: 2rem;
+	}
+}
+
+
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: normal;
@@ -84,6 +94,16 @@ ol, ul, dl {
 }
 ul, ol {
 	padding-left: 3rem;
+}
+
+ul {
+	&.list-unstyled {
+		&.compact {
+			li {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 ol {

@@ -129,9 +129,6 @@
 		dl {
 			margin-bottom: $spacer-large;
 			dt {
-				font-size: $h4-font-size;
-				padding-bottom: $spacer-base;
-				margin-bottom: $spacer-base;				
 			}
 			dd {
 				&.active {
@@ -145,7 +142,6 @@
 				}
 			}
 		}
-		
 		.links {
 			.template,
 			.comic-book-history, 
