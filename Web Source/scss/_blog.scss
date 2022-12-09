@@ -133,10 +133,13 @@
 			dd {
 				&.active {
 					a {
-						color: $gray-light;
+						font-family: $font-family-bold;
 						cursor: default;
 						&:after {
 							display: none;
+						}
+						&:hover {
+							color: $text-color;
 						}
 					}
 				}
