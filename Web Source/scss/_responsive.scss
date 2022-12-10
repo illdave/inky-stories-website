@@ -173,6 +173,25 @@
 			}
 		}
 	}
+	
+	.bordered-image {
+		img {
+			margin-bottom: $spacer-small;
+		}
+		.text {
+			margin-bottom: $spacer-large;
+		}
+	}
+	.sticky-top {
+		position: static;
+		top: auto;
+	}
+	.sidebar {
+		.link-list {
+			margin-top: $spacer-large;
+		}
+	}
+	
 	.comic-book-listing, .commissions, .store  {
 		.section.intro {
 			&.comic-book-panel {
@@ -198,6 +217,15 @@
 			}
 			
 		}
+		&.index {
+			article {
+				header {
+					h1 {
+						line-height: 1.4rem;
+					}
+				}
+			}
+		}
 	}	
 }
 
@@ -213,6 +241,11 @@
 }
 
 @media (max-width: 576px) { 
+
+	h1, .h1 {
+		font-size: 1.75rem;
+		line-height: 1.75rem;
+	}
 	.affix {
 		position: static;
 		top: 0;
@@ -220,7 +253,6 @@
 	.section {
 		&.intro {
 			padding: 0;
-			padding-bottom: 1rem !important;
 		}
 	}
 	.text-page {
@@ -312,6 +344,10 @@
 			.section.genre {
 				&:first-child {
 					padding-top: 1rem;
+				}
+				.ratings {
+					white-space: nowrap;
+					display: none;
 				}
 			}
 		}

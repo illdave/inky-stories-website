@@ -374,6 +374,7 @@
 	.thumbnail {
 		background: $comic-book-thumbnail-bg;
 		margin-bottom: $spacer-large;
+		display: block;
 		.image {
 			background: $comic-book-thumbnail-image-bg;
 			background-size: cover;

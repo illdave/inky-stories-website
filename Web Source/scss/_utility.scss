@@ -152,7 +152,7 @@
 		margin-top: 1rem;
 	}
 	.text {
-		display: inline-block;
+		display: block;
 		margin: 0 0 1rem;
 		.genre, 
 		.name, 
@@ -179,10 +179,10 @@
 		}
 	}
 	a {
+		text-decoration: none;
 		.text {
 			.genre {
 				color: $gray-lightest;
-				text-decoration: none;
 			}	
 			.name {
 				color: $link-color;
@@ -200,11 +200,9 @@
 			}
 			.genre {
 				color: $gray;
-				text-decoration: none;
 			}	
 			.name {
 				color: $link-hover-color;
-				text-decoration: none;
 			}	
 			.description {
 				color: $link-hover-decoration;
