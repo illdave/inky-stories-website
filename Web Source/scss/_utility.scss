@@ -291,10 +291,6 @@
 	}
 }
 
-
-
-
-
 .list-inline {
 	li {
 		display: inline-block;
@@ -338,6 +334,13 @@
 	&:before {
 		content: $icon-learn-more;
 	}
+}
+
+.signature {
+	background: url("#{$brand-image-path}/rotten-kid-logo.png") no-repeat 0 2px;
+	background-size: 3rem;
+	padding: 1rem 0 1.5rem 3.25rem;
+	font-family: $font-family-italic;
 }
 
 .jumbotron {
@@ -597,11 +600,6 @@
 	.listings.boxed .listing {
 		padding: 1rem;
 	}
-}
-
-
-.signature {
-	font-family: $font-family-italic;
 }
 
 .instructional {

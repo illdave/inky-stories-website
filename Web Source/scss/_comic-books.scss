@@ -18,11 +18,13 @@
 			}
 			.double-page-spread {
 				img {
-					width: 800px;
-				}			
+					width: $comic-book-page-width;
+				}		
 			}
 			.author-notes {
 				text-align: left;
+				width: $comic-book-page-width;
+				margin: 0 auto;
 			}
 			&.carousel {
 				.carousel-control-prev, 

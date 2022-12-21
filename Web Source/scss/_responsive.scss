@@ -68,7 +68,13 @@
 	}	
 }	
 
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
+
+	.newspaper-columns {
+		column-count: 1;
+		column-gap: 0;
+		column-rule: 0;
+	}	
 	.home  {
 		.section {
 			&.intro {
@@ -89,6 +95,15 @@
 						height: 112px;
 					}
 				}
+			}
+		}
+	}
+	.comic-book {
+		.comic-book-story {
+			.comic-book-page {
+				.author-notes {
+					width: auto;
+				}	
 			}
 		}
 	}
@@ -191,7 +206,6 @@
 			margin-top: $spacer-large;
 		}
 	}
-	
 	.comic-book-listing, .commissions, .store  {
 		.section.intro {
 			&.comic-book-panel {
