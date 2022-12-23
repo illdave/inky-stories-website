@@ -219,6 +219,10 @@
 		
 		&.genre-nav {
 			text-align: center;
+			background: $section-intro-comics url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+			background-size: 50%;
+			padding: 0;
+
 			.comics-nav-toggler {
 				display: inline-block;
 				position: relative;	
@@ -236,21 +240,12 @@
 					}
 				}
 			}
-		
 			.nav {
-				margin-bottom: -4px;
 			}
-			padding: 0;
-			
-			background: $section-intro-comics url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
-			background-size: 50%;
-			
-			
-			border-bottom: $comic-listing-intro-border;
 			li {
 				a {
 					color: $genre-link-color;
-					padding: .5rem 1rem;
+					padding: .75rem 1rem;
 					text-decoration: none;
 					font-family: $font-family-bold;
 					text-transform: uppercase;
@@ -266,6 +261,10 @@
 					&.active {
 						color: $black;
 						background: $white;
+						&.adult-content {
+							color: $white;
+							background: $comics-for-adults-bg;
+						}
 					}
 				}
 			}
@@ -340,7 +339,14 @@
 			}
 			p {
 				color: $gray-light;
-			}			
+			}
+			.ratings {
+				.rating {
+					color: $white;
+					background: transparent;
+					border-color: $gray;
+				}
+			}		
 			.thumbnails a {
 				.text .name {
 				}
