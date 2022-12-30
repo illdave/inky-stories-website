@@ -62,6 +62,12 @@ figure {
 	&.no-border {
 		border: 0;
 	}
+	
+	&.image-has-border {
+		img {
+			border: $border-default;
+		}
+	}
 	&.centered {
 		text-align: center;
 		img {

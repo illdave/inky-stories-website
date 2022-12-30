@@ -171,6 +171,7 @@ $dsm-image-path:							$image-path/dsm;
 $webcomics-image-path:						$assets-path/img/comics;
 $speaker-image-path:						$image-path/speaker;
 $logos-image-path:							$image-path/logos;
+$characters-image-path:						$image-path/characters;
 
 
 /* spacing --------------------------- */
@@ -259,9 +260,9 @@ $jumbotron-bg: 								$gray-lighter;
 $jumbotron-border-radius: 					0;
 
 $photo-circle-lg: 							20rem;
-$photo-circle-md: 							18rem;
-$photo-circle-sm: 							14rem;
-$photo-circle-xs: 							10rem;
+$photo-circle-md: 							14rem;
+$photo-circle-sm: 							10rem;
+$photo-circle-xs: 							5rem;
 $circle-border-radius: 						50%;
 
 $intro-bg:  								$theme-color-2;

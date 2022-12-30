@@ -232,8 +232,7 @@
 	}
 }
 
-.link-list {
-	margin-bottom: 2rem;
+aside {
 	dt {
 		font-size: $h4-font-size;
 		text-transform: uppercase;
@@ -241,9 +240,14 @@
 		padding-bottom: $spacer-base;
 		margin-bottom: $spacer-base;				
 	}
+}
+
+.link-list {
+	margin-bottom: 2rem;
 	dd {
 		line-height: 1.1rem;
 	}
+	
 	a {
 		text-decoration: none;
 		color: $text-color;
@@ -263,6 +267,25 @@
 		&:hover {
 			color: $text-color !important;
 		}
+	}
+}
+
+.info {
+	border: $border-default;
+	padding: 1.5rem;
+	padding-bottom: 0;
+	dt {
+		font-size: $h2-font-size;
+		padding-bottom: 0;
+		border-bottom: 0;				
+	}
+	dd {
+		padding-bottom: $spacer-small;
+		margin-bottom: $spacer-small;
+		border-bottom: $border-default;	
+		&:last-child {
+			border: 0;
+		}			
 	}
 }
 
