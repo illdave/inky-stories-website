@@ -30,13 +30,47 @@
 				text-align: center;
 				.picture {
 					display: block;
-					background-color: #ccc;
+					background: #ccc no-repeat 0 0;
+					background-size: cover;
+					border: $border-default;
 					width: $photo-circle-sm;
 					height: $photo-circle-sm;
 					border-radius: $circle-border-radius;
 					margin: 0 auto 1rem;
+					
+					&.agent-k {
+						background-image: url("#{$characters-image-path}/agent-k-thumbnail.jpg");
+					}
+					&.agent-d {
+						background-image: url("#{$characters-image-path}/agent-d-thumbnail.jpg");
+					}
+					&.director {
+						background-image: url("#{$characters-image-path}/director-thumbnail.jpg");
+					}
+					&.mecanica {
+						background-image: url("#{$characters-image-path}/mecanica-thumbnail.jpg");
+					}
+					&.senorita {
+						background-image: url("#{$characters-image-path}/senorita-thumbnail.jpg");
+					}
+					&.quasara {
+						background-image: url("#{$characters-image-path}/quasara-thumbnail.jpg");
+					}
+					
+					&.delgada {
+						background-image: url("#{$characters-image-path}/delgada-thumbnail.jpg");
+					}
+					&.general-zaq {
+						background-image: url("#{$characters-image-path}/general-zaq-thumbnail.jpg");
+					}
 				}
 				.text {
+				}
+				
+				&:hover {
+					.picture {
+						border-color: $link-hover-color;
+					}
 				}
 			}
 		}
@@ -49,7 +83,6 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
-			
 			}
 		}
 	}
