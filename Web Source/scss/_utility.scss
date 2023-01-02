@@ -270,6 +270,16 @@ aside {
 	}
 }
 
+.redacted {
+	background: transparent url("#{$layout-image-path}/redacted.png") 0 0 no-repeat;
+	text-indent: $text-indent-for-image;
+	background-size: contain;
+	width: 6rem;
+	height: 1.3rem;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
 .info {
 	border: $border-default;
 	padding: 1.5rem;
@@ -288,7 +298,6 @@ aside {
 		}			
 	}
 }
-
 
 .cta {
 	display: flex;
