@@ -39,29 +39,34 @@
 					margin: 0 auto 1rem;
 					
 					&.agent-k {
-						background-image: url("#{$characters-image-path}/agent-k-thumbnail.jpg");
+						background-image: url("#{$characters-image-path}/agent-k/thumbnail.jpg");
 					}
 					&.agent-d {
-						background-image: url("#{$characters-image-path}/agent-d-thumbnail.jpg");
+						background-image: url("#{$characters-image-path}/agent-d/thumbnail.jpg");
 					}
-					&.director {
-						background-image: url("#{$characters-image-path}/director-thumbnail.jpg");
+					&.castellon-crime-family{
+						background-image: url("#{$characters-image-path}/castellon-crime-family/thumbnail.jpg");
 					}
-					&.mecanica {
-						background-image: url("#{$characters-image-path}/mecanica-thumbnail.jpg");
-					}
-					&.senorita {
-						background-image: url("#{$characters-image-path}/senorita-thumbnail.jpg");
-					}
-					&.quasara {
-						background-image: url("#{$characters-image-path}/quasara-thumbnail.jpg");
-					}
-					
 					&.delgada {
-						background-image: url("#{$characters-image-path}/delgada-thumbnail.jpg");
+						background-image: url("#{$characters-image-path}/delgada/thumbnail.jpg");
 					}
 					&.general-zaq {
-						background-image: url("#{$characters-image-path}/general-zaq-thumbnail.jpg");
+						background-image: url("#{$characters-image-path}/general-zaq/thumbnail.jpg");
+					}
+					&.las-navajeras{
+						background-image: url("#{$characters-image-path}/las-navajeras/thumbnail.jpg");
+					}
+					&.mecanica {
+						background-image: url("#{$characters-image-path}/mecanica/thumbnail.jpg");
+					}
+					&.quasara {
+						background-image: url("#{$characters-image-path}/quasara/thumbnail.jpg");
+					}
+					&.the-director {
+						background-image: url("#{$characters-image-path}/the-director/thumbnail.jpg");
+					}
+					&.the-senorita {
+						background-image: url("#{$characters-image-path}/the-senorita/thumbnail.jpg");
 					}
 				}
 				.text {
