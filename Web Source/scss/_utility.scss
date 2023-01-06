@@ -247,7 +247,6 @@ aside {
 	dd {
 		line-height: 1.1rem;
 	}
-	
 	a {
 		text-decoration: none;
 		color: $text-color;
@@ -359,12 +358,26 @@ aside {
 			color: $icon-link-color-active;
 		}
 	}
-
 }
 
 .learn-more .fas {
 	&:before {
 		content: $icon-learn-more;
+	}
+}
+
+.back-to-landing-page {
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover {
+		}
+		&:before {
+			font-family: 'Font Awesome Solid';
+			content: $icon-back-to-landing-page;			
+			color: $text-color;
+			margin-right: .25rem;
+		}
 	}
 }
 
