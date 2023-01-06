@@ -32,6 +32,18 @@
 	.comic-book-listing .section.intro {
 		padding-bottom: 0;
 	}
+
+	.characters.index  {
+		.thumbnails {
+			.thumbnail {
+				.picture {
+					width: $photo-circle-xs;
+					height: $photo-circle-xs;
+				}
+			}
+		}
+	}	
+	
 	.genre-nav {
 		.nav {
 			position: relative;
