@@ -90,5 +90,19 @@
 				object-fit: cover;
 			}
 		}
+		
+		aside {
+			figure {
+				padding-bottom: 0;
+		
+				img {
+					margin-bottom: 0;
+				}
+			}
+			.info {
+				margin-top: -2rem;
+			}
+		
+		}
 	}
 }

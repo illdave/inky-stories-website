@@ -371,6 +371,9 @@ aside {
 		text-decoration: none;
 		text-transform: uppercase;
 		&:hover {
+			&:before {
+				color: $link-hover-color;
+			}
 		}
 		&:before {
 			font-family: 'Font Awesome Solid';
