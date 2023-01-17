@@ -120,6 +120,17 @@
 	}
 }
 
+dl.interview {
+	dt {
+		font-family: $font-family-bold;
+		border: 0;
+		padding-bottom: 0;
+	}
+	dd {
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 768px) {
 	.has-right-link {
 		display: block;
