@@ -143,6 +143,24 @@ dl {
 		border-bottom: $border-default;
 		line-height: 1.1rem;
 	}
+	&.pullquote {
+		margin-top: .5rem;
+		dt {
+			font-family: $comic-book-font-bold-italic;
+			font-size: $h1-font-size;
+			line-height: 1.6rem;
+			border: 0;
+			padding: 0;
+			margin-bottom: 1rem;
+			color: $theme-color-7;
+		}
+		dd {
+			font-family: $font-family-italic;
+			font-size: $h4-font-size;
+			line-height: 1.5rem;
+			color: $gray-lightest;
+		}
+	}
 }
 
 strong, bold {
