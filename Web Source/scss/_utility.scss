@@ -79,7 +79,6 @@
 	text-transform: uppercase;
 	color: $cta-link-color;
 	.fas, .fa-solid {
-		margin-left: .5rem;
 		&:before {
 			font-family: 'Font Awesome Solid';
 			content: $icon-learn-cta;
@@ -112,7 +111,7 @@
 		}
 	}
 	.fas, .fa-solid {
-		margin-left: .5rem;
+		margin-left: 0;
 		&:before {
 			font-family: 'Font Awesome Solid';
 			content: $icon-learn-cta;
@@ -156,7 +155,7 @@
 	padding-top: 1rem;
 }
 
-.bordered-image, .thumbnails {
+.bordered-image, .thumbnails, .sidebar {
 	img {
 		border: $border-default;
 		margin-bottom: $spacer-base;
@@ -229,6 +228,16 @@
 		}
 	}
 }
+
+.sidebar {
+	.text {
+		margin-bottom: 2rem;
+		p {
+			margin-bottom: .5rem;
+		}
+	}
+}
+
 
 .materials {
 	border-top: $border-default;
@@ -321,7 +330,7 @@ aside {
 	text-transform: uppercase;
 	color: $cta-link-color;
 	.fas, .fa-solid {
-		margin-left: .5rem;
+		margin-left: .25rem;
 		&:before {
 			font-family: 'Font Awesome Solid';
 			content: $icon-learn-cta;
