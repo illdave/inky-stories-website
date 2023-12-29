@@ -73,9 +73,13 @@ $box-shadow-white:                  		0 .25rem .5rem rgba($white, .15);
 
 $section-intro-home: 						$inkystories-blue;
 $section-intro-comics: 						lighten($inkystories-yellow, 10%);
-$section-intro-about: 						lighten($theme-color-6, 60%);
-$section-intro-store: 						$theme-color-7;
+$section-intro-about: 						lighten($inkystories-teal, 60%);
+$section-intro-store: 						lighten($inkystories-blue, 45%);
 $section-intro-contact: 					lighten($inkystories-blue, 10%);
+
+$section-store-standard-us: 				$white;
+$section-store-minicomics: 					$gray-lighter;
+$section-store-comic-book-stores: 			$white;
 
 
 /* typography ------------------------ */

@@ -136,10 +136,12 @@ ul, ol {
 dl {
 	margin-bottom: $spacer-base;
 	dt {
-		font-family: $comic-book-headers;
+		font-family: $font-family-info-headers;
 		font-weight: normal;
+		text-transform: uppercase;
+		color: $headings-color;
 		padding-bottom: $spacer-small;
-		margin-bottom: $spacer-small;
+		margin-bottom: $spacer-base;				
 		border-bottom: $border-default;
 		line-height: 1.1rem;
 	}

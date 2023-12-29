@@ -350,13 +350,14 @@
 			}		
 			.thumbnails a {
 				.text .name {
+						color: $white;	
 				}
 				.text .description {
 					color: $gray-light; 
 				}
 				&:hover {
 					.text .name {
-						color: $white;	
+						color: $gray-lightest;	
 					}
 				}					
 			}

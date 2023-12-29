@@ -3,16 +3,27 @@
 .store {
 	.section {
 		&.intro {
-			padding-bottom: 0;
+			background: $section-intro-store url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+			.text-page-header {
+				margin-bottom: 0;
+			}
+		}
+		&#standard-us-comics-size  {
+			background: $section-store-standard-us;
 		}
 		&#minicomics {
-			background: $gray-lighter;
+			background: $section-store-minicomics;
+		}
+		
+		&#comic-book-stores {
+			background: $section-store-comic-book-stores;
 		}
 		&#minicomics, &#standard-us-comics-size {
 			padding-bottom: 0;
 		}
-		&#standard-us-comics-size  {
-			padding-top: 0;
+		
+		&#minicomics, &#comic-book-stores {
+			border-top: $border-default;
 		}
 	}
 	
@@ -79,7 +90,10 @@
 				flex-direction: column;
 				align-content: space-between;
 				h3 {
-					margin-bottom: .5rem;
+					font-family: $font-family-info-headers;
+					border-bottom: $border-default;
+					padding-bottom: $spacer-small;
+					margin-bottom: $spacer-small;
 				}
 				.button-row {
 					align-self: flex-start;

@@ -124,8 +124,8 @@
 		font-family: $font-family-bold;
 		border: 0;
 		padding-bottom: 0;
-		margin-bottom: 0;
-		line-height: 1.2rem;
+		margin-bottom: .5rem;
+		line-height: 1rem;
 	}
 	dd {
 		margin-bottom: 0;
@@ -179,7 +179,7 @@
 			padding-bottom: 0 !important;
 		}
 		.name {
-			font-family: $font-family-headers;
+			font-family: $font-family-info-headers;
 			background-color: transparent;
 			font-size: $h4-font-size;
 			font-weight: normal;
@@ -238,7 +238,6 @@
 	}
 }
 
-
 .materials {
 	border-top: $border-default;
 	padding-top: 1rem;
@@ -251,16 +250,6 @@
 		li {
 			margin-bottom: 0;
 		}
-	}
-}
-
-aside {
-	dt {
-		font-size: $h4-font-size;
-		text-transform: uppercase;
-		color: $headings-color;
-		padding-bottom: $spacer-base;
-		margin-bottom: $spacer-base;				
 	}
 }
 
@@ -306,6 +295,7 @@ aside {
 	padding: 1.5rem;
 	padding-bottom: 0;
 	dt {
+		font-family: $comic-book-headers;
 		font-size: $h2-font-size;
 		padding-bottom: 0;
 		border-bottom: 0;				
