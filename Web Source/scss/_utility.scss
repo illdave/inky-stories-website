@@ -415,6 +415,9 @@
 	&.intro {
 		padding: $section-padding-large;
 	}
+	&.text-page-section {
+		padding-top: 0;
+	}
 }
 
 .photo {
