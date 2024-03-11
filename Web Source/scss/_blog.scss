@@ -46,19 +46,21 @@
 		}
 		
 		header {
-			margin-bottom: $spacer-small;
+			border-bottom: $border-default;
+			margin-bottom: $spacer-base;
+			padding-bottom: $spacer-small;
 			h2 {
 				font-family:$comic-book-font;
 				font-size: $h4-font-size;
 				line-height: $h4-font-size;
 				color: $gray-dark;
+				margin-bottom: .5rem;
 				.book-title {
 					font-family: inherit;
 				}
 			}
 			.entry-meta {
 				font-size: 80%;
-				text-align: right;
 				a {
 					color: $text-color;
 					cursor: default;
@@ -66,8 +68,11 @@
 			
 				.byline {
 					.author {
-						font-family: $font-family-headers;
-						display: none;
+						&::after {
+						  content: "|";
+						  margin-left: $spacer-small;
+						  margin-right: $spacer-small;
+						}
 					}
 				}			
 				.posted-on {
@@ -171,12 +176,15 @@
 				margin-bottom: 0;
 				h1 {
 					font-size: $h3-font-size;
+					line-height: $h3-font-size;
+					margin-bottom: .5rem;
 					a {
 						text-decoration: none;
 					}
 				}
 				.entry-meta {
 					text-align: left;
+					margin-bottom: .5rem;
 				}
 			}
 			.entry-summary {

@@ -37,6 +37,7 @@ h1, .h1 {
 h2, .h2 {
 	font-size: $h2-font-size;
 	line-height: math.div($h2-font-size, 1);
+	margin-bottom: 1rem;
 }
 h3, .h3 {
 	font-size: $h3-font-size;
