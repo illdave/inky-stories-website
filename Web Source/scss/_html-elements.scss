@@ -121,10 +121,16 @@ ol {
 			width: 1.5rem;
 		}
     }	
-	ul {
-		list-style-type: disc;
+	> li > ul {
 		padding-left: 1rem;
 		margin: 1rem 0;
+		list-style-type: disc;
+		counter-reset: item;
+		> li {
+			&:before {
+				display: none;
+			}
+		}
 	}
 }
 
