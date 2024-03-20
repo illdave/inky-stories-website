@@ -322,6 +322,9 @@
 				margin-bottom: .5rem;
 			}		 	
 		 }
+		 h3, .h3 {
+		 	margin-top: 0;
+		 }
 	}
 	.word-balloon {
 		margin-bottom: 0;
@@ -437,6 +440,33 @@
 		.section.intro .text-page-header {
 			padding-bottom: 1rem !important;
 		}	
+	}
+	
+	.tile-cards {
+		margin-bottom: 2rem;
+		.tile-card {
+			min-height: auto;
+		}
+	}
+	
+	.multi-link {
+		.icon {
+			display: none;
+		}
+		.text {
+			ul {
+				margin-top: 1rem;
+				li {
+					margin-bottom: 1rem;
+					line-height: 1.2rem;
+					&::after {
+					  content: "";
+					  margin-left: 0;
+					  margin-right: 0;
+					}
+				}
+			}
+		}
 	}	
 }
 

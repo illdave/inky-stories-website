@@ -46,9 +46,11 @@
 		}
 		
 		header {
-			border-bottom: $border-default;
 			margin-bottom: $spacer-base;
-			padding-bottom: $spacer-small;
+			&.has-border {
+				border-bottom: $border-default;
+				padding-bottom: $spacer-small;
+			}			
 			h2 {
 				font-family:$comic-book-font;
 				font-size: $h4-font-size;
@@ -61,6 +63,7 @@
 			}
 			.entry-meta {
 				font-size: 80%;
+				margin-bottom: 1rem;
 				a {
 					color: $text-color;
 					cursor: default;

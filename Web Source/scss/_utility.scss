@@ -155,6 +155,25 @@
 	padding-top: 1rem;
 }
 
+.steps {
+	margin-top: 2rem;
+	h2 {
+		margin-bottom: .25rem;
+	}
+	.step {
+		padding-top: 1.5rem;
+		margin-bottom: .5rem;
+		&:first-of-type { 
+			padding-top: 0;
+			margin-top: 0;
+		}
+		figure {
+			padding-bottom: 0;
+			margin-bottom: .5rem;
+		}
+	}
+}
+
 .bordered-image, .thumbnails, .sidebar {
 	img {
 		border: $border-default;
@@ -346,6 +365,123 @@
 	li {
 		&:not(:last-child) {
 			margin-bottom: $spacer;
+		}
+	}
+}
+
+.feature-story-card {
+	.image {
+		img {
+			margin-bottom: 1rem;
+		}
+	}
+	.text {
+		.cta a {
+			text-decoration: none;
+			&:after {
+				font-family: 'Font Awesome Solid';
+				font-size: .75rem;
+				content: $icon-list-link;			
+				color: $link-color;
+				margin-left: .25rem;
+			}
+		}
+	}
+}
+
+.multi-link {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-top: 2rem;
+	.icon {
+		flex-shrink: 0;
+		text-align: center;
+		background: $multilink-bg url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+		background-size: 100%;
+		width: $multilink-circle;
+		height: $multilink-circle;
+		border-radius: $circle-border-radius;
+		margin-right: 1rem;
+		margin-top: -.5rem;
+		img {
+			width: $multilink-icon;
+			margin: .25rem auto 0;
+		}
+	}
+	.text {
+		h2 {
+			margin-bottom: .5rem;
+		}
+		p {
+			margin-bottom: .5rem;
+		}
+		ul {
+			padding-left: 0;
+			li {
+				display: inline-block;
+				line-height: 1rem;
+				margin-bottom: 0;
+				&:not(:last-child) {
+					margin-right: 0;
+				}
+				&::after {
+				  content: "|";
+				  color: $gray-lightest;
+				  margin-left: $spacer-small;
+				  margin-right: $spacer-small;
+				}
+				&:last-child {
+					&::after {
+						content: "";
+					}
+				}
+				a {
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.tile-cards {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem 0;
+	margin-bottom: 2rem;
+	.tile-card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		background: $tile-card-bg url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;	
+		background-size: 40rem;
+		border-radius: $border-radius-base;
+		text-decoration: none;
+		.header, .description {
+			display: block;
+			text-decoration: none;
+			line-height: 1.2rem;
+		}
+		.header {
+			font-family: $font-family-info-headers;
+			text-transform: uppercase;
+			margin-bottom: .5rem;
+			&:after {
+				font-family: 'Font Awesome Solid';
+				font-size: .75rem;
+				content: $icon-list-link;			
+				color: $link-color;
+				margin-left: .25rem;
+			}
+		}
+		.description {
+			color: $text-color;
+			font-size: $font-size-small;
+		}
+		&:hover {
+			background-color: $tile-card-hover-bg;
 		}
 	}
 }

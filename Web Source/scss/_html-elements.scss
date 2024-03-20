@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5, h6,
 	font-family: $font-family-headers;
 }
 
+h3, h4, h5, h6, 
+.h3, .h4, .h5, .h6 {
+	font-family: $font-family-info-headers;
+}
+
 h1, .h1 {
 	font-size: $h1-font-size;
 	line-height: math.div($h1-font-size, 1);
@@ -79,7 +84,7 @@ img {
 
 hr {
 	border-top: $border-default;
-	margin: $hr-margin auto;
+	margin: $hr-spacing;
 	opacity: 1;
 	&.extra-top-margin {
 		margin-top: 1rem;

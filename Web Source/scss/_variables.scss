@@ -222,6 +222,7 @@ $section-padding-large: 					$spacer-large 0;
 
 
 /* Font Awesome icons ---------------- */
+
 $fa-var-circle-envelope: 					\e10c;
 $fa-var-at: 								\40;
 
@@ -250,7 +251,6 @@ $navbar-toggler-icon:   					quote($fa-var-bars);
 $icon-list-link: 							quote($fa-var-chevron-right);
 
 
-
 /* uncategorized --------------------- */
 
 $footer-border: 							rem(1px solid $gray-light);
@@ -260,6 +260,7 @@ $footer-height: 							5.6rem;
 $footer-height-mobile: 						7rem;
 
 $hr-margin: 								math.div($spacer, 2);
+$hr-spacing: 								$spacer-base auto;
 
 $jumbotron-padding: 						$spacer-large $spacer-base;
 $jumbotron-bg: 								$gray-lighter;
@@ -279,7 +280,26 @@ $picture-caption-link: 						white;
 $picture-caption-strong:					$theme-color-5;
 
 $btn-padding:	 							0.25rem 0.5rem;
-	
+
+$tile-card-bg: 								$gray-lighter;
+$tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
+
+
+/* multi link ----------------------- */
+
+$multilink-circle: 							6rem;
+$multilink-icon: 							4rem;
+
+$multilink-bg: 								$gray-light;
+$multilink-bg-yellow: 						lighten($inkystories-yellow, 10%);
+$multilink-bg-orange: 						lighten($inkystories-orange, 10%);
+$multilink-bg-red: 							lighten($inkystories-red, 10%);
+
+$multilink-bg-blue: 						lighten($inkystories-blue, 10%);
+$multilink-bg-blue-dark: 					lighten($inkystories-blue-dark, 10%);
+$multilink-bg-cyan: 						lighten($inkystories-cyan, 10%);
+$multilink-bg-green: 						lighten($inkystories-green, 10%);
+
 
 /* home ------------------------------ */
 
