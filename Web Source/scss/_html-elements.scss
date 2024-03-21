@@ -101,7 +101,7 @@ ul, ol {
 	padding-left: 3rem;
 }
 
-ul {
+ul, ol {
 	&.list-unstyled {
 		&.compact {
 			li {
@@ -173,6 +173,11 @@ dl {
 			font-size: $h4-font-size;
 			line-height: 1.5rem;
 			color: $gray-lightest;
+		}
+	}
+	&.compact {
+		dd {
+			margin-bottom: 0;
 		}
 	}
 }

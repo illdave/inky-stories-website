@@ -59,27 +59,36 @@
 			<main id="main-content" class="main-content bd-content blog" role="main">
 				<section class="section">
 					<div class="container">
-						<div class="row">
-							<div class="col-md-8">
-								<article  class="">
-									<header>
-<h1>BLOG_TOPIC</h1>
-<h2>BLOG_CONTENT_SUMMARY</h2>
-										<div class="entry-meta">
-											<span class="byline"> 
-												<span class="author">David Marshall</span>
-											</span>		
-											<span class="posted-on">
-<time class="entry-date published">POSTED_DATE</time>
-<time class="updated">POSTED_UPDATE</time>
-											</span>
+						<div class="row gx-md-5">
+							<div class="col-lg-9">
+								<article class="">
+									<header class="feature-story-card">
+										<div class="row">
+											<div class="col-lg-6 image">
+												<img src="../assets/img/pictures/nyccon-2014-25.jpg" alt="">
+											</div>
+											<div class="col-lg-6 text">
+												<h1>BLOG_TOPIC</h1>
+												<h2>SUBHEADER</h2>
+												<div class="entry-meta">
+													<span class="byline"> 
+														<span class="author">David Marshall</span>
+													</span>		
+													<span class="posted-on">
+														<time class="entry-date published">DATE</time>
+														<time class="updated">DATE</time>
+													</span>
+												</div>
+												<p>INTRO</p>
+												<p class="cta">
+													<a href="h#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
+												</p>
+											</div>
 										</div>
 									</header>
-									<div class="entry-thumb">
-<img src="../assets/img/pictures/about-index.jpg" alt="">
-									</div>								
 									<div class="entry-content">
-<p>BLOG_CONTENT</p>
+<p>CONTENT</p>
+<p class="signature">David Marshall, man from the school they tore down to build the old school</p>
 									</div>
 									<footer class="entry-footer">
 										<span class="cat-links">
@@ -88,32 +97,32 @@
 									</footer>
 								</article>
 							</div>					
-							<div class="col-md-4 sidebar">
+							<div class="col-lg-3 sidebar">
 								<div class="sticky-top">
 									<aside id="inky-links">
-										<h2 class="widget-title">Categories<span class="widget-deco"></span></h2>
 										<div class="textwidget">
 											<div class="links">
-												<dl class="public-appearances">
+												<dl class="link-list public-appearances">
 													<dt>Public Appearances</dt>
 													<dd><a href="exhibit-2013-agencyport.html">Inky Stories at Agencyport</a></dd>
 													<dd><a href="exhibit-2002-inman-square.html">Inky Stories at 1369 Coffee House</a></dd>
 													<dd class="template"><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
 												</dl>
 												
-												<dl class="art-technique">
+												<dl class="link-list art-technique">
 													<dt>Art Technique</dt>
-													<dd>Digital and traditional art-making tools</dd>
 													<dd><a href="silver-age-printing-technique.html">Silver Age Color Emulation Technique</a></dd>
 													<dd><a href="coloring-like-giraud.html">Learning to Color Like Jean Giraud</a></dd>
 													<dd><a href="craftint-duo-shade.html">Craftint Duo-Shade Emulation Technique</a></dd>
 													<dd><a href="digital-art-process.html">Digital Art Process</a></dd>
+													<dd><a href="analog-art-process.html">Analog Art Process</a></dd>
 												</dl>
-												<dl class="work-in-progress">
-													<dt>Work in Progress</dt>
+												<dl class="link-list recent-work">
+													<dt>Recent Work</dt>
+													<dd class="active"><a href="mecanica-death-ray.html">Mecanica vs. Aliens</a></dd>
 													<dd><a href="commission-ask-kodiak.html">Commission for Ask Kodiak</a></dd>
 												</dl>
-												<dl class="comic-book-history">
+												<dl class="link-list comic-book-history">
 													<dt>Comic Book History</dt>
 													<dd>Business and technology issues that affect the final product</dd>
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
@@ -121,7 +130,7 @@
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
 												</dl>
-												<dl class="film-and-television">
+												<dl class="link-list film-and-television">
 													<dt>Film and Television Reviews</dt>
 													<dd>Mostly from my personal DVD collection</dd>
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
@@ -129,7 +138,7 @@
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
 												</dl>
-												<dl class="doctor-who">
+												<dl class="link-list doctor-who">
 													<dt>Doctor Who Reviews</dt>
 													<dd>Noir, Classic, and current eras of televised and audio adventures</dd>
 													<dd><a href="ARTICLE_URL">ARTICLE_NAME</a></dd>
@@ -165,6 +174,11 @@
 			<script src="../assets/lib/jquery/jquery.min.js"></script>
 			<script src="../assets/lib/lightbox-2.11.1/js/lightbox.js"></script>		
 			<script src="../assets/lib/bootstrap/js/bootstrap.js"></script>
+			<div class="hidden-content" hidden>
+				<a href="../assets/img/blog/mecanica-vs-aliens/prelim-7.jpg" data-lightbox="mecanica-priliminary" data-title="Mecanica vs Aliens: Pencil on bristol paper, freshly traced from the enlarged sketch">
+					<img src="../assets/img/blog/mecanica-vs-aliens/prelim-7.jpg" alt="">
+				</a>
+			</div>			
 		</div>
 	</body>
 </html>
