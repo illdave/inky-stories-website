@@ -69,6 +69,12 @@
 	top: $main-nav-height + $spacer-base;
 }
 
+.intro-paragraph {
+	font-family: $font-family-italic;
+	font-size: $font-size-medium;
+	margin-bottom: $spacer-large;
+}
+
 .cta {
 	display: flex;
 	align-items: flex-start;
@@ -297,6 +303,37 @@
 			color: $text-color !important;
 		}
 	}
+}
+
+.footnote {
+    border-top: $border-default;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-family: $font-family-italic;
+    font-size: $font-size-small;
+    .footnote-asterisk {
+    	color: $inkystories-red;
+    }
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1rem;
+			li {
+				margin-bottom: .5rem !important;
+			}
+	} 
+	&.mla {
+		text-indent: -1rem;
+    	padding-left: 1rem;
+    	a {
+    		white-space: nowrap;
+    	}
+    }  
+}
+.footnote-asterisk {
+	color: $inkystories-red;
+	text-decoration: none;
+	margin-right: .25rem;
 }
 
 .redacted {

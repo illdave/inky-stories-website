@@ -133,8 +133,8 @@ $font-family-bold:							$proxima-nova-bold;
 $font-family-bold-italic:					$proxima-nova-bold-italic;
 
 $font-size-base:          					1rem;
-$font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
-$font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
+$font-size-large:         					$font-size-base * 1.6;	// ~18px
+$font-size-medium:        					$font-size-base * 1.2; // ~16px
 $font-size-small:         					math.div($font-size-base, 1.15); // ~12px
 
 $h1-font-size:                				$font-size-base * 2.0;
