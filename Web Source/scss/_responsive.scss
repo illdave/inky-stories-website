@@ -1,11 +1,11 @@
 /* responsive ------------------------- */
 
 @media (min-width: 1200px) { 
-	.genre-nav {
+	.genre-nav, .comparison-nav {
 		.navbar-collapse {
 			display: block !important;
 		}
-		.comics-nav-toggler {
+		.comics-nav-toggler, .comparison-navigation-toggler {
 			display: none !important;
 		}
 	}	
@@ -457,12 +457,9 @@
 			ul {
 				margin-top: 1rem;
 				li {
-					margin-bottom: 1rem;
 					line-height: 1.2rem;
 					&::after {
-					  content: "";
-					  margin-left: 0;
-					  margin-right: 0;
+
 					}
 				}
 			}

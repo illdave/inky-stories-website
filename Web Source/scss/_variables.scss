@@ -287,18 +287,19 @@ $tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
 
 /* multi link ----------------------- */
 
-$multilink-circle: 							6rem;
-$multilink-icon: 							4rem;
+$multilink-circle: 							5rem;
+$multilink-icon: 							3rem;
 
-$multilink-bg: 								$gray-light;
 $multilink-bg-yellow: 						lighten($inkystories-yellow, 10%);
 $multilink-bg-orange: 						lighten($inkystories-orange, 10%);
 $multilink-bg-red: 							lighten($inkystories-red, 10%);
 
-$multilink-bg-blue: 						lighten($inkystories-blue, 10%);
+$multilink-bg-blue: 						lighten($inkystories-blue, 40%);
 $multilink-bg-blue-dark: 					lighten($inkystories-blue-dark, 10%);
 $multilink-bg-cyan: 						lighten($inkystories-cyan, 10%);
 $multilink-bg-green: 						lighten($inkystories-green, 10%);
+
+$multilink-bg: 								$multilink-bg-blue;
 
 
 /* home ------------------------------ */

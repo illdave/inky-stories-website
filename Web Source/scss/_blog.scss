@@ -76,6 +76,7 @@
 						  margin-left: $spacer-small;
 						  margin-right: $spacer-small;
 						}
+						display: none;
 					}
 				}			
 				.posted-on {
@@ -85,14 +86,27 @@
 						color: $gray-lightest;
 					}
 					time {
-						&.entry-date {}
+						&.entry-date {
+						
+							&::before {
+							  content: "Posted on ";
+							}
+							&::after {
+							  content: "|";
+							  margin-left: $spacer-small;
+							  margin-right: $spacer-small;
+							}
+						}
 						&.updated {
-							display: none;
+							&::before {
+							  content: "Updated on ";
+							}
 						}
 					}
 				}
 			}
 		}
+		
 		.entry-summary {}
 		
 		.content-summary {
@@ -101,11 +115,95 @@
 			font-style: italic;
 			color: $gray-dark;
 		}
-		
 		footer {
 			&.entry-footer {
 				display: none;
 				border: 0;
+			}
+		}
+		
+		.content-feedback {
+			border-top: rem(4px solid $border-default-color);			
+			margin-top: 2rem;
+			padding-top: 1rem;
+			h2 {
+				margin-bottom: 1rem;
+			}
+			.comments {
+				.comment {
+					border-bottom: $border-default;
+					margin-bottom: 1rem;
+					padding-bottom: 1rem;
+					&:last-child {
+						border: 0;
+					}
+					.person {
+						font-family: $font-family-bold;
+						margin-bottom: .25rem;
+					}
+					.reply {
+						margin-left: 2rem;
+						p {
+							font-family: $font-family-italic;
+							&.person {
+								font-family: $font-family-bold-italic;
+							}
+						}
+						.dateline {
+							font-family: $font-family-base;
+						}
+					}
+				}
+			}
+		}
+		
+		.comparison-nav {
+			text-align: center;
+			background-size: 50%;
+			padding: 0;
+			margin-top: 2rem;
+
+			.comparison-nav-toggler {
+				display: inline-block;
+				position: relative;	
+				text-decoration: none;
+				background: $white;
+				padding: 1rem 1.5rem;
+				margin: 0 auto 1rem;
+				&:after {
+					font-family: 'Font Awesome Solid';
+					content: $icon-toggle-open;
+				}
+				&.collapsed {
+					&:after {
+						content: $icon-toggle-collapsed;
+					}
+				}
+			}
+			li {
+				a {
+					color: $genre-link-color;
+					padding: 1rem 1.5rem;
+					margin-right: .5rem;
+					text-decoration: none;
+					font-family: $font-family-bold;
+					text-transform: uppercase;
+					color: $genre-link-color;
+					background: transparent;
+					border-radius: $border-radius-base;
+			
+					&:hover {
+						color: $genre-link-color-hover;
+						background: lighten($inkystories-blue-dark, 75%);
+					}
+					&:active {
+						color: $genre-link-color-active;
+					}
+					&.active {
+						color: $black;
+						background: $section-intro-comics url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+					}
+				}
 			}
 		}
 	}
