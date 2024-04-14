@@ -435,12 +435,28 @@
 }
 
 .feature-story-card {
+	margin-bottom: 2rem;
+	&.has-bottom-border {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+	}
 	.image {
 		img {
 			margin-bottom: 1rem;
+			border: $border-default;
 		}
 	}
 	.text {
+		.header {
+			font-family: $font-family-headers;
+			font-size: $h2-font-size;
+			line-height: math.div($h2-font-size, 1);
+			color: $h1-color;
+			margin-bottom: $spacer-base;
+		}
+		p {
+		
+		}
 		.cta a {
 			text-decoration: none;
 			&:after {
