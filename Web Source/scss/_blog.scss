@@ -47,6 +47,9 @@
 		
 		header {
 			margin-bottom: $spacer-base;
+			&.feature-story-card {
+				margin-bottom: $spacer-large;
+			}
 			&.has-border {
 				border-bottom: $border-default;
 				padding-bottom: $spacer-small;

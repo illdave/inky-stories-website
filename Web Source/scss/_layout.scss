@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
 /* sidebar column --------------------- */
 
 .sidebar {
+	margin-bottom: $spacer-large;
 	.item {
 		border-bottom: $border-default;
 		margin-bottom: $spacer-base;
