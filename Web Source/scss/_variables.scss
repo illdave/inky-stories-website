@@ -59,6 +59,8 @@ $text-disabled-color:						$gray-light;
 $link-color:								darken($theme-color-1, 10%); // slightly darker blue 
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
+$alerts-color-red: 							darken($inkystories-red, 10%);
+$new-update-color:							$alerts-color-red;
 
 $cta-link-color: 							$link-color;
 $cta-link-hover-color: 						$text-color;

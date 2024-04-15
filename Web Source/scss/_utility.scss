@@ -85,6 +85,13 @@
 	margin-right: .25rem;
 }
 
+.new-update {
+	text-transform: uppercase;
+	color: $new-update-color;
+	font-family: $font-family-bold;
+	margin-right: .25rem;
+}
+
 .cta {
 	display: flex;
 	align-items: flex-start;
@@ -644,6 +651,7 @@
 	border: $border-default;
 	margin-bottom: 1rem;
 }
+
 .circle {
 	height: $photo-circle-lg;
 	width: $photo-circle-lg;
