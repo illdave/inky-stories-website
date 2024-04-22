@@ -92,12 +92,12 @@
 						&.entry-date {
 						
 							&::before {
-							  content: "Posted on ";
+							  content: "";
 							}
 							&::after {
 							  content: "|";
 							  margin-left: $spacer-small;
-							  margin-right: $spacer-small;
+							  margin-right: .25rem;
 							}
 						}
 						&.updated {
