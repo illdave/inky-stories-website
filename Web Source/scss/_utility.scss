@@ -447,6 +447,9 @@
 		margin-bottom: 2rem;
 		padding-bottom: 1rem;
 	}
+	&.small-bottom-margin {
+		margin-bottom: 1rem !important; 
+	}
 	.image {
 		img {
 			margin-bottom: 1rem;
@@ -455,14 +458,16 @@
 	}
 	.text {
 		.header {
-			font-family: $font-family-headers;
+			font-family: $comic-book-headers;
 			font-size: $h2-font-size;
 			line-height: math.div($h2-font-size, 1);
-			color: $h1-color;
-			margin-bottom: $spacer-base;
-		}
-		p {
-		
+			color: $headings-color;
+			margin-bottom: $spacer-small;
+			&.header-3 {
+				font-size: $h2-font-size;
+				line-height: math.div($h2-font-size, 1);
+				color: $h1-color;
+			}
 		}
 		.cta a {
 			text-decoration: none;
@@ -656,6 +661,19 @@
 	height: $photo-circle-lg;
 	width: $photo-circle-lg;
 	border-radius: $circle-border-radius;
+	
+	&.photo-md {
+		height: $photo-circle-md;
+		width: $photo-circle-md;
+	}
+	&.photo-sm {
+		height: $photo-circle-sm;
+		width: $photo-circle-sm;
+	}
+	&.photo-xs {
+		height: $photo-circle-xs;
+		width: $photo-circle-xs;
+	}
 }
 
 .button-backtotop {
