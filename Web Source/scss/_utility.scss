@@ -115,6 +115,16 @@
 	}
 }
 
+.video {
+	width: 100%;
+	&.embed-16x9 {
+		aspect-ratio: 16 / 9;
+	}
+	&.embed-4x3 {
+		aspect-ratio: 4 / 3;
+	}
+}
+
 .has-right-link {
 	display: flex;
 	align-items: center;
@@ -968,11 +978,14 @@
 /* 404 error page --------------------- */
 
 .error-404 {
+
+	background: transparent url("#{$layout-image-path}/error-404.jpg") 0 0 no-repeat;
+	background-size: 100%;
+	position: absolute;
+    height: 100vh;
+    width: 100%;
 	.section {
 		&.intro {
-			background: transparent url("#{$layout-image-path}/error-404.jpg") 0 0 no-repeat;
-			background-size: cover;
-			position: relative;
 			.text {
 				bottom: -8rem;
 				h1, h2, p {
@@ -981,6 +994,15 @@
 				h1 {
 					font-size: 8rem;
 					line-height: 8rem;
+				}
+				h2 {
+					color: $gray-light;
+				}
+				a {
+					color: $inkystories-orange;
+					&:hover {
+						color: $white;
+					}
 				}
 			}
 		}
