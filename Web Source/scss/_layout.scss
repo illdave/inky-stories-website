@@ -27,8 +27,22 @@ h1, h2, h3, h4 {
   			border: 0;
 		}
 	}
-	.links a {
-		text-decoration: none;
+	.links {
+		a {
+			text-decoration: none;
+		}
+		.active {
+			a {
+				font-family: $font-family-bold;
+				cursor: default;
+				&:after {
+					display: none;
+				}
+				&:hover {
+					color: $text-color;
+				}
+			}
+		}
 	}
 }
 
@@ -80,6 +94,12 @@ figure {
 				width: 100%;
 			}
 		}
+	}
+}
+
+.images-have-border {
+	img {
+		border: $border-default;
 	}
 }
 

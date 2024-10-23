@@ -3,9 +3,16 @@
 .home {
 	.section {
 		&.intro {
-			padding: 1rem 0;
-			background: $section-intro-home url("#{$layout-image-path}/intro-corner-dots-nofade-cyan.png") 0 0 repeat;
+			padding: 2rem 0;
+			background: $section-intro-home url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
 			background-size: 50%;
+			
+			.feature-story-card {
+				margin-bottom: 0;
+				.image img {
+					margin-bottom: 0;
+				}
+			}
 			h1 {
 				text-align: left;
 				font-size: $h1-font-size;

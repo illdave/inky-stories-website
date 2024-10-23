@@ -157,6 +157,13 @@ dl {
 		margin-bottom: $spacer-base;				
 		border-bottom: $border-default;
 		line-height: 1.1rem;
+		span {
+			display: inline-block;
+			font-family: $font-family-base;
+			text-transform: none;
+			color: $text-color;
+			margin-top: .5rem;
+		}
 	}
 	&.pullquote {
 		margin-top: .5rem;

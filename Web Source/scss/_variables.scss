@@ -73,7 +73,7 @@ $box-shadow-white:                  		0 .25rem .5rem rgba($white, .15);
 
 /* section intro colors -------------- */
 
-$section-intro-home: 						$inkystories-blue;
+$section-intro-home: 						lighten($inkystories-blue, 3%);
 $section-intro-comics: 						lighten($inkystories-yellow, 10%);
 $section-intro-about: 						lighten($inkystories-teal, 60%);
 $section-intro-store: 						lighten($inkystories-blue, 45%);
