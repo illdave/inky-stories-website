@@ -249,7 +249,7 @@
 			padding-bottom: 0 !important;
 			color: $gray-lightest;
 		}
-		.name {
+		.name, .header {
 			font-family: $font-family-info-headers;
 			background-color: transparent;
 			font-size: $h4-font-size;
@@ -268,7 +268,7 @@
 			.genre {
 				color: $gray-lightest;
 			}	
-			.name {
+			.name, .header {
 				color: $link-color;
 				text-decoration: none;
 			}	
@@ -567,7 +567,6 @@
 		}
 	}
 }
-
 
 .feature-cards {
 	display: flex;
@@ -1056,16 +1055,6 @@
 }
 
 
-/* genre pages ------------------------ */
-
-.genre {
-	.intro {
-		background: #efefef;
-	}
-}
-
-
-
 /* 404 error page --------------------- */
 
 .error-404 {
@@ -1276,7 +1265,6 @@
 	}
 }
 
-
 .comic-book-panel {
 	position: relative;
 	background: orange;
@@ -1291,5 +1279,52 @@
 		height: 130px;
 		background: transparent url("#{$speaker-image-path}/the-director.png") 0 0 no-repeat;
 		background-size: cover;
+	}
+}
+
+.ratings {
+	float: right;
+	margin-top: -.5rem;
+	.rating {
+		color: $comic-book-ratings-color;
+		background: $comic-book-ratings-bg;
+		border: $comic-book-ratings-border;
+		border-radius: $comic-book-ratings-border-radius;
+		padding: $comic-book-ratings-padding;
+		font-size: $comic-book-ratings-font-size;
+		font-family: $comic-book-ratings-font-family;
+		font-weight: bold;
+		margin-left: .15rem;
+		&.circle {
+			color: $comic-ratings-circle-color;
+			background: $comic-ratings-circle-bg;
+			border: $comic-ratings-circle-border;
+			padding: $comic-book-ratings-padding;
+			font-size: $comic-ratings-circle-font-size;
+			font-family: $roboto-bold;
+			text-align: center;
+			width: $comic-ratings-circle-size;
+			height:$comic-ratings-circle-size;
+			line-height: $comic-ratings-circle-line-height;
+			&.g {
+				background: #639d1e; // green
+			}
+			&.pg13 {
+				background: #f37022; // orange 
+				font-size: $comic-ratings-circle-font-size-sm;
+			}
+			&.r {
+				background: #2c53d0; // blue
+			}
+			&.r-nc17 {
+				color: $black;
+				background: $white;
+			}
+			&.nc17 {
+				color: $black;
+				background: $white;
+				font-size: $comic-ratings-circle-font-size-sm;
+			}
+		}					
 	}
 }

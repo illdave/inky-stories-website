@@ -167,7 +167,49 @@
 	z-index: 1030;
 }
 
-.comic-book-listing {
+
+.comic-book-genre {
+	.intro {
+		background: #efefef;
+	}
+}
+
+.comic-book-listing, 
+.comic-book-genre {
+	&.comix {
+		.section {
+			&.intro {
+				background-color: $comics-for-adults-bg;
+				background-image: none;
+				h1, h2 {
+					color: $white;
+				}
+				p {
+					color: $gray-light;
+				}
+				.ratings {
+					.rating {
+						color: $white;
+						background: transparent;
+						border-color: $gray;
+					}
+				}		
+				.thumbnails a {
+					.text .name {
+							color: $white;	
+					}
+					.text .description {
+						color: $gray-light; 
+					}
+					&:hover {
+						.text .name {
+							color: $gray-lightest;	
+						}
+					}					
+				}
+			}
+		}
+	}
 	.section {
 		&.intro {
 			border-bottom: 0;
@@ -283,53 +325,6 @@
 				&#adult-content {
 					border-bottom: 0;
 				}
-				.ratings {
-					float: right;
-					margin-top: -.5rem;
-					.rating {
-						display: inline-block;
-						color: $comic-book-ratings-color;
-						background: $comic-book-ratings-bg;
-						border: $comic-book-ratings-border;
-						border-radius: $comic-book-ratings-border-radius;
-						padding: $comic-book-ratings-padding;
-						font-size: $comic-book-ratings-font-size;
-						font-family: $comic-book-ratings-font-family;
-						font-weight: bold;
-						margin-left: .15rem;
-						&.circle {
-							color: $comic-ratings-circle-color;
-							background: $comic-ratings-circle-bg;
-							border: $comic-ratings-circle-border;
-							padding: $comic-book-ratings-padding;
-							font-size: $comic-ratings-circle-font-size;
-							font-family: $roboto-bold;
-							text-align: center;
-							width: $comic-ratings-circle-size;
-							height:$comic-ratings-circle-size;
-							line-height: $comic-ratings-circle-line-height;
-							&.g {
-								background: #639d1e; // green
-							}
-							&.pg13 {
-								background: #f37022; // orange 
-								font-size: $comic-ratings-circle-font-size-sm;
-							}
-							&.r {
-								background: #2c53d0; // blue
-							}
-							&.r-nc17 {
-								color: $black;
-								background: $white;
-							}
-							&.nc17 {
-								color: $black;
-								background: $white;
-								font-size: $comic-ratings-circle-font-size-sm;
-							}
-						}					
-					}
-				}
 			}
 		}
 									
@@ -376,6 +371,14 @@
 				}
 				&:active {}
 			}
+		}
+	}
+}
+
+.comic-book-genre {
+	.section {
+		&.intro {
+			padding-bottom: 2rem;
 		}
 	}
 }
