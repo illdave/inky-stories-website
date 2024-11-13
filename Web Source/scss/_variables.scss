@@ -177,6 +177,7 @@ $dsm-image-path:							$image-path/dsm;
 $webcomics-image-path:						$assets-path/img/comics;
 $speaker-image-path:						$image-path/speaker;
 $logos-image-path:							$image-path/logos;
+$icons-image-path:							$image-path/icons;
 $characters-image-path:						$image-path/characters;
 
 
@@ -242,9 +243,13 @@ $icon-comics-nav:   						quote($fa-var-paint-brush);
 $icon-toggle-collapsed:   					quote($fa-var-circle-chevron-down);
 $icon-toggle-open:   						quote($fa-var-circle-chevron-up);
 
-$icon-facebook:   							quote($fa-var-facebook);
+$icon-facebook-fa:   						quote($fa-var-facebook);
 $icon-twitter:   							quote($fa-var-twitter);
-$icon-email:   								quote($fa-var-envelope);
+$icon-email-fa:   							quote($fa-var-envelope);
+
+$icon-facebook:   							url("#{$icons-image-path}/facebook.svg");
+$icon-bluesky:   							url("#{$icons-image-path}/bluesky.svg");
+$icon-email:   								url("#{$icons-image-path}/envelope.svg");
 
 $icon-comic-nav-prev:   					quote($fa-var-chevron-circle-left);
 $icon-comic-nav-next:   					quote($fa-var-chevron-circle-right);

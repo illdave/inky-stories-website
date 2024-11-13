@@ -33,17 +33,17 @@
 			&:not(:last-child) {margin-right: 0;}
 			a {
 				text-decoration: none;
-				&:before {
-					font-family: 'Font Awesome Brands';
-					color: $icon-link-color;
-					font-size: 2rem;
-				}
+				color: $icon-link-color;
+				display: inline-block;
+				height: 2rem;
+				width: 2rem;
+				line-height: 2rem;
 			}
 			&.facebook a {
-				&:before {content: $icon-facebook;}
+				background: $icon-facebook;
 			}
-			&.twitter a {
-				&:before {content: $icon-twitter;}
+			&.bluesky a {
+				background: $icon-bluesky;
 			}
 			&.email a {
 				&:before {
@@ -55,11 +55,14 @@
 				&:before {
 					color: $icon-link-color-hover;
 				}
+				fill: $icon-link-color-hover;
+				filter: invert(50%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(103%) contrast(100%);
 			}
 			&:active a {
 				&:before {
 					color: $icon-link-color-active;
 				}
+				color: $icon-link-color-active;
 			}
 		}
 	}				
