@@ -52,16 +52,10 @@
 				}
 			}
 			&:hover a {
-				&:before {
-					color: $icon-link-color-hover;
-				}
 				fill: $icon-link-color-hover;
 				filter: invert(50%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(103%) contrast(100%);
 			}
 			&:active a {
-				&:before {
-					color: $icon-link-color-active;
-				}
 				color: $icon-link-color-active;
 			}
 		}
@@ -637,7 +631,6 @@
 .botom-link-align {
 	height: 3rem;
 }
-
 
 .story-group-blade {
 	border-bottom: $border-default;
