@@ -103,6 +103,9 @@ ul, ol {
 }
 
 ul, ol {
+	li {
+		margin-bottom: $spacer-small;
+	}
 	&.list-unstyled {
 		&.compact {
 			li {
@@ -137,12 +140,6 @@ ol {
 				display: none;
 			}
 		}
-	}
-}
-
-ul, ol {
-	li {
-		margin-bottom: $spacer-small;
 	}
 }
 
@@ -193,6 +190,11 @@ dl {
 strong, bold {
 	font-family: $font-family-headers;
 	font-weight: normal;
+}
+
+em, italic {
+	font-family: $font-family-italic;
+	font-style: normal;
 }
 
 table, .table {
@@ -284,15 +286,6 @@ figure {
 	img {
 		margin-bottom: $spacer-small;
 	}
-}
-
-italic, em {
-	font-family: $font-family-italic;
-	font-style: normal;
-}
-bold, strong {
-	font-family: $font-family-bold;
-	font-weight: normal;
 }
 
 .form {
