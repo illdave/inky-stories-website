@@ -324,6 +324,21 @@
 
 .link-list {
 	margin-bottom: 2rem;
+	&.two-column {
+		.list-columns {
+		  column-count: 2;
+		  column-gap: 5%;
+		}
+	}	
+	&.three-column {
+	  column-count: 3;
+	  column-gap: 5%;
+	}	
+	&.four-column {
+	  column-count: 4;
+	  column-gap: 5%;
+	}	
+	
 	dd {
 		line-height: 1.1rem;
 	}
@@ -439,6 +454,11 @@
 		img {
 			margin-bottom: 1rem;
 			border: $border-default;
+		}
+		&.no-border {
+			img {
+				border: 0;
+			}
 		}
 	}
 	.text {
@@ -1171,7 +1191,6 @@
 			h1 {
 				font-size: $caption-box-header-size;
 				color: $caption-box-header-color;
-				line-height: 1.3rem;
 			}			
 		}
 	}
