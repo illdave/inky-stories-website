@@ -98,6 +98,14 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	color: $cta-link-color;
+	&:after {
+		@include cta-arrow;
+	}
+	a {
+		&:after {
+			display: none;
+		}
+	}
 	.fas, .fa-solid {
 		&:before {
 			font-family: 'Font Awesome Solid';

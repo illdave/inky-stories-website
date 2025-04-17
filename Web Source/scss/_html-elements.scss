@@ -163,21 +163,27 @@ dl {
 		}
 	}
 	&.pullquote {
-		margin-top: .5rem;
+		padding: $pullquote-padding;
+		margin-bottom: $pullquote-margin;
 		dt {
-			font-family: $comic-book-font-bold-italic;
-			font-size: $h1-font-size;
-			line-height: 1.6rem;
+			font-family: $pullquote-quote-font-family;
+			font-size: $pullquote-quote-font-size;
+			line-height: $pullquote-quote-line-height;
+			color: $pullquote-quote-color;
+			text-transform: none;
 			border: 0;
 			padding: 0;
-			margin-bottom: 1rem;
-			color: $theme-color-7;
+			margin-bottom: $spacer-base;
+			strong {
+				font-family: inherit;
+				color: $text-color;
+			}
 		}
 		dd {
-			font-family: $font-family-italic;
-			font-size: $h4-font-size;
-			line-height: 1.5rem;
-			color: $gray-lightest;
+			font-family: $pullquote-speaker-font-family;
+			font-size: $pullquote-speaker-font-size;
+			color: $pullquote-speaker-color;
+			line-height:$pullquote-speaker-line-height;
 		}
 	}
 	&.compact {
@@ -188,7 +194,7 @@ dl {
 }
 
 strong, bold {
-	font-family: $font-family-headers;
+	font-family: $font-family-bold;
 	font-weight: normal;
 }
 
@@ -207,6 +213,7 @@ table, .table {
 	}
 	th {
 		font-family: $font-family-info-headers;
+		font-weight: normal;
 	}
 	thead th {
 		vertical-align: bottom;
@@ -227,9 +234,9 @@ table, .table {
 		}
 	}
 	caption {
-		font-family: $font-family-info-headers;
-		font-size: $h4-font-size;
-		color: $text-color;
+		font-family: $font-family-headers;
+		font-size: $h3-font-size;
+		color: $headings-color;
 		padding: 0;
 		margin: 0;
 		margin-bottom: .5rem;

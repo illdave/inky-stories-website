@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <style>
+      .b {
+        fill: #fff;
+      }
+
+      .c {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 29px;
+      }
+
+      .d {
+        fill: #d8d6d6;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="d" cx="203.56" cy="226.01" r="163.89" transform="translate(-100.19 210.14) rotate(-45)"/>
+    <path class="d" d="M609.46,626.31c-43.65-71.02-87.96-136.6-114.04-157.24-38.74-30.67-130.78-36.99-294.31-34.5-163.52-2.49-255.56,3.83-294.31,34.5-26.08,20.64-70.39,86.22-114.04,157.24h816.69Z"/>
+  </g>
+  <path class="c" d="M102.62,260.37c13.55,43.35,54.01,74.81,101.83,74.81s88.28-31.46,101.83-74.81"/>
+  <ellipse class="b" cx="167.78" cy="182.22" rx="24.81" ry="49.26"/>
+  <ellipse class="b" cx="239.63" cy="182.22" rx="24.81" ry="49.26"/>
+</svg>

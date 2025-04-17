@@ -290,7 +290,21 @@ $btn-padding:	 							0.25rem 0.5rem;
 
 $tile-card-bg: 								$gray-lighter;
 $tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
-$tile-card-icon: 							5rem;
+$tile-card-icon: 							3rem;
+
+$pullquote-padding: 						$spacer-large;
+$pullquote-margin: 							$spacer-base;
+
+$pullquote-quote-font-family: 				$comic-book-font-bold-italic;
+$pullquote-quote-font-size: 				$h2-font-size;
+$pullquote-quote-font-family-bold: 			$pullquote-quote-font-family;
+$pullquote-quote-line-height: 				$pullquote-quote-font-size * 0.9;
+$pullquote-quote-color: 					$gray-lightest;
+
+$pullquote-speaker-font-family: 			$font-family-italic;
+$pullquote-speaker-font-size: 				$h3-font-size;
+$pullquote-speaker-line-height: 			$pullquote-speaker-font-size * 1.2;
+$pullquote-speaker-color: 					$text-color;
 
 
 /* multi link ----------------------- */
@@ -341,7 +355,6 @@ $genre-link-line-border-radius:				$spacer-xs;
 $genre-link-color: 							$link-color;
 $genre-link-color-hover: 					$link-hover-color;
 $genre-link-color-active: 					$black;
-
 
 $link-active-color:							darken($link-color, 20%);
 

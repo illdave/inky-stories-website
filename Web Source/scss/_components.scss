@@ -107,25 +107,6 @@
 	flex-direction: row;
 	gap: 1rem 0;
 	margin-bottom: 2rem;
-	&.icon-tiles {
-		.tile-card {
-			text-align: center;
-			flex-direction: column;
-			.header {
-				&:after {
-					display: none;
-				}
-			}
-			.icon {
-				margin-bottom: $spacer-small;
-				img {
-					width: $tile-card-icon;
-					margin: .25rem auto 0;
-				}
-			}
-		}
-	}	
-	
 	.tile-card {
 		display: flex;
 		flex-direction: column;
@@ -161,8 +142,64 @@
 		&:hover {
 			background-color: $tile-card-hover-bg;
 		}
-	}
+	}	
+	&.icon-tiles {
+		.tile-card {
+			text-align: center;
+			flex-direction: column;
+			.header {
+				&:after {
+					display: none;
+				}
+			}
+			.icon {
+				margin-bottom: $spacer-small;
+				img {
+					width: $tile-card-icon;
+					margin: .25rem auto 0;
+				}
+			}
+		}
+	}	
+	
+	&.button-tiles {
+		display: flex;
+		flex-direction: column;
+		gap: 0 $spacer-base;
+	
+		.tile-card {
+			align-content: flex-start;
+			flex-direction: row;
+			gap: 0 $spacer-small;
+			text-align: left;
+			.icon {
+				flex-shrink: 0;
+				margin-bottom: $spacer-small;
+				margin-right: $spacer-small;
+				img {
+					width: $tile-card-icon;
+					margin: .25rem auto 0;
+				}
+			}
+			.image {
+				flex-shrink: 0;
+				margin-bottom: $spacer-small;
+				img {
+					width: $photo-circle-xs;
+					height: $photo-circle-xs;
+					border-radius: $circle-border-radius;
+				}
+			}
+		}
+	}		
 }
+
+
+
+
+
+
+
 
 .feature-cards {
 	display: flex;

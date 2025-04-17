@@ -64,20 +64,24 @@ h1, h2, h3, h4 {
 		}
 	}
 	img {
-		margin-bottom: .5rem;
+		margin-bottom: $spacer-small;
 	}
 }
 
 figure {
 	border-bottom: $border-default;
-	padding-bottom: .5rem;
+	padding-bottom: $spacer-small;
 	.figure-caption {
 		text-align: left;
 	}
 	&.no-border {
 		border: 0;
-		img {
-		}
+	}
+	&.no-bottom-margin {
+		margin-bottom: 0;
+	}
+	&.small-bottom-margin {
+		margin-bottom: $spacer-small;
 	}
 	&.image-has-border {
 		img {
@@ -87,7 +91,7 @@ figure {
 	&.centered {
 		text-align: center;
 		img {
-			margin: 0 auto .5rem;
+			margin: 0 auto $spacer-small;
 		}
 		&.full-width {
 			img {
@@ -119,7 +123,7 @@ figure {
 .text-page {
 	h3, .h3 {
 		border-top: rem(1px solid $gray-light);
-		padding-top: 1.5rem;
+		padding-top: 1$spacer-small;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 	}
