@@ -27,6 +27,11 @@
 				margin: 0 auto;
 			}
 			&.carousel {
+				.page-label {
+					font-family: $font-family-headers;
+					font-size: $h3-font-size;
+					color: $headings-color;
+				}
 				.carousel-control-prev, 
 				.carousel-control-next {
 					width: $carousel-nav-width;
