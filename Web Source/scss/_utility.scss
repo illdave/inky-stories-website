@@ -90,7 +90,6 @@
 }
 
 .cta {
-	display: flex;
 	align-items: flex-start;
 	font-family: $font-family-bold;
 	font-size: $font-size-base;
@@ -132,12 +131,13 @@
 
 .has-right-link {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	margin: 0 0 1.5rem;
 	a {
 		margin-left: auto;
 		font-family: $font-family-bold;
 		font-size: $font-size-base;
+		line-height: $font-size-base;
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $cta-link-color;
@@ -147,13 +147,12 @@
 		&:active {
 			color: $cta-link-active-color;
 		}
-	}
-	.fas, .fa-solid {
-		margin-left: 0;
-		&:before {
-			font-family: 'Font Awesome Solid';
-			content: $icon-learn-cta;
+		&:after {
+			@include cta-arrow;		
 		}
+	}
+	&.has-paragraph {
+		margin-bottom: $spacer-small;
 	}
 }
 
@@ -772,7 +771,6 @@
 			}
 		}
 	}
-	
 	.lb-closeContainer {
 		.lb-close {}
 	}

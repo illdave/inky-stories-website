@@ -194,13 +194,6 @@
 	}		
 }
 
-
-
-
-
-
-
-
 .feature-cards {
 	display: flex;
 	flex-direction: row;
@@ -363,6 +356,29 @@
 		color: $cta-link-color !important;
 		&:hover {
 			color: $text-color !important;
+		}
+	}
+	&.left-nav {
+		dt, dd {
+			margin-bottom: 0;
+		}
+		dd {
+			line-height: normal;
+			break-inside: avoid;
+			position: relative;
+		}	
+		a {
+			display: block;
+			padding: $spacer-base 0;
+			border-bottom: $border-default;
+			&.active, &:focus {
+				font-family: $font-family-bold;
+			}
+			&:after {
+				position: absolute;
+				right: 0;
+				top: 1.2rem;
+			}
 		}
 	}
 }
