@@ -218,7 +218,9 @@ table, .table {
 	thead th {
 		vertical-align: bottom;
 	}
-	
+	tbody th {
+		font-family: $font-family-italic;
+	}
 	
 	&> :not(:first-child) {
 		border-top: none;

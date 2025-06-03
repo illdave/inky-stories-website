@@ -123,7 +123,7 @@ figure {
 .text-page {
 	h3, .h3 {
 		border-top: rem(1px solid $gray-light);
-		padding-top: 1$spacer-small;
+		padding-top: $spacer-base;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 	}
@@ -140,7 +140,7 @@ figure {
 		h2 {
 		}
 		p {
-			margin-bottom: 0;
+			margin-bottom: $spacer-base;
 			font-size: $font-size-base * 1.15;
 			line-height: 1.2rem;;
 		}

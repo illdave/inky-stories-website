@@ -478,6 +478,16 @@
 	&.text-page-section {
 		padding-top: 0;
 	}
+	&.no-background {
+		padding-bottom: 0;
+		.text-page-header {
+			margin-bottom: 0;
+		}
+		.feature-story-card {
+			padding-bottom: $spacer-base;
+			margin-bottom: 0;
+		}
+	}
 }
 
 .photo {

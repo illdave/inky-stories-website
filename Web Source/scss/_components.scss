@@ -219,17 +219,18 @@
 			}
 			.header {
 				font-family: $font-family-info-headers;
+				font-size: $h4-font-size;
 				text-transform: uppercase;
 				margin-bottom: .5rem;
-				&:after {
-					font-family: 'Font Awesome Solid';
-					font-size: .75rem;
-					content: $icon-list-link;			
-					color: $link-color;
-					margin-left: .25rem;
-				}
 				a {
 					text-decoration: none;
+					&:after {
+						font-family: 'Font Awesome Solid';
+						font-size: .75rem;
+						content: $icon-list-link;			
+						color: $link-color;
+						margin-left: .25rem;
+					}
 				}
 			}
 			.description {
