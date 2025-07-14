@@ -4,21 +4,22 @@
 		<!-- Copyright 1990-2025 Rotten Kid Press -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Inky Stories: Contact</title>
-		<meta name="application-name" content="Inky Stories: Contact">
 		<meta name="author" content="David Marshall">
 		<meta name="copyright" content="Copyright 1990-2025 Rotten Kid Press">
-		<meta name="description" content="Comic book stories by David Marshall">
+		<meta name="description" content="Contact form leading to more information about comic book art by Dave Marshall">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
 		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
 		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
 
 		<meta property="og:title"        content="Inky Stories: About the Artist">
 		<meta property="og:type"         content="article">
-		<meta property="og:description"  content="Inky Stories is a web and print anthology of my short, self-contained comic book stories.">
+		<meta property="og:description"  content="Contact form leading to more information about comic book art by Dave Marshall">
 		<meta property="og:url"          content="http://www.inkystories.com/about">
 		<meta property="og:image"        content="http://www.inkystories.com/assets/img/open-graph/og-rotten-wallpaper.png">
+		
+		<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 	</head>
 	<body>
 		<div class="inky-stories-3">
@@ -64,7 +65,7 @@
 									<li class="email"><a href="mailto:dave@inkystories.com" target="_blank" rel="noopener noreferrer" aria-label="email Inky Stories"></a></li>
 								</ul>
 							</div>
-							<form class="form" id="contact-inky-stories" action="https://submit-form.com/hNavghxp">
+							<form method="post" class="form" id="contact-inky-stories" action="https://submit-form.com/hNavghxp">
 								<input
 									type="hidden"
 									name="_redirect"
@@ -80,17 +81,17 @@
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="your-email" class="form-label">Email</label>
-											<input type="email" class="form-control" id="your-email" name="your-email" placeholder="name@example.com">
+											<input type="email" class="form-control" id="your-email" name="email" placeholder="name@example.com">
 										</div>
-
 									</div>
 									<div class="col-12">
 										<div class="form-group">
 											<label for="your-message" class="form-label">Message</label>
-											<textarea class="form-control" id="your-message" name="your-message" rows="3"  placeholder="Intimated as I am by your raw genius, Dave..."></textarea>
+											<textarea class="form-control" id="your-message" name="message" rows="3"  placeholder="Intimated as I am by your raw genius, Dave..."></textarea>
 										</div>
 									</div>
 									<div class="col-12">
+										<div class="h-captcha" data-sitekey="1c92efba-73c6-4c98-b32c-609463521826"></div>
 										<button type="submit" class="btn btn-primary">Send</button>
 									</div>		
 								</div>

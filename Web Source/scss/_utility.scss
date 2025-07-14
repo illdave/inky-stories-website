@@ -461,6 +461,10 @@
 	background-size: 3rem;
 	padding: 1rem 0 1.5rem 3.25rem;
 	font-family: $font-family-italic;
+	&.no-art {
+		background: none;
+		padding: 0;
+	}
 }
 
 .jumbotron {
@@ -855,6 +859,7 @@
 		}
 		.word-balloon {
 			margin-left: 24rem;
+			text-align: left;
 			&.left-pointer:after {
 				bottom: 20%;
 				top: auto;
@@ -1010,6 +1015,12 @@
 	}
 	.signature {
 		font-family: $comic-book-font-italic;
+		p {
+			&.name {
+				font-family: $comic-book-font-bold-italic;
+			}
+			margin-bottom: 0 !important;
+		}
 	}
 }
 

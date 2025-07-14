@@ -298,6 +298,27 @@ figure {
 }
 
 .form {
+	&.has-border {
+		border: $border-default;
+		padding: $spacer-large;
+	}
+	&.has-background {
+		background: $gray-lighter;
+		padding: $spacer-base $spacer-large;
+	}
+	&.has-bottom-margin {
+		margin-bottom: $spacer-large;
+	}
+	fieldset {
+		border-top: $border-light;
+		padding: $spacer-base 0;
+	}
+	legend {
+		font-family: $font-family-headers;
+		font-size: $h3-font-size;
+		color: $headings-color;
+	}
+	label {}
 	.form-group {
 		margin-bottom: 1rem;
 		text-align: left;
