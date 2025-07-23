@@ -19,7 +19,7 @@
 		<meta property="og:url"          content="http://www.inkystories.com/about">
 		<meta property="og:image"        content="http://www.inkystories.com/assets/img/open-graph/og-rotten-wallpaper.png">
 		
-		<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+		<script src="https://unpkg.com/@botpoison/browser" async></script>
 	</head>
 	<body>
 		<div class="inky-stories-3">
@@ -65,11 +65,18 @@
 									<li class="email"><a href="mailto:dave@inkystories.com" target="_blank" rel="noopener noreferrer" aria-label="email Inky Stories"></a></li>
 								</ul>
 							</div>
-							<form method="post" class="form" id="contact-inky-stories" action="https://submit-form.com/hNavghxp">
+							<form 
+								method="post" 
+								class="form" 
+								id="contact-inky-stories" 
+								action="https://submit-form.com/hNavghxp"
+								data-botpoison-public-key="pk_a634dafa-5a8e-4261-b1e3-299b706a557f">
 								<input
 									type="hidden"
 									name="_redirect"
 									value="http://www.inkystories.com/contact/contact-confirmation.html"
+									name="_email.subject" value="Contact Inky Stories" 
+									name="_email.template.title" value="Inky Stories contact form" 
 								/>
 								<div class="row">
 									<div class="col-md-6">
@@ -91,7 +98,6 @@
 										</div>
 									</div>
 									<div class="col-12">
-										<div class="h-captcha" data-sitekey="1c92efba-73c6-4c98-b32c-609463521826"></div>
 										<button type="submit" class="btn btn-primary">Send</button>
 									</div>		
 								</div>

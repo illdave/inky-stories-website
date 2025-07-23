@@ -32,6 +32,11 @@
 				line-height: math.div($h2-font-size, 1);
 				color: $h1-color;
 			}
+			&.subheader {
+				font-size: $h3-font-size;
+				line-height: math.div($h3-font-size, 1);
+				color: $h1-color;
+			}
 		}
 		.cta a {
 			text-decoration: none;

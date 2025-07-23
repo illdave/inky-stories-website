@@ -17,21 +17,23 @@ const sass = require("gulp-sass")(require("sass"));
 const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require('gulp-clean-css');
 
+
+
 // browser sync
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "../Web Root/"
+    	baseDir: "../Web Root/"
     },
     port: 3000
-  });
-  done();
+	});
+	done();
 }
 
 // browser sync reload
 function browserSyncReload(done) {
-  browsersync.reload();
-  done();
+	browsersync.reload();
+	done();
 }
 
 // images

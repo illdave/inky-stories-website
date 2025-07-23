@@ -18,9 +18,9 @@
 		<meta property="og:type"         content="article">
 		<meta property="og:description"  content="Artist for hire: Commission personalized, unique original comic book art from Dave Marshall of Rotten Kid Press.">
 		<meta property="og:url"          content="http://www.inkystories.com/commissions/index.html">
-		<meta property="og:image"        content="http://www.inkystories.com/assets/img/open-graph/og-rotten-wallpaper.png">
+		<meta property="og:image"        content="http://www.inkystories.com/assets/img/blog/commissions/theme.jpg">
 		
-		<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+		<script src="https://unpkg.com/@botpoison/browser" async></script>
 	</head>
 	<body>
 		<div class="inky-stories-3">
@@ -58,8 +58,8 @@
 				<section class="section intro no-background">
 					<div class="container">
 						<div class="text-page-header">
-							<h1>Commissions</h1>
-							<p>Keep me off the streets and out of trouble by <strong>commissioning custom art!</strong> Together we can  <strong>create the extraordinary.</strong></p>
+							<h1>Commission Art</h1>
+							<h2>Hand-Crafted Comic Art in the Classic Tradition</h2>
 						</div>
 					</div>
 				</section>
@@ -74,23 +74,27 @@
 										</div>
 										<div class="col-lg-6 text">
 											<div class="header">I love to draw...for you!</div>
-											<p>I work with traditional ink-on-paper media, usually hunched over an Anco Bilt drafting table like my old school idols. Art, lettering, and design are all done by hand. Expressing the feeling of older comics in current times with era-appropriate tools has been my passion for at least 20 years. Commissions include character portraits, pin-ups, model sheets, pitch samples, and faux cover recreations. Fill out the handy <strong>commissions request form</strong> below to start creating the extraordinary.</p>
+											<p>I work with traditional ink-on-paper media, hunched over an Anco Bilt drafting table like the old school masters. Art, lettering, and design are all done by hand. Capturing the authentic feel of vintage comics in current times with era-appropriate tools has been my passion for over 20 years. Commissions include character portraits, pin-ups, model sheets, pitch samples, and faux cover recreations. Fill out the <strong>commission request form</strong> below to start creating something extraordinary.</p>
 											<p class="cta">
 												<a href="/blog/commissions-rate-sheet.html" aria-label="">See the commission rate sheet</a>
 											</p>
 										</div>
 									</div>
 								</div>
-								
 								<h2 id="commission-request-form">Commission request form</h2>
 								<p>All fields are required.</p>
-								<form method="post" class="form has-background has-bottom-margin" action="https://submit-form.com/GKhBIYxFD">
+								<form 
+									method="post" 
+									id="commission-request-form" 
+									class="form has-background has-bottom-margin" 
+									action="https://submit-form.com/GKhBIYxFD" 
+									data-botpoison-public-key="pk_523f3edb-f212-41e0-b992-e60465d80662">
 									<input
 										type="hidden" 
 										name="_redirect" 
 										value="http://www.inkystories.com/commissions/commission-confirmation.html"
-										name="_email.subject" value="Commission request from Inky Stories form" 
-										name="_email.template.title" value="Commission request from Inky Stories form" 
+										name="_email.subject" value="Commission art request" 
+										name="_email.template.title" value="Inky Stories commission request form" 
 									/>
 									<fieldset>
 										<legend>Identify yourself</legend>
@@ -98,13 +102,13 @@
 											<div class="col-md-6">
 												<div class="form-group">
 													<label for="full-name" class="form-label">Your full name</label>
-													<input type="text" class="form-control" id="full-name" name="full-name" placeholder="">
+													<input type="text" class="form-control" id="full-name" name="full-name" placeholder="" required>
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
 													<label for="your-email" class="form-label">Email</label>
-													<input type="email" class="form-control" id="email" name="email" placeholder="">
+													<input type="email" class="form-control" id="email" name="email" placeholder="" required>
 												</div>
 											</div>
 										</div>
@@ -112,15 +116,15 @@
 									<fieldset>
 										<legend>Describe your idea</legend>
 										<div class="row mb-3">
-											<label for="idea-name" class="col-sm-2 col-form-label">Name</label>
+											<label for="idea-name" class="col-sm-2 col-form-label">Title</label>
 											<div class="col-sm-10">
-												<input type="text" class="form-control" id="idea-title" name="idea-title" placeholder="">
+												<input type="text" class="form-control" id="idea-title" name="idea-title" placeholder=""required>
 											</div>											
 										</div>
 										<div class="row mb-3">
 											<label for="idea-details" class="col-sm-2 col-form-label">Details</label>
 											<div class="col-sm-10">
-												<textarea class="form-control" id="idea-details" name="idea-details" placeholder="" rows="3"></textarea>
+												<textarea class="form-control" id="idea-details" name="idea-details" placeholder="" rows="3" required></textarea>
 											</div>											
 										</div>
 									</fieldset>
@@ -129,7 +133,7 @@
 											<fieldset>
 												<legend>Paper size</legend>
 													<div class="form-check">
-														<input class="form-check-input" type="radio" name="paper-size" id="sketchbook-paper-size" value="sketchbook-paper-size">
+														<input class="form-check-input" type="radio" name="paper-size" id="sketchbook-paper-size" value="sketchbook-paper-size" required>
 														<label class="form-check-label" for="sketchbook-paper-size">
 															Sketchbook (9" x 12")
 														</label>
@@ -141,7 +145,7 @@
 														</label>
 													</div>
 													<div class="form-check">
-														<input class="form-check-input" type="radio" name="-paper-size" id="goldenage-paper-size" value="goldenage-paper-size">
+														<input class="form-check-input" type="radio" name="paper-size" id="goldenage-paper-size" value="goldenage-paper-size">
 														<label class="form-check-label" for="goldenage-paper-size">
 															Golden Age (15" x 20")
 														</label>
@@ -152,7 +156,7 @@
 											<fieldset>
 												<legend>Characters</legend>
 													<div class="form-check">
-														<input class="form-check-input" type="radio" name="characters" id="one-or-two" value="one-or-two-characters">
+														<input class="form-check-input" type="radio" name="characters" id="one-or-two" value="one-or-two-characters" required>
 														<label class="form-check-label" for="one-or-two">
 															One or two characters
 														</label>
@@ -175,7 +179,7 @@
 											<fieldset>
 												<legend>Background</legend>
 												<div class="form-check">
-													<input class="form-check-input" type="radio" name="background" id="no-background" value="no-background">
+													<input class="form-check-input" type="radio" name="background" id="no-background" value="no-background" required>
 													<label class="form-check-label" for="no-background">
 														No background
 													</label>
@@ -201,7 +205,7 @@
 												<legend>Lettering</legend>
 												<p>Enhance your drawing with hand-lettered word balloons, captions, and sound effects.</p>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" value="yes" id="lettering" name="lettering">
+													<input class="form-check-input" type="checkbox" value="yes" id="lettering" name="lettering" >
 													<label class="form-check-label" for="lettering">
 														I want lettering
 													</label>
@@ -210,10 +214,10 @@
 										</div>
 										<div class="col-md-6">
 											<fieldset>
-												<legend>Cover recreation</legend>
+												<legend>Faux cover recreation</legend>
 												<p>Full size original art with publisher trade dressing (logo, price and issue number, etc.)</p>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" value="yes" id="cover-recreation" name="cover-recreation">
+													<input class="form-check-input" type="checkbox" value="yes" id="cover-recreation" name="cover-recreation" >
 													<label class="form-check-label" for="cover-recreation">
 														I want a cover recreation
 													</label>
@@ -221,11 +225,23 @@
 											</fieldset>
 										</div>
 									</div>
-									<div class="h-captcha" data-sitekey="1c92efba-73c6-4c98-b32c-609463521826"></div>
 									<fieldset>
 										<button type="submit" class="btn btn-primary">Send</button>
 									</fieldset>
 								</form>	
+								<script>
+									var formElement = document.getElementById("commission-request-form");
+									var buttonElement = document.getElementById("button");
+									formElement.addEventListener("botpoison-challenge-start", function () {
+										buttonElement.setAttribute("disabled", "disabled");
+									});
+									formElement.addEventListener("botpoison-challenge-success", function () {
+										buttonElement.removeAttribute("disabled");
+									});
+									formElement.addEventListener("botpoison-challenge-error", function () {
+										buttonElement.removeAttribute("disabled");
+									});
+								</script>
 							</div>
 							<div class="col-md-3 sidebar">
 								<div class="sticky-top">

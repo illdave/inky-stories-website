@@ -138,6 +138,17 @@ figure {
 			margin-bottom: $spacer-base;
 		}
 		h2 {
+			font-family: $comic-book-headers;
+			font-size: $h3-font-size;
+			line-height: $h3-font-size;
+			color: $text-color;
+			margin-bottom: $spacer-small;
+			.book-title {
+				font-family: inherit;
+			}
+		}
+		h1 + h2 {
+			margin-top: -$spacer-small;
 		}
 		p {
 			margin-bottom: $spacer-base;
