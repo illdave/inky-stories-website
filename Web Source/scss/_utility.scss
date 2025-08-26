@@ -101,6 +101,7 @@
 		@include cta-arrow;
 	}
 	a {
+		text-decoration: none;
 		&:after {
 			display: none;
 		}

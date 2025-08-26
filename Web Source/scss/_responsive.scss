@@ -304,6 +304,8 @@
 
 	h1, .h1 {
 		font-size: 1.75rem;
+		line-height: 1.75rem;
+		margin-bottom: $spacer-small;
 	}
 	.affix {
 		position: static;
@@ -314,12 +316,41 @@
 			padding: 0;
 		}
 	}
+	
+	.blog {
+		article {
+			&:last-child {
+				margin-bottom: $spacer-large;
+			}
+			header {
+				h1 {
+					font-size: 1.75rem;
+					line-height: 1.75rem;
+					margin-bottom: $spacer-small;
+				}
+				h2, .h2 {
+					font-size: 1.2rem;
+					line-height: 1.2rem;
+				}					
+			}
+		}
+		&.index {
+			article {
+			}
+		}
+	}		
+	
 	.text-page {
 		 .text-page-header {
 		 	margin-bottom: 0;
 			h1, .h1 {
-				margin-bottom: .5rem;
-			}		 	
+				font-size: 1.75rem;
+				line-height: 1.75rem;
+				margin-bottom: $spacer-small;
+			}	
+			p {
+				font-size: $font-size-base;
+			}	 	
 		 }
 		 h3, .h3 {
 		 	margin-top: 0;
