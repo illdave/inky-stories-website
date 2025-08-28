@@ -1,61 +1,60 @@
 /* components ------------------------ */
 
+.feature-story-card {
+	margin-bottom: 2rem;
+	&.has-bottom-border {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+	}
+	&.small-bottom-margin {
+		margin-bottom: 1rem !important; 
+	}
+	.image {
+		img {
+			margin-bottom: 1rem;
+			border: $border-default;
+		}
+		&.no-border {
+			img {
+				border: 0;
+			}
+		}
+	}
+	.text {
+		.header {
+			font-family: $comic-book-headers;
+			font-size: $h2-font-size;
+			line-height: math.div($h2-font-size, 1);
+			color: $headings-color;
+			margin-bottom: $spacer-small;
+			&.header-3 {
+				font-size: $h2-font-size;
+				line-height: math.div($h2-font-size, 1);
+				color: $h1-color;
+			}
+			&.subheader {
+				font-size: $h3-font-size;
+				line-height: math.div($h3-font-size, 1);
+				color: $h1-color;
+			}
+		}
+		.cta a {
+			text-decoration: none;
+			&:after {
+				font-family: 'Font Awesome Solid';
+				font-size: .75rem;
+				content: $icon-list-link;			
+				color: $link-color;
+				margin-left: .25rem;
+			}
+		}
+	}
+}
 .feature-story-cards {
 	&.stacked .feature-story-card {
 		border-bottom: $border-default;
 		margin-bottom: $spacer-base;
 	}
-	.feature-story-card {
-		margin-bottom: 2rem;
-		&.has-bottom-border {
-			margin-bottom: 2rem;
-			padding-bottom: 1rem;
-		}
-		&.small-bottom-margin {
-			margin-bottom: 1rem !important; 
-		}
-		.image {
-			img {
-				margin-bottom: 1rem;
-				border: $border-default;
-			}
-			&.no-border {
-				img {
-					border: 0;
-				}
-			}
-		}
-		.text {
-			.header {
-				font-family: $comic-book-headers;
-				font-size: $h2-font-size;
-				line-height: math.div($h2-font-size, 1);
-				color: $headings-color;
-				margin-bottom: $spacer-small;
-				&.header-3 {
-					font-size: $h2-font-size;
-					line-height: math.div($h2-font-size, 1);
-					color: $h1-color;
-				}
-				&.subheader {
-					font-size: $h3-font-size;
-					line-height: math.div($h3-font-size, 1);
-					color: $h1-color;
-				}
-			}
-			.cta a {
-				text-decoration: none;
-				&:after {
-					font-family: 'Font Awesome Solid';
-					font-size: .75rem;
-					content: $icon-list-link;			
-					color: $link-color;
-					margin-left: .25rem;
-				}
-			}
-		}
-	}
-
 }
 
 .multi-link {
