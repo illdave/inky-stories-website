@@ -77,7 +77,20 @@ $section-intro-home: 						lighten($inkystories-blue, 3%);
 $section-intro-comics: 						lighten($inkystories-yellow, 10%);
 $section-intro-about: 						lighten($inkystories-teal, 60%);
 $section-intro-store: 						lighten($inkystories-blue, 45%);
+$section-intro-blog: 						lighten($inkystories-cyan, 40%);
 $section-intro-contact: 					lighten($inkystories-blue, 10%);
+
+
+$inkystories-blue:							#007bff; // stolen from Bootstrap branding
+$inkystories-blue-dark:						#142f56;
+$inkystories-cyan:							#00afec; 
+$inkystories-orange:						#ff4e00; // stolen from Strava branding
+$inkystories-yellow:						#fdc131;
+$inkystories-teal:							#0083a9;
+$inkystories-green:							#8ec549;
+$inkystories-green-dark:					#3fb350;
+$inkystories-red:							#ff0000;
+
 
 $section-store-standard-us: 				$white;
 $section-store-minicomics: 					$gray-lighter;

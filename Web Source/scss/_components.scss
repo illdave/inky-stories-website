@@ -9,6 +9,9 @@
 	&.small-bottom-margin {
 		margin-bottom: 1rem !important; 
 	}
+	&.no-bottom-margin {
+		margin-bottom: 0 !important; 
+	}
 	.image {
 		img {
 			margin-bottom: 1rem;
@@ -259,6 +262,28 @@
 			}
 		}
 	}
+	
+	a.feature-card {
+		.text {
+			.header {
+				display: inline-block;
+				&:after {
+					font-family: 'Font Awesome Solid';
+					font-size: .75rem;
+					content: $icon-list-link;			
+					color: $link-color;
+					margin-left: .25rem;
+				}
+			}
+		}
+		&:hover {
+			.image {
+				img {
+					filter: brightness(110%);
+				}
+			}
+		}
+	}	
 	
 	&.with-background {
 		.feature-card {
