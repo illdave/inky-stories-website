@@ -309,9 +309,11 @@
 		top: 0;
 	}
 	.section {
+		padding: $section-padding;
 		&.intro {
 			padding: 0;
 		}
+		margin-bottom: $spacer-base;
 	}
 	
 	.blog {
@@ -346,6 +348,7 @@
 			}	
 			p {
 				font-size: $font-size-base;
+				margin-bottom: 0;
 			}	 	
 		 }
 		 h3, .h3 {
@@ -454,7 +457,6 @@
 		&.index {
 			.section {
 				&.intro {
-					padding-bottom: 1rem;
 				}
 			}
 		}		
