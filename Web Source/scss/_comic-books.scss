@@ -318,10 +318,11 @@
 		}
 		
 		&.genres {
-			padding: 0;
+			background: $genre-section-bg-color url("#{$layout-image-path}/intro-corner-dots-nofade-white.png")  0 0;
+			background-size: 50%;
 			border: 0;
 			.genre {
-				background: $white 0 0 no-repeat;
+				background: 0 0 no-repeat;
 				background-size: cover;
 				padding-bottom: $spacer-base;
 				margin-bottom: 0;
