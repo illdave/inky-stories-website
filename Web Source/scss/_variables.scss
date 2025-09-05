@@ -61,6 +61,7 @@ $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 $alerts-color-red: 							darken($inkystories-red, 10%);
 $new-update-color:							$alerts-color-red;
+$category-header-color: 					$gray-lightest; 
 
 $cta-link-color: 							$link-color;
 $cta-link-hover-color: 						$text-color;

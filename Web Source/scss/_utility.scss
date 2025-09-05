@@ -89,6 +89,10 @@
 	margin-right: .25rem;
 }
 
+.category-header {
+	@include category-header;
+}
+
 .cta {
 	align-items: flex-start;
 	font-family: $font-family-bold;
@@ -247,11 +251,7 @@
 			display: block;
 		}
 		.genre {
-			font-size: 90%;
-			text-transform: uppercase;
-			line-height: 1rem;
-			margin-bottom: .5rem !important;
-			padding-bottom: 0 !important;
+			@include category-header;
 			color: $gray-lightest;
 		}
 		.name, .header {

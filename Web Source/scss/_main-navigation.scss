@@ -10,6 +10,9 @@
 		.inky-stories-brand {
 			min-height: $main-nav-height;
 		}
+		h1 {
+			margin: 0;
+		}
 		.navbar-brand  {
 			font-size: $h1-font-size;
 			padding: $navbar-brand-padding-y;

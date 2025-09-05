@@ -3,10 +3,16 @@
 .home {
 	.section {
 		&.intro {
+			.h1 {
+				font-size: $h1-font-size;
+				line-height: $h1-font-size;
+				margin-bottom: 1.5rem;
+			}
+		}
+		&.intro-speaker {
 			padding: 2rem 0;
 			background: $section-intro-home url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
 			background-size: 50%;
-			
 			.feature-story-card {
 				margin-bottom: 0;
 				.image img {
@@ -55,7 +61,7 @@
 				background-image: url("#{$banner-image-path}/home-banner.jpg");
 				background-size: cover;
 			}
-		}
+		}		
 	}
 	
 	.latest {
