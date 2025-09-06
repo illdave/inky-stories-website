@@ -193,15 +193,16 @@
 		background-image: url("#{$layout-image-path}/main-nav-art.png");
 		 .navbar {
 		 	padding: 1rem 0;
-			.navbar-brand {
-				width: $main-nav-brand-width-mobile;
-				height: auto;
-				background-position: center 0;
-				display: inline-block;
+			h1 {
+				display: inline;
 				font-size: 2rem;
-				margin-right: 0;
-				margin-left: 0;
+				line-height: 44px;
+				margin-bottom: 4px;
 			}
+			.navbar-brand {
+				display: inline-block;
+			}
+			
 			.navbar-nav {
 				text-align: left;
 				margin: 0.5rem 0
@@ -298,12 +299,50 @@
 }
 
 @media (max-width: 576px) { 
-
 	h1, .h1 {
 		font-size: 1.75rem;
 		line-height: 1.75rem;
 		margin-bottom: $spacer-small;
 	}
+	.table {
+		th, td {
+			display: block;
+		}
+		td {
+			display: flex;
+			gap: 1rem;
+			&:before {
+				content: attr(data-header);
+				flex-basis: 50%;
+				
+				flex-shrink: 0;				
+			}
+		}
+		th {
+			text-align: left;
+			padding: 5px;
+			&[scope="col"] {
+				display: none;
+			}
+		}
+		tbody {
+			th {
+				font-family: $font-family-info-headers;
+				font-weight: normal;
+				padding-left: 0;
+				margin-top: $spacer-base;
+			}
+		}
+		tfoot {
+			td {
+				padding: .5rem 0;
+				&:before {
+					content: normal;
+				}
+			}
+		}	
+	}
+		
 	.affix {
 		position: static;
 		top: 0;
@@ -314,6 +353,14 @@
 			padding: 0;
 		}
 		margin-bottom: $spacer-base;
+	}
+	
+	.home {
+		.section {
+			&.intro {
+				padding-top: $spacer-base;
+			}
+		}
 	}
 	
 	.blog {
@@ -430,10 +477,9 @@
 			}
 		}
 		.section.genres {
-			padding-top: 0;
 			.section.genre {
 				&:first-child {
-					padding-top: 1rem;
+					padding-top: $spacer-base;
 				}
 				.ratings {
 					white-space: nowrap;
@@ -448,8 +494,15 @@
 			background: transparent;
 			min-height: auto;
 			.word-balloon {
-				margin: 1rem;
+				margin: $spacer-base;
+				padding: $spacer-base;
 				width: auto;
+				h1 {
+					font-size: $h3-font-size;
+				}
+				.social {
+					margin-bottom: $spacer-base;
+				}
 			}	
 		}
 	}
