@@ -81,7 +81,6 @@
 }	
 
 @media (max-width: 991.98px) {
-
 	.newspaper-columns {
 		column-count: 1;
 		column-gap: 0;
@@ -119,6 +118,11 @@
 			}
 		}
 	}
+	.sidebar {
+ 		.feature-cards .header {
+			hyphens: auto;
+		}	
+	}	
 }
 
 @media (max-width: 768px) { 

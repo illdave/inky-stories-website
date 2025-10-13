@@ -318,8 +318,6 @@
 		}
 		
 		&.genres {
-			background: $genre-section-bg-color url("#{$layout-image-path}/intro-corner-dots-nofade-white.png")  0 0;
-			background-size: 50%;
 			border: 0;
 			.genre {
 				background: 0 0 no-repeat;
@@ -332,6 +330,12 @@
 					border-bottom: 0;
 				}
 			}
+		}
+		&.featured {
+		
+			background: $genre-section-bg-color url("#{$layout-image-path}/intro-corner-dots-nofade-white.png")  0 0;
+			background-size: 50%;
+		
 		}
 									
 		&#adult-content {

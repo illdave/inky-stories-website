@@ -214,6 +214,17 @@
 	flex-direction: row;
 	gap: 1rem 0;
 	margin-bottom: 2rem;
+	&.stacked {
+		display: block;
+		.feature-card {
+			margin-bottom: $spacer-large;
+		}
+		&.with-background {
+			.feature-card {
+				margin-bottom: $spacer-base;
+			}
+		}
+	}
 	.feature-card {
 		display: flex;
 		flex-direction: column;
