@@ -225,6 +225,27 @@
 			}
 		}
 	}
+	&.horizontal {
+		.feature-card {
+			flex-direction: row;
+			.image {
+				margin-right: $spacer-base;
+			}
+			.text {
+				display: flex;
+				flex-direction: column;
+				.header {
+					flex-grow: 0;
+				}
+				.description {
+					flex-grow: 1;
+				}
+				.button-row {
+				}
+			}
+		}
+	}
+		
 	.feature-card {
 		display: flex;
 		flex-direction: column;
@@ -308,6 +329,49 @@
 			padding: 1rem;
 			background: $tile-card-bg url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;	
 			background-size: 40rem;
+		}
+	}
+}
+
+.retail-cards {
+	.retail-card {
+	
+	
+	
+	
+	
+		.header, h3 {
+			display: block;
+			font-family: $font-family-info-headers;
+			font-size: $h3-font-size;		
+			border-bottom: $border-default;
+			padding-bottom: $spacer-small;
+			margin-bottom: $spacer-base !important;
+		}
+		.item {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: $spacer-large;
+			.description, .cta {
+				display: block;
+			}
+			.image {
+				img {
+					margin: 0;
+					text-align: left;
+					border: $border-default;
+				}
+			}
+			.text {
+				.description {
+					line-height: 1.6rem;
+					margin-bottom: $spacer-base;
+				}
+				a {
+					text-decoration: none;
+				}
+			}
+			.cta {}
 		}
 	}
 }

@@ -223,6 +223,9 @@
 			background-size: 50%;
 			.text-page-header {
 				margin-bottom: 0;
+				padding: 0;
+				p {
+				}
 			}
 			&.comic-book-panel {
 				.word-balloon {
@@ -388,7 +391,6 @@
 .comic-book-genre {
 	.section {
 		&.intro {
-			padding-bottom: 2rem;
 		}
 	}
 }

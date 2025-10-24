@@ -30,7 +30,6 @@
 	
 @media (max-width: 1200px) {
 	.comic-book-listing .section.intro {
-		padding-bottom: 0;
 	}
 
 	.characters.index  {
@@ -308,6 +307,9 @@
 		line-height: 1.75rem;
 		margin-bottom: $spacer-small;
 	}
+	h2, .h2 {
+		margin-bottom: $spacer-small;
+	}
 	.table {
 		th, td {
 			display: block;
@@ -354,7 +356,6 @@
 	.section {
 		padding: $section-padding;
 		&.intro {
-			padding: 0;
 		}
 		margin-bottom: $spacer-base;
 	}
