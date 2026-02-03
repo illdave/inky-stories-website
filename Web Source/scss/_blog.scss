@@ -45,7 +45,7 @@
 		header {
 			margin-bottom: $spacer-base;
 			&.feature-story-card {
-				margin-bottom: $spacer-large;
+				margin-bottom: $spacer-base;
 			}
 			&.has-border {
 				border-bottom: $border-default;
@@ -187,6 +187,11 @@
 		line-height: 1.25rem;
 		a {
 			font-family: $font-family-base;
+		}
+		.cta {
+			a {
+				font-family: $font-family-bold;
+			}
 		}
 		h2 {
 			margin-bottom: 1rem;

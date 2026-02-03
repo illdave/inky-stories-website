@@ -5,7 +5,7 @@
 .banner-top {
 	padding-top: 0;
 }
-.book-title, .magazine-title, .show-title, .tv-show-title {
+.book-title, .magazine-title, .show-title, .tv-show-title, .serial-title, .series-title {
 	font-family: $font-family-italic;
 }
 
@@ -92,6 +92,9 @@ figure {
 	padding-bottom: $spacer-small;
 	.figure-caption {
 		text-align: left;
+		p {
+			margin-bottom: 0;
+		}
 	}
 	&.no-border {
 		border: 0;
