@@ -229,7 +229,12 @@
 		.section {
 			&.intro {
 				background: $section-intro-blog url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;				
-				padding-bottom: 0;
+				padding-bottom: $spacer-base;
+				margin-bottom: $spacer-large;
+				.text-page-header {
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
 			}
 			&.text-page-section {
 				padding-top: 0;

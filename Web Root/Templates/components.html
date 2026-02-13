@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Inky Stories: Components</title>
+		<title>Inky Stories Content Style Guide: Components</title>
 		<meta name="author" content="David Marshall">
 		<meta name="copyright" content="Copyright 1990-2025 Rotten Kid Press">
 		<meta name="description" content="TEASER_DESCRIPTION">
@@ -51,42 +51,68 @@
 					</nav>
 				</div>
 			</header>		
-			<main id="main-content" class="main-content bd-content about text-page" role="main">
+			<main id="main-content" class="main-content bd-content text-page" role="main">
 				<section class="section details">
 					<div class="container">
 						<div class="text-page-header">
+							<span class="category-header">Inky Stories design system</span>
 							<h1>Components</h1> 
-							<p>Grouped category modules, mostly lifted from the CTDS Design System</p>
+							<p>These <strong>compact highlight blocks</strong> are designed for linking to to more detailed content, like internal pages, external websites, or other resources. Every component is <strong>rigorously tested</strong> to meet the latest accessibility standards, presenting equally well on <strong>desktop, tablet, and mobile devices.</strong></p>
 						</div>
 						<div class="row gx-md-5">
-							<div class="col-md-9">
-								<h2>Feature Story Card</h2>
-								
-								<div class="feature-story-card">
+							<div class="col-md-2 sidenav">
+								<div class="sticky-top">
+									<aside id="inky-sidebar">
+										<div class="item links">
+											<dl class="link-list left-nav">	
+												<dt>Components</dt>
+												<dd><a href="#lead-story">Lead story</a></dd>
+												<dd><a href="#story-group">Story group</a></dd>
+												<dd><a href="#tile-card">Tile Card</a></dd>
+												<dd><a href="#feature-card">Feature Card</a></dd>
+												<dd><a href="#multi-link-card">Multi Link Card</a></dd>
+												<dd><a href="#image">Image component</a></dd>
+												<dd><a href="#link-list">Link List</a></dd>
+												<dd><a href="#text-styles">Text styles</a></dd>		
+											</dl>
+											
+											<dl class="link-list left-nav">
+												<dt>Inky Stories design system</dt>
+												<dd class="active"><a href="components.html">Components</a></dd>
+												<dd><a href="content.html">Content</a></dd>
+											</dl>
+										</div>
+									</aside>
+								</div>							
+							</div>							
+							<div class="col-md-10">
+								<h2 id="lead-story">Lead story component</h2>
+								<p>Row with an image and text columns. The text column has an headline, description, and CTA link. The default option has half-size columns.</p>
+								<div class="lead-story">
 									<div class="row">
 										<div class="col-lg-6 image no-border">
 											<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 										</div>
 										<div class="col-lg-6 text">
-											<div class="header">Feature Story Card</div>
-											<p>DETAILS</p>
+											<div class="header">HEADLINE</div>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 											<p class="cta">
-												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
+												<a href="#">CTA</a>
 											</p>
 										</div>
 									</div>
 								</div>
 
-								<h3>Header tag variant</h3>
-								<div class="feature-story-card no-bottom-margin">
+								<h3>Variations</h3>
+								<h4>2/3 lead story</h4>
+								<div class="lead-story">
 									<div class="row">
-										<div class="col-lg-6 image no-border">
+										<div class="col-lg-4 image no-border">
 											<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 										</div>
-										<div class="col-lg-6 text">
-											<h1>HEADER</h1>
-											<h2>SUBHEADER</h2>
-											<p>DETAILS</p>
+										<div class="col-lg-8 text">
+											<div class="header">HEADLINE</div>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 											<p class="cta">
 												<a href="#">CTA</a>
 											</p>
@@ -94,19 +120,52 @@
 									</div>
 								</div>
 								
-								<hr>
-								<h2>Feature Story Card Blog</h2>
-								<p>Styled for blogs.</p>
+								<h4>3/4 lead story</h4>
+								<div class="lead-story">
+									<div class="row">
+										<div class="col-lg-3 image no-border">
+											<img src="../assets/img/blog/template/placeholder.jpg" alt="">
+										</div>
+										<div class="col-lg-9 text">
+											<div class="header">HEADLINE</div>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+											<p class="cta">
+												<a href="#">CTA</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<h4>Header tag with subhead</h4>
+								<p>Using H1 and H2 tags instead of header-agnostic DIV element</p>
+								<div class="lead-story">
+									<div class="row">
+										<div class="col-lg-6 image no-border">
+											<img src="../assets/img/blog/template/placeholder.jpg" alt="">
+										</div>
+										<div class="col-lg-6 text">
+											<h1>H1 HEADLINE</h1>
+											<h2>H2 SUBHEADER</h2>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+											<p class="cta">
+												<a href="#">CTA</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<h4>Full lead story for blog pages</h4>
+								<p>Styled to include author and timestamp</p>
 								<div class="blog">
 									<article  class="">
-										<header class="feature-story-card">
+										<header class="lead-story">
 											<div class="row">
 												<div class="col-lg-6 image">
 													<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 												</div>
 												<div class="col-lg-6 text">
-													<h1>HEADER</h1>
-													<h2>SUBHEADER</h2>
+													<h1>H1 HEADLINE</h1>
+													<h2>H2 SUBHEADER</h2>
 													<div class="entry-meta">
 														<span class="byline"> 
 															<span class="author">David Marshall</span>
@@ -116,7 +175,7 @@
 															<time class="updated">DATE</time>
 														</span>
 													</div>
-													<p>INTRO</p>
+													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 												</div>
 											</div>
 										</header>
@@ -124,11 +183,91 @@
 								</div>
 								
 								<hr>
-								<h2 class="has-right-link">
-									Story Group Blade
-									<a href="comics/index.html" aria-label="FOO">Optional CTA </a>
-								</h2>									
+								<h2 id="story-group">Story group component</h2>
+								<p>Story groups have one lead story and up to four secondary stories. The default story group is essentially a lead story component with secondary stories as tile cards underneath.</p>
+								
+								<div class="story-group-tiles">
+									<div class="lead-story">
+										<div class="row">
+											<div class="col-lg-6 image no-border">
+												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
+											</div>
+											<div class="col-lg-6 text">
+												<div class="header">HEADLINE</div>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+												<p class="cta">
+													<a href="#">CTA</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="row tile-cards">
+										<div class="col-md-4">
+											<a class="tile-card" href="#">
+												<span class="header">HEADLINE Duis autem vel eum iriure dolore</span>
+												<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
+											</a>
+										</div>
+										<div class="col-md-4">
+											<a class="tile-card" href="#">
+												<span class="header">HEADLINE Duis autem vel eum iriure dolore</span>
+												<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
+											</a>
+										</div>
+										<div class="col-md-4">
+											<a class="tile-card" href="#">
+												<span class="header">HEADLINE Duis autem vel eum iriure dolore</span>
+												<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								
+								<h3>Variations</h3>
+								<h4>Bottom tiles merged</h4>
+								<div class="story-group-tiles merged">
+									<div class="lead-story">
+										<div class="row">
+											<div class="col-lg-6 image no-border">
+												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
+											</div>
+											<div class="col-lg-6 text">
+												<div class="header">Headline</div>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+												<p class="cta">
+													<a href="#">CTA</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="row tile-cards">
+										<div class="item">
+											<a class="tile-card" href="#">
+												<span class="header">HEADER Duis autem vel eum iriure dolore</span>
+												<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
+											</a>
+										</div>
+										<div class="item">
+											<a class="tile-card" href="#">
+												<span class="header">HEADER Duis autem vel eum iriure dolore</span>
+												<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
+											</a>
+										</div>
+										<div class="item">
+											<a class="tile-card" href="#">
+												<span class="header">HEADER Duis autem vel eum iriure dolore</span>
+												<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								
+								<h4>Story group blade</h4>		
 								<div class="row story-group-blade">
+									<h2 class="has-right-link">
+										Blade title
+										<a href="comics/index.html" aria-label="FOO">Optional CTA</a>
+									</h2>									
 									<div class="col-lg-6 story-group-lead">
 										<div class="feature-story-card">
 											<div class="row">
@@ -136,10 +275,10 @@
 													<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 												</div>
 												<div class="col-lg-6 text">
-													<div class="header">Title</div>
+													<div class="header">Headline</div>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 													<p class="cta">
-														<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
+														<a href="#" rel="noopener noreferrer" target="_blank" class="external-site" aria-label="">CTA</a>
 													</p>
 												</div>
 											</div>
@@ -167,8 +306,8 @@
 									</div>	
 								</div>								
 								
-								<h2>Tile Cards</h2>
-								<p>Basic</p>
+								<h2 id="tile-card">Tile Card component</h2>
+								<p>Clickable cards with headline, description, call-to-action link, and optional icon. The default option has no image and CTA link in the headline. </p>
 								<div class="row tile-cards">
 									<div class="col-md-4">
 										<a class="tile-card" href="#">
@@ -190,7 +329,8 @@
 									</div>
 								</div>
 
-								<p>Icon variant</p>
+								<h3>Variations</h3>
+								<h4>Centered</h4>
 								<div class="row tile-cards icon-tiles">
 									<div class="col-md-4">
 										<a class="tile-card" href="#">
@@ -225,7 +365,7 @@
 									</div>
 								</div>
 								
-								<p>Button tile variant</p>
+								<h4>Horizontal button</h4>
 								<div class="tile-cards button-tiles">
 									<div class="row">
 										<div class="col-md-6">
@@ -254,9 +394,8 @@
 								</div>
 								
 								<hr>
-								<h2>Feature Cards</h2>
-								
-								<p>Clickable cards </p>
+								<h2 id="feature-card">Feature Card component</h2>
+								<p>Clickable vertical stack of an image, headline, description, and CTA link. The default version has the link in the headline.</p>
 								<div class="row feature-cards">
 									<div class="col-md-4">
 										<a class="feature-card" href="#">
@@ -291,46 +430,10 @@
 											</span>
 										</a>
 									</div>								
-								</div>								
-								
-								<p>Links in header</p>
-								<div class="row feature-cards">
-									<div class="col-md-4">
-										<div class="feature-card">
-											<div class="image">
-												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
-											</div>
-											<div class="text">
-												<span class="header"><a href="#">HEADLINE with link</a></span>
-												<span class="description">Description</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="feature-card">
-											<div class="image">
-												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
-											</div>
-											<div class="text">
-												<span class="header"><a href="#">HEADLINE with link</a></span>
-												<span class="description">Description</span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4">
-										<div class="feature-card">
-											<div class="image">
-												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
-											</div>
-											<div class="text">
-												<span class="header"><a href="#">HEADLINE with link</a></span>
-												<span class="description">Description</span>
-											</div>
-										</div>
-									</div>
 								</div>
-								
-								<p>Links in CTA</p>
+														
+								<h3>Variations</h3>
+								<h4>Links in CTA</h4>
 								<div class="row feature-cards">
 									<div class="col-md-4">
 										<div class="feature-card">
@@ -370,78 +473,59 @@
 									</div>
 								</div>
 								
-								<div hidden>
-								<p>Horizontal cards with links in CTA</p>
-								<div class="row feature-cards horizontal">
-									<div class="col-md-6">
-										<div class="feature-card">
-											<div class="image">
-												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
-											</div>
-											<div class="text">
-												<span class="header">HEADLINE</span>
-												<span class="description">Description</span>
-												<span class="button-row"><a href="#" class="cta">CTA</a></span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="feature-card">
-											<div class="image">
-												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
-											</div>
-											<div class="text">
-												<span class="header">HEADLINE</span>
-												<span class="description">Description</span>
-												<span class="button-row"><a href="#" class="cta">CTA</a></span>
-											</div>
-										</div>
-									</div>
-								</div>									
-								</div>
-								
+								<h4>With background</h4>
 								<div class="row feature-cards with-background">
-									<div class="col-md-4">
+									<div class="col-md-3">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 											</div>
 											<div class="text">
-												<span class="header"><a href="#">HEADLINE with optional link</a></span>
+												<span class="header"><a href="#">HEADLINE with CTA</a></span>
 												<span class="description">Description</span>
 											</div>
-											<div class="button-row"><a href="#" class="cta">Optional CTA</a></div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-md-3">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 											</div>
 											<div class="text">
-												<span class="header"><a href="#">HEADLINE with optional link</a></span>
+												<span class="header"><a href="#">HEADLINE with CTA</a></span>
 												<span class="description">Description</span>
 											</div>
-											<div class="button-row"><a href="#" class="cta">Optional CTA</a></div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-md-3">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
 											</div>
 											<div class="text">
-												<span class="header"><a href="#">HEADLINE with optional link</a></span>
+												<span class="header">HEADLINE</span>
 												<span class="description">Description</span>
 											</div>
-											<div class="button-row"><a href="#" class="cta">Optional CTA</a></div>
+											<div class="button-row"><a href="#" class="cta">CTA</a></div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="feature-card">
+											<div class="image">
+												<img src="../assets/img/blog/template/placeholder.jpg" alt="">
+											</div>
+											<div class="text">
+												<span class="header">HEADLINE</span>
+												<span class="description">Description</span>
+											</div>
+											<div class="button-row"><a href="#" class="cta">CTA</a></div>
 										</div>
 									</div>
 								</div>								
 								<hr>
 								
-								<h2>Multi Link Card</h2>
-								<p>Optional description</p>
+								<h2 id="multi-link-card">Multi Link Card component</h2>
+								<p>Horizontal row of icon, headline, description, and multiple links within the topic.</p>
 								<div class="multi-link">
 									<div class="icon">
 										<img src="../assets/img/icons/rotten-kid-logo.svg" alt="">
@@ -458,46 +542,64 @@
 								</div>
 								
 								<hr>
-								<h2>Images</h2>
+								<h2 id="image">Image component</h2>
+								<p>Presents image with optional captions and borders.</p>
 								<div class="row tile-cards">
 									<div class="col-md-4">
 										<figure class="">
 											<img src="/assets/img/blog/template/placeholder.jpg" alt="">
-											<figcaption class="figure-caption">Has bottom border</figcaption>
+											<figcaption class="figure-caption">Caption has bottom border, image has no border</figcaption>
 										</figure>
 									</div>
 									<div class="col-md-4">
 										<figure class="no-border">
 											<img src="/assets/img/blog/template/placeholder.jpg" alt="">
-											<figcaption class="figure-caption">No bottom border</figcaption>
+											<figcaption class="figure-caption">Caption with no bottom border <a href="#">has hyperlink</a>, image has no border</figcaption>
 										</figure>
 									</div>
 									<div class="col-md-4">
 										<figure class="no-border image-has-border">
 											<img src="/assets/img/blog/template/placeholder.jpg" alt="">
-											<figcaption class="figure-caption">Image has border</figcaption>
+											<figcaption class="figure-caption">Caption has no bottom border, image has border</figcaption>
 										</figure>
 									</div>
 								</div>
 								
 								<hr>
-								<h2>Multicolumn Link Lists</h2>
-								<dl class="link-list">
-									<dt>DL Link List</dt>
-									<dd><a href="#">First item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Second item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Third item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-									<dd><a href="#">Fourth item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Fifth item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Sixth item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-									<dd><a href="#">Seventh item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Eighth item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Ninth item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-									<dd><a href="#">Tenth item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Eleventh item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Twelfth item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-								</dl>
-								
+								<h2 id="link-list">Link List component</h2>
+								<p>Hyperlinks styled to work in single or multiple columns with optional description and group CTA link.</p>
+								<div class="row">
+									<div class="col-md-4">
+										<dl class="link-list">
+											<dt>Default link list</dt>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+										</dl>
+									</div>
+									<div class="col-md-4">
+										<dl class="link-list">
+											<dt>Link list with CTA link</dt>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+											<dd class="cta"><a href="#">Optional CTA</a></dd>
+										</dl>
+									</div>
+									<div class="col-md-4">
+										<dl class="link-list">
+											<dt>
+												Link list with desciption 
+												<span>Optional description</span>
+											</dt>
+											<dd><a href="#">Get iusto odio dignissim qui blandit praesent luptatum zzril</a></dd>
+											<dd><a href="#">Delenit augue duis dolore te feugait nulla facilisi</a></dd>
+											<dd><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></dd>
+										</dl>
+									</div>								
+								</div>	
+
+								<h3>Multicolumn Link Lists</h3>
 								<div class="link-list two-column">
 									<div class="header">
 										<div class="list-name">Two-column link list</div>
@@ -560,36 +662,9 @@
 								</div>
 
 								<hr>
-							
-								<h2>Text Styles</h2>
-								<p>Born and raised in Springfield Massachusetts, Dave made his artistic debut at four creating Superman from a lump of children's clay, getting frustrated to the point of toddler rage trying to the diamond-shape logo right twice (front chest and back of cape). In later years he discovered Marvel comics from the Silver and Bronze ages. As he grow older, analyzing the mechanics of artists (Jack Kirby, Steve Ditko, Wally Wood, John Buscema, Marie Severin, Joe Sinnott, Frank Giacoia), writers (Stan Lee, Roy Thomas, Steve Englehart, Steve Gerber) and letterers (Artie Simek, Sam Rosen, and Tom Orzechowski) made him think he could be a professional comics artist.</p>
-								<p>By age 16 in 1978, operating under the influence of Pop-Tarts and How to Draw Comics the Marvel Way, Dave began making comic book art with professional tools in hopes of breaking into Marvel. Sadly the original art was lost in a series of self-made bonfires, but the process led to getting into Massachusetts College of Art. Studying comics art & technology history for his Senior Degree Project exposed Dave to the work of George Herriman, Alex Toth, Trina Robbins, and more. This energized my personal discoveries of Los Bros. Hernandez, June Tarpe Mills, Gladys Parker, and R. Crumb.</p>
+								<h2 id="text-styles">Paragraph text styles</h2>
+								<p>Lorem ipsum dolor sit amet, <a href="#">in-site hyperlink</a> and <a href="#" target="_blank" rel="noopener noreferrer" class="external-site external-site">external hyperlink</a>, sed diam nonummy <strong>strong text</strong> ut laoreet dolore magna <em>italic text.</em> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
 								<p class="signature">Dave M!, giving you all I’ve got.</p>
-							</div>
-							<div class="col-md-3 sidebar">
-								<div class="sticky-top">
-									<aside id="inky-sidebar">
-										<div class="item links">	
-											<dl class="link-list">
-												<dt>Link list category</dt>
-												<dd><a href="#" target="_blank" rel="noopener noreferrer">Duis autem vel eum iriure dolor in hendrerit</a></dd>
-												<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
-												<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-												<dd class="cta"><a href="#">view all of this long-named category</a></dd>
-											</dl>
-
-											<dl class="link-list">
-												<dt>
-													Link list category with description
-													<span>Brief description of this link list category	</span>
-												</dt>
-												<dd><a href="#">Get iusto odio dignissim qui blandit praesent luptatum zzril</a></dd>
-												<dd><a href="#">Delenit augue duis dolore te feugait nulla facilisi</a></dd>
-												<dd><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></dd>
-											</dl>
-										</div>
-									</aside>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -601,8 +676,8 @@
 						<p class="copyright">Copyright &copy; Rotten Kid Press 1990-<script>document.write(new Date().getFullYear())</script>. Please <a href="mailto:david@inkystories.com">send email</a> to request any use this copyright-protected work.</p>
 						<div class="social">
 							<ul class="list-inline">
-								<li class="facebook"><a href="http://www.facebook.com/pages/Inky-Stories/161622173872127" target="_blank" rel="noopener noreferrer" aria-label="inky stories on facebook"></a></li>
-								<li class="bluesky"><a href="https://bsky.app/profile/illdave.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="inky stories on blue sky"></a></li>
+								<li class="facebook"><a href="http://www.facebook.com/pages/Inky-Stories/161622173872127" target="_blank" rel="noopener noreferrer" class="external-site" aria-label="inky stories on facebook"></a></li>
+								<li class="bluesky"><a href="https://bsky.app/profile/illdave.bsky.social" target="_blank" rel="noopener noreferrer" class="external-site" aria-label="inky stories on blue sky"></a></li>
 							</ul>
 						</div>
 					</div>

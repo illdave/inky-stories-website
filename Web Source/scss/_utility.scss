@@ -169,6 +169,29 @@
 	}
 }
 
+a.external-site {
+	&:after {
+		display: inline-block;
+		width: $icon-external-site-size;
+		height: $icon-external-site-size;
+		line-height: $icon-external-site-size;
+		margin-left: .1rem;
+		content: $icon-external-site;
+		fill: $link-color;
+	}
+}
+
+
+.icon-linked {
+	fill: $link-color;
+	&:hover {
+		fill: $link-hover-color;
+	}
+	&:active {
+		fill: $link-active-color;
+	}
+}
+
 .video {
 	width: 100%;
 	&.embed-16x9 {

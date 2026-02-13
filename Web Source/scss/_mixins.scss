@@ -25,9 +25,11 @@
 }
 
 @mixin category-header {
+	font-family: $font-family-base;
 	font-size: 90%;
 	text-transform: uppercase;
 	line-height: 1rem;
+	display: block;
 	margin-bottom: .5rem !important;
 	padding-bottom: 0 !important;
 	color: $category-header-color;

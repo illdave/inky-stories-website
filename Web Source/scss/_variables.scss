@@ -156,7 +156,7 @@ $font-size-small:         					math.div($font-size-base, 1.15); // ~12px
 $h1-font-size:                				$font-size-base * 2.6;
 $h2-font-size:                				$font-size-base * 1.8;
 $h3-font-size:                				$font-size-base * 1.4;
-$h4-font-size:                				$font-size-base * 1.2;
+$h4-font-size:                				$font-size-base;
 $h5-font-size:                				$font-size-base;
 $h6-font-size:                				$font-size-base;
 
@@ -320,6 +320,9 @@ $pullquote-speaker-font-family: 			$font-family-italic;
 $pullquote-speaker-font-size: 				$h3-font-size;
 $pullquote-speaker-line-height: 			$pullquote-speaker-font-size * 1.2;
 $pullquote-speaker-color: 					$text-color;
+
+$icon-external-site:   						url("#{$icons-image-path}/external-site.svg");
+$icon-external-site-size: 					.85rem;
 
 
 /* multi link ----------------------- */

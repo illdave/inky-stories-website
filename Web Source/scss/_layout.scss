@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
 
 /* sidebar column --------------------- */
 
-.sidebar {
+.sidebar, .sidenav {
 	margin-bottom: $spacer-large;
 	.item {
 		border-bottom: $border-default;
@@ -139,9 +139,13 @@ figure {
 		margin-bottom: 1rem;
 	}
 	.text-page-header {
-		padding-top: $spacer-base;
-		padding-bottom: $spacer-base;
+		padding-top: 0;
 		margin-bottom: $spacer-large;
+		&.has-bottom-border {
+			border-bottom: $border-default;
+			padding-bottom: $spacer-base;
+		}
+		
 		@include comic-book-font;
 		h1 {
 			font-size: $font-size-base * 2.5;

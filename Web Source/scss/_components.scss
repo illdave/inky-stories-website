@@ -1,5 +1,59 @@
 /* components ------------------------ */
 
+.lead-story {
+	margin-bottom: 2rem;
+	&.has-bottom-border {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+	}
+	&.small-bottom-margin {
+		margin-bottom: 1rem !important; 
+	}
+	&.no-bottom-margin {
+		margin-bottom: 0 !important; 
+	}
+	.image {
+		img {
+			margin-bottom: 1rem;
+			border: $border-default;
+		}
+		&.no-border {
+			img {
+				border: 0;
+			}
+		}
+	}
+	.text {
+		.header {
+			font-family: $comic-book-headers;
+			font-size: $h2-font-size;
+			line-height: math.div($h2-font-size, 1);
+			color: $headings-color;
+			margin-bottom: $spacer-small;
+			&.header-3 {
+				font-size: $h2-font-size;
+				line-height: math.div($h2-font-size, 1);
+				color: $h1-color;
+			}
+			&.subheader {
+				font-size: $h3-font-size;
+				line-height: math.div($h3-font-size, 1);
+				color: $h1-color;
+			}
+		}
+		.cta a {
+			text-decoration: none;
+			&:after {
+				font-family: 'Font Awesome Solid';
+				font-size: .75rem;
+				content: $icon-list-link;			
+				color: $link-color;
+				margin-left: .25rem;
+			}
+		}
+	}
+}
+
 .feature-story-card {
 	margin-bottom: 2rem;
 	&.has-bottom-border {
@@ -43,6 +97,9 @@
 		}
 		.cta a {
 			text-decoration: none;
+			&.external-site:after {
+				display: none;
+			}			
 			&:after {
 				font-family: 'Font Awesome Solid';
 				font-size: .75rem;
@@ -335,11 +392,6 @@
 
 .retail-cards {
 	.retail-card {
-	
-	
-	
-	
-	
 		.header, h3 {
 			display: block;
 			font-family: $font-family-info-headers;
@@ -372,6 +424,37 @@
 				}
 			}
 			.cta {}
+		}
+	}
+}
+
+.story-group-tiles {
+	.lead-story {
+		margin-bottom: $spacer-small;
+	}
+	&.merged {
+		.row.tile-cards {
+			position: relative;
+			margin-left: 0;
+			margin-right: 0;
+			display: flex;
+			background: $tile-card-bg url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;	
+			.item {
+				position: relative;
+				flex: 1 0 0%;
+				.tile-card {
+					background: none;
+				}
+				&:not(:first-child):before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 1rem;
+					bottom: 1rem;
+					width: 1px;
+					background: $border-default-color;
+				}
+			}
 		}
 	}
 }
