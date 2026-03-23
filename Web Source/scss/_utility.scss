@@ -181,7 +181,6 @@ a.external-site {
 	}
 }
 
-
 .icon-linked {
 	fill: $link-color;
 	&:hover {
@@ -905,6 +904,7 @@ a.external-site {
 		.word-balloon {
 			margin-left: 24rem;
 			text-align: left;
+			padding: $spacer-large;
 			&.left-pointer:after {
 				bottom: 20%;
 				top: auto;

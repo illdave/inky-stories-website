@@ -2,23 +2,61 @@
 <html lang="en-US">
 	<head>
 		<!-- Copyright 1990-2025 Rotten Kid Press -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Inky Stories Content Style Guide: Content</title>
+		<title>Inky Stories Content Style Guide - Typography & Layout Reference</title>
+		<meta name="title" content="Inky Stories Content Style Guide - Typography & Layout Reference">
+		<meta name="description" content="Typography, layout, and content patterns for the Inky Stories design system. Demonstrates responsive styling for headings, images, tables, and interactive elements.">
 		<meta name="author" content="David Marshall">
-		<meta name="copyright" content="Copyright 1990-2025 Rotten Kid Press">
-		<meta name="description" content="TEASER_DESCRIPTION">
-		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, rotten kid press, inky stories">
-		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
 		<link href="../assets/img/brand/inky-stories.ico" type="image/x-icon" rel="icon">
-
-		<meta property="og:title"        content="Inky Stories: About the Artist">
-		<meta property="og:type"         content="article">
-		<meta property="og:description" content="TEASER_DESCRIPTION">
-		<meta property="og:url"          content="http://www.inkystories.com/about">
-		<meta property="og:image"        content="http://www.inkystories.com/assets/img/open-graph/og-rotten-wallpaper.png">
+		<link rel="canonical" href="https://www.inkystories.com/templates/content.html">
+	
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.inkystories.com/templates/content.html">
+		<meta property="og:title" content="Inky Stories Content Style Guide - Typography & Layout Reference">
+		<meta property="og:description" content="Typography, layout, and content patterns for the Inky Stories design system. Responsive styling for headings, images, tables, and more.">
+		<meta property="og:image" content="https://www.inkystories.com/assets/img/design-system-preview.jpg">
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://www.inkystories.com/templates/content.html">
+		<meta property="twitter:title" content="Inky Stories Content Style Guide">
+		<meta property="twitter:description" content="Typography and layout patterns for responsive, accessible web content.">
+		<meta property="twitter:image" content="https://www.inkystories.com/assets/img/design-system-preview.jpg">
+			
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "TechArticle",
+				"headline": "Inky Stories Content Style Guide",
+				"description": "Typography, layout, and content patterns for responsive, accessible web design.",
+				"author": {
+					"@type": "Person",
+					"name": "David Marshall",
+					"url": "https://www.inkystories.com"
+				},
+				"datePublished": "2024-01-01",
+				"dateModified": "2026-02-13",
+				"publisher": {
+					"@type": "Organization",
+					"name": "Inky Stories",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://www.inkystories.com/assets/img/logo.png"
+					}
+				},
+				"mainEntityOfPage": {
+					"@type": "WebPage",
+					"@id": "https://www.inkystories.com/templates/content.html"
+				},
+				"articleSection": "Web Development"
+			}
+		</script>
+		<link href="../assets/themes/inky-stories/inky-stories.css" type="text/css" rel="stylesheet">	
 	</head>
+	
 	<body>
 		<div class="inky-stories-3">
 			<header class="fixed-top main-navigation" role="banner">
@@ -34,11 +72,17 @@
 								<li class="web-comics">
 									<a href="../comics/index.html" aria-label="comic books by David Marshall"><span class="nav-icon"></span><span class="nav-text">Comics</span></a>
 								</li>
+								<li class="about">
+									<a href="#" aria-label="about Inky Stories author David Marshall"><span class="nav-icon"></span><span class="nav-text">About</span></a>
+								</li>
 								<li class="store">
 									<a href="../store/index.html" aria-label="Inky Stories store"><span class="nav-icon"></span><span class="nav-text">Store</span></a>
 								</li>
-								<li class="webdev">
-									<a href="../contact/index.html" aria-label="contact Inky Stories"><span class="nav-icon"></span><span class="nav-text">Web Dev</span></a>
+								<li class="blogs active" aria-label="Inky Stories blog">
+									<a href="../blog/index.html" aria-label="Inky Stories blog"><span class="nav-icon"></span><span class="nav-text">Blog</span></a>
+								</li>
+								<li class="contact">
+									<a href="../contact/index.html" aria-label="contact Inky Stories"><span class="nav-icon"></span><span class="nav-text">Contact</span></a>
 								</li>
 							</ul>
 						</div>
@@ -51,78 +95,103 @@
 						<div class="text-page-header">
 							<span class="category-header">Inky Stories design system</span>
 							<h1>Content style guide</h1>
-							<p>Default text, layout and image styles for the Inky Stories website. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							<p>Typography, layout, and content patterns for consistent presentation across the Inky Stories website. This reference demonstrates default styling for headings, paragraphs, images, tables, and interactive elements. All styles are built with semantic HTML and responsive design principles.</p>
 						</div>
 						<div class="row gx-md-5">
 							<div class="col-md-2 sidenav">
 								<div class="sticky-top">
 									<aside id="inky-sidebar">
-										<div class="item links">	
+										<div class="item links">
+											<dl class="link-list left-nav">	
+												<dt>Content style guide</dt>
+												<dd><a href="#body-text">Body text and inline styles</a></dd>
+												<dd><a href="#heading-hierarchy">Heading hierarchy</a></dd>
+												<dd><a href="#image-layouts">Image layouts</a></dd>
+												<dd><a href="#pullquotes">Pullquotes</a></dd>
+												<dd><a href="#buttons">Buttons</a></dd>
+												<dd><a href="#lightbox-gallery">Lightbox gallery</a></dd>
+												<dd><a href="#data-tables">Data tables</a></dd>
+												<dd><a href="#lists">Lists</a></dd>	
+											</dl>
 											<dl class="link-list left-nav">
 												<dt>Inky Stories design system</dt>
-												<dd><a href="components.html">Components</a></dd>
-												<dd class="active"><a href="content.html">Content</a></dd>
+												<dd><a href="components.html">UI Component Library</a></dd>
+												<dd class="active"><a href="content.html">Content style guide</a></dd>
 											</dl>
 										</div>
 									</aside>
 								</div>							
 							</div>							
 							<div class="col-md-10">							
-								<h2>Paragraphs and inline styles</h2>
+								<h2 id="body-text">Body text and inline styles</h2>
+								<p>Standard body text with inline elements for emphasis and linking. Link styles distinguish between internal navigation and external resources with visual indicators. All interactive elements maintain proper focus states for keyboard accessibility.</p>
 								<p>Lorem ipsum dolor sit amet, <a href="#">in-site hyperlink</a> and <a href="#" target="_blank" rel="noopener noreferrer" class="external-site external-site">external hyperlink</a>, sed diam nonummy <strong>strong text</strong> ut laoreet dolore magna <em>italic text.</em> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+
+								<hr>
+								<h2 id="heading-hierarchy">Heading Hierarchy</h2>
+								<p>Proper heading structure maintains document outline for screen readers and SEO. Font sizes, weights, and spacing scale proportionally across breakpoints.</p>
 								
 								<h2>H2 header</h2>
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent.</p>
 
 								<h3>H3 header</h3>
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent.</p>
 
 								<h4>H4 header</h4>
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent.</p>
 		
-		
-								<h2>Image Wrappers</h2>
-								<p>Red diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+								<hr>
+								<h2 id="image-layouts">Image Layouts</h2>
+								<p>Responsive image containers with multiple layout options using a standard 600 × 400 pixel aspect ratio (3:2). All images scale proportionally and include semantic figure/figcaption markup for proper association between images and their captions. Vertical formats are reserved for comic book pages and sketchbook artwork.</p>
 								
-								<h3>Image Centered</h3>
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<h3>Variations</h3>
+								<h4>Image centered</h4>
+								<p>Default centered layout with optional caption. Images maintain aspect ratio and scale to container width on smaller screens.</p>
 								
 								<figure class="centered">
-									<img src="../assets/img/pictures/24-hour-2008-andy-wong-1.jpg" alt="photo of Andy Wong working hard" />
-									<figcaption class="figure-caption">FOO.</figcaption>
+									<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder">
+									<figcaption class="figure-caption">Caption: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.</figcaption>
 								</figure>
-								<p>Color in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at qui blandit praesent.</p>
 								
-								<h3>Image Float Left</h3>
-								<figure class="float-start me-5 col-12 col-md-4">
-									<img src="../assets/img/pictures/batgirl-yvonne-craig-3.png" alt="batgirl captured by egghead">
-									<figcaption class="figure-caption">Daredoll Damsel in Distress moment from  <a href="https://www.tor.com/2017/02/10/holy-rewatch-batman-the-ogg-couple" rel="noopener noreferrer" target="_blank" class="external-site">"The Ogg Couple"</a>, a Batman '66 episode written by Stanford Sherman, directed by Oscar Rudolph, starring Yvonne Craig as Batgirl and Vincent Price as Egghead.</figcaption>
+								<h4>Image centered full width</h4>
+								<p>Edge-to-edge layout that spans the full content width for maximum visual impact. Useful for hero images, featured artwork, or content that benefits from full horizontal space. Caption includes bottom border to visually separate from subsequent content.</p>
+								<figure class="centered full-width">
+									<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder">
+									<figcaption class="figure-caption">Caption with border to separate from bottom content.</figcaption>
+								</figure>
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								
+								<h4>Image float left, 1/3 width</h4>
+								<p>Left-floated images allow text to wrap around on the right. Float clears on mobile breakpoints for better readability. Figures maintain margins for comfortable spacing between image and text content.</p>
+								<figure class="float-start me-4 col-12 col-md-4 no-border">
+									<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder">
+									<figcaption class="figure-caption">Caption: Lorem ipsum.</figcaption>
 								</figure>
 								<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
 								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, and vel illum.</p>
 								
-								<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
-								
-								<h3>Image Float Right</h3>
-								<figure class="float-end ms-5 col-12 col-md-3">
-									<img src="../assets/img/pictures/24-hour-2008-jesse-farrell.jpg" alt="photo of jesse ferrell holding videos">
-									<figcaption class="figure-caption">I brought 70's sci fi classics Rollerball and Logan's Run, which Jesse approved.</figcaption>
+								<h4>Image float right, 1/4 width</h4>
+								<p>Right-floated images mirror the left-float behavior with text wrapping on the left side. Both float patterns collapse to full-width centered images on mobile devices.</p>
+								<figure class="float-end ms-4 col-12 col-md-3 no-border">
+									<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder">
+									<figcaption class="figure-caption"></figcaption>
 								</figure>
 								
 								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, and vel illum.</p>
-								<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
 								
+								<hr>
+								<h2 id="pullquotes">Pullquotes</h2>
+								<p>Visually distinct blockquote styling for emphasized quotations within article content. Uses definition list markup for proper semantic structure and attribution.</p>
 								<dl class="pullquote">
 									<dt>This is a pullquote: "He kicked me so hard once at the top of the stairs that I landed <strong>halfway down.</strong> My teachers couldn't understand why I was a <strong>nervous wreck!</strong> My sister and I hated, hated him. <strong>We talked about killing him.</strong>"</dt>
 									<dd>Fletcher "Christy" Hanks Jr. on his father in 2007</dd>
 								</dl>
 								
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, and vel illum.</p>
-								
-								<h3>Buttons</h3>
+								<hr>
+								<h2 id="buttons">Buttons</h2>
+								<p>Standard button styles with multiple semantic states. All buttons maintain minimum touch target size for mobile accessibility and include clear focus/hover states.</p>
 								<p>
 									<button type="button" class="btn btn-primary">Primary</button>
 									<button type="button" class="btn btn-secondary">Secondary</button>
@@ -134,37 +203,38 @@
 									<button type="button" class="btn btn-dark">Dark</button>
 								</p>
 								
-								<h3>Lightbox by Lokesh Dhakar</h3>
-								<p>Works with <a href="../assets/img/comics/stop-that-panzer-woman/06-07-spread.jpg" data-lightbox="double-page-spread-again">text links</a> and pictures, grouping controlled by using the same "data-lightbox" value. Optional captions come from "data-title" values. ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
-								
+								<hr>
+								<h2 id="lightbox-gallery">Lightbox Gallery</h2>
+								<p>Image gallery using Lightbox by Lokesh Dhakar. Supports both text links and thumbnail images with optional captions. Grouping controlled via data-lightbox attribute for related image sets. Keyboard navigable with arrow keys and ESC to close.</p>
+								<p>Works with <a href="../assets/img/comics/stop-that-panzer-woman/06-07-spread.jpg" data-lightbox="double-page-spread-again">text links</a> and pictures, grouping controlled by using the same "data-lightbox" value. Optional captions come from "data-title" values. ut laoreet dolore magna aliquam erat volutpat.</p>
 								<div class="row in-content">
 									<div class="col col-md-3">
-										<a href="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" data-lightbox="the-prisoner" data-title="Optional caption renders under photo">
-											<img src="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" alt="photo of us 24-hour artists at 3:30am" />
+										<a href="../assets/img/brand/placeholder-photo.jpg" data-lightbox="lightbox-demo" data-title="Optional caption renders under photo">
+											<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder" />
 										</a>
 									</div>
 									<div class="col col-md-3">
-										<a href="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" data-lightbox="the-prisoner" data-title="Caption thing about this image">
-											<img src="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" alt="photo of us 24-hour artists at 3:30am" />
+										<a href="../assets/img/brand/placeholder-photo.jpg" data-lightbox="lightbox-demo" data-title="Caption thing about this image">
+											<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder" />
 										</a>
 									</div>
 									<div class="col col-md-3">
-										<a href="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" data-lightbox="the-prisoner" data-title="Image caption that edifies reality">
-											<img src="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" alt="photo of us 24-hour artists at 3:30am" />
+										<a href="../assets/img/brand/placeholder-photo.jpg" data-lightbox="lightbox-demo" data-title="Image caption that edifies reality">
+											<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder" />
 										</a>
 									</div>
 									<div class="col col-md-3">
-										<a href="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" data-lightbox="the-prisoner" data-title="I am a caption, not a number!">
-											<img src="../assets/img/pictures/24-hour-2008-group-photo-3.jpg" alt="photo of us 24-hour artists at 3:30am" />
+										<a href="../assets/img/brand/placeholder-photo.jpg" data-lightbox="lightbox-demo" data-title="I am a caption, not a number!">
+											<img src="../assets/img/brand/placeholder-photo.jpg" alt="placeholder" />
 										</a>
 									</div>
 								</div>
-								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, and vel illum.</p>
-								
-								<h3>Data Tables</h3>
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+								<hr>
+								<h2 id="data-tables">Data Tables</h2>
+								<p>Responsive table layouts with horizontal scroll on mobile devices. Header rows maintain sticky positioning on scroll for context. Zebra striping improves row scanning on longer tables.</p>
 								<table class="table" id="people-cities">
-									<caption>People &amp; Their Cities (Single-Column)</caption>
+									<caption>People &amp; Their Cities</caption>
 									<thead>
 										<tr>
 											<th scope="col" role="columnheader">Person</th>
@@ -207,9 +277,12 @@
 									</tbody>
 								</table>
 								
-								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+								<h2 id="lists">Lists</h2>
+								<p>Standard unordered and ordered list styling with proper indentation and marker styles. Nested lists maintain hierarchy with adjusted margins and alternative markers.</p>
+								<h3>Variations</h3>
 								<div class="row">
 									<div class="col-12 col-md-6">
+									<h4>Unordered list</h4>
 									<ul>
 										<li>Quis nostrud exerci tation ullamcorper</li>
 										<li>Nminim veniam, quis nostrud exerci tation</li>
@@ -218,6 +291,7 @@
 									</ul>
 									</div>
 									<div class="col-12 col-md-6">
+										<h4>Ordered list</h4>
 										<ol>
 											<li>Quis nostrud exerci tation ullamcorper</li>
 											<li>Nminim veniam, quis nostrud exerci tation</li>
@@ -227,18 +301,8 @@
 									</div>
 								</div>
 								
-								<h4>H4 Had Minim Veniam</h4>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.</p>
-								<p>Color in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-								<ol>
-									<li>Quis nostrud exerci tation ullamcorper</li>
-									<li>Nminim veniam, quis nostrud exerci tation</li>
-									<li>Accumsan et iusto odio dignissim qui blandit praesent luptatum</li>
-									<li>Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</li>
-								</ol>
-								
-								<h4>H4 Had Minim Veniam</h4>
-								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								<h4>Definition Lists</h4>
+								<p>Semantic markup for term-definition pairs. Useful for glossaries, metadata, and FAQ-style content. Maintains proper association between terms and definitions for screen readers.</p>
 								<div class="row">
 									<div class="col-12 col-md-6">
 										<dl>

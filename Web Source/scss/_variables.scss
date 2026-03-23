@@ -306,6 +306,8 @@ $btn-padding:	 							0.25rem 0.5rem;
 $tile-card-bg: 								$gray-lighter;
 $tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
 $tile-card-icon: 							3rem;
+$tile-card-blade-hover-bg: 					$tile-card-hover-bg;
+$tile-card-blade-hover-border: 				rem(1px solid $link-color);
 
 $pullquote-padding: 						$spacer-large;
 $pullquote-margin: 							$spacer-base;
@@ -323,6 +325,8 @@ $pullquote-speaker-color: 					$text-color;
 
 $icon-external-site:   						url("#{$icons-image-path}/external-site.svg");
 $icon-external-site-size: 					.85rem;
+
+$accordion-header-bg:						$tile-card-bg;
 
 
 /* multi link ----------------------- */
