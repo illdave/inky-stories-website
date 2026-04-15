@@ -46,8 +46,17 @@ $theme-color-8: 							$inkystories-green-dark;
 $theme-color-9: 							$inkystories-red;
 $theme-color-10: 							$inkystories-blue-dark;
 
+$accent-bg:									lighten($inkystories-cyan, 45%);
+$accent-bg-border-color:					darken($accent-bg, 30%);
+
 $border-default-color: 						$gray-light;
 $border-default: 							rem(1px solid $border-default-color);
+
+$border-link-color: 						lighten($link-color, 10%);
+$border-link-hover-color: 					lighten($border-link-color, 10%);
+$border-link: 								rem(1px solid $border-link-color);
+$border-link-hover: 						rem(1px solid $border-link-hover-color);
+
 $border-light: 								rem(1px solid $gray-lighter);
 
 $body-bg:									$white;
@@ -303,8 +312,9 @@ $picture-caption-strong:					$theme-color-5;
 
 $btn-padding:	 							0.25rem 0.5rem;
 
-$tile-card-bg: 								$gray-lighter;
+$tile-card-bg: 								$accent-bg;
 $tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
+$tile-card-border-color: 					$accent-bg-border-color;
 $tile-card-icon: 							3rem;
 $tile-card-blade-hover-bg: 					$tile-card-hover-bg;
 $tile-card-blade-hover-border: 				rem(1px solid $link-color);

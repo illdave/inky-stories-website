@@ -565,6 +565,13 @@
 				}
 			}
 		}
+	}
+	.link-list {
+		&.two-column, &.three-column, &.four-column, &.five-column, &.six-column {
+			ul {
+			  column-count: 1;
+			}
+		}	
 	}	
 }
 
