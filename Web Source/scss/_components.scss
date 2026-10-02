@@ -326,7 +326,7 @@
 				font-family: $font-family-info-headers;
 				font-size: $h4-font-size;
 				text-transform: uppercase;
-				margin-bottom: $spacer-small;
+				margin-bottom: 0;
 				a {
 					text-decoration: none;
 					&:after {
@@ -415,9 +415,17 @@
 	
 	&.with-background {
 		.feature-card {
-			padding: 1rem;
+			padding: 1.5rem;
 			background: $tile-card-bg url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;	
 			background-size: 40rem;
+		}
+		&.yellow {
+			.feature-card {
+				background: $tile-card-bg-yellow url("#{$layout-image-path}/intro-corner-dots-nofade-white.png") 0 0 repeat;
+				&:hover {
+					background-color: $tile-card-hover-bg-yellow;
+				}
+			}
 		}
 	}
 }

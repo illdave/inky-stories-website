@@ -154,6 +154,9 @@
 		&:after {
 			display: none;
 		}
+		&.external-site::after {
+			display: none;
+		}
 	}
 	.fas, .fa-solid {
 		&:before {

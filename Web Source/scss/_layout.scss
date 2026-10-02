@@ -173,6 +173,9 @@ figure {
 		}
 		.cta {
 			margin-top: 1rem;
+			a {
+				font-family: $font-family-bold;
+			}
 		}
 		a {
 			text-decoration: none;
